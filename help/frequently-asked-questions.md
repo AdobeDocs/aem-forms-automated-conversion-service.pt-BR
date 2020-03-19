@@ -7,15 +7,15 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
+source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 
 ---
 
 
-# Frequently asked questions{#frequently-asked-questions}
+# Perguntas frequentes{#frequently-asked-questions}
 
 1. **Qual versão do AEM Forms é compatível com o serviço de conversão de formulários automatizados?**
-   <p>O serviço de Conversão de formulários automatizados oferece suporte para formulários AEM 6.5. Ele funciona com formulários AEM em formulários OSGi e AEM em JEE. Você precisa do pacote complementar AEM Forms mais recente na parte superior da instância do autor AEM para usar o serviço. Para obter instruções detalhadas, consulte <a href="configure-service.md">Configurar o serviço de Conversão</a> de formulários automatizada.</p> 
+   <p>O serviço de Conversão de formulários automatizados oferece suporte aos formulários AEM 6.4 e AEM 6.5. Ele funciona com formulários AEM em formulários OSGi e AEM em JEE. Você precisa do pacote complementar AEM Forms mais recente na parte superior da instância do autor AEM para usar o serviço. Para obter instruções detalhadas, consulte <a href="configure-service.md">Configurar o serviço de Conversão</a> de formulários automatizada.</p> 
     <br>
 
 1. **O serviço pode ser instalado no local?**
@@ -26,7 +26,7 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
    <p>O serviço pode converter formulários PDF não interativos, formulários XDP e PDF baseados em XFA e formulários AcroForms para formulários adaptáveis. O serviço não suporta formulários digitalizados ou preenchidos. Para obter outras limitações, consulte o artigo sobre problemas <a href="known-issues.md"></a> conhecidos.<br /> </p> 
     <p>Estamos constantemente adicionando suporte para outros tipos de fonte. Mantenha a seção de formulários <a href="introduction.md">PDF</a> suportados em sua lista de monitoramento para obter uma atualização regular dos recursos e capacidades recém-adicionados.</p>
 
-   O serviço pode converter somente formulários em inglês em formulários adaptáveis. Você pode traduzir os formulários adaptativos gerados para outro idioma usando o fluxo de trabalho de tradução do [AEM.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   O serviço pode converter somente formulários em inglês em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **O serviço pode produzir um XDP em vez de um formulário adaptável?**
    <p>O serviço não produz uma saída XDP. Estamos adicionando regularmente recursos e ao serviço. Mantenha a seção de idiomas e formulários <a href="introduction.md">PDF</a> suportados na lista de acompanhamento para obter uma atualização regular dos recursos e recursos recém-adicionados.</p> <br>
@@ -50,7 +50,7 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
    <p>O serviço pode converter formulários PDF em formulários adaptáveis. O serviço não suporta formulários digitalizados ou preenchidos. Para obter outras limitações, consulte o artigo sobre problemas <a href="known-issues.md"></a> conhecidos.</p> <br>
 
 1. **O serviço pode converter um formulário digitalizado ou apenas uma imagem de um formulário em um formulário adaptável?**
-   <p>O serviço não suporta a conversão de formulários digitalizados ou de uma imagem de um formulário para um formulário pronto para uso. Entretanto, você usa o Adobe Acrobat para converter a imagem de um formulário em um formulário PDF. Em seguida, use o serviço para converter o Formulário PDF em um formulário adaptável. Sempre use uma imagem de alta qualidade do formulário para conversão no Acrobat. Melhora a qualidade da conversão.</p> <br>
+   <p>O serviço não suporta a conversão de formulários digitalizados ou de uma imagem de um formulário para um formulário pronto para uso. No entanto, você usa o Adobe Acrobat para converter a imagem de um formulário em um formulário PDF. Em seguida, use o serviço para converter o Formulário PDF em um formulário adaptável. Sempre use uma imagem de alta qualidade do formulário para conversão no Acrobat. Melhora a qualidade da conversão.</p> <br>
 
 1. **Alguns formulários baseados em XDP usam fragmentos de formulário, onde esses fragmentos de formulário devem ser carregados?**
    <p class="MsoNormal">Carregue fragmentos de formulário na pasta de conversão e preserve a estrutura da pasta original. Ajuda a preservar os caminhos relativos usados em formulários baseados em XDP e fragmentos de formulário.</p> <br>
@@ -74,7 +74,7 @@ Os motivos mais comuns para a conversão falhar são:</p>
     <p> </p> <br>
 
 1. **O serviço identifica e usa fontes do PDF de origem em formulários adaptáveis de saída?**
-   <p>O estilo e o layout de um formulário HTML responsivo são geralmente diferentes de um formulário PDF ou em papel. Para suportar layout e estilos consistentes em todas as organizações, os formulários adaptáveis usam <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">temas para estilizar um formulário</a>. O serviço de conversão usa as fontes e os estilos de fonte especificados no tema aplicado durante a conversão. É possível alterar fontes e estilos de fonte do tema para fornecer uma aparência distinta aos componentes de um formulário adaptável.</p> <br>
+   <p>O estilo e o layout de um formulário HTML responsivo são geralmente diferentes de um formulário PDF ou em papel. Para suportar layout e estilos consistentes em todas as organizações, os formulários adaptáveis usam <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">temas para estilizar um formulário</a>. O serviço de conversão usa as fontes e os estilos de fonte especificados no tema aplicado durante a conversão. É possível alterar as fontes e os estilos de fonte do tema para fornecer uma aparência distinta aos componentes de um formulário adaptável.</p> <br>
 
 1. **O serviço extrai automaticamente o JavaScript de formulários baseados em XDP e o aplica aos formulários adaptáveis correspondentes?**
    <p>O serviço não converte automaticamente scripts de formulários XFA ou Acro Forms para regras de formulário adaptáveis correspondentes. Você (autores de formulários) pode usar o editor <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">de</a> regras para adicionar interatividade a um formulário adaptável.</p> <br>
@@ -92,13 +92,13 @@ Os motivos mais comuns para a conversão falhar são:</p>
 O serviço suporta apenas formulários em branco ou não preenchidos. Não carregue formulários preenchidos ou formulários com informações de identificação pessoal (PII). Além disso, remova os dados pré-preenchidos e as PII de rótulo branco, as informações confidenciais e proprietárias nos formulários de origem. <br/>
 
 1. **Onde devem ser colocados o cabeçalho e os rodapés?**
-   <p>Coloque cabeçalho e rodapé em um modelo de formulários adaptáveis. Se o formulário PDF de origem tiver cabeçalho e rodapé, o serviço detectará e substituirá o cabeçalho e rodapé detectados pelo cabeçalho e rodapé disponíveis no modelo de formulário adaptável durante a conversão. Se algum cabeçalho ou rodapé extra estiver incluído no formulário adaptável, você poderá usar o editor <a href="review-correct-ui-edited.md">Revisar e corrigir</a> para corrigir ou remover esse cabeçalho ou rodapé.</p> <br />
+   <p>Coloque cabeçalho e rodapé em um modelo de formulários adaptáveis. Se o formulário PDF de origem tiver cabeçalho e rodapé, o serviço detectará e substituirá o cabeçalho e rodapé detectados pelo cabeçalho e rodapé disponíveis no modelo de formulário adaptável, durante a conversão. Se algum cabeçalho ou rodapé extra estiver incluído no formulário adaptável, você poderá usar o editor <a href="review-correct-ui-edited.md">Revisar e corrigir</a> para corrigir ou remover esse cabeçalho ou rodapé.</p> <br />
 
 1. **Quanto tempo o serviço economiza em comparação ao processo manual de planejamento, criação de ativos (temas, modelos), criação e publicação de um formulário adaptável?**
    <p>A quantidade de tempo depende do tamanho e da complexidade dos formulários de entrada e do número de solicitações. O serviço pretende reduzir significativamente o tempo de conversão em valor convertendo formulários PDF em formulários adaptáveis a um ritmo muito mais rápido em comparação ao processo manual de conversão de formulários. </p> <br />
 
-1. **O que fazer se encontrar um erro relacionado às bibliotecas RSA?** A mensagem de erro é semelhante à mensagem mencionada abaixo: <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>O erro mencionado anteriormente ocorre quando a delegação de inicialização não está configurada para bibliotecas RSA/BouncyCastle. Execute as etapas abaixo para resolver o problema:
+1. **O que fazer se encontrar um erro relacionado às bibliotecas RSA? A mensagem de erro é semelhante à mensagem mencionada abaixo:** <br/>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>O erro mencionado anteriormente ocorre quando a delegação de inicialização não está configurada para bibliotecas RSA/BouncyCastle. Execute as etapas a seguir para resolver o problema:
    <p> </p>
 
    1. Pare a instância do AEM. Navegue até a `[AEM installation directory]\crx-quickstart\conf\` pasta. Abra o arquivo sling.properties para edição. Se você usar `[AEM installation directory]\crx-quickstart\bin\start.bat` para iniciar uma instância do AEM, edite sling.properties localizado em `[AEM_root]\crx-quickstart\`.
