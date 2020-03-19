@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: b879a0ddecd5370c754dfe9e1bf33121dd5ecc97
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
@@ -24,10 +24,11 @@ Este artigo descreve as instruções passo a passo para executar com êxito toda
 
 ## Pré-requisitos {#pre-requisites}
 
-* Instância de autor do AEM 6.5 com o AEM 6.5 Service Pack mais recente
+* Configurar uma instância de autor do AEM 6.4 ou 6.5
+* Instale o service pack [mais](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) recente para sua instância do AEM
 * Versão mais recente do pacote complementar AEM Forms
-* [Serviço de conversão de formulários automatizado](configure-service.md)
-* Um banco de dados para integrar. O banco de dados usado na implementação de amostra é MySQL 5.6.24. Entretanto, é possível integrar o formulário adaptável convertido a qualquer banco de dados de sua escolha.
+* Configure [Automated Forms Conversion service](configure-service.md)
+* Configure um banco de dados. O banco de dados usado na implementação de amostra é MySQL 5.6.24. Entretanto, é possível integrar o formulário adaptável convertido a qualquer banco de dados de sua escolha.
 
 ## Exemplo de formulário adaptável {#sample-adaptive-form}
 
@@ -160,25 +161,25 @@ Depois de configurar o MYSQL como a fonte de dados, execute as seguintes etapas 
 
 1. Selecione a fonte de dados MYSQL configurada na seção anterior e toque em **[!UICONTROL Create]**.
 
-1. Toque **[!UICONTROL Edit]** e expanda a fonte de dados listada no painel esquerdo para selecionar a tabela de **contatos** , **[!UICONTROL get]** os serviços e **[!UICONTROL insert]** os serviços, e toque **[!UICONTROL Add Selected]**.
+1. Toque **[!UICONTROL Edit]** e expanda a fonte de dados listada no painel esquerdo para selecionar a tabela de **contatos** , **[!UICONTROL get]** os serviços e **[!UICONTROL insert]** os serviços, e toque em **[!UICONTROL Add Selected]**.
 
    ![Dados de amostra mysql](assets/fdm_details_workfdlow_submit.png)
 
 1. Selecione o objeto de modelo de dados no painel direito e toque **[!UICONTROL Edit Properties]**. Selecione **[!UICONTROL get]** e **[!UICONTROL insert]** de listas **[!UICONTROL Read Service]** e **[!UICONTROL Write Service]** suspensas. Especifique os argumentos para o serviço de Leitura e toque **[!UICONTROL Done]**.
 
-1. Na **[!UICONTROL Services]** guia, selecione o **[!UICONTROL get]** serviço e toque **[!UICONTROL Edit Properties]**. Selecione o **[!UICONTROL Output Model Object]**, desative a **[!UICONTROL Return array]** alternância e toque **[!UICONTROL Done]**.
+1. Na **[!UICONTROL Services]** guia, selecione o **[!UICONTROL get]** serviço e toque em **[!UICONTROL Edit Properties]**. Selecione o **[!UICONTROL Output Model Object]**, desative a **[!UICONTROL Return array]** alternância e toque **[!UICONTROL Done]**.
 
 1. Selecione o **[!UICONTROL Insert]** serviço e toque em **[!UICONTROL Edit Properties]**. Selecione o **[!UICONTROL Input Model Object]** e toque **[!UICONTROL Done]**.
 
 1. Toque em **[!UICONTROL Save]** para salvar o modelo de dados do formulário.
 
-É possível baixar a amostra do Modelo de dados de formulário usando:
+É possível fazer download do modelo de dados de formulário de amostra usando:
 
 [Obter arquivo](assets/DownloadedFormsPackage_1497728018502500.zip)
 
 ## Gerar formulários adaptáveis com vínculo JSON {#generate-adaptive-forms-with-json-binding}
 
-Use o serviço de Conversão de formulários [automatizados para converter](convert-existing-forms-to-adaptive-forms.md) o formulário [](#sample-adaptive-form) Fale conosco em um formulário adaptável com vínculo de dados. Certifique-se de não marcar a caixa de **[!UICONTROL Generate adaptive form(s) without data bindings]** seleção ao gerar o formulário adaptável.
+Use o serviço de Conversão de formulários [automatizados para converter](convert-existing-forms-to-adaptive-forms.md) o formulário [](#sample-adaptive-form) Entrar em contato conosco em um formulário adaptável com vínculo de dados. Certifique-se de não marcar a caixa de **[!UICONTROL Generate adaptive form(s) without data bindings]** seleção ao gerar o formulário adaptável.
 
 ![Formulário adaptável com vínculo JSON](assets/generate_af_with_data_bindings.png)
 
@@ -259,11 +260,11 @@ Execute as seguintes etapas para configurar o formulário adaptável para preenc
 
 1. Toque **[!UICONTROL Create]** e selecione **[!UICONTROL is changed]** na lista **[!UICONTROL Select State]** suspensa na **[!UICONTROL When]** seção.
 
-1. Na **[!UICONTROL Then]** seção, selecione **[!UICONTROL Invoke Service]** e **obtenha** como serviço para o modelo de dados de formulário criado em uma seção anterior deste artigo.
+1. Na **[!UICONTROL Then]** seção, selecione **[!UICONTROL Invoke Service]** e **obtenha** como o serviço para o modelo de dados de formulário criado em uma seção anterior deste artigo.
 
 1. Selecione **Email** na seção **[!UICONTROL Input]** e os outros três campos do modelo de dados do formulário, **Nome**, Número **de** telefone e Descrição **da** edição na **[!UICONTROL Output]** seção. Toque em **[!UICONTROL Done]** para salvar as configurações.
 
-   ![Definir configurações de preenchimento de email](assets/email_prefill_settings.png)
+   ![Configurar Definições de Preenchimento de Correio Eletrônico](assets/email_prefill_settings.png)
 
    Como resultado, com base nas entradas de E-mail existentes no banco de dados MYSQL, você pode pré-preencher os valores dos três restantes campos no **[!UICONTROL Preview]** modo do formulário adaptável. Por exemplo, se você especificar aya.tan@xyz.com no campo **Email** (com base nos dados existentes na seção [Preparar modelo](#prepare-data-for-form-model) de dados de formulário deste artigo) e sair do campo, os três campos restantes, **Nome**, Número **de** telefone e Descrição **da** edição serão exibidos automaticamente no formulário adaptável.
 
