@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 040b0ddb489b5bdfd640a93b22cd7bc512a39aea
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
@@ -26,10 +26,11 @@ A amostra, discutida neste artigo, é uma implementação de referência de serv
 
 ## Pré-requisitos {#pre-requisites}
 
-* Instância de autor do AEM 6.5 com o AEM 6.5 Service Pack mais recente
+* Configurar uma instância de autor do AEM 6.4 ou 6.5
+* Instale o service pack [mais](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) recente para sua instância do AEM
 * Versão mais recente do pacote complementar AEM Forms
-* [Serviço de conversão de formulários automatizado](configure-service.md)
-* Um banco de dados para integrar. O banco de dados usado na implementação de amostra é MySQL 5.6.24. No entanto, você pode integrar o Portal do Forms a qualquer banco de dados de sua escolha.
+* Configure [Automated Forms Conversion service](configure-service.md)
+* Configure um banco de dados. O banco de dados usado na implementação de amostra é MySQL 5.6.24. Entretanto, é possível integrar o formulário adaptável convertido a qualquer banco de dados de sua escolha.
 
 ## Configurar conexão entre a instância do AEM e o banco de dados {#set-up-connection-aem-instance-database}
 
@@ -64,7 +65,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
    CREATE SCHEMA `formsportal` ;
    ```
 
-   onde **formsportal** se refere ao nome do esquema.
+   em que **formsportal** se refere ao nome do esquema.
 
 1. Crie uma tabela de **dados** no esquema do banco de dados usando a seguinte instrução SQL:
 
@@ -158,7 +159,7 @@ Execute as seguintes etapas de configuração para criar uma conexão entre a in
     </tr> 
     <tr> 
     <td><p>Serviço de Dados de Rascunho do Portal de Formulários</p></td> 
-    <td><p>Identificador do serviço de dados preliminar</p></td>
+    <td><p>Identificador do serviço de dados de rascunho</p></td>
     <td><p>formsportal.sampledataservice</p></td> 
     </tr>
     <tr> 
@@ -167,13 +168,13 @@ Execute as seguintes etapas de configuração para criar uma conexão entre a in
     <td><p>formsportal.samples emetadataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Serviço de dados de envio do Portal de formulários</p></td> 
-    <td><p>Identificador para enviar serviço de dados</p></td>
+    <td><p>Serviço de Dados de Envio de Portal de Formulários</p></td> 
+    <td><p>Identificador para enviar o serviço de dados</p></td>
     <td><p>formsportal.sampledataservice</p></td> 
     </tr>
     <tr> 
     <td><p>Serviço de Metadados de Envio do Portal de Formulários</p></td> 
-    <td><p>Identificador do serviço de metadados de envio</p></td>
+    <td><p>Identificador para o serviço de metadados de envio</p></td>
     <td><p>formsportal.samples emetadataservice</p></td> 
     </tr>
     <tr> 
@@ -268,14 +269,14 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
    [Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Vá para o gerenciador de pacote AEM em *http://[host]:[port]/crx/packmgr/*.
+1. Vá para o gerenciador de pacote do AEM em *http://[host]:[port]/crx/packmgr/*.
 1. Clique em **[!UICONTROL Upload Package]**.
 1. Navegue para selecionar o pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** e clique em **[!UICONTROL OK]**.
 1. Clique **[!UICONTROL Install]** ao lado do pacote para instalá-lo.
 
 ## Configurar o formulário adaptável convertido para integração com o Portal do Forms {#configure-converted-adaptive-form-for-forms-portal-integration}
 
-Execute as seguintes etapas para habilitar o envio de formulário adaptável usando a página Portal de formulários:
+Execute as seguintes etapas para habilitar o envio de formulário adaptável usando a página do Portal de formulários:
 1. [Execute a conversão](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) para converter um formulário de origem em um formulário adaptável.
 1. Abra o formulário adaptável no modo de edição.
 1. Toque em Contêiner de formulário e selecione Configurar ![formulário](assets/configure-adaptive-form.png)adaptável.
