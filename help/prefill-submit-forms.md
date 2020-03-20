@@ -9,14 +9,14 @@ topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 translation-type: tm+mt
-source-git-commit: f598871fd41c402f98d94d7b2174ab8b2e487075
+source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
 
 ---
 
 
 # Preenchimento e fluxos de trabalho recomendados com base na fonte de dados para formulários adaptáveis {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
-É possível usar qualquer uma das seguintes fontes de dados com formulários adaptáveis convertidos usando o serviço de conversão de formulários automatizados:
+É possível usar qualquer uma das seguintes fontes de dados com formulários adaptáveis convertidos usando o serviço de Conversão de formulários automatizados:
 
 * Modelo de dados de formulário, OData ou qualquer outro serviço de terceiros
 * Esquema JSON
@@ -91,8 +91,8 @@ Este artigo descreve os fluxos de trabalho recomendados para preencher previamen
 
 Para obter mais informações sobre o serviço de Conversão de formulários automatizados, consulte os seguintes artigos:
 
-* [Introdução ao serviço de conversão de formulários automatizados](introduction.md)
-* [Configurar o serviço de conversão de formulários automatizados](configure-service.md)
+* [Introdução ao serviço de conversão automática de formulários](introduction.md)
+* [Configurar o serviço de conversão automática de formulários](configure-service.md)
 * [Converter formulários impressos em formulários adaptáveis](convert-existing-forms-to-adaptive-forms.md)
 * [Revisar e corrigir formulários convertidos](review-correct-ui-edited.md)
 
@@ -101,7 +101,7 @@ As informações fornecidas neste artigo baseiam-se no pressuposto de que qualqu
 ## Pré-requisitos {#pre-requisites}
 
 * Configurar uma instância do autor [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html)
-* Configurar o serviço de conversão de formulários [automatizados na instância do autor de AEM](configure-service.md)
+* Configurar o serviço de Conversão de formulários [automatizados na instância do autor de AEM](configure-service.md)
 
 ## Exemplo de formulário adaptável {#sample-adaptive-form}
 
@@ -268,17 +268,17 @@ Execute as seguintes etapas:
    1. Na **[!UICONTROL Submission]** seção, selecione **[!UICONTROL Submit using Form Data Model]** na lista **[!UICONTROL Submit Action]** suspensa.
 
    1. Selecione o modelo de dados usando o **[!UICONTROL Data Model to submit]** campo.
-   1. Toque no ícone ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) Concluído para salvar as propriedades.
+   1. Toque no ícone ![](assets/save_icon.svg) Concluído para salvar as propriedades.
 
-1. Toque na caixa de texto Nome do candidato e selecione ![configurar ícone](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
+1. Toque na caixa de texto Nome do candidato e selecione ![configurar ícone](assets/configure_icon.svg) (Configurar).
 
-   1. No campo Vincular referência, selecione **Candidato** > **Nome** e toque no ícone ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) concluído para salvar as propriedades. Da mesma forma, crie um vínculo de dados para o **Endereço**, Número **de** telefone, **Email**, **Ocupação**, Salário **Anual (em dólares)****e Número de. de campos de membros** da família dependentes com as entidades do modelo de dados do formulário.
-   ![Vincular referências](assets/bind_references.png)
+   1. No campo Vincular referência, selecione **Candidato** > **Nome** e toque no ícone ![](assets/save_icon.svg) concluído para salvar as propriedades. Da mesma forma, crie um vínculo de dados para o **Endereço**, Número **de** telefone, **Email**, **Ocupação**, Salário **Anual (em dólares)****e Número de. de campos de membros** da família dependentes com as entidades do modelo de dados do formulário.
+   ![Referências de vinculação](assets/bind_references.png)
 
 1. Toque em **[!UICONTROL Preview]** para exibir os valores de campo de formulário adaptável pré-preenchido.
 1. Modifique os valores de campo, se necessário, e envie o formulário adaptável. Os valores de campo são submetidos ao banco de dados MySQL. É possível atualizar a tabela **candidato** no banco de dados para exibir os valores atualizados na tabela.
 
-**** Caso de uso: Você gera um formulário adaptável sem vínculo de dados usando o serviço de Conversão de formulários automatizada e configura o banco de dados MYSQL como a fonte de dados. Vincule os campos de formulário adaptáveis usando o editor de regras para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.
+**Caso de uso:** Você gera um formulário adaptável sem vínculo de dados usando o serviço de Conversão de formulários automatizada e configura o banco de dados MYSQL como a fonte de dados. Vincule os campos de formulário adaptáveis usando o editor de regras para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.
 
 Execute as seguintes etapas para usar o editor [de](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) regras para chamar o serviço de modelo de dados de formulário para vincular campos e valores de preenchimento prévio em um formulário adaptável:
 
@@ -311,7 +311,7 @@ Execute as seguintes etapas para usar o editor [de](https://helpx.adobe.com/expe
 
    >[!NOTE]
    >
-   >Verifique se a **[!UICONTROL Return Array]** Propriedade está definida como OFF para a propriedade **get** service no modelo de dados de formulário associado ao formulário adaptável.
+   >Certifique-se de que a **[!UICONTROL Return Array]** Propriedade esteja definida como OFF para a propriedade **get** service no modelo de dados de formulário associado ao formulário adaptável.
 
 1. Modifique os valores de campo, se necessário, e envie o formulário adaptável. Os dados enviados estão disponíveis no seguinte local no repositório crx:
 
@@ -319,7 +319,7 @@ Execute as seguintes etapas para usar o editor [de](https://helpx.adobe.com/expe
 
 ### Usar esquema JSON como fonte de dados {#jsondatasource}
 
-**** Caso de uso: Você gera um formulário adaptável sem vínculo de dados usando o serviço de Conversão de formulários automatizados e configura o esquema JSON como a fonte de dados. Vincule os campos de formulário adaptáveis ao esquema JSON manualmente e use a opção **Visualizar com dados** para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.
+**Caso de uso:** Você gera um formulário adaptável sem vínculo de dados usando o serviço de Conversão de formulários automatizados e configura o esquema JSON como a fonte de dados. Vincule os campos de formulário adaptáveis ao esquema JSON manualmente e use a opção **Visualizar com dados** para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.
 
 Antes de executar o caso de uso, verifique se você:
 
@@ -331,9 +331,9 @@ Execute as seguintes etapas:
 1. Selecione o formulário **do aplicativo de empréstimo de** amostra convertido disponível na pasta de **saída** e toque em **[!UICONTROL Properties]**.
 1. Toque na **[!UICONTROL Form Model]** guia, selecione **[!UICONTROL Schema]** na lista **[!UICONTROL Select From]** suspensa e toque **[!UICONTROL Select Schema]** para fazer upload do esquema **demo.schema JSON** salvo no sistema de arquivos local. Toque em **[!UICONTROL Save & Close]** para salvar o formulário.
 1. Selecione o formulário **de solicitação de empréstimo de** amostra e toque em **[!UICONTROL Edit]**.
-1. Toque na caixa de texto Nome do candidato e selecione ![configurar ícone](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
+1. Toque na caixa de texto Nome do candidato e selecione ![configurar ícone](assets/configure_icon.svg) (Configurar).
 
-   No campo Vincular referência, selecione **Candidato** > **Nome** e toque no ícone ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) concluído para salvar as propriedades. Da mesma forma, crie um vínculo de dados para o **Endereço**, Número **de** telefone, **Email**, **Ocupação**, Salário **Anual (em dólares)****e Número de. dos campos de membros** da família dependentes com as entidades do esquema JSON.
+   No campo Vincular referência, selecione **Candidato** > **Nome** e toque no ícone ![](assets/save_icon.svg) concluído para salvar as propriedades. Da mesma forma, crie um vínculo de dados para o **Endereço**, Número **de** telefone, **Email**, **Ocupação**, Salário **Anual (em dólares)****e Número de. dos campos de membros** da família dependentes com as entidades do esquema JSON.
 
 1. Selecione novamente o formulário **do aplicativo de empréstimo de** amostra convertido disponível na **[!UICONTROL output]** pasta e selecione **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -347,7 +347,7 @@ Execute as seguintes etapas:
 
 ### Usar esquema XSD como fonte de dados {#xsddatasource}
 
-**** Caso de uso: Você gera um formulário adaptável sem vínculo de dados usando o serviço de Conversão de formulários automatizados e configura o esquema XSD como a fonte de dados. Vincule os campos de formulário adaptáveis ao esquema XSD manualmente e use a opção **Visualizar com dados** para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.
+**Caso de uso:** Você gera um formulário adaptável sem vínculo de dados usando o serviço de Conversão de formulários automatizados e configura o esquema XSD como a fonte de dados. Vincule os campos de formulário adaptáveis ao esquema XSD manualmente e use a opção **Visualizar com dados** para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.
 
 Antes de executar o caso de uso, verifique se você:
 
@@ -359,8 +359,8 @@ Execute as seguintes etapas:
 1. Selecione o formulário **do aplicativo de empréstimo de** amostra convertido disponível na **[!UICONTROL output]** pasta e toque em **[!UICONTROL Properties]**.
 1. Toque na **[!UICONTROL Form Model]** guia, selecione **[!UICONTROL Schema]** na lista **[!UICONTROL Select From]** suspensa e toque **[!UICONTROL Select Schema]** para fazer upload do esquema XSD do **aplicativo** de empréstimo salvo no sistema de arquivos local. Selecione o elemento raiz para o esquema XSD e toque **[!UICONTROL Save & Close]** para salvar o formulário.
 1. Selecione o formulário **de solicitação de empréstimo de** amostra e toque em **[!UICONTROL Edit]**.
-1. Toque na caixa de texto Nome do candidato e selecione ![configurar ícone](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
-No campo Vincular referência, selecione **Candidato** > **Nome** e toque em Ícone ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) Concluído para salvar as propriedades. Da mesma forma, crie um vínculo de dados para o **Endereço**, Número **de** telefone, **Email**, **Ocupação**, Salário **Anual (em dólares)****e Número de. de campos de membros** da família dependentes com as entidades de esquema XSD.
+1. Toque na caixa de texto Nome do candidato e selecione ![configurar ícone](assets/configure_icon.svg) (Configurar).
+No campo Vincular referência, selecione **Candidato** > **Nome** e toque em Ícone ![](assets/save_icon.svg) Concluído para salvar as propriedades. Da mesma forma, crie um vínculo de dados para o **Endereço**, Número **de** telefone, **Email**, **Ocupação**, Salário **Anual (em dólares)****e Número de. de campos de membros** da família dependentes com as entidades de esquema XSD.
 
 1. Selecione novamente o formulário **do aplicativo de empréstimo de** amostra convertido disponível na pasta de **saída** e selecione **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -381,7 +381,7 @@ Use o serviço de Conversão de formulários [automatizados para converter](conv
 
 ### Usar esquema JSON como fonte de dados {#jsonwithdatabinding}
 
-**** Caso de uso: Você gera um formulário adaptável com vínculo de dados JSON usando o serviço de Conversão de formulários automatizados. O serviço de preenchimento prévio e a função de envio de formulário funcionam perfeitamente. Você não precisa de nenhuma etapa de configuração.
+**Caso de uso:** Você gera um formulário adaptável com vínculo de dados JSON usando o serviço de Conversão de formulários automatizados. O serviço de preenchimento prévio e a função de envio de formulário funcionam perfeitamente. Você não precisa de nenhuma etapa de configuração.
 
 Antes de executar o caso de uso, verifique se você tem [um formulário adaptável com vínculo](#generate-adaptive-forms-with-json-binding)de dados.
 
