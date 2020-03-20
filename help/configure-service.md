@@ -2,7 +2,7 @@
 title: Configurar o serviço de conversão automática de formulários
 description: Prepare sua instância do AEM para usar o serviço de Conversão de formulários automatizados
 translation-type: tm+mt
-source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
+source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
 
 ---
 
@@ -79,7 +79,7 @@ Você precisa do pacote do conector 1.1.38 ou superior para usar os recursos e a
 | Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
 
 >[!NOTE]
-> se você já tiver um ambiente de serviço de Conversão de formulários automatizados em funcionamento, para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar AEM Forms mais recente e o pacote de conector mais recente no pedido mencionado.
+> Se você já tiver um ambiente de serviço de Conversão de formulários automatizados em funcionamento, para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar AEM Forms mais recente e o pacote de conector mais recente na ordem mencionada.
 
 
 ### Criar temas e modelos personalizados {#referencepackage}
