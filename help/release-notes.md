@@ -2,7 +2,7 @@
 title: Novidades? Notas de versão - Serviço de conversão de formulários automatizado
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão de formulários automatizado '
 translation-type: tm+mt
-source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
+source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
 
 ---
 
@@ -16,9 +16,7 @@ O serviço de conversão de formulários automatizado recebe melhorias continuam
 * Correções de erros
 * Funcionalidade obsoleta
 * Instruções especiais
-* Planos futuros para alterações
-
-Esta página é atualizada mensalmente, portanto, volte a ela regularmente.
+* Futuros planos para mudanças
 
 ## 20 de março de 2020 (AFC-2020.03.1)
 
@@ -26,7 +24,7 @@ Esta página é atualizada mensalmente, portanto, volte a ela regularmente.
 
 **Detectar automaticamente seções lógicas em um formulário**
 
-Por padrão, o serviço cria um painel de nível superior separado para cada página de um formulário PDF de entrada. Agora, você pode selecionar a **[!UICONTROL Auto-detect logical sections]** opção para remover a noção de criar um painel de nível superior separado para cada página do PDF e detectar automaticamente seções lógicas. Os campos relacionados de um formulário aos grupos de serviço em uma seção lógica. Por exemplo, todos os campos relacionados ao endereço de faturamento são agrupados em uma seção e todos os campos relacionados ao endereço de entrega são agrupados em uma seção diferente. O serviço também cria um painel de nível superior separado para cada seção lógica detectada automaticamente.
+Por padrão, o serviço cria um painel de nível superior separado para cada página de um formulário PDF. Agora, você pode usar a **[!UICONTROL Auto-detect logical sections]** opção para soltar painéis de nível de página (painéis baseados em número de página) e criar apenas painéis lógicos.  Ele também pausa os campos que não pertencem a nenhuma seção com seção lógica anterior. Também ativa campos de uma seção lógica espalhados por duas páginas adjacentes em uma única seção lógica. Por exemplo, se alguns campos de uma seção lógica estiverem no final da página um e alguns estiverem no início da página dois, todos esses campos serão agrupados em uma única seção lógica.
 
 ### O que foi melhorado
 
