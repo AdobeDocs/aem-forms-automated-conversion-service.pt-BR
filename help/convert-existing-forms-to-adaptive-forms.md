@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: bcd55fa59f37b71b95b7cbfd80fcda368eaba408
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -21,7 +21,7 @@ O serviço de Conversão de formulários automatizados do AEM Forms, desenvolvid
 
 * [**Configurar o serviço de conversão **](configure-service.md)
 
-* **Prepare os[modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)a serem aplicados aos formulários convertidos:** Usar um modelo permite aplicar marcas consistentes em todos os formulários adaptativos. Além disso, o serviço de Conversão de formulários automatizados não extrai nem usa cabeçalho e rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar cabeçalho e rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados aos formulários adaptáveis durante a conversão.
+* **Prepare os[modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)a serem aplicados aos formulários convertidos:** Usar um modelo permite aplicar marcas consistentes em todos os formulários adaptativos. Além disso, o serviço de Conversão de formulários automatizados não extrai nem usa cabeçalho e rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar cabeçalho e rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão.
 
 * **Prepare os[temas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)a serem aplicados aos formulários convertidos:** O uso de um tema permite que você aplique um estilo consistente a todas as formas adaptáveis de sua organização.
 
@@ -42,7 +42,7 @@ O serviço de conversão converte formulários PDF disponíveis na instância do
 * Mantenha o número de páginas em um formulário menor que 15.
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha e protegidos.
 * Não carregue formulários de origem com espaços no nome do arquivo. Remova o espaço do nome do arquivo antes de fazer upload dos formulários.
-* Não carregue [portfólios em PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um portfólio em PDF em formulários adaptáveis.
+* Não carregue [portfólios em PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfólio PDF em um formulário adaptável.
 * Leia as seções [Problemas](known-issues.md) conhecidos e [Práticas recomendadas e considerações](styles-and-pattern-considerations-and-best-practices.md) e faça as alterações sugeridas nos formulários.
 
 Execute as seguintes etapas para carregar os formulários a serem convertidos em uma pasta na instância do AEM Forms:
@@ -91,7 +91,7 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
 
 
    * Selecione a **[!UICONTROL Auto-detect multi-column layout of input forms]** opção para manter o layout do formulário de origem para telas grandes, como desktops e laptops. A opção é útil para preservar o layout de várias colunas dos formulários de origem. Por exemplo, quando um PDF de origem tem um layout de duas colunas, o serviço gera um formulário adaptável de saída com um layout de duas colunas para telas grandes e um layout de coluna única para dispositivos de tela pequena, como telefones celulares. O recurso tem alguns problemas conhecidos com a estrutura do schema da fonte de dados. Para obter detalhes, consulte o artigo sobre problemas [](known-issues.md) conhecidos.
-   * Por padrão, o serviço cria um painel de nível superior separado para cada página de um formulário PDF. Agora, você pode usar a **[!UICONTROL Auto-detect logical sections]** opção para soltar painéis de nível de página (painéis baseados em número de página) e criar apenas painéis lógicos. Ele também pausa os campos que não pertencem a nenhuma seção com seção lógica anterior e os campos de uma seção lógica espalhados por duas páginas adjacentes em uma única seção lógica. Por exemplo, se alguns campos de uma seção lógica estiverem no final da página um e alguns estiverem no início da página dois, todos esses campos serão agrupados em uma única seção lógica.
+   * Por padrão, o serviço cria um painel de nível superior separado para cada página de um formulário PDF. Agora, você pode usar a **[!UICONTROL Auto-detect logical sections]** opção para não criar painéis de nível de página (painéis baseados em números de página) e criar apenas painéis lógicos. Também associa os campos que não pertencem a nenhuma seção com a seção lógica anterior e os campos de uma seção lógica espalhados por duas páginas adjacentes em uma única seção lógica. Por exemplo, se alguns campos de uma seção lógica estiverem no final da página um e alguns estiverem no início da página dois, todos esses campos serão agrupados em uma única seção lógica.
 
       >[!NOTE]
       > É necessário o pacote do conector 1.1.38 ou superior para usar o **[!UICONTROL Auto-detect logical sections]** recurso.
@@ -129,7 +129,7 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
 
    >[!NOTE]
    >
-   >Se o processo de conversão levar mais de 60 minutos e o formulário PDF ainda não for convertido em um formulário adaptável, crie uma nova pasta na instância do AEM Forms, carregue o formulário PDF na pasta recém-criada e reinicie a conversão.
+   >Se o processo de conversão levar mais de 60 minutos e o formulário PDF ainda não for convertido em um formulário adaptável, crie uma pasta na instância do AEM Forms, carregue o formulário PDF na pasta recém-criada e reinicie a conversão.
 
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
