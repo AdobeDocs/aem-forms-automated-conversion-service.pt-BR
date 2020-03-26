@@ -2,7 +2,7 @@
 title: Configurar o serviço de conversão automática de formulários
 description: Prepare sua instância do AEM para usar o serviço de Conversão de formulários automatizados
 translation-type: tm+mt
-source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
+source-git-commit: 68824c2f398d00141d67996121f7b758af16d2e4
 
 ---
 
@@ -43,7 +43,7 @@ Antes de usar o serviço, prepare a instância do autor de AEM para se conectar 
 1. [Baixe e instale o AEM 6.4 ou AEM 6.5](#aemquickstart)
 1. [Baixe e instale o AEM Service Pack mais recente](#servicepack)
 1. [Baixar e instalar o pacote de complementos AEM Forms mais recente](#downloadaemformsaddon)
-1. [Baixe e instale o pacote do conector mais recente](#installConnectorPackage)
+1. (opcional) [Baixe e instale o pacote de conector mais recente](#installConnectorPackage)
 1. [Criar temas e modelos personalizados](#referencepackage)
 
 ### Baixe e instale o AEM 6.4 ou AEM 6.5 {#aemquickstart}
@@ -53,7 +53,7 @@ O serviço de conversão de formulários automatizada é executado na instância
 
 * Se você já for um cliente do AEM, baixe o AEM 6.4 ou o AEM 6.5 do site [de licenciamento da](http://licensing.adobe.com)Adobe.
 
-* Se você for um parceiro da Adobe, use o Programa [de treinamento para parceiros da](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) Adobe para solicitar o AEM 6.4 ou o AEM 6.5.
+* Se você for um parceiro da Adobe, use o Programa [](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) Adobe Partner Training para solicitar o AEM 6.4 ou o AEM 6.5.
 
 Depois de baixar o AEM, para obter instruções sobre como configurar uma instância do autor de AEM, consulte [implantação e manutenção](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
@@ -69,17 +69,17 @@ Uma instância do AEM contém recursos básicos de formulários. O serviço de c
 > Certifique-se de executar as configurações obrigatórias pós-instalação depois de instalar o pacote suplementar.
 
 
-### Download e instalação do pacote do conector {#installConnectorPackage}
+### (Opcional) Download e instalação do pacote do conector {#installConnectorPackage}
 
-Você precisa do pacote do conector 1.1.38 ou superior para usar os recursos e as melhorias mais recentes fornecidos na versão AFC-2020.03.1. Você pode [baixar o pacote do conector do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)de pacotes AEM.
+Instale o pacote do conector 1.1.38 ou superior para usar os recursos e as melhorias das seções [lógicas de detecção](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) automática fornecidos na versão AFC-2020.03.1. Você pode [baixar o pacote do conector do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)de pacotes AEM.
 
 >[!NOTE]
-> Se você já tiver um ambiente de serviço de Conversão de formulários automatizados em funcionamento, para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar AEM Forms mais recente e o pacote de conector mais recente na ordem mencionada.
+> Se você já tiver um ambiente de serviço de Conversão de formulários automatizada para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar mais recente do AEM Forms e o pacote de conector mais recente na ordem mencionada.
 
 
 ### Criar temas e modelos personalizados {#referencepackage}
 
-Se você iniciar o AEM no modo [](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) de produção (nosamplecontent runmode), os pacotes de referência não serão instalados. Os pacotes de referência contêm exemplos de temas e modelos. O serviço de Conversão de formulários automatizada requer pelo menos um tema e um modelo para converter formulários PDF em formulários adaptáveis. Crie um tema e modelo personalizados de sua própria configuração [de](#configure-the-cloud-service) serviço de ponto e ponto para usar modelos e temas personalizados antes de usar o serviço.
+Se você start o AEM no modo [de](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) produção (nosamplecontent runmode), os pacotes de referência não são instalados. Os pacotes de referência contêm temas e modelos de amostra. O serviço de Conversão de formulários automatizada requer pelo menos um tema e um modelo para converter formulários PDF em formulários adaptáveis. Crie um tema e modelo personalizados de sua própria configuração [de](#configure-the-cloud-service) serviço de ponto e ponto para usar modelos e temas personalizados antes de usar o serviço.
 
 ## Configurar o serviço {#configure-the-service}
 
@@ -110,7 +110,7 @@ Os desenvolvedores são membros de sua organização designados para executar o 
    1. No [Admin Console](https://adminconsole.adobe.com/enterprise), navegue até a guia Visão geral.
    1. Clique **[!UICONTROL Assign Developers]** no cartão de produto desejado.
    1. Insira o endereço de email dos desenvolvedores e, opcionalmente, o nome e o sobrenome.
-   1. Selecione perfis de produto. Tocar **[!UICONTROL Save]**.
+   1. Selecione perfis de produtos. Tocar **[!UICONTROL Save]**.
 
 Repita as etapas acima para todos os usuários.  Para obter mais detalhes sobre como adicionar desenvolvedores, consulte [Gerenciar desenvolvedores](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
@@ -133,7 +133,7 @@ O serviço de conversão de formulários automatizada usa o serviço de email Da
 1. Ir para o gerenciador de configuração do AEM em `http://localhost:4502/system/console/configMgr`
 1. Abra a configuração do serviço Day CQ Mail. Especifique um valor para os campos **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]** e **[!UICONTROL From address]** . Clique em **[!UICONTROL Save]**.
 
-   Você pode entrar em contato com seu provedor de serviços de email ou administrador de TI para obter informações sobre o nome do host e a porta do servidor SMTP. Você pode usar qualquer endereço de email válido no campo de formulário. Por exemplo, notification@example.com ou donotreply@example.com.
+   Você pode entrar em contato com seu provedor de serviço de email ou administrador de TI para obter informações sobre o nome do host e a porta do servidor SMTP. Você pode usar qualquer endereço de email válido no campo de formulário. Por exemplo, notification@example.com ou donotreply@example.com.
 
 1. Abra a **[!UICONTROL Day CQ Link Externalizer]** configuração. No **[!UICONTROL Domains]** campo, especifique o nome do host ou endereço IP real e o número da porta para instâncias locais, de autor e de publicação. Clique em **[!UICONTROL Save]**.
 
@@ -149,7 +149,7 @@ Especifique um endereço de email no perfil do usuário do AEM designado para ex
 
 #### Obter certificados públicos {#obtainpubliccertificates}
 
-Um certificado público permite que você autentique seu perfil em E/S da Adobe.
+Um certificado público permite autenticar seu perfil em E/S da Adobe.
 
 1. Faça logon na instância do autor do AEM Forms. Vá até **[!UICONTROL Tools]**> **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Tocar **[!UICONTROL Create]**. A **[!UICONTROL Adobe IMS Technical Account Configuration]** página é exibida.
 
@@ -193,7 +193,7 @@ Para usar o serviço de Conversão de formulários automatizados, crie uma integ
 
 1. Especifique o nome e a descrição da integração. Toque **[!UICONTROL Select a File from your computer]** e carregue o arquivo AEM-Adobe-IMS.crt baixado na seção [Obter certificados](#obtainpubliccertificates) públicos.
 1. Selecione o perfil criado ao [conceder acesso aos desenvolvedores de sua organização](#adduseranddevs) e toque em **[!UICONTROL Create Integration]**. A integração é criada.
-1. Toque em **[!UICONTROL Continue to integration details]** para exibir as informações de integração. A página contém a chave da API, o segredo do cliente e outras informações necessárias para conectar sua instância do AEM local ao serviço de conversão de formulários automatizados. As informações na página são usadas para criar a configuração IMS na máquina local.
+1. Toque em **[!UICONTROL Continue to integration details]** para visualização das informações de integração. A página contém a chave da API, o segredo do cliente e outras informações necessárias para conectar sua instância do AEM local ao serviço de conversão de formulários automatizados. As informações na página são usadas para criar a configuração IMS na máquina local.
 
    ![Chave da API, segredo do cliente e informações de carga de uma integração](assets/integration-details.png)
 
@@ -228,14 +228,14 @@ Crie uma configuração de serviço em nuvem para conectar sua instância do AEM
 
    | Texto | Descrição |
    |--- |--- |
-   | Título | Título exclusivo para a configuração. O título é exibido na interface do usuário usada para iniciar a conversão. |
+   | Título | Título exclusivo para a configuração. O título é exibido na interface do usuário usada para conversão de start. |
    | Nome | Nome exclusivo para a configuração. A configuração é salva no CRX-Repository com o nome especificado. O nome pode ser idêntico ao título. |
    | Localização em miniatura | Localização da miniatura da configuração. |
    | URL do serviço | URL do serviço de Conversão de formulários automatizada na Adobe Cloud. Use o `https://aemformsconversion.adobe.io/` URL. |
    | Modelo | Modelo padrão a ser aplicado aos formulários convertidos. Você sempre pode especificar um modelo diferente antes de iniciar a conversão. Um modelo contém estrutura básica e conteúdo inicial para um formulário adaptável. Você pode escolher um modelo dos modelos fornecidos prontos para uso. Você também pode criar um modelo personalizado. |
    | Tema | O tema padrão a ser aplicado aos formulários convertidos. Você sempre pode especificar um tema diferente antes de iniciar a conversão.  Você pode clicar no ícone para escolher um tema fornecido fora da caixa. Você também pode criar um tema personalizado. |
    | Fragmentos existentes | Localização dos fragmentos existentes, se houver. |
-   | Meta-modelo personalizado | Caminho do arquivo .schema.json do meta-modelo personalizado. |
+   | Meta-modelo personalizado | Caminho do arquivo .schema.json do metrosmodelo personalizado. |
 
 
 
@@ -251,7 +251,7 @@ Crie uma configuração de serviço em nuvem para conectar sua instância do AEM
    <tbody>
    <tr>
    <td >Gerar documento de registro</td>
-   <td>Selecione a opção para gerar automaticamente o Documento de registro para formulários convertidos. A opção é somente para formulários baseados em XFA (XDP e PDF Forms). Ao ativar a opção, após enviar um formulário, é possível permitir que seus clientes mantenham um registro, em formato impresso ou de documento, das informações que preencheram no formulário para referência futura. Isso é chamado de documento de registro.</td>
+   <td>Selecione a opção para gerar automaticamente o Documento de Registro para formulários convertidos. A opção é somente para formulários baseados em XFA (XDP e PDF Forms). Ao ativar a opção, após enviar um formulário, é possível permitir que seus clientes mantenham um registro, em formato impresso ou em formato de documento, das informações que preencheram no formulário para referência futura. Isso é conhecido como um documento de registro.</td>
    </tr>
    <tr>
    <td>Ativar Analytics</td>
@@ -273,4 +273,4 @@ Crie uma configuração de serviço em nuvem para conectar sua instância do AEM
       }
    ```
 
-1. Tocar **[!UICONTROL Create]**. A configuração da nuvem é criada. Sua instância do AEM Forms está pronta para iniciar a conversão de formulários legados em formulários adaptáveis.
+1. Tocar **[!UICONTROL Create]**. A configuração da nuvem é criada. Sua instância do AEM Forms está pronta para ser start na conversão de formulários legados em formulários adaptáveis.
