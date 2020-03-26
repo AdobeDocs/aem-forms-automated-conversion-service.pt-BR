@@ -2,7 +2,7 @@
 title: Novidades? Notas de versão - Serviço de conversão de formulários automatizado
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão de formulários automatizado '
 translation-type: tm+mt
-source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
+source-git-commit: dc17dfcb331df6144b8a7ce3c9c9d840b1182a95
 
 ---
 
@@ -11,8 +11,10 @@ source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
 
 O serviço de conversão de formulários automatizado recebe melhorias continuamente. Para se manter atualizado com os desenvolvimentos mais recentes, visite esta página regularmente. Esta página fornece informações sobre:
 
+* Acesso antecipado
 * Versões mais recentes
 * Novos recursos
+* melhorias
 * Correções de erros
 * Funcionalidade obsoleta
 * Instruções especiais
@@ -20,22 +22,18 @@ O serviço de conversão de formulários automatizado recebe melhorias continuam
 
 ## 20 de março de 2020 (AFC-2020.03.1)
 
-### Novidades
+### Acesso antecipado
 
 **Detectar automaticamente seções lógicas em um formulário**
 
+A versão AFC-2020.03.1 fornece acesso antecipado ao **[!UICONTROL Auto-detect logical sections]** recurso.
+
 Por padrão, o serviço cria um painel de nível superior separado para cada página de um formulário PDF. Agora, você pode usar a **[!UICONTROL Auto-detect logical sections]** opção para soltar painéis de nível de página (painéis baseados em número de página) e criar apenas painéis lógicos.  Ele também pausa os campos que não pertencem a nenhuma seção com seção lógica anterior e os campos de uma seção lógica espalhados por duas páginas adjacentes em uma única seção lógica. Por exemplo, se alguns campos de uma seção lógica estiverem no final da página um e alguns estiverem no início da página dois, todos esses campos serão agrupados em uma única seção lógica.
+
+É necessário o pacote do conector 1.1.38 ou superior para usar o **[!UICONTROL Auto-detect logical sections]** recurso. Você pode baixar o pacote do conector do Compartilhamento [de pacotes do](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)AEM.
 
 ### O que foi melhorado
 
 **Melhorias na detecção de listas**
 
-O serviço agora é mais eficiente na detecção de listas com marcadores e numeradas. Agora, ele pode detectar facilmente listas de vários níveis.
-
-### Instruções especiais
-
-**Instalar o pacote Automated Forms Conversion Service Connector**
-
-Você precisa do pacote do conector 1.1.38 ou superior para usar os recursos e as melhorias mais recentes fornecidos na versão AFC-2020.03.1. Você pode baixar o pacote do conector do Compartilhamento [de pacotes do](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)AEM.
-
-Se você já tiver um ambiente de serviço de Conversão de formulários automatizados em funcionamento, para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar AEM Forms mais recente e o pacote de conector mais recente na ordem mencionada. Para obter instruções detalhadas, consulte o artigo [Configurar o serviço](configure-service.md) de Conversão de formulários automatizados.
+O serviço agora é mais eficiente na detecção de listas com marcadores e numeradas.
