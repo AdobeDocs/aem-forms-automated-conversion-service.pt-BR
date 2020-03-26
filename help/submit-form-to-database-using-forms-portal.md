@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 O serviço de conversão de formulários automatizada permite converter um formulário PDF não interativo, um formulário Acro ou um formulário PDF baseado em XFA em um formulário adaptável. Ao iniciar o processo de conversão, você tem a opção de gerar um formulário adaptável com ou sem vínculos de dados.
 
-Se você optar por gerar um formulário adaptável sem vínculos de dados, poderá integrar o formulário adaptável convertido a um Modelo de dados de formulário, esquema XML ou esquema JSON após a conversão. Entretanto, se um formulário adaptável for gerado com vínculos de dados, o serviço de conversão associará automaticamente os formulários adaptáveis a um esquema JSON e criará um vínculo de dados entre os campos disponíveis no formulário adaptável e no esquema JSON. Em seguida, é possível integrar o formulário adaptável a um banco de dados de sua escolha, preencher dados no formulário e enviá-lo ao banco de dados usando o Portal de Formulários.
+Se você optar por gerar um formulário adaptável sem vínculos de dados, poderá integrar o formulário adaptável convertido a um Modelo de dados de formulário, schema XML ou schema JSON após a conversão. Entretanto, se um formulário adaptável for gerado com vínculos de dados, o serviço de conversão associará automaticamente os formulários adaptáveis a um schema JSON e criará um vínculo de dados entre os campos disponíveis no formulário adaptável e no schema JSON. Em seguida, é possível integrar o formulário adaptável a um banco de dados de sua escolha, preencher dados no formulário e enviá-lo ao banco de dados usando o Portal de Formulários.
 
 A figura a seguir descreve diferentes estágios de integração de um formulário adaptável convertido a um banco de dados usando o Portal do Forms:
 
@@ -38,7 +38,7 @@ A configuração de uma conexão entre uma instância do AEM e um banco de dados
 
 * [Instalação de um pacote de conector MYSQL](#install-mysql-connector-java-file)
 
-* [Criação de esquema e tabelas no banco de dados](#create-schema-and-tables-in-database)
+* [Criação de schemas e tabelas no banco de dados](#create-schema-and-tables-in-database)
 
 * [Definição das configurações de conexão](#configure-connection-between-aem-instance-and-database)
 
@@ -55,19 +55,19 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 1. Clique em **[!UICONTROL Install]** ou **[!UICONTROL Update]**. Após a conclusão, reinicie o servidor.
 1. (Somente Windows) Desligue o firewall do sistema para o seu sistema operacional.
 
-### Criar esquema e tabelas no banco de dados {#create-schema-and-tables-in-database}
+### Criar schema e tabelas no banco de dados {#create-schema-and-tables-in-database}
 
-Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
+Execute as seguintes etapas para criar schemas e tabelas no banco de dados:
 
-1. Crie um esquema no banco de dados usando a seguinte instrução SQL:
+1. Crie um schema no banco de dados usando a seguinte instrução SQL:
 
    ```sql
    CREATE SCHEMA `formsportal` ;
    ```
 
-   em que **formsportal** se refere ao nome do esquema.
+   em que **formsportal** se refere ao nome do schema.
 
-1. Crie uma tabela de **dados** no esquema do banco de dados usando a seguinte instrução SQL:
+1. Crie uma tabela de **dados** no schema do banco de dados usando a seguinte instrução SQL:
 
    ```sql
     CREATE TABLE `data` (
@@ -79,7 +79,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Crie uma tabela de **metadados** no esquema do banco de dados usando a seguinte instrução SQL:
+1. Crie uma tabela de **metadados** no schema do banco de dados usando a seguinte instrução SQL:
 
    ```sql
    CREATE TABLE `metadata` (
@@ -119,7 +119,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Crie uma tabela de metadados **adicionais** no esquema do banco de dados usando a seguinte instrução SQL:
+1. Crie uma tabela de metadados **adicionais** no schema do banco de dados usando a seguinte instrução SQL:
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -131,7 +131,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Crie uma tabela **comentável** no esquema do banco de dados usando a seguinte instrução SQL:
+1. Crie uma tabela **comentável** no schema do banco de dados usando a seguinte instrução SQL:
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -208,7 +208,7 @@ Execute as seguintes etapas de configuração para criar uma conexão entre a in
     </tr>
     <tr> 
     <td><p>URI de conexão JDBC</p></td> 
-    <td><p>jdbc:mysql://[host]:[porta]/[nome_esquema]</p></td>
+    <td><p>jdbc:mysql://[host]:[porta]/[nome_do_schema]</p></td>
     </tr>
     <tr> 
     <td><p>Nome de usuário</p></td> 
@@ -251,11 +251,11 @@ Execute as seguintes etapas de configuração para criar uma conexão entre a in
     <td><p>Marcado</p></td>
     </tr>
      <tr> 
-    <td><p>Consulta de validação</p></td> 
+    <td><p>Query de validação</p></td> 
     <td><p>Exemplos de valores são SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</p></td>
     </tr>
      <tr> 
-    <td><p>Tempo limite da consulta de validação</p></td> 
+    <td><p>Tempo limite do Query de validação</p></td> 
     <td><p>10000</p></td>
     </tr>
     </tbody> 
@@ -279,8 +279,8 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 Execute as seguintes etapas para habilitar o envio de formulário adaptável usando a página do Portal de formulários:
 1. [Execute a conversão](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) para converter um formulário de origem em um formulário adaptável.
 1. Abra o formulário adaptável no modo de edição.
-1. Toque em Contêiner de formulário e selecione Configurar ![formulário](assets/configure-adaptive-form.png)adaptável.
-1. Na **[!UICONTROL Submission]** seção, selecione **[!UICONTROL Forms Portal Submit Action]** na lista **[!UICONTROL Submit Action]** suspensa.
+1. Toque em Container de formulário e selecione Configurar ![formulário](assets/configure-adaptive-form.png)adaptável.
+1. Na **[!UICONTROL Submission]** seção, selecione **[!UICONTROL Forms Portal Submit Action]** a partir da lista **[!UICONTROL Submit Action]** suspensa.
 1. Toque em ![Salvar política](assets/edit_template_done.png) de modelo para salvar as configurações.
 
 ## Criar e configurar a página do Portal de formulários {#create-configure-forms-portal-page}
@@ -292,7 +292,7 @@ Execute as seguintes etapas para criar uma página do Portal de formulários e c
 1. Selecione o modelo para a página, toque em **[!UICONTROL Next]**, especifique um título para a página e toque em **[!UICONTROL Create]**.
 1. Toque em **[!UICONTROL Edit]** para configurar a página.
 1. No cabeçalho da página, toque em ![Editar modelo](assets/edit_template_sites.png) > **[!UICONTROL Edit Template]** para abrir o modelo da página.
-1. Toque em Contêiner de layout e toque em ![Editar política](assets/edit_template_policy.png)de modelo. Na **[!UICONTROL Allowed Components]** guia, ative as opções **[!UICONTROL Document Services]** e **[!UICONTROL Document Services Predicates]** e toque em ![Salvar política](assets/edit_template_done.png)de modelo.
+1. Toque em Container de layout e toque em ![Editar política](assets/edit_template_policy.png)de modelo. Na **[!UICONTROL Allowed Components]** guia, ative as opções **[!UICONTROL Document Services]** e **[!UICONTROL Document Services Predicates]** e toque em ![Salvar política](assets/edit_template_done.png)de modelo.
 1. Inserir **[!UICONTROL Search & Lister]** componente na página. Como resultado, todos os formulários adaptativos existentes disponíveis na sua instância do AEM são listados na página.
 1. Inserir **[!UICONTROL Drafts & Submissions]** componente na página. Duas guias **[!UICONTROL Draft Forms]** e **[!UICONTROL Submitted Forms]**, são exibidas na página Portal de formulários. A **[!UICONTROL Draft Forms]** guia também exibe o formulário adaptativo convertido gerado usando as etapas mencionadas em [Configurar o formulário adaptativo convertido para integração com o Portal de formulários](#configure-converted-adaptive-form-for-forms-portal-integration)
 
