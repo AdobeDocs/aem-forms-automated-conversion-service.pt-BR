@@ -7,16 +7,16 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
+source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
 
 ---
 
 
 # Práticas recomendadas e padrões complexos conhecidos {#Best-practices-and-considerations2}
 
-Este documento fornece orientações e recomendações que podem beneficiar os administradores, autores e desenvolvedores de formulários ao trabalhar com o serviço de Conversão de formulários automatizados. Ele discute as práticas recomendadas, desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automatizada. Essas práticas recomendadas contribuem coletivamente para o desempenho geral e a saída do serviço de Conversão de formulários automatizados.
+Este documento fornece orientações e recomendações que podem beneficiar administradores, autores e desenvolvedores de formulários ao trabalhar com o serviço de Conversão de formulários automatizados. Ele discute as práticas recomendadas, desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automatizada. Essas práticas recomendadas contribuem coletivamente para o desempenho geral e a saída do serviço de Conversão de formulários automatizados.
 
-## Práticas recomendadas
+## Práticas recomendadas  
 
 O serviço de conversão converte formulários PDF disponíveis na instância do AEM Forms em formulários adaptáveis. Você pode carregar todos os formulários PDF de uma vez ou em fases, conforme necessário. Antes de carregar os formulários, considere o seguinte:
 
@@ -24,8 +24,8 @@ O serviço de conversão converte formulários PDF disponíveis na instância do
 * Mantenha o tamanho da pasta com menos de 10 MB. Não mantenha formulários em uma subpasta.
 * Mantenha o número de páginas em um formulário menor que 15.
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha e protegidos.
-* Não carregue os portfólios [PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfólio PDF em formulários adaptáveis.
-* Não carregue formulários digitalizados, coloridos, em idioma diferente do inglês e preenchidos. Esses formulários não são suportados.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um portfólio em PDF em formulários adaptáveis.
+* Não carregue formulários digitalizados, coloridos, em idioma diferente do inglês e preenchidos. Tais formas não são suportados.
 * Não carregue formulários de origem com espaços no nome do arquivo. Remova o espaço do nome do arquivo antes de fazer upload dos formulários.
 * Use modelos de formulário adaptáveis para especificar cabeçalho e rodapé para o formulário adaptável de saída. O serviço ignora o cabeçalho-rodapé dos documentos PDF de origem e usa o cabeçalho-rodapé especificado no modelo de formulário adaptável.
 
@@ -35,11 +35,11 @@ O serviço de conversão automatizada do AEM Forms usa algoritmos de inteligênc
 
 O serviço de Conversão de formulários automatizada é treinado em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. Entretanto, há alguns campos e estilos em formulários PDF que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campos ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
 
-O serviço começaria a identificar e atribuir campos ou painéis corretos a esses padrões à medida que continuava aprendendo com os dados de origem. Por enquanto, você pode usar o editor [Revisar e Corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de começar a corrigir os problemas ou a ler mais detalhadamente, familiarize-se com os componentes [de formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptáveis.
+O serviço start a identificação e atribuição de campos ou painéis corretos a esses padrões à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor [Revisar e Corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de o start corrigir os problemas ou ler mais detalhadamente, familiarize-se com os componentes [de formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptáveis.
 
 ### Padrões gerais {#general}
 
-| Padrão | Resolução |
+| Padrão | Exemplo |
 |--- |--- |
 | **O Serviço de padrão** <br> não converte formulários PDF coloridos em formulários adaptáveis. <br><br>**Resolução **<br>Use formulários PDF em preto-e-branco ou em tons de cinza. | ![Formulário colorido](assets/best-practice-coloured-forms.png) |
 | **O** Serviço de padrão <br>não converte formulários PDF preenchidos em formulários adaptáveis. <br><br>**Resolução **<br>Use formulários adaptativos vazios. | ![Formulário preenchido](assets/best-practice-filled-forms.png) |
@@ -70,9 +70,9 @@ O serviço começaria a identificar e atribuir campos ou painéis corretos a ess
 
 | Padrão | Resolução |
 |--- |--- |
-| **As** listas de padrões <br>que contêm campos de formulário são mescladas ou não são convertidas em componentes de formulário adaptáveis correspondentes <br><br>**Resolução **<br>Use campos de formulários com limites claros ou use o Editor de revisões e correções para corrigir esses problemas. | ![listas que contêm grupos de opções](assets/best-practice-lists-containing-form-fields.png) |
-| **O** Serviço de padrão <br>pode deixar algumas listas aninhadas sem identificação <br><br>**Resolução **<br>Use o editor de Revisão e Correção para corrigir esses problemas. | ![listas que contêm grupos de opções](assets/best-practice-nested-lists.png) |
-| **O Serviço de padrão** <br> mescla algumas listas que contêm grupos de opções entre si <br><br>****<br>Use o Editor de revisão e correção para corrigir esses problemas. | ![listas que contêm grupos de opções](assets/best-practice-check-box-in-table-cells.png) |
+| **As** Listas padrão <br>que contêm campos de formulário são mescladas ou não convertidas em componentes de formulário adaptáveis correspondentes <br><br>**Resolução **<br>Use campos de formulários com limites claros ou use o Editor de revisão e correção para corrigir esses problemas. | ![listas que contêm grupos de escolha](assets/best-practice-lists-containing-form-fields.png) |
+| **O** Serviço de padrão <br>pode deixar algumas listas aninhadas sem identificação <br><br>**Resolução **<br>Use o editor de Revisão e Correção para corrigir esses problemas. | ![listas que contêm grupos de escolha](assets/best-practice-nested-lists.png) |
+| **O Serviço de padrão** <br> mescla algumas listas que contêm grupos de opções entre si <br><br>****<br>Use o Editor de revisão e correção para corrigir esses problemas. | ![listas que contêm grupos de escolha](assets/best-practice-check-box-in-table-cells.png) |
 
 <!--
 Comment Type: draft
