@@ -1,32 +1,32 @@
 ---
-title: Estender o modelo meta padrão
-seo-title: Estender o modelo meta padrão
+title: Ampliar o meta modelo padrão
+seo-title: Ampliar o meta modelo padrão
 description: Estenda o metrosmodelo padrão para adicionar padrões, validações e entidades específicas à sua organização e aplique configurações a campos de formulário adaptáveis enquanto executa o serviço de Conversão de formulários automatizados.
 seo-description: Estenda o metrosmodelo padrão para adicionar padrões, validações e entidades específicas à sua organização e aplique configurações a campos de formulário adaptáveis enquanto executa o serviço de Conversão de formulários automatizados.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 5d4dba8fea7439b991a7a15872e6f4ed48156ac9
+source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
 
 ---
 
 
-# Estender o modelo meta padrão {#extend-the-default-meta-model}
+# Ampliar o meta modelo padrão {#extend-the-default-meta-model}
 
 O serviço de conversão de formulários automatizada identifica e extrai objetos de formulário de formulários de origem. O mapeador semântico ajuda o serviço a decidir como os objetos extraídos são representados em um formulário adaptável. Por exemplo, um formulário de origem pode ter muitos tipos diferentes de representações de uma data. O mapeador semântico ajuda a mapear todas as representações de objetos de formulário de data do formulário de origem com o componente de data dos formulários adaptáveis. O mapeador semântico também permite que o serviço pré-configure e aplique validações, regras, padrões de dados, texto da Ajuda e propriedades de acessibilidade a componentes de formulário adaptáveis durante a conversão.
 
 ![](assets/meta-model.gif)
 
-O modelo meta é um esquema JSON. Antes de começar com meta-modelo, certifique-se de que você está familiarizado com o JSON. Você deve ter experiência em criar, editar e ler dados salvos no formato JSON.
+O metrosmodelo é um schema JSON. Antes de start com meta-modelo, verifique se você está familiarizado com o JSON. Você deve ter experiência em criar, editar e ler dados salvos no formato JSON.
 
 ## Modelo meta padrão {#default-meta-model}
 
-O serviço de Conversão de formulários automatizados tem um meta-modelo padrão. É um esquema JSON e reside na Adobe Cloud com outros componentes do serviço de conversão de formulários automatizados. Você pode encontrar uma cópia do meta-modelo em seu servidor AEM local em:
+O serviço de Conversão de formulários automatizados tem um meta-modelo padrão. É um schema JSON e reside na Adobe Cloud com outros componentes do serviço de conversão de formulários automatizados. Você pode encontrar uma cópia do meta-modelo em seu servidor AEM local em:
 
 http://&lt;servidor>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json.
 
-O esquema do meta-modelo é derivado de entidades de esquema em https://schema.org/docs/schemas.html. Ele tem Pessoa, PostalAddress, LocalBusiness e mais entidades, conforme definido em https://schema.org. Cada entidade do metamodelo segue o tipo de objeto de esquema JSON. O código a seguir representa uma estrutura meta-modelo de amostra:
+O schema de meta-modelo é derivado de entidades de schemas em https://schema.org/docs/schemas.html. Ele tem Pessoa, PostalAddress, LocalBusiness e mais entidades, conforme definido em https://schema.org. Cada entidade do metamodelo adere ao tipo de objeto de schema JSON. O código a seguir representa uma estrutura meta-modelo de amostra:
 
 ```
    "Entity": {
@@ -50,7 +50,7 @@ Execute as seguintes etapas para baixar o meta-modelo padrão no sistema de arqu
 
 1. Faça logon na instância do AEM Forms.
 1. Navegue até a pasta **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** > **** **[!UICONTROL Meta Model]** .
-1. Selecione o **[!UICONTROL global.schema.json]** arquivo e toque **[!UICONTROL Download]**. Uma caixa de diálogo de download é exibida. Selecione a **[!UICONTROL Download asset(s) as binary files]** opção. Tocar **[!UICONTROL Download]**. Um arquivo é baixado.
+1. Selecione o **[!UICONTROL global.schema.json]** arquivo e toque em **[!UICONTROL Download]**. Uma caixa de diálogo de download é exibida. Selecione a **[!UICONTROL Download asset(s) as binary files]** opção. Tocar **[!UICONTROL Download]**. Um arquivo é baixado.
 
    <!--
    Comment Type: draft
@@ -66,7 +66,7 @@ Execute as seguintes etapas para baixar o meta-modelo padrão no sistema de arqu
 
 ## Noções básicas sobre o meta-modelo {#understanding-the-meta-model}
 
-Um modelo meta se refere a um arquivo de esquema JSON que contém entidades. Todas as entidades no arquivo de esquema JSON incluem um nome e uma id. Cada entidade pode incluir várias propriedades. As entidades e suas propriedades podem variar com base no domínio. É possível aumentar um arquivo de esquema com palavras-chave e configurações de campo para mapear propriedades de esquema para componentes de formulário adaptáveis.
+Um modelo meta se refere a um arquivo de schema JSON que contém entidades. Todas as entidades no arquivo de schema JSON incluem um nome e uma id. Cada entidade pode incluir várias propriedades. As entidades e suas propriedades podem variar com base no domínio. É possível aumentar um arquivo de schema com palavras-chave e configurações de campo para mapear as propriedades do schema para os componentes de formulário adaptáveis.
 
 ```
 "Event": {
@@ -97,29 +97,29 @@ Um modelo meta se refere a um arquivo de esquema JSON que contém entidades. Tod
     }
 ```
 
-Neste exemplo, **Event** representa o nome de uma entidade com um valor para **id** como **Eventid**. A entidade Evento inclui várias propriedades:
+Neste exemplo, o **Evento** representa o nome de uma entidade com um valor para **id** como **Eventid**. A entidade Evento inclui várias propriedades:
 
 * startDate
 * endDate
 * localização
 
-A construção **allOf** no metamodelo permite a herança entre entidades.
+A construção **allOf** no metamodelo permite a herança entre as entidades.
 
 Cada propriedade pode ainda incluir:
 
-* [Propriedades do esquema JSON](#jsonschemaproperties)
+* [Propriedades do schema JSON](#jsonschemaproperties)
 * [Pesquisa baseada em palavras-chave para aplicar propriedades aos campos de formulário adaptativo gerados](#keywordsearch)
 * [Propriedades adicionais](#additionalproperties)
 
 ![Propriedades de modelo Meta](assets/meta_model_elements.gif)
 
-Com base nas palavras-chave referenciadas usando **aem:affKeyword**, o serviço de conversão executa uma operação de pesquisa nos campos de formulário de origem. O serviço de conversão aplica as propriedades do esquema JSON e propriedades adicionais aos campos que atendem aos critérios de pesquisa.
+Com base nas palavras-chave referenciadas usando **aem:affKeyword**, o serviço de conversão executa uma operação de pesquisa nos campos de formulário de origem. O serviço de conversão aplica as propriedades do schema JSON e propriedades adicionais aos campos que atendem aos critérios de pesquisa.
 
 Neste exemplo, o serviço de conversão pesquisa palavras-chave telefone, telefone, telefone celular, telefone de trabalho, telefone residencial, número de telefone, número de telefone e número de telefone no formulário de origem. Com base nos campos que incluem essas palavras-chave, o serviço de conversão aplica o tipo, o padrão e aem:afProperties aos campos de formulário adaptáveis após a conversão.
 
-### Propriedades de esquema JSON para campos de formulário adaptável gerados {#jsonschemaproperties}
+### Propriedades do schema JSON para campos de formulário adaptável gerados {#jsonschemaproperties}
 
-O modelo meta oferece suporte às seguintes propriedades comuns do esquema JSON para campos de formulário adaptáveis gerados pelo serviço de Conversão de formulários automatizados:
+O modelo meta suporta as seguintes propriedades comuns do schema JSON para campos de formulário adaptáveis gerados usando o serviço de Conversão de formulários automatizados:
 
 <table> 
  <tbody> 
@@ -156,7 +156,7 @@ O modelo meta oferece suporte às seguintes propriedades comuns do esquema JSON 
   </tr>
   <td><p>enum e enumNames</p></td> 
    <td> 
-    <p>As propriedades enum e enumNames restringem os valores dos campos suspensos, de caixa de seleção ou de botão de opção a um conjunto fixo. Os valores listados em enumNames são exibidos na interface do usuário. Os valores listados usando a propriedade enum são usados para o cálculo.<br>Para obter mais informações, consulte <strong>Converter um campo de formulário em caixas de seleção de múltipla escolha no formulário</strong>adaptável, <strong>Converter um campo de texto em lista suspensa no formulário</strong>adaptável e <strong>Adicionar opções adicionais à lista</strong> suspensa em exemplos de metmodelo <a href="#custommetamodelexamples">personalizado.</a></p> </td> 
+    <p>As propriedades enum e enumNames restringem os valores dos campos suspensos, da caixa de seleção ou de botões de opção a um conjunto fixo. Os valores listados em enumNames são exibidos na interface do usuário. Os valores listados usando a propriedade enum são usados para o cálculo.<br>Para obter mais informações, consulte <strong>Converter um campo de formulário em caixas de seleção de múltipla escolha no formulário</strong>adaptável, <strong>Converter um campo de texto em lista suspensa no formulário</strong>adaptável e <strong>Adicionar opções adicionais à lista</strong> suspensa em exemplos de metmodelo <a href="#custommetamodelexamples">personalizado.</a></p> </td> 
   </tr>
  </tbody> 
 </table>
@@ -189,18 +189,18 @@ Você pode usar a propriedade **aem:afProperties** no metrosmodelo para definir 
    <th><strong>Descrição</strong></th> 
   </tr> 
   <tr> 
-   <td><p>multiline</p></td> 
+   <td><p>multiLine</p></td> 
    <td> 
-    <p>A propriedade de várias linhas converte um campo de formulário de origem em um campo de várias linhas no formulário adaptável após a conversão. Para obter mais informações, consulte <strong>Converter um campo de string em um campo</strong> de várias linhas em exemplos <a href="#custommetamodelexamples">personalizados de meta-modelo.</a></p> </td> 
+    <p>A propriedade multiLine converte um campo de formulário de origem em um campo de várias linhas no formulário adaptável após a conversão. Para obter mais informações, consulte <strong>Converter um campo de string em um campo</strong> de várias linhas em exemplos <a href="#custommetamodelexamples">personalizados de meta-modelo.</a></p> </td> 
   </tr>
   <td><p>mandatory</p></td> 
    <td> 
-    <p>A propriedade mandatory define a entrada de um campo de formulário adaptável após a conversão como obrigatório.<br>Para obter mais informações, consulte <strong>Adicionar validações a campos</strong> de formulário adaptáveis em exemplos de metmodelo <a href="#custommetamodelexamples">personalizado.</a></p>
+    <p>A propriedade mandatory define a entrada de um campo de formulário adaptável após a conversão como obrigatório.<br>Para obter mais informações, consulte <strong>Adicionar validações a campos</strong> de formulário adaptáveis em exemplos <a href="#custommetamodelexamples">personalizados de metmodelo.</a></p>
     </td> 
   </tr>
   <td><p>jcr:title</p></td> 
    <td> 
-    <p>A propriedade jcr:title, com o título propriedade de esquema JSON, permite modificar o rótulo de um campo de formulário adaptável após a conversão.<br>Para obter mais informações, consulte <strong>Modificar o rótulo de um campo</strong> de formulário em exemplos <a href="#custommetamodelexamples">personalizados de meta-modelo.</a><br>Consulte <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Criação de formulários adaptáveis usando o esquema</a> JSON para obter informações sobre mais propriedades que podem ser aplicadas a campos de formulário adaptáveis usando o esquema JSON.</p>
+    <p>A propriedade jcr:title, com o título propriedade schema JSON, permite modificar o rótulo de um campo de formulário adaptável após a conversão.<br>Para obter mais informações, consulte <strong>Modificar o rótulo de um campo</strong> de formulário em exemplos <a href="#custommetamodelexamples">personalizados de meta-modelo.</a><br>Consulte <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Criação de formulários adaptáveis usando o schema</a> JSON para obter informações sobre mais propriedades que podem ser aplicadas a campos de formulário adaptáveis usando o schema JSON.</p>
     <p></p></td> 
   </tr>
   <td><p>sling:resourceType e guideNodeClass</p></td> 
@@ -209,7 +209,7 @@ Você pode usar a propriedade **aem:afProperties** no metrosmodelo para definir 
   </tr>
   <td><p>validatePictureClause</p></td> 
    <td> 
-    <p>A propriedade validatePictureClause define uma validação no formato permitido no campo de formulário adaptável após a conversão.<br>Para obter mais informações, consulte <strong>Adicionar validações a campos</strong> de formulário adaptáveis em exemplos de metmodelo <a href="#custommetamodelexamples">personalizado.</p> </td> 
+    <p>A propriedade validatePictureClause define uma validação no formato permitido no campo de formulário adaptável após a conversão.<br>Para obter mais informações, consulte <strong>Adicionar validações a campos</strong> de formulário adaptáveis em exemplos <a href="#custommetamodelexamples">personalizados de metmodelo.</p> </td> 
   </tr>
  </tbody> 
 </table>
@@ -228,12 +228,12 @@ No entanto, você pode salvar um meta-modelo personalizado em uma pasta e modifi
 
 Execute as seguintes etapas para usar um meta-modelo personalizado durante a conversão:
 
-1. Crie uma pasta em **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** e carregue o arquivo de esquema JSON meta-model personalizado para a pasta.
+1. Crie uma pasta em **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** e carregue o arquivo de schema JSON meta-model personalizado para a pasta.
 1. Abra as propriedades do serviço de conversão usando:
 
    **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]**> **&lt;** Propriedades da configuração **selecionada>**
 
-1. Na **[!UICONTROL Basic]** guia, especifique o local do meta-modelo personalizado no **[!UICONTROL Custom Meta-model]** campo e toque **[!UICONTROL Save & Close]**.
+1. Na **[!UICONTROL Basic]** guia, especifique o local do meta-modelo personalizado no **[!UICONTROL Custom Meta-model]** campo e toque em **[!UICONTROL Save & Close]**.
 1. [Execute a conversão](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) para aplicar o meta-modelo personalizado ao processo de conversão.
 
 ### Exemplos personalizados de meta-modelo {#custommetamodelexamples}
@@ -246,13 +246,13 @@ Alguns exemplos comuns de uso de um metrosmodelo personalizado para modificar pr
 * Converter um campo de formulário em botões de opção de múltipla escolha no formulário adaptável
 * Modificar o formato de um campo de formulário
 * Adicionar validações a campos de formulário adaptáveis
-* Converter um campo de formulário em opções de lista suspensa no formulário adaptável
+* Converter um campo de formulário em opções de lista suspensas no formulário adaptável
 * Adicionar opções adicionais à lista suspensa
 * Converter um campo de string em um campo de várias linhas
 
 #### Modificar o rótulo de um campo de formulário {#modify-the-label-of-a-form-field}
 
-**** Exemplo: Modifique o rótulo do número de conta bancária no formulário para Número de conta personalizado no formulário adaptável após a conversão.
+**Exemplo:** Modifique o rótulo do número de conta bancária no formulário para Número de conta personalizado no formulário adaptável após a conversão.
 
 Neste meta-modelo personalizado, o serviço de conversão usa a propriedade **title** como uma palavra-chave de pesquisa. Após recuperar o texto do número **da conta** bancária no formulário, o serviço de conversão substitui o texto pela string do número **da conta do** Cliente mencionada pela propriedade **jcr:title** na seção **aem:afProperties** .
 
@@ -335,9 +335,9 @@ Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:aff
 
 #### Modificar o formato de um campo de formulário {#modify-the-format-of-a-form-field}
 
-**Exemplo**: Modifique o formato do campo Endereço **de** email para um formato de email.
+**Exemplo**: Modifique o formato do campo Endereço **de** email para um formato do email.
 
-Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:affKeyword** como uma palavra-chave de pesquisa. Após recuperar o texto Endereço **de** email no formulário, o serviço de conversão converte o campo em um formato de email usando a propriedade **format** .
+Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:affKeyword** como uma palavra-chave de pesquisa. Após recuperar o texto Endereço **de** email no formulário, o serviço de conversão converte o campo em um formato do email usando a propriedade **format** .
 
 ```
 {
@@ -351,7 +351,7 @@ Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:aff
 
 #### Adicionar validações a campos de formulário adaptáveis {#add-validations-to-adaptive-form-fields}
 
-**** Exemplo 1: Adicione uma validação ao campo Código **** postal do formulário adaptável.
+**Exemplo 1:** Adicione uma validação ao campo Código **** postal do formulário adaptável.
 
 Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:affKeyword** como palavra-chave de pesquisa. Após recuperar o texto do Código **** postal no formulário, o serviço de conversão adiciona uma validação ao campo usando a propriedade **validatePictureClause** definida na seção **aem:afProperties** . Com base na validação, a entrada especificada para o campo Código **** postal no formulário adaptável após a conversão deve incluir seis caracteres.
 
@@ -367,7 +367,7 @@ Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:aff
 }
 ```
 
-**** Exemplo 2: Adicione uma validação ao campo Número **da conta** bancária do formulário adaptável.
+**Exemplo 2:** Adicione uma validação ao campo Número **da conta** bancária do formulário adaptável.
 
 Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:affKeyword** como palavra-chave de pesquisa. Após recuperar o texto do número **da conta** bancária no formulário, o serviço de conversão adiciona uma validação ao campo usando a propriedade **obrigatória** definida na seção **aem:afProperties** . Com base na validação, você deve especificar um valor para o campo de número **de conta** bancária antes de enviar o formulário após a conversão.
 
@@ -419,7 +419,7 @@ Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:aff
 
 #### Adicionar opções adicionais à lista suspensa {#add-additional-options-to-the-drop-down-list}
 
-**** Exemplo: Adicione o **Sri Lanka** como uma opção extra a uma lista suspensa existente usando um meta-modelo personalizado.
+**Exemplo:** Adicione o **Sri Lanka** como uma opção extra a uma lista suspensa existente usando um meta-modelo personalizado.
 
 Para adicionar uma opção extra, atualize a propriedade **enum** com a nova opção. Neste exemplo, atualize a propriedade **enum** com o **Sri Lanka** como uma opção extra. Os valores listados na propriedade **enum** são exibidos na lista suspensa.
 
@@ -447,19 +447,19 @@ Para adicionar uma opção extra, atualize a propriedade **enum** com a nova op�
 
 #### Converter um campo de string em um campo de várias linhas {#convert-a-string-field-to-a-multi-line-field}
 
-**** Exemplo: Converta o campo **Endereço** do tipo de string em um campo de várias linhas no formulário após a conversão.
+**Exemplo:** Converta o campo **Endereço** do tipo de string em um campo de várias linhas no formulário após a conversão.
 
-Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:affKeyword** como palavra-chave de pesquisa. Após recuperar o texto **Endereço** no formulário, o serviço converte o campo de texto em um campo de várias linhas usando a propriedade de **várias linhas** definida na seção **aem:afProperties** .
+Neste meta-modelo personalizado, o serviço de conversão usa texto em **aem:affKeyword** como palavra-chave de pesquisa. Após recuperar o texto **Endereço** no formulário, o serviço converte o campo de texto em um campo de várias linhas usando a propriedade **multiLine** definida na seção **aem:afProperties** .
 
 ```
 {
- "multiline" : {
+ "multiLine" : {
    "aem:affKeyword": [
       "Address"
     ],
     "type" : "string",
     "aem:afProperties": {
-      "multiline": "true"
+      "multiLine": "true"
     }
   }
 }
