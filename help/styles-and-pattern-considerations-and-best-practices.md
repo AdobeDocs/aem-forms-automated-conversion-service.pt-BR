@@ -7,27 +7,49 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
+source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
 
 ---
 
 
 # Práticas recomendadas e padrões complexos conhecidos {#Best-practices-and-considerations2}
 
-Este documento fornece orientações e recomendações que podem beneficiar administradores, autores e desenvolvedores de formulários ao trabalhar com o serviço de Conversão de formulários automatizados. Ele discute as práticas recomendadas, desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automatizada. Essas práticas recomendadas contribuem coletivamente para o desempenho geral e a saída do serviço de Conversão de formulários automatizados.
+Este documento fornece orientações e recomendações que podem beneficiar administradores, autores e desenvolvedores de formulários ao trabalhar com o serviço de Conversão de formulários automatizados. Ele discute as práticas recomendadas, desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automatizada. Essas práticas recomendadas contribuem coletivamente para o desempenho e a saída geral do serviço de Conversão de formulários automatizados.
 
 ## Práticas recomendadas  
 
-O serviço de conversão converte formulários PDF disponíveis na instância do AEM Forms em formulários adaptáveis. Você pode carregar todos os formulários PDF de uma vez ou em fases, conforme necessário. Antes de carregar os formulários, considere o seguinte:
+O serviço de conversão converte formulários PDF disponíveis na instância do AEM Forms em formulários adaptáveis. As práticas recomendadas listadas abaixo ajudam você a melhorar a velocidade e a precisão de conversão. Além disso, essas práticas recomendadas ajudam você a economizar tempo gasto em atividades de conversão.
+
+### Antes de carregar formulários de origem
+Você pode carregar todos os formulários PDF de uma vez ou em fases, conforme necessário. Antes de carregar os formulários, considere o seguinte:
 
 * Mantenha o número de formulários em uma pasta menor que 15 e mantenha o número total de páginas em uma pasta menor que 50.
 * Mantenha o tamanho da pasta com menos de 10 MB. Não mantenha formulários em uma subpasta.
 * Mantenha o número de páginas em um formulário menor que 15.
+* Organize documentos de origem em um lote de 8 a 15 documentos. Mantenha formulários de origem com Fragmentos de formulário adaptáveis comuns em um único lote.
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha e protegidos.
-* Do not upload the [PDF Portfolios](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um portfólio em PDF em formulários adaptáveis.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfólio PDF em um formulário adaptável.
 * Não carregue formulários digitalizados, coloridos, em idioma diferente do inglês e preenchidos. Tais formas não são suportados.
 * Não carregue formulários de origem com espaços no nome do arquivo. Remova o espaço do nome do arquivo antes de fazer upload dos formulários.
-* Use modelos de formulário adaptáveis para especificar cabeçalho e rodapé para o formulário adaptável de saída. O serviço ignora o cabeçalho-rodapé dos documentos PDF de origem e usa o cabeçalho-rodapé especificado no modelo de formulário adaptável.
+
+Ao usar um formulário XDP para conversão, execute as seguintes etapas antes de carregar os formulários XPD de origem:
+
+* Analise o formulário XDP e corrija problemas visuais. Verifique se o documento de origem usa os controles e estruturas desejados. Por exemplo, o formulário de origem pode ter caixas de seleção em vez de botões de opção para uma única seleção. Altere as caixas de seleção para botões de opção para produzir um formulário adaptável com os componentes desejados.
+* [Adicione vínculos ao formulário](http://www.adobe.com/go/learn_aemforms_designer_65) XDP antes de iniciar a conversão. Quando os vínculos estão disponíveis no formulário XDP de origem, o serviço aplica automaticamente vínculos aos campos de formulário adaptáveis correspondentes durante a conversão. Ele economiza o tempo necessário para aplicar manualmente os vínculos.
+* [Adicione tags](https://helpx.adobe.com/sign/using/text-tag.html) do Adobe Sign ao arquivo XDP. O serviço converte automaticamente as tags do Adobe Sign em campos de formulário adaptáveis correspondentes. Os Formulários adaptáveis são compatíveis com um número limitado de campos do Adobe Sign. Para obter a lista completa dos campos suportados, consulte [Uso do Adobe Sign em uma documentação de formulário](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adaptável.
+* Use subformulários em documentos XDP para criar painéis em formulários adaptáveis. O serviço converte cada subformulário em um painel de formulário adaptável durante a conversão.
+* Converta tabelas complexas em documentos XDP em tabelas simples, se possível.
+
+### Antes de start da conversão
+
+* Crie modelos de formulário adaptáveis. Os modelos ajudam a especificar uma estrutura uniforme para os formulários de sua organização ou departamento.
+* Especifique o cabeçalho e o rodapé nos modelos de formulário adaptável. O serviço ignora o cabeçalho-rodapé dos documentos de origem e usa o cabeçalho-rodapé especificado no modelo de formulário adaptável.
+* Crie temas de formulário adaptáveis. Os Temas ajudam a fornecer uma aparência uniforme aos formulários de sua organização ou departamento.
+* Configure o Modelo de dados de formulário para salvar e recuperar de uma fonte de dados. Crie e configure serviços de leitura e gravação para o Modelo de dados de formulário.
+* Crie Fragmentos de formulário adaptáveis e configure o serviço para usar seus Fragmentos de formulário adaptáveis.
+* Prepare modelos de fluxo de trabalho comuns para os formulários que exigem automação de processos de negócios.
+* Configure o Adobe Analytics, se necessário
+
 
 ## Conheça padrões complexos
 
