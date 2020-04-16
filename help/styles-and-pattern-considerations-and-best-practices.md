@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: a5d663c2a59895eb71eb5287586bc6b3862927fc
+source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
 
 ---
 
@@ -38,8 +38,8 @@ Ao usar um formulário XDP para conversão, execute as seguintes etapas antes de
 * Analise o formulário XDP e corrija problemas visuais. Verifique se o documento de origem usa os controles e estruturas desejados. Por exemplo, o formulário de origem pode ter caixas de seleção em vez de botões de opção para uma única seleção. Altere as caixas de seleção para botões de opção para produzir um formulário adaptável com os componentes desejados.
 * [Adicione vínculos ao formulário](http://www.adobe.com/go/learn_aemforms_designer_65) XDP antes de iniciar a conversão. Quando os vínculos estão disponíveis no formulário XDP de origem, o serviço aplica automaticamente vínculos aos campos de formulário adaptáveis correspondentes durante a conversão. Ele economiza o tempo necessário para aplicar manualmente os vínculos.
 * [Adicione tags](https://helpx.adobe.com/sign/using/text-tag.html) do Adobe Sign ao arquivo XDP. O serviço converte automaticamente as tags do Adobe Sign em campos de formulário adaptáveis correspondentes. Os Formulários adaptáveis são compatíveis com um número limitado de campos do Adobe Sign. Para obter a lista completa dos campos suportados, consulte [Uso do Adobe Sign em uma documentação de formulário](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adaptável.
-* Use subformulários em documentos XDP para criar painéis em formulários adaptáveis. O serviço converte cada subformulário em um painel de formulário adaptável durante a conversão.
 * Converta tabelas complexas em documentos XDP em tabelas simples, se possível. Uma tabela com campos de formulário em células de tabela, células de tamanho irregular, células expandidas de linha ou coluna, células unidas, bordas parciais ou nenhuma borda visível é considerada uma tabela complexa. Uma tabela com qualquer um dos itens acima mencionados é considerada uma tabela complexa.
+<!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Antes de start da conversão
 
