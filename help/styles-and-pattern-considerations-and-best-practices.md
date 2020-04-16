@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
+source-git-commit: 43b9b30e7e912081756050aa002a9e398d1d74fc
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
 
 Este documento fornece orientações e recomendações que podem beneficiar administradores, autores e desenvolvedores de formulários ao trabalhar com o serviço de Conversão de formulários automatizados. Ele discute as práticas recomendadas, desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automatizada. Essas práticas recomendadas contribuem coletivamente para o desempenho e a saída geral do serviço de Conversão de formulários automatizados.
 
-## Práticas recomendadas  
+## Práticas recomendadas
 
 O serviço de conversão converte formulários PDF disponíveis na instância do AEM Forms em formulários adaptáveis. As práticas recomendadas listadas abaixo ajudam você a melhorar a velocidade e a precisão de conversão. Além disso, essas práticas recomendadas ajudam você a economizar tempo gasto em atividades de conversão.
 
@@ -38,7 +38,7 @@ Ao usar um formulário XDP para conversão, execute as seguintes etapas antes de
 * Analise o formulário XDP e corrija problemas visuais. Verifique se o documento de origem usa os controles e estruturas desejados. Por exemplo, o formulário de origem pode ter caixas de seleção em vez de botões de opção para uma única seleção. Altere as caixas de seleção para botões de opção para produzir um formulário adaptável com os componentes desejados.
 * [Adicione vínculos ao formulário](http://www.adobe.com/go/learn_aemforms_designer_65) XDP antes de iniciar a conversão. Quando os vínculos estão disponíveis no formulário XDP de origem, o serviço aplica automaticamente vínculos aos campos de formulário adaptáveis correspondentes durante a conversão. Ele economiza o tempo necessário para aplicar manualmente os vínculos.
 * [Adicione tags](https://helpx.adobe.com/sign/using/text-tag.html) do Adobe Sign ao arquivo XDP. O serviço converte automaticamente as tags do Adobe Sign em campos de formulário adaptáveis correspondentes. Os Formulários adaptáveis são compatíveis com um número limitado de campos do Adobe Sign. Para obter a lista completa dos campos suportados, consulte [Uso do Adobe Sign em uma documentação de formulário](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adaptável.
-* Converta tabelas complexas em documentos XDP em tabelas simples, se possível. Uma tabela com campos de formulário em células de tabela, células de tamanho irregular, células expandidas de linha ou coluna, células unidas, bordas parciais ou nenhuma borda visível é considerada uma tabela complexa. Uma tabela com qualquer um dos itens acima mencionados é considerada uma tabela complexa.
+* Converta tabelas complexas em documentos XDP em tabelas simples, se possível. Uma tabela com campos de formulário em células de tabela, células de tamanho irregular, células expandidas de linha ou coluna, células unidas, bordas parciais ou nenhuma borda visível é considerada uma tabela complexa. Um quadro com qualquer um dos itens acima mencionados é considerado um quadro complexo.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Antes de start da conversão
@@ -56,7 +56,7 @@ Ao usar um formulário XDP para conversão, execute as seguintes etapas antes de
 
 O serviço de conversão automatizada do AEM Forms usa algoritmos de inteligência artificial e aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente a partir de dados de origem e produz uma saída aprimorada com cada churn. Estes serviços aprendem com a experiência como os humanos.
 
-O serviço de Conversão de formulários automatizada é treinado em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. Entretanto, há alguns campos e estilos em formulários PDF que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campos ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
+O serviço de Conversão de formulários automatizada é treinado em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. Entretanto, há alguns campos e estilos em formulários PDF que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir diferentes tipos de campos ou painéis aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
 
 O serviço start a identificação e atribuição de campos ou painéis corretos a esses padrões à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor [Revisar e Corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de o start corrigir os problemas ou ler mais detalhadamente, familiarize-se com os componentes [de formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptáveis.
 
@@ -64,13 +64,13 @@ O serviço start a identificação e atribuição de campos ou painéis corretos
 
 | Padrão | Exemplo |
 |--- |--- |
-| **O Serviço de padrão** <br> não converte formulários PDF coloridos em formulários adaptáveis. <br><br>**Resolução **<br>Use formulários PDF em preto-e-branco ou em tons de cinza. | ![Formulário colorido](assets/best-practice-coloured-forms.png) |
-| **O** Serviço de padrão <br>não converte formulários PDF preenchidos em formulários adaptáveis. <br><br>**Resolução **<br>Use formulários adaptativos vazios. | ![Formulário preenchido](assets/best-practice-filled-forms.png) |
+| **O Serviço de padrão** <br> não converte formulários PDF coloridos em um formulário adaptável. <br><br>**Resolução **<br>Use formulários PDF em preto-e-branco ou em tons de cinza. | ![Formulário colorido](assets/best-practice-coloured-forms.png) |
+| **O** Serviço de padrão <br>não converte formulários PDF preenchidos em um formulário adaptável. <br><br>**Resolução **<br>Use formulários adaptativos vazios. | ![Formulário preenchido](assets/best-practice-filled-forms.png) |
 | **O** Serviço de padrão <br>pode falhar ao reconhecer texto e campos em um formulário denso. <br><br>**Resolução **<br>Aumenta a largura entre o texto e os campos de um formulário denso antes de iniciar a conversão. |  |
 | **O** Serviço de padrão <br>não suporta formulários digitalizados. <br><br>**Resolução **<br>Não use formulários digitalizados. | ![Formulário digitalizado](assets/scanned-forms.png) |
 | **O** Serviço de padrão <br>não extrai imagens e texto em imagens. <br><br>**Resolução **<br>Adiciona manualmente imagens ou texto a formulários convertidos. | ![Imagem com formulário de texto](assets/best-practice-image-with-text.png) |
 | **As** tabelas padrão <br>com limites e bordas pontilhados ou não claros não são convertidas. <br><br>**Resolução **<br>Use tabelas com limites e bordas explícitos. suportado. | ![Formulário de tabela não limpo](assets/best-practice-table-dotted-non-clear.png) |
-| **Padrão** <br> O formulário adaptável não suporta texto vertical pronto para uso. Portanto, o serviço não converte o texto vertical para o texto correspondente dos Formulários adaptáveis. <br><br>**Resolução **<br>Use o editor de formulário adaptável para adicionar texto vertical, se necessário. | ![Formulário de tabela não limpo](assets/vertical-text.png) |
+| **Padrão** Os formulários adaptáveis não são compatíveis com o texto vertical pronto para uso <br> . Portanto, o serviço não converte o texto vertical para o texto correspondente dos Formulários adaptáveis. <br><br>**Resolução **<br>Use o editor de formulário adaptável para adicionar texto vertical, se necessário. | ![Formulário de tabela não limpo](assets/vertical-text.png) |
 
 
 
@@ -86,7 +86,7 @@ O serviço start a identificação e atribuição de campos ou painéis corretos
 |--- |--- |
 | **O Serviço de Padrão** <br> não identifica campos sem bordas claras. <br><br>**Resolução **<br>Use o editor Revisão e Correção para identificar esses campos. | ![campos com limites não claros](assets/best-practice-fields-without-clear-borders.png) |
 | **O Serviço de padrão** <br> pode não identificar alguns campos de formulário de grupo de escolha com legendas na parte inferior ou direita de um formulário. <br><br>**Resolução **<br>Use o Editor de revisão e correção para identificar esses campos | ![Campos de escolha](assets/best-practice-caption-bottom-right.png) |
-| **O Serviço de padrão** <br> mescla ou atribui um tipo errado a alguns campos de formulário que são colocados muito próximos uns dos outros ou não têm bordas claras. <br><br>**Resolução **<br>Use o editor Revisão e Correção para identificar esses campos. | ![Campos de escolha](assets/best-practice-placed-very-near.png) |
+| **O Serviço de padrão** <br> mescla ou atribui um tipo errado a alguns campos de formulário que são colocados muito próximos uns dos outros ou que não têm bordas claras. <br><br>**Resolução **<br>Use o editor Revisão e Correção para identificar esses campos. | ![Campos de escolha](assets/best-practice-placed-very-near.png) |
 | **O Serviço de padrão** <br> pode falhar ao reconhecer campos com legendas distantes ou uma linha pontilhada entre a legenda e o campo de entrada. <br><br>**Resolução **<br>Use campos de formulários com limites claros ou use o Editor de revisão e correção para corrigir esses problemas. | ![Campos distantes ou linha pontilhada entre o campo de legenda](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### Listas {#lists}
