@@ -6,7 +6,7 @@ seo-description: Problemas comuns do AFCS e suas soluções
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: aebfde420d02bd4184022ecb42496a379d66a3b5
+source-git-commit: 65dd07048b3cc7d9434568a8188dc08a1db66ada
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: aebfde420d02bd4184022ecb42496a379d66a3b5
 
 O artigo fornece informações sobre problemas de instalação, configuração e administração que podem surgir em um ambiente de produção do Automated Forms Conversion Service. O documento também fornece etapas básicas de solução de problemas e explicações para mensagens de erro comuns.
 
-### Erros comuns {#commonerrors}
+## Erros comuns {#commonerrors}
 
 | Erro | Exemplo |
 |--- |--- |
