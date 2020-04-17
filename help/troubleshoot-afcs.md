@@ -20,7 +20,7 @@ source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 | Erro | Exemplo |
 |--- |--- |
-| **Mensagem** de erro <br> O cabeçalho do token de acesso não está disponível. <br><br> **Razão** pela qual <br> um administrador criou várias configurações IMS ou a configuração IMS não consegue acessar o serviço AFCS na Adobe Cloud. <br><br>**Resolução **Se houver várias configurações, exclua todas as configurações e<br>crie uma nova configuração[](configure-service.md#obtainpubliccertificates).<br>Se houver uma única configuração, use a Verificação** de **integridade para[verificar a conectividade](configure-service.md#createintegrationoption). | ![O cabeçalho do token de acesso não está disponível](assets/invalid-ims-configuration.png) |
+| **Mensagem** de erro <br> O cabeçalho do token de acesso não está disponível. <br><br>**Razão **pela qual<br>um administrador criou várias configurações IMS ou a configuração IMS não consegue acessar o serviço AFCS na Adobe Cloud.<br><br>**Resolução** Se houver várias configurações, exclua todas as configurações e <br> crie uma nova configuração [](configure-service.md#obtainpubliccertificates). <br> Se houver uma única configuração, use a Verificação **de** integridade para [verificar a conectividade](configure-service.md#createintegrationoption). | ![O cabeçalho do token de acesso não está disponível](assets/invalid-ims-configuration.png) |
 
 | Erro | Exemplo |
 |--- |--- |
