@@ -7,18 +7,18 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 43b9b30e7e912081756050aa002a9e398d1d74fc
+source-git-commit: fa3b365b9762a044fddb3820ad3c091d211e0ae6
 
 ---
 
 
 # Práticas recomendadas e padrões complexos conhecidos {#Best-practices-and-considerations2}
 
-Este documento fornece orientações e recomendações que podem beneficiar administradores, autores e desenvolvedores de formulários ao trabalhar com o serviço de Conversão de formulários automatizados. Ele discute as práticas recomendadas, desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automatizada. Essas práticas recomendadas contribuem coletivamente para o desempenho e a saída geral do serviço de Conversão de formulários automatizados.
+Este documento fornece orientações e recomendações que podem ser beneficiadas pelo administrador, autores e desenvolvedores de formulários ao trabalhar com [!DNL Automated Forms Conversion service]. Ele discute as práticas recomendadas, desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automatizada. Essas práticas recomendadas contribuem coletivamente para o desempenho e a produção geral do [!DNL Automated Forms Conversion service].
 
 ## Práticas recomendadas
 
-O serviço de conversão converte formulários PDF disponíveis na instância do AEM Forms em formulários adaptáveis. As práticas recomendadas listadas abaixo ajudam você a melhorar a velocidade e a precisão de conversão. Além disso, essas práticas recomendadas ajudam você a economizar tempo gasto em atividades de conversão.
+O serviço de conversão converte formulários PDF disponíveis na sua [!DNL Forms] instância do AEM em formulários adaptáveis. As práticas recomendadas listadas abaixo ajudam você a melhorar a velocidade e a precisão de conversão. Além disso, essas práticas recomendadas ajudam você a economizar tempo gasto em atividades de conversão.
 
 ### Antes de fazer upload da fonte
 
@@ -54,9 +54,9 @@ Ao usar um formulário XDP para conversão, execute as seguintes etapas antes de
 
 ## Conheça padrões complexos
 
-O serviço de conversão automatizada do AEM Forms usa algoritmos de inteligência artificial e aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente a partir de dados de origem e produz uma saída aprimorada com cada churn. Estes serviços aprendem com a experiência como os humanos.
+O AEM [!DNL Forms Automated Conversion service] usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente a partir de dados de origem e produz uma saída aprimorada com cada churn. Estes serviços aprendem com a experiência como os humanos.
 
-O serviço de Conversão de formulários automatizada é treinado em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. Entretanto, há alguns campos e estilos em formulários PDF que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir diferentes tipos de campos ou painéis aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
+[!DNL Automated Forms Conversion service] é treinada em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. Entretanto, há alguns campos e estilos em formulários PDF que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir diferentes tipos de campos ou painéis aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
 
 O serviço start a identificação e atribuição de campos ou painéis corretos a esses padrões à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor [Revisar e Corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de o start corrigir os problemas ou ler mais detalhadamente, familiarize-se com os componentes [de formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptáveis.
 
