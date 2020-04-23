@@ -1,7 +1,7 @@
 ---
 title: Introdução
 description: 'Acelere a conversão de formulários impressos em formulários adaptáveis '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 ---
@@ -21,7 +21,7 @@ O serviço de conversão automática de formulários ajuda a acelerar a digitali
 
 ## Integração {#onboarding}
 
-O serviço está disponível gratuitamente para clientes de termo no local do AEM 6.4 Forms e AEM 6.5 Forms e clientes corporativos do Adobe Managed Service. Você pode entrar em contato com a equipe de vendas da Adobe ou com seu representante da Adobe para solicitar acesso ao serviço.
+O serviço está disponível gratuitamente para clientes de vigência no local do AEM 6.4 Forms e AEM6.5 Forms e clientes corporativos do Adobe Managed Service. Você pode entrar em contato com a equipe de vendas da Adobe ou com seu representante da Adobe para solicitar acesso ao serviço.
 
 A Adobe habilita o acesso para sua organização e fornece os privilégios necessários à pessoa designada como administrador em sua organização. O administrador pode conceder acesso aos desenvolvedores (usuários) do AEM Forms de sua organização para se conectar ao serviço. Consulte [Configurar o serviço de conversão automática de formulários](configure-service.md) para obter detalhes.
 
@@ -29,7 +29,7 @@ A Adobe habilita o acesso para sua organização e fornece os privilégios neces
 
 O serviço oferece suporte a formulários PDF não interativos, formulários criados com o Adobe Acrobat conhecidos como AcroForms e baseados em XFA criados com o AEM Forms ou o Adobe LiveCycle.
 
-O serviço pode converter somente formulários em inglês em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+O serviço pode converter somente formulários em inglês em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Fluxo de trabalho de conversão  {#conversion-workflow}
 
@@ -39,7 +39,7 @@ O serviço de conversão automática de formulários é executado na Adobe Cloud
 
 ### 1. Configurar o ambiente {#set-up-the-environment}
 
-O serviço de conversão automática de formulários é executado na Adobe Cloud. [Configure a conta de E/S da Adobe de sua organização e conecte sua instância de AEM loca](configure-service.md)l ao serviço de conversão em execução na Adobe Cloud.
+O serviço de conversão automática de formulários é executado na Adobe Cloud. [Configure a conta de Adobe I/O de sua organização e conecte sua instância de AEM loca](configure-service.md)l ao serviço de conversão em execução na Adobe Cloud.
 
 ### 2. Converter formulários PDF em formulários adaptáveis {#use-the-conversion-service}
 
@@ -48,7 +48,7 @@ Depois que o ambiente do AEM Forms for configurado, para converter formulários 
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha e criptografados.
 * Não carregue formulários digitalizados, coloridos, em idioma diferente do inglês e preenchidos. Tais formas não são suportados.
 * Não carregue formulários PDF com espaços no nome do arquivo.
-* Não carregue [portfólios em PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um portfólio em PDF em formulários adaptáveis.
+* Não carregue [portfólios em PDF](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um portfólio em PDF em formulários adaptáveis.
 * Faça as alterações sugeridas nos formulários PDF descritas no artigo [Práticas recomendadas e considerações](styles-and-pattern-considerations-and-best-practices.md).
 * Leia o artigo [Problemas conhecidos](known-issues.md) para evitar armadilhas.
 
