@@ -1,13 +1,16 @@
 ---
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários '
-translation-type: ht
-source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
+translation-type: tm+mt
+source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 100%
 
 ---
 
 
-# Serviço de conversão automática de formulários: notas de versão
+# Notas de versão
 
 O Serviço de conversão automática de formulários recebe melhorias continuamente. Para se manter atualizado com os desenvolvimentos mais recentes, visite esta página regularmente. Esta página fornece informações sobre:
 
