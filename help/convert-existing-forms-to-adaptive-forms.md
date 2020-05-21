@@ -8,7 +8,10 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
+source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
+workflow-type: tm+mt
+source-wordcount: '1464'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +45,7 @@ O serviço de conversão converte formulários PDF disponíveis na instância do
 * Mantenha o número de páginas em um formulário menor que 15.
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha e protegidos.
 * Não carregue formulários de origem com espaços no nome do arquivo. Remova o espaço do nome do arquivo antes de fazer upload dos formulários.
-* Não carregue [portfólios em PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfólio PDF em um formulário adaptável.
+* Não carregue [portfólios em PDF](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfólio PDF em um formulário adaptável.
 * Leia as seções [Problemas](known-issues.md) conhecidos e [Práticas recomendadas e considerações](styles-and-pattern-considerations-and-best-practices.md) e faça as alterações sugeridas nos formulários.
 
 Execute as seguintes etapas para carregar os formulários a serem convertidos em uma pasta na instância do AEM Forms:
@@ -91,7 +94,7 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
 
 
    * Selecione a **[!UICONTROL Auto-detect multi-column layout of input forms]** opção para manter o layout do formulário de origem para telas grandes, como desktops e laptops. A opção é útil para preservar o layout de várias colunas dos formulários de origem. Por exemplo, quando um PDF de origem tem um layout de duas colunas, o serviço gera um formulário adaptável de saída com um layout de duas colunas para telas grandes e um layout de coluna única para dispositivos de tela pequena, como telefones celulares. O recurso tem alguns problemas conhecidos com a estrutura do schema da fonte de dados. Para obter detalhes, consulte o artigo sobre problemas [](known-issues.md) conhecidos.
-   * Por padrão, o serviço cria um painel de nível superior separado para cada página de um formulário PDF. Agora, você pode usar a **[!UICONTROL Auto-detect logical sections]** opção para não criar painéis de nível de página (painéis baseados em números de página) e criar apenas painéis lógicos. Também associa os campos que não pertencem a nenhuma seção com a seção lógica anterior e os campos de uma seção lógica espalhados por duas páginas adjacentes em uma única seção lógica. Por exemplo, se alguns campos de uma seção lógica estiverem no final da página um e alguns estiverem no início da página dois, todos esses campos serão agrupados em uma única seção lógica.
+   * Por padrão, o serviço cria um painel de nível superior separado para cada página de um formulário PDF. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to not create page level panels (page number-based panels) and create only logical panels. Ele também agrupa os campos que não pertencem a nenhuma seção com a seção lógica anterior e agrupa os campos de uma seção lógica espalhados por duas páginas adjacentes em uma única seção lógica. Por exemplo, se alguns campos de uma seção lógica estiverem no final da página um e alguns estiverem no início da página dois, todos esses campos serão agrupados em uma única seção lógica.
 
       >[!NOTE]
       > É necessário o pacote do conector 1.1.38 ou superior para usar o **[!UICONTROL Auto-detect logical sections]** recurso.
