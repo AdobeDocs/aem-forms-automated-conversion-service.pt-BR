@@ -2,7 +2,10 @@
 title: Configurar o serviço de conversão automática de formulários
 description: Prepare sua instância do AEM para usar o serviço de Conversão de formulários automatizados
 translation-type: tm+mt
-source-git-commit: 68824c2f398d00141d67996121f7b758af16d2e4
+source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+workflow-type: tm+mt
+source-wordcount: '2519'
+ht-degree: 8%
 
 ---
 
@@ -17,13 +20,13 @@ Esta ajuda descreve como um administrador do AEM pode configurar o serviço de C
 
 * Configuração de servidores de correio SMTP
 
->[!VIDEO](https://video.tv.adobe.com/v/29267/)
+<!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
-**Assista ao vídeo ou leia o artigo para configurar o serviço de Conversão de formulários automatizados**
+**Watch the video or read the article to configure Automated Forms Conversion service** -->
 
 ## Integração{#onboarding}
 
-O serviço está disponível gratuitamente para clientes de termo no local do AEM 6.4 Forms e AEM 6.5 Forms e clientes corporativos do Adobe Managed Service. Você pode entrar em contato com a equipe de vendas da Adobe ou com seu representante da Adobe para solicitar acesso ao serviço.
+O serviço está disponível gratuitamente para clientes de vigência no local do AEM 6.4 Forms e AEM6.5 Forms e clientes corporativos do Adobe Managed Service. Você pode entrar em contato com a equipe de vendas da Adobe ou com seu representante da Adobe para solicitar acesso ao serviço.
 
 A Adobe habilita o acesso para sua organização e fornece os privilégios necessários à pessoa designada como administrador em sua organização. O administrador pode conceder acesso aos desenvolvedores (usuários) do AEM Forms de sua organização para se conectar ao serviço.
 
@@ -61,7 +64,7 @@ Depois de baixar o AEM, para obter instruções sobre como configurar uma instâ
 
 Baixe e instale o AEM Service Pack mais recente. Para obter instruções detalhadas, consulte as Notas [de versão do Service Pack do](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) AEM 6.4 ou as Notas [de versão do Service Pack do](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)AEM 6.5.
 
-### Baixar e instalar o pacote complementar do AEM Forms {#downloadaemformsaddon}
+### Baixar e instalar o pacote complementar do AEM Forms  {#downloadaemformsaddon}
 
 Uma instância do AEM contém recursos básicos de formulários. O serviço de conversão requer todos os recursos do AEM Forms. Baixe e instale o pacote complementar AEM Forms para aproveitar todos os recursos do AEM Forms. O pacote é necessário para configurar e executar o serviço de conversão. Para obter instruções detalhadas, consulte [Instalar e configurar recursos de captura de dados.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -69,12 +72,9 @@ Uma instância do AEM contém recursos básicos de formulários. O serviço de c
 > Certifique-se de executar as configurações obrigatórias pós-instalação depois de instalar o pacote suplementar.
 
 
-### (Opcional) Download e instalação do pacote do conector {#installConnectorPackage}
+### (Opcional) Download e instalação do pacote do conector  {#installConnectorPackage}
 
-Instale o pacote do conector 1.1.38 ou superior para usar os recursos e as melhorias das seções [lógicas de detecção](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) automática fornecidos na versão AFC-2020.03.1. Você pode [baixar o pacote do conector do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)de pacotes AEM.
-
->[!NOTE]
-> Se você já tiver um ambiente de serviço de Conversão de formulários automatizada para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar mais recente do AEM Forms e o pacote de conector mais recente na ordem mencionada.
+O pacote do conector fornece acesso antecipado aos recursos de detecção [automática de seções](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) lógicas e melhorias fornecidas na versão AFC-2020.03.1. Não instale o pacote se você não precisar do recurso e das melhorias fornecidas no AFC-2020.03.1.  Você pode [baixar o pacote do conector do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)de pacotes AEM.
 
 
 ### Criar temas e modelos personalizados {#referencepackage}
@@ -123,7 +123,7 @@ Depois que um administrador fornecer acesso de desenvolvedor, você poderá cone
 * [Configurar notificações por email](configure-service.md#configureemailnotification)
 * [Adicionar usuário ao grupo de usuários de formulários](#adduserstousergroup)
 * [Obter certificados públicos](#obtainpubliccertificates)
-* [Criar integração de E/S da Adobe](#createintegration)
+* [Criar integração do Adobe I/O](#createintegration)
 * [Configurar o serviço de nuvem](configure-service.md#configure-the-cloud-service)
 
 #### Configurar notificação por email {#configureemailnotification}
@@ -157,9 +157,9 @@ Um certificado público permite autenticar seu perfil em E/S da Adobe.
 
 1. Selecione **[!UICONTROL Automated Forms Conversion Service]** em Solução em nuvem.
 
-1. Marque a caixa de **[!UICONTROL Create new certificate]** seleção e especifique um alias. O alias serve como nome da caixa de diálogo. Tocar **[!UICONTROL Create certificate]**. Uma caixa de diálogo é exibida. Clique em **[!UICONTROL OK]**. O certificado é criado.
+1. Marque a caixa de **[!UICONTROL Create new certificate]** seleção e especifique um alias. O alias atua como nome da caixa de diálogo. Tocar **[!UICONTROL Create certificate]**. Uma caixa de diálogo é exibida. Clique em **[!UICONTROL OK]**. O certificado é criado.
 
-1. Toque em **[!UICONTROL Download Public Key]** e salve o arquivo de certificado *AEM-Adobe-IMS.crt* em seu computador. O arquivo de certificado é usado para [criar integração no Console](#createintegration)de E/S da Adobe. Tocar **[!UICONTROL Next]**.
+1. Toque em **[!UICONTROL Download Public Key]** e salve o arquivo de certificado *AEM-Adobe-IMS.crt* em seu computador. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Tocar **[!UICONTROL Next]**.
 
 1. Especifique o seguinte:
 
@@ -179,31 +179,30 @@ Um certificado público permite autenticar seu perfil em E/S da Adobe.
    <li>Step text</li>
    -->
 
-#### Criar integração de E/S da Adobe {#createintegration}
+#### Criar integração do Adobe I/O {#createintegration}
 
 Para usar o serviço de Conversão de formulários automatizados, crie uma integração em E/S da Adobe. A integração gera a chave da API, o segredo do cliente, a carga (JWT).
 
-1. Faça logon em [https://console.adobe.io/](https://console.adobe.io/). Use sua ID da Adobe, conta de desenvolvedor provisionada pelo administrador para fazer logon no console de E/S da Adobe para fazer logon.
+1. Faça logon em https://console.adobe.io/. Use sua ID da Adobe, conta de desenvolvedor provisionada pelo administrador para fazer logon no console de E/S da Adobe para fazer logon.
+1. Selecione sua organização no canto superior direito. Se não souber sua organização, entre em contato com o administrador.
+1. Tocar **[!UICONTROL Create new project]**. Uma tela para começar a usar seu novo projeto é exibida. Tocar **[!UICONTROL Add API]**. Uma tela com lista de todas as APIs ativadas para sua conta é exibida.
+1. Selecione **[!UICONTROL Automated Forms Conversion service]** e toque **[!UICONTROL Next]**. Uma tela para configurar a API é exibida.
+1. Selecione a [!UICONTROL Upload your public key] opção, carregue o arquivo AEM-Adobe-IMS.crt baixado na seção [Obter certificados](#obtainpubliccertificates) públicos e toque **[!UICONTROL Next]**. A opção Criar uma nova credencial de conta de serviço (JWT) é exibida. Tocar **[!UICONTROL Next]**.
+1. Selecione um Perfil de produto e toque em **[!UICONTROL Save configured API]**. Selecione o perfil criado ao [conceder acesso aos desenvolvedores de sua organização](#adduseranddevs). Se você não souber o perfil a ser selecionado, entre em contato com o administrador.
+1. Toque em **[!UICONTROL Service Account (JWT)]** para visualização da chave da API, do segredo do cliente e outras informações necessárias para conectar sua instância do AEM local ao serviço de conversão de formulários automatizados. As informações na página são usadas para criar a configuração IMS na máquina local.
 
-1. Tocar **[!UICONTROL View Integrations]**. Uma tela com todas as integrações disponíveis é exibida.
-1. Selecione sua organização no menu suspenso em **[!UICONTROL Integrations]**. Toque **[!UICONTROL New Integration]**, selecione **[!UICONTROL Access an API]** e toque **[!UICONTROL Continue]**.
-1. Selecione **[!UICONTROL Experience Cloud]** > **[!UICONTROL Automated Forms Conversion]** e toque **[!UICONTROL Continue]**. Se a opção Conversão de formulários automatizada estiver desativada para você, verifique se você selecionou a organização correta na caixa suspensa acima da **[!UICONTROL Adobe Services]** opção. Se você não souber sua organização, entre em contato com o administrador.
-
-   ![Selecionar conversão de formulários automatizada](assets/create-new-integration.png)
-
-1. Especifique o nome e a descrição da integração. Toque **[!UICONTROL Select a File from your computer]** e carregue o arquivo AEM-Adobe-IMS.crt baixado na seção [Obter certificados](#obtainpubliccertificates) públicos.
-1. Selecione o perfil criado ao [conceder acesso aos desenvolvedores de sua organização](#adduseranddevs) e toque em **[!UICONTROL Create Integration]**. A integração é criada.
-1. Toque em **[!UICONTROL Continue to integration details]** para visualização das informações de integração. A página contém a chave da API, o segredo do cliente e outras informações necessárias para conectar sua instância do AEM local ao serviço de conversão de formulários automatizados. As informações na página são usadas para criar a configuração IMS na máquina local.
-
-   ![Chave da API, segredo do cliente e informações de carga de uma integração](assets/integration-details.png)
-
-1. Abra a página Configuração IMS na instância local. Você manteve a página aberta no final da seção, [Obter certificado](#obtainpubliccertificates)público.
+1. Abra a página Configuração IMS na instância local. Você manteve a página aberta no final da seção, [Obter certificado público](#obtainpubliccertificates).
 
    ![Especificar título, chave da API, segredo do cliente e carga ](assets/ims-configuration-details.png)
 
-1. Na página Técnica do Adobe IMS, especifique a chave da API e o segredo do cliente. Use os valores especificados na página de integração.
+1. Na página Técnica do Adobe IMS, especifique a chave da API e o segredo do cliente. Use os valores especificados em Service Account (JWT) da página do console do Adobe Developer.
 
-   **Para a carga, use o código fornecido na guia JWT da página de integração.** Tocar  **[!UICONTROL Save]**. A configuração IMS é criada. Feche a página de integração.
+   >[!NOTE]
+   >
+   >
+   >Para a carga, use o código fornecido na guia Gerar JWT da página Conta de serviço (JWT) do Adobe Developer Console.
+
+1. Tocar **[!UICONTROL Save]**. A configuração IMS é criada.
 
    ![Usar valores do campo JWT para o campo de carga](assets/jwt.png)
 
@@ -211,13 +210,13 @@ Para usar o serviço de Conversão de formulários automatizados, crie uma integ
    >
    >Crie apenas uma configuração IMS. Não crie mais de uma configuração IMS.
 
-1. Selecione a configuração IMS e toque em **[!UICONTROL Check Health]**. Uma caixa de diálogo é exibida. Tocar **[!UICONTROL Check]**. Na conexão bem-sucedida, a mensagem *Token recuperado com êxito* é exibida.
+1. Selecione a configuração IMS e toque em **[!UICONTROL Check Health]**. Uma caixa de diálogo é exibida. Tocar **[!UICONTROL Check]**. Ao se conectar com êxito, a mensagem *Token recuperado com êxito* é exibida.
 
    ![Na conexão bem-sucedida, a mensagem do token recuperado com êxito é exibida. ](assets/health-check.png)
 
    <br/> <br/>
 
-#### Configurar o serviço de nuvem {#configure-the-cloud-service}
+#### Configure the cloud service {#configure-the-cloud-service}
 
 Crie uma configuração de serviço em nuvem para conectar sua instância do AEM ao serviço de conversão. Também permite especificar um modelo, tema e fragmentos de formulário para uma conversão. É possível criar várias configurações de serviço em nuvem separadas para cada conjunto de formulários. Por exemplo, você pode ter uma configuração separada para formulários do departamento de vendas e outra separada para formulários de suporte ao cliente. Execute as seguintes etapas para criar uma configuração de serviço em nuvem:
 
