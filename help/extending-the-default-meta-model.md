@@ -7,7 +7,10 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
+source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+workflow-type: tm+mt
+source-wordcount: '2372'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +25,7 @@ O metrosmodelo é um schema JSON. Antes de start com meta-modelo, verifique se v
 
 ## Modelo meta padrão {#default-meta-model}
 
-O serviço de Conversão de formulários automatizados tem um meta-modelo padrão. É um schema JSON e reside na Adobe Cloud com outros componentes do serviço de conversão de formulários automatizados. Você pode encontrar uma cópia do meta-modelo em seu servidor AEM local em:
-
-http://&lt;servidor>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json.
+O serviço de Conversão de formulários automatizados tem um meta-modelo padrão. É um schema JSON e reside na Adobe Cloud com outros componentes do serviço de conversão de formulários automatizados. Você pode encontrar uma cópia do meta-modelo em seu servidor AEM local em: http://&lt;servidor>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. Você também pode [clicar aqui](assets/global.schema.json) para acessar ou baixar o schema padrão.
 
 O schema de meta-modelo é derivado de entidades de schemas em https://schema.org/docs/schemas.html. Ele tem Pessoa, PostalAddress, LocalBusiness e mais entidades, conforme definido em https://schema.org. Cada entidade do metamodelo adere ao tipo de objeto de schema JSON. O código a seguir representa uma estrutura meta-modelo de amostra:
 
