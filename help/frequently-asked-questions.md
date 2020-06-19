@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: b1df14a331dc4aef7ce6383dec0091fa6db1fd7b
+source-git-commit: 3b3bb98352e23544d32c39f0bfb5f0d9b7ae99cf
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1686'
 ht-degree: 5%
 
 ---
@@ -92,7 +92,7 @@ Os motivos mais comuns para a conversão falhar são:</p>
    Você pode usar o metrosmodelo para mapear os objetos de formulário para um componente de formulário adaptável de sua escolha e pré-configurar validações, regras, padrões de dados, texto de ajuda e propriedades de acessibilidade para os componentes. Todas as propriedades especificadas são aplicadas durante a conversão. Você pode usar o modelo meta para aplicar propriedades comuns a campos. Ele pode ajudar a reduzir alguns problemas repetidos em todos os formulários.<br/><br/>
 
 1. **Quais são as opções para formulários com dados confidenciais, como informações de identificação pessoal (PII)?**
-O serviço suporta apenas formulários em branco ou não preenchidos. Não carregue formulários preenchidos ou formulários com informações de identificação pessoal (PII). Além disso, remova os dados pré-preenchidos e as PII de rótulo branco, as informações confidenciais e proprietárias nos formulários de origem. <br/>
+O serviço suporta apenas formulários em branco ou não preenchidos. Não carregue formulários preenchidos ou formulários com informações de identificação pessoal (PII). Além disso, remova os dados pré-preenchidos, as informações de identificação pessoal (PII), as informações confidenciais e proprietárias nos formulários de origem. <br/>
 
 1. **Onde devem ser colocados o cabeçalho e os rodapés?**
    <p>Coloque cabeçalho e rodapé em um modelo de formulários adaptáveis. Se o formulário PDF de origem tiver cabeçalho e rodapé, o serviço detectará e substituirá o cabeçalho e rodapé detectados pelo cabeçalho e rodapé disponíveis no modelo de formulário adaptável, durante a conversão. Se algum cabeçalho ou rodapé extra estiver incluído no formulário adaptável, você poderá usar o editor <a href="review-correct-ui-edited.md">Revisar e corrigir</a> para corrigir ou remover esse cabeçalho ou rodapé.</p> <br />
