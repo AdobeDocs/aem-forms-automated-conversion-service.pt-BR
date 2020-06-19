@@ -10,18 +10,21 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: afe461baa5bcfc1106c16aae2d6a9c839ea675e8
+source-git-commit: 356eb083b889a1bf151c32bc5f01a6d263b96274
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 6%
 
 ---
 
 
 # [NÃO PUBLICAR] Práticas recomendadas e considerações {#do-not-publish-best-practices-and-considerations}
 
-O serviço de conversão automatizada de formulários AEM converte um formulário PDF em um formulário adaptável. O serviço usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente a partir de dados de origem e produz uma saída aprimorada com cada churn. Estes serviços aprendem com a experiência como os humanos.
+O serviço de conversão automatizada do AEM Forms converte um formulário PDF em um formulário adaptável. O serviço usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente a partir de dados de origem e produz uma saída aprimorada com cada churn. Estes serviços aprendem com a experiência como os humanos.
 
-O serviço de Conversão de formulários automatizada é treinado em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. Entretanto, há alguns campos e estilos em formulários PDF que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campos ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
+O serviço de Conversão de formulários automatizada é treinado em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. No entanto, há alguns campos e estilos em PDF forms que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campos ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
 
-O serviço começaria a identificar e atribuir campos ou painéis corretos a esses padrões à medida que continuava aprendendo com os dados de origem. Por enquanto, você pode usar o editor [Revisar e Corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de começar a corrigir os problemas ou a ler mais detalhadamente, familiarize-se com os componentes [de formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptáveis.
+O serviço start a identificação e atribuição de campos ou painéis corretos a esses padrões à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor [Revisar e Corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de o start corrigir os problemas ou ler mais detalhadamente, familiarize-se com os componentes [de formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptáveis.
 
 ## Geral {#general}
 
@@ -29,7 +32,7 @@ O serviço começaria a identificar e atribuir campos ou painéis corretos a ess
 Comment Type: draft
 
 <ul>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.Service does not convert colored PDF forms to adaptive form. Use black and white or grayscale adaptive forms. <br /> </li>
+<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.Service does not convert colored PDF forms to adaptive form. Use  and white or grayscale adaptive forms. <br /> </li>
 <li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.</li>
 <li>Service does not support scanned forms. Do not use scanned forms. </li>
 <li>Service can fail to recognize text and fields in a dense form. Increase the width between text and fields of a dense form before starting the conversion.</li>
@@ -45,11 +48,11 @@ Comment Type: draft
    <td width="70%">Exemplo</td> 
   </tr>
   <tr>
-   <td><p><strong>Padrão</strong></p> <p>O serviço não converte formulários PDF coloridos em formulários adaptáveis.</p> <p> </p> <p><strong>Resolução</strong></p> <p>Use formulários PDF em preto-e-branco ou em tons de cinza. </p> </td> 
+   <td><p><strong>Padrão</strong></p> <p>O serviço não converte PDF forms coloridos em formulários adaptáveis.</p> <p> </p> <p><strong>Resolução</strong></p> <p>Use PDF forms pretos e brancos ou em tons de cinza. </p> </td> 
    <td style="text-align: left;"> <img src="assets/coloured-form.png" /></td> 
   </tr>
   <tr>
-   <td><p><strong>Padrão</strong></p> <p>O serviço não converte formulários PDF preenchidos em formulários adaptáveis.</p> <p> </p> <p><strong>Resolução</strong></p> <p>Use formulários adaptativos vazios.</p> </td> 
+   <td><p><strong>Padrão</strong></p> <p>O serviço não converte PDF forms preenchidos em formulários adaptáveis.</p> <p> </p> <p><strong>Resolução</strong></p> <p>Use formulários adaptativos vazios.</p> </td> 
    <td style="text-align: left;"><img src="assets/pre-filled-form.png" /></td> 
   </tr>
   <tr>
@@ -71,7 +74,7 @@ Comment Type: draft
  </tbody>
 </table>
 
-## Grupo de escolha {#choice-group}
+## Grupo de escolha  {#choice-group}
 
 <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody>
@@ -122,7 +125,7 @@ Comment Type: draft
    <td width="70%">Exemplo</td> 
   </tr>
   <tr>
-   <td><p><strong>Padrão</strong></p> <p>As listas que contêm campos de formulário são mescladas ou não convertidas em componentes de formulário adaptáveis correspondentes</p> <p><strong>Resolução</strong></p> <p>Use campos de formulários com limites claros ou use o Editor de revisão e correção para corrigir esses problemas.</p> </td> 
+   <td><p><strong>Padrão</strong></p> <p>Listas que contêm campos de formulário são mescladas ou não são convertidas em componentes de formulário adaptáveis correspondentes</p> <p><strong>Resolução</strong></p> <p>Use campos de formulários com limites claros ou use o Editor de revisão e correção para corrigir esses problemas.</p> </td> 
    <td><img src="assets/lists-with-fields.png" /></td> 
   </tr>
   <tr>
