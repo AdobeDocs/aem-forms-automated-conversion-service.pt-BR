@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Antes de começar a usar o serviço de conversão de formulários automatizados 
    * Não suporta painéis repetíveis para formulários baseados em XFA.
    * Se você modificar uma lista em uma tabela usando o editor Revisão e Correção, a largura da linha não se ajusta automaticamente e o texto pode se espalhar para a próxima linha da tabela.
    * O **[!UICONTROL Auto-detect multi-column layout from input forms]** recurso não funciona com o editor de Revisão e Correção e Fragmentos de formulário.
-   * Falha ao carregar a Assinatura de script criada com o editor de Revisão e Correção nos formulários adaptativos publicados. Os usuários não podem assinar um formulário adaptável usando esses componentes de assinatura rabisco.
+   * A assinatura de script criada com o editor de Revisão e Correção falha ao carregar para formulários adaptativos publicados.
 
 
 * Para formulários baseados em XFA:
