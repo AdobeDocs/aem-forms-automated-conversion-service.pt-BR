@@ -1,16 +1,16 @@
 ---
 title: 'Converter formulários PDF em formulários adaptáveis '
 seo-title: 'Converter formulários PDF em formulários adaptáveis '
-description: Execute o serviço de Conversão de formulários automatizados para converter formulários PDF em formulários adaptáveis
-seo-description: Execute o serviço de Conversão de formulários automatizados para converter formulários PDF em formulários adaptáveis
+description: Execute o serviço de conversão de formulários automatizados para converter PDF forms em formulários adaptáveis
+seo-description: Execute o serviço de conversão de formulários automatizados para converter PDF forms em formulários adaptáveis
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
+source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1480'
 ht-degree: 8%
 
 ---
@@ -18,27 +18,27 @@ ht-degree: 8%
 
 # Converter formulários PDF em formulários adaptáveis {#convert-print-forms-to-adaptive-forms}
 
-O serviço de Conversão de formulários automatizados do AEM Forms, desenvolvido pelo Adobe Sensei, converte automaticamente seus formulários PDF em formulários adaptativos responsivos e amigáveis ao dispositivo. Quer você esteja usando formulários PDF não interativos, formulários Acro Forms ou formulários PDF baseados em XFA, o serviço de Conversão de formulários automatizados pode converter esses formulários facilmente em formulários adaptáveis. Para obter informações sobre recursos, fluxo de trabalho de conversão e informações de onboard, consulte o serviço de Conversão [de formulários](introduction.md) automatizados.
+O serviço de Conversão de formulários automatizados do AEM Forms, desenvolvido pelo Adobe Sensei, converte automaticamente seus PDF forms em formulários adaptativos responsivos e amigáveis. Quer você esteja usando PDF forms não interativos, Acro Forms ou PDF forms baseados em XFA, o serviço de Conversão de formulários automatizados pode converter facilmente esses formulários em formulários adaptáveis. Para obter informações sobre recursos, fluxo de trabalho de conversão e informações de onboard, consulte o serviço de Conversão [de formulários](introduction.md) automatizados.
 
 ## Pré-requisitos {#pre-requisites}
 
 * [**Configurar o serviço de conversão **](configure-service.md)
 
-* **Prepare os[modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)a serem aplicados aos formulários convertidos:** Usar um modelo permite aplicar marcas consistentes em todos os formulários adaptativos. Além disso, o serviço de Conversão de formulários automatizados não extrai nem usa cabeçalho e rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar cabeçalho e rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão.
+* **Prepare os[modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)a serem aplicados aos formulários convertidos:** Usar um modelo permite aplicar marcas consistentes em todos os formulários adaptativos. Além disso, o serviço de Conversão de formulários automatizados não extrai nem usa cabeçalho e rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar cabeçalho e rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão. Ao criar uma pasta para os modelos, selecione a opção **[!UICControlar configuração]** de navegação para todos.
 
 * **Prepare os[temas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)a serem aplicados aos formulários convertidos:** O uso de um tema permite que você aplique um estilo consistente a todas as formas adaptáveis de sua organização.
 
 ## Start do processo de conversão {#start-the-conversion-process}
 
-Depois de conectar sua instância do AEM com o serviço de conversão de formulários AEM, é possível converter formulários PDF em formulários adaptáveis. Execute as seguintes etapas na ordem listada para converter os formulários:
+Depois de conectar sua instância do AEM com o AEM Forms Conversion Service, é possível converter seus PDF forms em formulários adaptáveis. Execute as seguintes etapas na ordem listada para converter os formulários:
 
-* [Carregar formulários PDF no servidor do AEM Forms](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
+* [Carregar PDF forms em seu servidor AEM Forms](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
 * [Executar a conversão](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
 * [Revisar e corrigir os formulários convertidos](review-correct-ui-edited.md)
 
-### Carregar formulários PDF no servidor do AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
+### Carregar PDF forms em seu servidor AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
 
-O serviço de conversão converte formulários PDF disponíveis na instância do AEM Forms em formulários adaptáveis. Você pode carregar todos os formulários PDF de uma vez ou em fases, conforme necessário. Antes de carregar os formulários, considere o seguinte:
+O serviço de conversão converte PDF forms disponíveis na instância do AEM Forms em formulários adaptáveis. Você pode fazer upload de todas as PDF forms de uma só vez ou em fases, conforme necessário. Antes de carregar os formulários, considere o seguinte:
 
 * Mantenha o número de formulários em uma pasta menor que 15 e mantenha o número total de páginas em uma pasta menor que 50.
 * Mantenha o tamanho da pasta com menos de 10 MB. Não mantenha formulários em uma subpasta.
@@ -61,8 +61,8 @@ Execute as seguintes etapas para carregar os formulários a serem convertidos em
 
 Depois de carregar os formulários e configurar o serviço, execute as seguintes etapas para start da conversão:
 
-1. Na instância do AEM Forms, toque em Caixa de diálogo **[!UICONTROL Adobe Experience Manager]** Configurações de ![conversão >](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** > ![](assets/compass.png) **[!UICONTROL Forms]** **[!UICONTROL Forms & Documents]**.
-1. Selecione um formulário ou a pasta que contém formulários PDF (formulários a serem convertidos) e toque em **[!UICONTROL Start Automated Conversion]**. A **[!UICONTROL Conversion Settings]** caixa de diálogo é exibida.
+1. Na instância do AEM Forms, toque em **[!UICONTROL Adobe Experience Manager]** Configurações de ![conversão > Caixa de diálogo](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecione um formulário ou a pasta que contém PDF forms (formulários a serem convertidos) e toque em **[!UICONTROL Start Automated Conversion]**. A **[!UICONTROL Conversion Settings]** caixa de diálogo é exibida.
 
    ![Especificar as configurações](assets/conversion-settings-dialog.png)
 
@@ -84,12 +84,12 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
 
 1. Na **[!UICONTROL Additional]** guia da caixa de diálogo Configurações de conversão,
    * Selecione a **[!UICONTROL Extract fragment from adaptive forms]** opção para permitir que o serviço de conversão identifique, extraia e baixe fragmentos de formulário para formulários convertidos. Quando você seleciona a **[!UICONTROL Extract fragment from adaptive forms]** opção, as opções para especificar caminhos para salvar fragmentos de formulário extraídos e schemas de fragmentos de formulário correspondentes são ativadas.
-   * Especifique o local do **[!UICONTROL existing adaptive form fragments]**, se você tiver fragmentos de formulário baseados em schemas JSON e menos adaptáveis baseados em schemas e planeja usar esses fragmentos em formulários adaptáveis gerados automaticamente. O serviço de conversão corresponde aos fragmentos de formulário disponíveis baseados em schemas JSON e menos adaptáveis em schema com os formulários PDF de entrada (somente formulários PDF não interativos), se houver uma correspondência, o fragmento de formulário adaptável correspondente será usado nos formulários adaptáveis correspondentes.
+   * Especifique o local do **[!UICONTROL existing adaptive form fragments]**, se você tiver fragmentos de formulário baseados em schemas JSON e menos adaptáveis baseados em schemas e planeja usar esses fragmentos em formulários adaptáveis gerados automaticamente. O serviço de conversão corresponde aos fragmentos de formulário disponíveis baseados no schema JSON e menos adaptáveis do schema com PDF forms de entrada (somente PDF forms não interativos), se houver uma correspondência, o fragmento de formulário adaptável correspondente será usado nos formulários adaptáveis correspondentes.
    >[!NOTE]
    >
    >
    > * Você pode usar somente **[!UICONTROL  Extract Fragment]** ou **[!UICONTROL Use existing adaptive form fragments]** a opção de cada vez. Não é possível usar ambas as opções simultaneamente.
-   > * É possível usar a **[!UICONTROL Use existing adaptive form fragments]** opção somente com formulários PDF não interativos. Outros tipos de formulário ainda não são suportados.
+   > * Você pode usar a **[!UICONTROL Use existing adaptive form fragments]** opção somente com PDF forms não interativos. Outros tipos de formulário ainda não são suportados.
    > * Você pode usar apenas fragmentos ou fragmentos não vinculados a um schema JSON com o serviço de conversão automatizada. Não use fragmentos XFA. Fragmentos XFA não são suportados.
 
 
@@ -136,4 +136,4 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
 
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
-Os formulários do mundo real têm requisitos complexos de captura de dados. Quando a conversão automática estiver concluída, os clientes poderão revisar a qualidade de conversão do formulário e fazer as atualizações necessárias para o formulário. O AEM Forms fornece um editor de [revisão e correção](review-correct-ui-edited.md) para fazer as alterações necessárias. Permite melhorar a identificação automatizada de campos de formulário e converter campos identificados de um tipo para outro. Por exemplo, você pode ajudar a identificar o layout de duas colunas de um formulário e alterar um campo identificado automaticamente como botão de opção para o campo de várias opções.
+Os formulários do mundo real têm requisitos complexos de captura de dados. Quando a conversão automática estiver concluída, os clientes poderão revisar a qualidade de conversão do formulário e fazer as atualizações necessárias para o formulário. O AEM Forms fornece um editor [de revisão e correção](review-correct-ui-edited.md) para fazer as alterações necessárias. Permite melhorar a identificação automatizada de campos de formulário e converter campos identificados de um tipo para outro. Por exemplo, você pode ajudar a identificar o layout de duas colunas de um formulário e alterar um campo identificado automaticamente como botão de opção para o campo de várias opções.
