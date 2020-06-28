@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
+source-git-commit: 5fdf997fdde07cc4546accebddb85a248f36e057
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1477'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ O serviço de Conversão de formulários automatizados do AEM Forms, desenvolvid
 
 * [**Configurar o serviço de conversão **](configure-service.md)
 
-* **Prepare os[modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)a serem aplicados aos formulários convertidos:** Usar um modelo permite aplicar marcas consistentes em todos os formulários adaptativos. Além disso, o serviço de Conversão de formulários automatizados não extrai nem usa cabeçalho e rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar cabeçalho e rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão. Ao criar uma pasta para os modelos, selecione a opção **[!UICControlar configuração]** de navegação para todos.
+* **Prepare os[modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)a serem aplicados aos formulários convertidos:** Usar um modelo permite aplicar marcas consistentes em todos os formulários adaptativos. Além disso, o serviço de Conversão de formulários automatizados não extrai nem usa cabeçalho e rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar cabeçalho e rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão. Ao criar uma pasta para os modelos, selecione a **[!UICONTROL Browse configurations]** opção para todos.
 
 * **Prepare os[temas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)a serem aplicados aos formulários convertidos:** O uso de um tema permite que você aplique um estilo consistente a todas as formas adaptáveis de sua organização.
 
