@@ -7,7 +7,10 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 2fcceb45d9be4297fcd923f5a17c7b593294e855
+source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+workflow-type: tm+mt
+source-wordcount: '785'
+ht-degree: 1%
 
 ---
 
@@ -25,15 +28,17 @@ Antes de começar a usar o serviço de conversão de formulários automatizados 
    * Não suporta painéis repetíveis para formulários baseados em XFA.
    * Se você modificar uma lista em uma tabela usando o editor Revisão e Correção, a largura da linha não se ajusta automaticamente e o texto pode se espalhar para a próxima linha da tabela.
    * O **[!UICONTROL Auto-detect multi-column layout from input forms]** recurso não funciona com o editor de Revisão e Correção e Fragmentos de formulário.
+   * Falha ao carregar a Assinatura de script criada com o editor de Revisão e Correção nos formulários adaptativos publicados. Os usuários não podem assinar um formulário adaptável usando esses componentes de assinatura rabisco.
+
 
 * Para formulários baseados em XFA:
    * Não há suporte para a extração de fragmentos de um formulário baseado em XFA.
    * Scripts XFA não são suportados. Por exemplo, scripts para gerar valores automaticamente para um componente suspenso.
    * Metmodelo não funciona para o grupo de escolha
    * A opção Grupos de escolha com um único caractere não é identificada
-   * Quando o documento de origem é um XFA dinâmico (.XDP) e [define o comportamento das propriedades XFA em um formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)adaptável, a propriedade presence do documento de origem não é respeitada. Por exemplo, um campo no documento de origem é marcado como oculto e um script torna o campo visível, então o campo permanece visível no formulário adaptável de saída.
+   * Quando o documento de origem é um XFA dinâmico (.XDP) e [define o comportamento das propriedades XFA em um formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)adaptável, a propriedade presence do documento de origem não é respeitada. Por exemplo, um campo no documento de origem é marcado como oculto e um script torna o campo visível e, em seguida, o campo permanece visível no formulário adaptável de saída.
 
-* Ao usar a opção **Usar formulário de entrada como documento de registro (DoR) para formulários** adaptativos gerados, considere o seguinte:
+* Ao usar a opção **Usar formulário de entrada como Documento de registro (DoR) para formulários** adaptativos gerados, considere o seguinte:
 
 <table>
     <tr>
@@ -41,7 +46,7 @@ Antes de começar a usar o serviço de conversão de formulários automatizados 
         <td><img  src="assets/creditCard_Composite.png"/>                                                            </td>
     </tr>
     <tr>
-        <td>O vínculo e os dados são perdidos para campos de data compostos. Um campo de data composto é composto de três campos diferentes. Por exemplo, um campo de data de nascimento em um AcroForm é dividido em três campos separados. O formulário adaptável fornece um componente de seletor de datas pronto para uso. Para usar o componente do seletor de datas do formulário adaptável e, ao mesmo tempo, reter o vínculo do AcroForm, antes de converter um AcroForm em formulário adaptável, modifique o AcroForm para usar um único campo de data.</td>
+        <td>O vínculo e os dados são perdidos para campos de data compostos. Um campo de data composto é composto de três campos diferentes. Por exemplo, um campo de data de nascimento em um AcroForm é dividido em três campos separados. O formulário adaptável fornece um componente de seletor de datas pronto para uso. Para usar o componente do seletor de datas do formulário adaptável e, ao mesmo tempo, reter o vínculo do AcroForm, antes de converter um AcroForm em um formulário adaptável, modifique o AcroForm para usar um único campo de data.</td>
         <td><img  src="assets/CompositeDateField.png"/></td>
     </tr>
     <tr>
@@ -57,19 +62,19 @@ Antes de começar a usar o serviço de conversão de formulários automatizados 
         <td></td>
     </tr>
     <tr >
-        <td>Os limites de algumas tabelas são estendidos para fora da página no documento de registro gerado automaticamente (DoR). </td>
+        <td>Os limites de algumas tabelas são estendidos para fora da página no documento de registro (DoR) gerado automaticamente. </td>
         <td></td>
     </tr>
 </table>
 
-## Limitações {#limitations}
+## Limitações          {#limitations}
 
-* Não há suporte para formulários PDF com layout dinâmico complexo, campos com contorno pontilhado, campos preenchidos ou campos coloridos.
-* Imagens e texto dentro das imagens não são identificados. Adicionar imagens manualmente a formulários convertidos.
-* Documentos XDP de arte não são suportados.
-* Não há suporte para formulários PDF com mais de 15 páginas.
-* Documentos criptografados, protegidos por senha e protegidos não são convertidos. Remova a criptografia ou as senhas antes de executar a conversão.
+* Não há suporte para PDF forms com layout dinâmico complexo, campos com contorno pontilhado, campos preenchidos ou campos coloridos.
+* Imagens e texto dentro das imagens não são identificados. Adicione manualmente imagens a formulários convertidos.
+* documentos XDP de arte não são suportados.
+* Não há suporte para PDF forms maiores que 15 páginas.
+* documentos criptografados, protegidos por senha e protegidos não são convertidos. Remova a criptografia ou as senhas antes de executar a conversão.
 * Tabelas complexas como tabelas sem bordas, tabelas aninhadas, tabelas com linhas coloridas e tabelas com valores de espaço reservado não são suportadas. Use o editor de formulário adaptável para adicionar ou modificar tabelas complexas, após a conversão. Somente tabelas simples, com campos vazios, cabeçalhos adequados e limites de limpeza são suportados.
-* O serviço converte somente formulários em inglês em formulários adaptáveis. Você pode traduzir formulários adaptativos convertidos para outro idioma usando o fluxo de trabalho [de tradução do](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)AEM.
+* O serviço converte somente formulários em inglês em formulários adaptáveis. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * O AEM 6.4 Forms não oferece suporte à detecção automática do layout de várias colunas de formulários de entrada.
 
