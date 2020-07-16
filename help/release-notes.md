@@ -2,9 +2,9 @@
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários '
 translation-type: tm+mt
-source-git-commit: 9fe3de9decbebc66c07d99b21424e3183599c64a
+source-git-commit: caa019d1a7dd1968a52df5ec5be4755e1c6c4ee6
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 94%
 
 ---
@@ -28,7 +28,7 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 
 ### O que foi melhorado
 
-Melhorias na conversão automática de campos de texto, formulário e grupo de opções para os componentes de formulário adaptáveis correspondentes.
+Melhorias na conversão automática de campos de texto, formulário e grupo de opções em componentes de formulário adaptáveis correspondentes.
 
 ## 20 de março de 2020 (AFC-2020.03.1)
 
