@@ -10,9 +10,9 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: 356eb083b889a1bf151c32bc5f01a6d263b96274
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '555'
 ht-degree: 6%
 
 ---
@@ -20,26 +20,13 @@ ht-degree: 6%
 
 # [NÃO PUBLICAR] Práticas recomendadas e considerações {#do-not-publish-best-practices-and-considerations}
 
-O serviço de conversão automatizada do AEM Forms converte um formulário PDF em um formulário adaptável. O serviço usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente a partir de dados de origem e produz uma saída aprimorada com cada churn. Estes serviços aprendem com a experiência como os humanos.
+O serviço de Conversão automatizada da AEM Forms converte um formulário PDF em um formulário adaptável. O serviço usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente a partir de dados de origem e produz uma saída aprimorada com cada churn. Estes serviços aprendem com a experiência como os humanos.
 
-O serviço de Conversão de formulários automatizada é treinado em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. No entanto, há alguns campos e estilos em PDF forms que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campos ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
+O serviço Automated Forms Conversion é treinado em um grande conjunto de formulários. Ela identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. No entanto, há alguns campos e estilos em PDF forms que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campos ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
 
 O serviço start a identificação e atribuição de campos ou painéis corretos a esses padrões à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor [Revisar e Corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de o start corrigir os problemas ou ler mais detalhadamente, familiarize-se com os componentes [de formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adaptáveis.
 
 ## Geral {#general}
-
-<!--
-Comment Type: draft
-
-<ul>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.Service does not convert colored PDF forms to adaptive form. Use  and white or grayscale adaptive forms. <br /> </li>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.</li>
-<li>Service does not support scanned forms. Do not use scanned forms. </li>
-<li>Service can fail to recognize text and fields in a dense form. Increase the width between text and fields of a dense form before starting the conversion.</li>
-<li>Service does not extract images. Manually add images to converted forms.</li>
-<li>Service does not extract text present within an image. Manually add text to the adaptive form.</li>
-</ul>
--->
 
 <table border="1" cellpadding="1" cellspacing="0" style="border-collapse: separate; border-spacing: 0px;" width="100%"> 
  <tbody>
@@ -47,11 +34,6 @@ Comment Type: draft
    <td width="30%">Padrões e resolução conhecidos</td> 
    <td width="70%">Exemplo</td> 
   </tr>
-  <tr>
-   <td><p><strong>Padrão</strong></p> <p>O serviço não converte PDF forms coloridos em formulários adaptáveis.</p> <p> </p> <p><strong>Resolução</strong></p> <p>Use PDF forms pretos e brancos ou em tons de cinza. </p> </td> 
-   <td style="text-align: left;"> <img src="assets/coloured-form.png" /></td> 
-  </tr>
-  <tr>
    <td><p><strong>Padrão</strong></p> <p>O serviço não converte PDF forms preenchidos em formulários adaptáveis.</p> <p> </p> <p><strong>Resolução</strong></p> <p>Use formulários adaptativos vazios.</p> </td> 
    <td style="text-align: left;"><img src="assets/pre-filled-form.png" /></td> 
   </tr>
@@ -83,7 +65,7 @@ Comment Type: draft
    <td width="70%">Exemplo</td> 
   </tr>
   <tr>
-   <td><p><strong>Padrão</strong></p> <p>As opções de grupo de escolha com formas diferentes de caixa ou círculo não são convertidas em componentes de formulário adaptáveis correspondentes. </p> <p> </p> <p><strong>Resolução</strong></p> <p>Altere as formas das opções de escolha para caixa ou círculo ou use o Editor de revisão e correção para identificar as formas.</p> </td> 
+   <td><p><strong>Padrão</strong></p> <p>As opções de grupo de opções com formas diferentes de caixa ou círculo não são convertidas em componentes de formulário adaptáveis correspondentes. </p> <p> </p> <p><strong>Resolução</strong></p> <p>Altere as formas das opções de escolha para caixa ou círculo ou use o Editor de revisão e correção para identificar as formas.</p> </td> 
    <td><img src="assets/shaded-box-patterns.png" /> </td> 
   </tr>
  </tbody>
