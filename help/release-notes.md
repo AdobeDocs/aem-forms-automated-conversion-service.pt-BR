@@ -2,7 +2,7 @@
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários '
 translation-type: tm+mt
-source-git-commit: bf14583de678ef963b0f2084c3da4624c9304b30
+source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 89%
@@ -28,7 +28,7 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 
 ### Novidades
 
-Adicionado suporte para converter formulários PDF coloridos em formulários adaptáveis.
+Adicionado suporte para converter PDF forms coloridos em formulários adaptáveis.
 
 ### O que foi melhorado
 
