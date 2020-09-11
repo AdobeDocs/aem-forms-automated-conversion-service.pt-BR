@@ -2,10 +2,10 @@
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários '
 translation-type: tm+mt
-source-git-commit: 1c6bdd03d5a3ac37a11a31e5c7948c28412b67aa
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 92%
+source-wordcount: '343'
+ht-degree: 88%
 
 ---
 
@@ -26,9 +26,14 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 
 ## 16 de julho de 2020 (AFC-2020.07.0)
 
+### Novidades
+
+Agora você pode usar o serviço para converter também formulários PDF coloridos em formulários adaptáveis.
+
 ### O que foi melhorado
 
 Melhorias na conversão automática de campos de texto, formulário e grupo de opções em componentes de formulário adaptáveis correspondentes.
+
 
 ## 20 de março de 2020 (AFC-2020.03.1)
 
