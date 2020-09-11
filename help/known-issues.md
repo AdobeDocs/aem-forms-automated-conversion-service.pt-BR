@@ -1,22 +1,22 @@
 ---
 title: Problemas conhecidos
 seo-title: Problemas conhecidos
-description: problemas conhecidos e limitações do serviço de conversão de formulários automatizados
-seo-description: Antes de começar a usar o serviço de conversão de formulários automatizados do AEM Forms, saiba mais sobre os problemas conhecidos e as limitações do serviço
+description: problemas conhecidos e limitações do serviço de conversão automatizado Forms
+seo-description: Antes de começar a usar o serviço AEM Forms Automated Forms Conversion, saiba mais sobre os problemas conhecidos e as limitações do serviço
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
 
 # Problemas conhecidos e limitações {#known-issues-limitations}
 
-Antes de começar a usar o serviço de conversão de formulários automatizados do AEM Forms, analise os seguintes problemas conhecidos e limitações:
+Antes de começar a usar o serviço AEM Forms Automated Forms Conversion, analise os seguintes problemas conhecidos e limitações:
 
 ## Problemas conhecidos {#known-issues}
 
@@ -67,14 +67,14 @@ Antes de começar a usar o serviço de conversão de formulários automatizados 
     </tr>
 </table>
 
-## Limitações          {#limitations}
+## Limitações           {#limitations}
 
-* Não há suporte para PDF forms com layout dinâmico complexo, campos com contorno pontilhado, campos preenchidos ou campos coloridos.
+* Não há suporte para PDF forms com layout dinâmico complexo, campos com contorno pontilhado ou campos preenchidos.
 * Imagens e texto dentro das imagens não são identificados. Adicione manualmente imagens a formulários convertidos.
-* documentos XDP de arte não são suportados.
+* Documentos XDP de arte não são suportados.
 * Não há suporte para PDF forms maiores que 15 páginas.
-* documentos criptografados, protegidos por senha e protegidos não são convertidos. Remova a criptografia ou as senhas antes de executar a conversão.
-* Tabelas complexas como tabelas sem bordas, tabelas aninhadas, tabelas com linhas coloridas e tabelas com valores de espaço reservado não são suportadas. Use o editor de formulário adaptável para adicionar ou modificar tabelas complexas, após a conversão. Somente tabelas simples, com campos vazios, cabeçalhos adequados e limites de limpeza são suportados.
+* Documentos criptografados, protegidos por senha e protegidos não são convertidos. Remova a criptografia ou as senhas antes de executar a conversão.
+* Tabelas complexas como tabelas sem bordas, tabelas aninhadas e tabelas com valores de espaço reservado não são suportadas. Use o editor de formulário adaptável para adicionar ou modificar tabelas complexas, após a conversão. Somente tabelas simples, com campos vazios, cabeçalhos adequados e limites de limpeza são suportados.
 * O serviço converte somente formulários em inglês em formulários adaptáveis. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
-* O AEM 6.4 Forms não oferece suporte à detecção automática do layout de várias colunas de formulários de entrada.
+* AEM 6.4 A Forms não oferece suporte à detecção automática do layout de várias colunas de formulários de entrada.
 
