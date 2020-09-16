@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Adicionado suporte para converter PDF forms coloridos em formulários adaptávei
 
 ### O que foi melhorado
 
-Melhorias na conversão automática de campos de texto, formulário e grupo de opções em componentes de formulário adaptáveis correspondentes.
+Melhorias na conversão automática de campos de texto, formulário e grupo de opções para os componentes de formulário adaptáveis correspondentes.
 
 
 ## 20 de março de 2020 (AFC-2020.03.1)
@@ -51,7 +51,7 @@ O serviço agora é mais eficiente na detecção de listas com marcadores e nume
 
 ### Instruções especiais
 
-**Instale o pacote do conector do serviço de conversão automatizado Forms**
+**Instalar o pacote de conectores do Serviço de conversão automática de formulários**
 
 Você precisa do pacote de conectores 1.1.38 ou superior para usar os recursos e as melhorias mais recentes fornecidos na versão AFC-2020.03.1. Você pode baixar o pacote de conectores no [Compartilhamento de pacotes do AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
