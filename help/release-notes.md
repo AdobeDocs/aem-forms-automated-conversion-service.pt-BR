@@ -1,11 +1,11 @@
 ---
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
