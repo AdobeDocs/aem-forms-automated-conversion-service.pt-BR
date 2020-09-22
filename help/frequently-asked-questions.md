@@ -7,10 +7,10 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 5%
+source-wordcount: '1822'
+ht-degree: 4%
 
 ---
 
@@ -132,4 +132,11 @@ O erro mencionado anteriormente ocorre quando a delegação de inicialização n
    <br/>
 
 1. **Como alterar automaticamente a capitalização do texto de formulário adaptável?**
+
    <p>Você pode usar adaptativos de temas ou editor de estilos para alterar a capitalização de um campo de formulário adaptável. Por exemplo, você pode abrir o editor de temas e definir o valor da propriedade Case de todo o texto do formulário para maiúsculas, minúsculas ou camelCase. Você também pode usar a opção Substituição de CSS no editor de temas para criar diferentes tipos de estilos.</p>
+
+1. **Posso usar tags de texto da Adobe Sign com o serviço de conversão automatizada da Forms?**
+
+   <p> Quando você usa o serviço de conversão automatizado do Forms para converter um formulário PDF em um formulário adaptável e o formulário PDF possui tags de texto Adobe Sign, essas tags são convertidas em campos de formulário adaptáveis correspondentes e os detalhes do assinante são automaticamente preenchidos.  O recurso está disponível somente para o Acro Forms e os formulários adaptativos suportam um número limitado de campos Adobe Sign.</p>  </br>
+
+   <p> Para obter a lista completa das tags compatíveis, abra um formulário no editor de formulários adaptáveis e adicione um bloco Adobe Sign. Use o bloco Adobe Sign para localizar todos os campos do Adobe Sign suportados. Ela fornece uma lista suspensa para selecionar todos os campos suportados.</p>
