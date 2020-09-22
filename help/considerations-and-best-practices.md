@@ -1,6 +1,5 @@
 ---
-title: '[NÃO PUBLICAR] Práticas recomendadas e considerações '
-seo-title: '[NÃO PUBLICAR] Práticas recomendadas e considerações '
+title: 'Práticas recomendadas e considerações '
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -10,15 +9,19 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: bc7a0a86a211214d6e43e7c95809f6f40fe267f8
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 6%
+source-wordcount: '542'
+ht-degree: 8%
 
 ---
 
 
-# [NÃO PUBLICAR] Práticas recomendadas e considerações {#do-not-publish-best-practices-and-considerations}
+# Práticas recomendadas e considerações {#do-not-publish-best-practices-and-considerations}
+
+<!--
+[DO NOT PUBLISH]
+-->
 
 O serviço de Conversão automatizada da AEM Forms converte um formulário PDF em um formulário adaptável. O serviço usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente a partir de dados de origem e produz uma saída aprimorada com cada churn. Estes serviços aprendem com a experiência como os humanos.
 
