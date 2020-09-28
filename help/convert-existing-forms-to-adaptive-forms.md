@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
+source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1585'
 ht-degree: 7%
 
 ---
@@ -30,8 +30,8 @@ O serviço AEM Forms Automated Forms Conversion, desenvolvido pela Adobe Sensei,
 
 * **Adicione tags de texto do Adobe Sign a documentos PDF de origem:** Quando o formulário PDF de origem tiver tags [de texto do](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, o serviço automaticamente as tags serão convertidas em campos de formulário adaptáveis correspondentes e os detalhes do assinante serão automaticamente preenchidos. O recurso está disponível somente para AcroForms e formulários adaptativos suportam um número limitado de campos Adobe Sign.
 
-
-   Para obter a lista completa das tags compatíveis, abra um formulário no editor de formulários adaptáveis e adicione um bloco Adobe Sign. Use o bloco Adobe Sign para localizar todos os campos do Adobe Sign suportados. Ela fornece uma lista suspensa para selecionar todos os campos suportados.
+   </br>
+    O formulário adaptável suporta apenas os campos assinatura, texto, número, data, suspensa, botão de opção, caixa de seleção, inicial, bloco de assinatura, assinatura digital, título do assinante, email do assinante, empresa do assinante, data de assinatura e nome completo do assinante Adobe Sign. Portanto, o serviço converte tags de texto somente dos campos mencionados anteriormente em campos de formulário adaptáveis correspondentes.
 
 ## Start do processo de conversão {#start-the-conversion-process}
 
