@@ -1,9 +1,9 @@
 ---
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários '
-translation-type: ht
-source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8808e2d9c762617ba67e2f1ab4e103f828e11c58
+workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Melhorias na conversão automática de campos de texto, formulário e grupo de o
 
 Por padrão, o serviço cria um painel de nível superior separado para cada página de um formulário PDF. Agora, você pode usar a opção **[!UICONTROL Auto-detect logical sections]** para soltar painéis no nível da página (painéis baseados em números de página) e criar apenas painéis lógicos. Ele também agrupa os campos que não pertencem a nenhuma seção com a seção lógica anterior e agrupa os campos de uma seção lógica espalhados por duas páginas adjacentes em uma única seção lógica. Por exemplo, se alguns campos de uma seção lógica estiverem no final da página um e alguns estiverem no início da página dois, todos esses campos serão agrupados em uma única seção lógica.
 
-### O que foi melhorado
+### O que foi melhorado {#improvements}
 
 **Melhorias na detecção de listas**
 
