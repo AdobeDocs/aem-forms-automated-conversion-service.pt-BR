@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
+source-git-commit: 0bff37d64df233dc52310266e306edb734887727
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1599'
 ht-degree: 7%
 
 ---
@@ -24,14 +24,15 @@ O serviço AEM Forms Automated Forms Conversion, desenvolvido pela Adobe Sensei,
 
 * [**Configurar o serviço de conversão**](configure-service.md)
 
-* **Prepare os[modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)a serem aplicados aos formulários convertidos:** O uso de um modelo permite aplicar marcas consistentes em todos os formulários adaptativos. Além disso, o serviço de conversão automatizada da Forms não extrai nem usa o cabeçalho e o rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar cabeçalho e rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão. Ao criar uma pasta para os modelos, selecione a **[!UICONTROL Browse configurations]** opção para todos.
+* **Prepare os [modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) a serem aplicados aos formulários convertidos:** O uso de um modelo permite aplicar marcas consistentes em todos os formulários adaptativos. Além disso, o serviço de conversão automatizada da Forms não extrai nem usa o cabeçalho e o rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar cabeçalho e rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão. Ao criar uma pasta para os modelos, selecione a **[!UICONTROL Browse configurations]** opção para todos.
 
-* **Prepare os[temas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)a serem aplicados aos formulários convertidos:** O uso de um tema permite que você aplique um estilo consistente a todas as formas adaptáveis de sua organização.
+* **Prepare os [temas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) a serem aplicados aos formulários convertidos:** O uso de um tema permite que você aplique um estilo consistente a todas as formas adaptáveis de sua organização.
 
-* **Adicione tags de texto do Adobe Sign a documentos PDF de origem:** Quando o formulário PDF de origem tiver tags [de texto do](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, o serviço automaticamente as tags serão convertidas em campos de formulário adaptáveis correspondentes e os detalhes do assinante serão automaticamente preenchidos. O recurso está disponível somente para AcroForms e formulários adaptativos suportam um número limitado de campos Adobe Sign.
+* **Adicione tags de texto do Adobe Sign a documentos PDF de origem:** Quando um formulário PDF de origem tem tags [de texto da](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, o serviço preserva todas as informações relacionadas ao assinante durante a conversão. O formulário adaptativo gerado preenche todos os detalhes do assinante ao enviar o formulário adaptável para o serviço Adobe Sign para assinatura. O recurso está disponível somente para AcroForms e as propriedades do formulário Adaptive estão exatamente alinhadas com as propriedades do AcroForm.
 
-   </br>
-    O formulário adaptável suporta apenas os campos assinatura, texto, número, data, suspensa, botão de opção, caixa de seleção, inicial, bloco de assinatura, assinatura digital, título do assinante, email do assinante, empresa do assinante, data de assinatura e nome completo do assinante Adobe Sign. Portanto, o serviço converte tags de texto somente dos campos mencionados anteriormente em campos de formulário adaptáveis correspondentes.
+   Para adicionar tags de texto Adobe Sign aos documentos PDF de origem, substitua o nome do campo no documento PDF de origem por uma Tag [de](https://helpx.adobe.com/sign/using/text-tag.html) texto ou use o formulário Converter para Adobe Sign conforme descrito em [Criar formulários usando o artigo do Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
+
+
 
 ## Start do processo de conversão {#start-the-conversion-process}
 
