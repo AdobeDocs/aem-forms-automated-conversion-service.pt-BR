@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 0bff37d64df233dc52310266e306edb734887727
+source-git-commit: 773dae94d4e65b72de3518ebf5be4350db34fbb0
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1605'
 ht-degree: 7%
 
 ---
@@ -28,7 +28,7 @@ O serviço AEM Forms Automated Forms Conversion, desenvolvido pela Adobe Sensei,
 
 * **Prepare os [temas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) a serem aplicados aos formulários convertidos:** O uso de um tema permite que você aplique um estilo consistente a todas as formas adaptáveis de sua organização.
 
-* **Adicione tags de texto do Adobe Sign a documentos PDF de origem:** Quando um formulário PDF de origem tem tags [de texto da](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, o serviço preserva todas as informações relacionadas ao assinante durante a conversão. O formulário adaptativo gerado preenche todos os detalhes do assinante ao enviar o formulário adaptável para o serviço Adobe Sign para assinatura. O recurso está disponível somente para AcroForms e as propriedades do formulário Adaptive estão exatamente alinhadas com as propriedades do AcroForm.
+* **Adicione tags de texto do Adobe Sign a documentos PDF de origem:** Quando um formulário PDF de origem tem tags [de texto da](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign, o serviço preserva todas as informações relacionadas à Adobe Sign durante a conversão. O formulário adaptativo gerado mantém intactos os campos de formulário adaptativo relacionados às informações do assinante enquanto envia o formulário adaptativo para o serviço Adobe Sign para assinatura. O recurso está disponível somente para AcroForms e as propriedades do formulário Adaptive estão exatamente alinhadas com as propriedades do AcroForm.
 
    Para adicionar tags de texto Adobe Sign aos documentos PDF de origem, substitua o nome do campo no documento PDF de origem por uma Tag [de](https://helpx.adobe.com/sign/using/text-tag.html) texto ou use o formulário Converter para Adobe Sign conforme descrito em [Criar formulários usando o artigo do Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
 
