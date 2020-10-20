@@ -1,5 +1,5 @@
 ---
-source-git-commit: 55bee52ffe5dce8f6fd43f6212a8b6d5772d2a31
+source-git-commit: d2af4611e68447253a818e0c83ff3ec519056373
 workflow-type: tm+mt
 translation-type: tm+mt
 source-wordcount: '517'
@@ -10,7 +10,7 @@ ht-degree: 21%
 
 | EXL-PR | EXL | Visualizar | Ativar | Publicado | Ajuda |
 |--- |--- |--- |--- |--- |--- |
-| [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/lastBuild/) | [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/lastBuild) | [URL de pré-visualização](https://experienceleague.corp.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [ativate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/home.html?lang=en) | [Guia de criação](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/introduction.html?lang=en) |
+| [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/lastBuild/) | [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/lastBuild) | [URL de pré-visualização](https://experienceleague.corp.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [ativate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [Guia de criação](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Saudamos as contribuições de conteúdo de nossos funcionários da comunidade e do Adobe fora das equipes de documentação.
 
