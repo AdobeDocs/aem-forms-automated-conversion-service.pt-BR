@@ -7,7 +7,7 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+source-git-commit: ac110cc2e8b29603fb7ff8b86c5d323f13bc204e
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 4%
@@ -142,4 +142,7 @@ O erro mencionado anteriormente ocorre quando a delegação de inicialização n
    <p> Para obter a lista completa das tags compatíveis, abra um formulário no editor de formulários adaptáveis e adicione um bloco Adobe Sign. Use o bloco Adobe Sign para localizar todos os campos do Adobe Sign suportados. Ela fornece uma lista suspensa para selecionar todos os campos suportados.</p>
 
 1. **Como criar um formulário PDF habilitado para Adobe Sign?**
-Para criar um formulário PDF habilitado para Adobe Sign, adicione tags [de texto para](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign a nomes de campos ou use a opção [Converter em formulário](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) Adobe Sign. </br>
+
+   </p>Para criar um formulário PDF habilitado para Adobe Sign:</p>
+
+   Adicione tags [de texto do](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign a nomes de campos ou use a opção [Converter em formulário](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) do Adobe Sign.
