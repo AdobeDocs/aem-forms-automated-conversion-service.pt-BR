@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 589eacfd6200f4336b7a4a7708e10f3dfe08406d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
@@ -77,4 +77,7 @@ Antes de começar a usar o serviço AEM Forms Automated Forms Conversion, analis
 * Tabelas complexas como tabelas sem bordas, tabelas aninhadas e tabelas com valores de espaço reservado não são suportadas. Use o editor de formulário adaptável para adicionar ou modificar tabelas complexas, após a conversão. Somente tabelas simples, com campos vazios, cabeçalhos adequados e limites de limpeza são suportados.
 * O serviço converte somente formulários em inglês em formulários adaptáveis. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 A Forms não oferece suporte à detecção automática do layout de várias colunas de formulários de entrada.
+* As informações codificadas usando cores no formulário PDF de origem não são transferidas para o formulário adaptável.
+* As cores do formulário PDF de origem são transferidas para temas de formulário adaptáveis.
+* Os PDF forms coloridos são tratados como formulários em tons de cinza e os campos são detectados de acordo.
 
