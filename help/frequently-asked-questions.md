@@ -2,7 +2,7 @@
 title: Perguntas frequentes
 seo-title: Perguntas frequentes
 description: Query comuns ou perguntas frequentes
-seo-description: perguntas frequentes sobre o Automated Forms Conversion Service
+seo-description: perguntas frequentes sobre o Serviço de Automateds forms conversion
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
@@ -17,26 +17,26 @@ ht-degree: 4%
 
 # Perguntas frequentes{#frequently-asked-questions}
 
-1. **Que versão do AEM Forms o serviço de conversão automatizada da Forms oferece suporte?**
+1. **Que versão do AEM Forms o serviço de Automated forms conversion suporta?**
 
-   <p>O serviço Automated Forms Conversion oferece suporte ao Forms AEM 6.4 e ao Forms AEM 6.5. Funciona com AEM Forms em formulários OSGi e AEM em JEE. Você precisa do pacote complementar mais recente do AEM Forms sobre AEM instância do autor para usar o serviço. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
+   <p>O serviço de automated forms conversion suporta AEM 6.4 Forms e AEM 6.5 Forms. Funciona com AEM Forms em formulários OSGi e AEM em JEE. Você precisa do pacote complementar mais recente do AEM Forms sobre AEM instância do autor para usar o serviço. Para obter instruções detalhadas, consulte <a href="configure-service.md">Configurar o serviço Automated forms conversion</a>.</p> 
     <br>
 
 1. **O serviço pode ser instalado no local?**
 
-   <p>O Adobe treina os algoritmos AI e ML do serviço Automated Forms Conversion regularmente com novos conjuntos de dados para melhorar a precisão da conversão. Os algoritmos atualizados são implantados no serviço de conversão em execução na Adobe Cloud em intervalos periódicos. Todos os clientes do serviço são beneficiados pelos algoritmos atualizados. Portanto, a implantação central hospedada na nuvem é mais adequada para o serviço de conversão automatizada da Forms para aprender e fornecer continuamente melhorias a todos os clientes.</p> 
+   <p>A Adobe treina os algoritmos AI e ML do serviço de Automated forms conversion regularmente com novos conjuntos de dados para melhorar a precisão da conversão. Os algoritmos atualizados são implantados no serviço de conversão em execução na Adobe Cloud em intervalos periódicos. Todos os clientes do serviço são beneficiados pelos algoritmos atualizados. Portanto, a implantação central hospedada na nuvem é mais adequada para o serviço de Automated forms conversion aprender e oferecer continuamente melhorias a todos os clientes.</p> 
     <p>O serviço converte formulários em branco em formulários adaptáveis. O serviço não oferece suporte para formulários preenchidos e extração de dados de formulários preenchidos. Remova dados de formulários preenchidos e remova ou lista de permissões informações proprietárias dos formulários antes de enviá-los ao serviço para conversão</p> <br>
 
 1. **O serviço suporta todos os formatos de PDF forms? Quais são os idiomas suportados?**
 
-   <p>O serviço pode converter PDF forms não interativos, XDP e PDF forms baseados em XFA e AcroForms em formulários adaptáveis. O serviço não suporta formulários digitalizados ou preenchidos. Para obter outras limitações, consulte o artigo sobre problemas <a href="known-issues.md"></a> conhecidos.<br /> </p> 
-    <p>Estamos constantemente adicionando suporte para outros tipos de fonte. Mantenha a seção de formulários <a href="introduction.md">PDF</a> suportados em sua lista de monitoramento para obter uma atualização regular dos recursos e capacidades recém-adicionados.</p>
+   <p>O serviço pode converter PDF forms não interativos, XDP e PDF forms baseados em XFA e AcroForms em formulários adaptáveis. O serviço não suporta formulários digitalizados ou preenchidos. Para obter outras limitações, consulte o artigo <a href="known-issues.md">problemas conhecidos</a>.<br /> </p> 
+    <p>Estamos constantemente adicionando suporte para outros tipos de fonte. Mantenha a seção <a href="introduction.md">supportedPDF forms</a> em sua lista de monitoramento para obter uma atualização regular dos recursos e recursos recém-adicionados.</p>
 
    O serviço pode converter somente formulários em inglês em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM.](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **O serviço pode produzir um XDP em vez de um formulário adaptável?**
 
-   <p>O serviço não produz uma saída XDP. Estamos adicionando regularmente recursos e ao serviço. Mantenha a seção de idiomas e PDF forms <a href="introduction.md"></a> suportados em sua lista de observação para obter uma atualização regular dos recursos e capacidades recém-adicionados.</p> <br>
+   <p>O serviço não produz uma saída XDP. Estamos adicionando regularmente recursos e ao serviço. Mantenha a seção <a href="introduction.md">idiomas e PDF forms suportados</a> na sua lista de observação para obter uma atualização regular dos recursos e recursos recém-adicionados.</p> <br>
 
 1. **Qual é o tipo de schema gerado?**
 
@@ -49,15 +49,15 @@ ht-degree: 4%
 
    <p>Não, o serviço não converte um formulário do Microsoft Word em um formulário adaptável. É possível salvar formulários do Microsoft Word em PDF e converter o formulário PDF em um formulário adaptável. O processo completo é </p> <br>
 
-   1. Use o Adobe Acrobat para [converter o Word Document em um PDF](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html)não interativo.
-   1. Use o Adobe Acrobat para [converter os PDF forms produzidos em Formulário](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html)PDF preenchível.
+   1. Use o Adobe Acrobat para [converter documento do Word em um PDF não interativo](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html).
+   1. Use o Adobe Acrobat para [converter os PDF forms produzidos em Formulário PDF preenchível](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
    1. Use o Adobe Acrobat para atualizar e corrigir campos de formulário manualmente.
    1. Salve o formulário PDF. Agora, você pode usar o formulário com o serviço de conversão para gerar um formulário adaptável. Também é possível usar o formulário como um Documento de modelo de Registro.
 
 
 1. **O serviço pode converter formulários impressos digitalizados e formulários coloridos em formulários adaptáveis?**
 
-   <p>O serviço pode converter PDF forms coloridos em formulários adaptáveis. O serviço não suporta formulários digitalizados ou preenchidos. Para obter outras limitações, consulte o artigo sobre problemas <a href="known-issues.md"></a> conhecidos.</p> <br>
+   <p>O serviço pode converter PDF forms coloridos em formulários adaptáveis. O serviço não suporta formulários digitalizados ou preenchidos. Para obter outras limitações, consulte o artigo <a href="known-issues.md">problemas conhecidos</a>.</p> <br>
 
 1. **O serviço pode converter um formulário digitalizado ou apenas uma imagem de um formulário em um formulário adaptável?**
 
@@ -77,34 +77,34 @@ Os motivos mais comuns para a conversão falhar são:
    * PDF forms seguros são fornecidos para a conversão. Não use PDF forms protegidos por senha ou protegidos para conversão.
    * A conexão com a Internet é interrompida. Verifique se você está conectado à Internet durante a conversão.
    * O PDF de origem tem uma imagem do formulário em vez do formulário real.
-   * O serviço está configurado incorretamente, o URL do serviço não é fornecido ou o URL do serviço fornecido está incorreto. Verifique a configuração [do](configure-service.md#configure-the-cloud-service) serviço em **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
+   * O serviço está configurado incorretamente, o URL do serviço não é fornecido ou o URL do serviço fornecido está incorreto. Verifique a [configuração do serviço](configure-service.md#configure-the-cloud-service) em **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
    * A Configuração IMS não está configurada corretamente. Execute uma verificação de integridade na configuração do IMS para garantir que ela esteja funcionando corretamente. Para verificar se a Configuração IMS está correta ou não:
       1. Ir para `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-      2. Selecione a configuração. Clique no cabeçalho **[!UICONTROL Check Health]** e clique em **[!UICONTROL Check]**. Se tiver sucesso, você receberá **[!UICONTROL Token retrieved successfully!]** mensagem. <br> <br>
+      2. Selecione a configuração. Clique em **[!UICONTROL Check Health]** no cabeçalho e clique em **[!UICONTROL Check]**. Se bem-sucedido, você receberá a mensagem **[!UICONTROL Token retrieved successfully!]**. <br> <br>
 
 1. **O uso de fontes personalizadas afeta a conversão?**
 
    <p>Quando um formulário PDF não interativo é convertido em um formulário adaptável, para melhorar a qualidade da conversão, as fontes são incorporadas no formulário PDF. O suporte para incorporação de fontes está restrito a PDF forms não interativos. Para otimizar a conversão de PDF forms baseados em AcroForm e XFA, são usadas fontes de fallback.</p> 
-    <p>Somente os formulários disponíveis no diretório de fontes personalizadas listados no campo de diretório <strong>de fontes do</strong> Cliente da configuração do serviço <strong></strong> CQ-DAM-Handler-Gibson Font Manager são incorporados em formulários PDF não interativos.</p> 
+    <p>Somente os formulários disponíveis no diretório de fontes personalizadas listados no campo <strong>Diretório de fontes do cliente</strong> da configuração <strong> CQ-DAM-Handler-Gibson Font Manager Service</strong> são incorporados no formulário PDF não interativo.</p> 
     <p> </p> <br>
 
 1. **O serviço identifica e usa fontes do PDF de origem em formulários adaptáveis de saída?**
 
-   <p>O estilo e o layout de um formulário HTML responsivo são geralmente diferentes de um formulário PDF ou em papel. Para suportar layout e estilos consistentes em todas as organizações, os formulários adaptativos usam <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">temas para estilizar um formulário</a>. O serviço de conversão usa as fontes e os estilos de fonte especificados no tema aplicado durante a conversão. É possível alterar as fontes e os estilos de fonte do tema para fornecer uma aparência distinta aos componentes de um formulário adaptável.</p> <br>
+   <p>O estilo e o layout de um formulário HTML responsivo são geralmente diferentes de um formulário PDF ou em papel. Para oferecer suporte a layout e estilos consistentes em todas as organizações, os formulários adaptáveis usam <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">temas para estilizar um formulário</a>. O serviço de conversão usa as fontes e os estilos de fonte especificados no tema aplicado durante a conversão. É possível alterar as fontes e os estilos de fonte do tema para fornecer uma aparência distinta aos componentes de um formulário adaptável.</p> <br>
 
 1. **O serviço extrai automaticamente o JavaScript de formulários baseados em XDP e o aplica aos formulários adaptáveis correspondentes?**
 
-   <p>O serviço não converte automaticamente scripts de formulários baseados em XFA ou Acro Forms em regras de formulário adaptáveis correspondentes. Você (autores de formulários) pode usar o editor <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">de</a> regras para adicionar interatividade a um formulário adaptável.</p> <br>
+   <p>O serviço não converte automaticamente scripts de formulários baseados em XFA ou Acro Forms em regras de formulário adaptáveis correspondentes. Você (autores de formulário) pode usar o <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">Editor de regras</a> para adicionar interatividade a um formulário adaptável.</p> <br>
 
 1. **Alguns objetos de formulário não são convertidos corretamente em componentes de formulário adaptáveis. Como resolver o problema?**
 
-   <p>O serviço Automated Forms Conversion é treinado em um grande conjunto de formulários. Mas os aplicativos baseados em IA/ML são limitados por seus dados e padrões de treinamento. Podem existir vários tipos de campo, layouts, padrões e contexto perceptíveis à percepção humana, mas difíceis de reconhecer automaticamente. O serviço pode falhar ao identificar esses objetos ou pode reconhecê-los incorretamente. Você pode usar o editor <a href="review-correct-ui-edited.md" target="_blank">Revisar e corrigir</a> para fazer as modificações necessárias no layout familiar em papel baseado no formulário de entrada.</p> <br/>
+   <p>O serviço de automated forms conversion é treinado em um grande conjunto de formulários. Mas os aplicativos baseados em IA/ML são limitados por seus dados e padrões de treinamento. Podem existir vários tipos de campo, layouts, padrões e contexto perceptíveis à percepção humana, mas difíceis de reconhecer automaticamente. O serviço pode falhar ao identificar esses objetos ou pode reconhecê-los incorretamente. Você pode usar o editor <a href="review-correct-ui-edited.md" target="_blank">Revisar e corrigir</a> para fazer as modificações necessárias no layout familiar com base no formulário em papel do formulário de entrada.</p> <br/>
 
 1. **Algumas correções são repetidas nos formulários. O serviço pode identificar e corrigir todas essas instâncias em conversões futuras?**
 
    O serviço está consistentemente treinando em seus formulários e padrões. Aprende novos padrões diariamente. Ainda não foi possível start das correções de aplicação automática repetidas nos formulários. Fique de olho nos formulários de pré-lançamento para a disponibilidade de tal recurso. <br/><br/>
 
-   Você pode usar o metrosmodelo para mapear os objetos de formulário para um componente de formulário adaptável de sua escolha e pré-configurar validações, regras, padrões de dados, texto de ajuda e propriedades de acessibilidade para os componentes. Todas as propriedades especificadas são aplicadas durante a conversão. Você pode usar o modelo meta para aplicar propriedades comuns a campos. Ele pode ajudar a reduzir alguns problemas repetidos em todos os formulários.<br/><br/>
+   Você pode usar o metrosmodelo para mapear os objetos de formulário para um componente de formulário adaptável de sua escolha e pré-configurar validações, regras, padrões de dados, texto de ajuda e propriedades de acessibilidade para os componentes. Todas as propriedades especificadas são aplicadas durante a conversão. Você pode usar o modelo meta para aplicar propriedades comuns a campos. Ele pode ajudá-lo a reduzir alguns problemas repetidos nos formulários.<br/><br/>
 
 1. **Quais são as opções para formulários com dados confidenciais, como informações de identificação pessoal (PII)?**
 O serviço suporta apenas formulários em branco ou não preenchidos. Não carregue formulários preenchidos ou formulários com informações de identificação pessoal (PII). Além disso, remova os dados pré-preenchidos, as informações de identificação pessoal (PII), as informações confidenciais e proprietárias nos formulários de origem. 
@@ -124,7 +124,7 @@ O erro mencionado anteriormente ocorre quando a delegação de inicialização n
 O erro mencionado anteriormente ocorre quando a delegação de inicialização não está configurada para bibliotecas RSA/BouncyCastle. Execute as etapas a seguir para resolver o problema:
    <p> </p>
 
-   1. Pare a instância AEM. Navegue até a `[AEM installation directory]\crx-quickstart\conf\` pasta. Abra o arquivo sling.properties para edição. Se você usar `[AEM installation directory]\crx-quickstart\bin\start.bat` para start de uma instância AEM, edite sling.properties localizado em `[AEM_root]\crx-quickstart\`.
+   1. Pare a instância AEM. Navegue até a pasta `[AEM installation directory]\crx-quickstart\conf\`. Abra o arquivo sling.properties para edição. Se você usar `[AEM installation directory]\crx-quickstart\bin\start.bat` para start de uma instância AEM, edite sling.properties localizado em `[AEM_root]\crx-quickstart\`.
    1. Adicione as seguintes propriedades ao arquivo sling.properties:<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
    1. Salve e feche o arquivo. <br/>
    1. Start da instância AEM.<br/>
@@ -135,12 +135,12 @@ O erro mencionado anteriormente ocorre quando a delegação de inicialização n
 
    <p>Você pode usar adaptativos de temas ou editor de estilos para alterar a capitalização de um campo de formulário adaptável. Por exemplo, você pode abrir o editor de temas e definir o valor da propriedade Case de todo o texto do formulário para maiúsculas, minúsculas ou camelCase. Você também pode usar a opção Substituição de CSS no editor de temas para criar diferentes tipos de estilos.</p>
 
-1. **Posso usar tags de texto da Adobe Sign com o serviço de conversão automatizada da Forms?**
+1. **Posso usar tags de texto da Adobe Sign com o serviço de Automated forms conversion?**
 
-   <p> Quando você usa o serviço de conversão automatizado do Forms para converter um formulário PDF em um formulário adaptável e o formulário PDF possui tags de texto Adobe Sign, essas tags são convertidas em campos de formulário adaptáveis correspondentes e os detalhes do assinante são automaticamente preenchidos.  O recurso está disponível somente para o Acro Forms e os formulários adaptativos suportam um número limitado de campos Adobe Sign.</p>  </br>
+   <p> Quando você usa o Serviço de Automated forms conversion para converter um formulário PDF em um formulário adaptável e o formulário PDF possui tags de texto Adobe Sign, essas tags são convertidas em campos de formulário adaptáveis correspondentes e os detalhes do assinante são automaticamente preenchidos.  O recurso está disponível somente para o Acro Forms e os formulários adaptativos suportam um número limitado de campos Adobe Sign.</p>  </br>
 
 1. **Como criar um formulário PDF habilitado para Adobe Sign?**
 
    </p>Para criar um formulário PDF habilitado para Adobe Sign:</p>
 
-   Adicione tags [de texto do](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign a nomes de campos ou use a opção [Converter em formulário](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) do Adobe Sign.
+   Adicione [tags de texto da Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html) aos nomes de campos ou use a opção [Converter em formulário da Adobe Sign](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html).
