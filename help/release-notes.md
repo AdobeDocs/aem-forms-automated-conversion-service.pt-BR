@@ -2,7 +2,7 @@
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários '
 translation-type: tm+mt
-source-git-commit: befed9c6221e473e86f3453e793744250909651c
+source-git-commit: 923fee97428b8063f6a973b90eb91fdb25e5dd12
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 95%
@@ -24,7 +24,7 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 * Futuros planos de alterações
 
 
-## 28 de janeiro de 2021 (AFC-2021.01)
+## 01 de fevereiro de 2021 (AFC-2021.01)
 
 Melhorias no desempenho na organização de campos de formulário em painéis e na geração de títulos para painéis.
 
