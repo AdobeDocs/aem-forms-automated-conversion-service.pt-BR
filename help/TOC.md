@@ -9,11 +9,13 @@ user-guide-title: Serviço de conversão automática do Adobe Experience Manager
 user-guide-description: Converta formulários PDF em formulários HTML responsivos e prontos para dispositivos móveis.
 breadcrumb-title: Guia de conversão automatizada do Forms
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
+feature: Formulários adaptáveis
+role: Profissional
 translation-type: tm+mt
-source-git-commit: ab178dd8d1786c6c341d4a1a3da0aecebead31dd
+source-git-commit: b3946630c5180a600fe7acc25f1084601dec04ef
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 100%
+source-wordcount: '95'
+ht-degree: 97%
 
 ---
 
