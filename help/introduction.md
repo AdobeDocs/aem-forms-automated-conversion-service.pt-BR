@@ -2,10 +2,10 @@
 title: Introdução
 description: 'Acelere a conversão de formulários impressos em formulários adaptáveis '
 translation-type: tm+mt
-source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+source-git-commit: 53b88de185ed1b6669ecfc3c7c6649d5627741e9
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 75%
 
 ---
 
@@ -17,22 +17,22 @@ O serviço de conversão automática de formulários ajuda a acelerar a digitali
 * Poupar o esforço manual necessário para converter formulários impressos em formulários adaptáveis
 * Aplicar padrões e validações apropriadas durante a conversão
 * Gerar documento de registro durante a conversão
-* Agrupar campos que ocorrem com frequência em fragmentos de formulário reutilizáveis
+* Agrupar campos comumente em fragmentos de formulário reutilizáveis
 * Ativar o Adobe Analytics durante a conversão
 
-![É simples. Você nos fornece apenas as fontes e deixa tudo com a gente. Nós lhe proporcionaremos bonitos formulários adaptáveis. É claro que você fará retoques no resultado para sua satisfação. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![É simples. Você nos fornece as fontes e deixa tudo conosco. Nós lhe fornecemos belos formulários adaptáveis. Você sempre pode fazer retoques na saída para sua satisfação. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Integração {#onboarding}
 
-O serviço está disponível gratuitamente para clientes de vigência no local do AEM 6.4 Forms e AEM6.5 Forms e clientes corporativos do Adobe Managed Service. Você pode entrar em contato com a equipe de vendas da Adobe ou com seu representante da Adobe para solicitar acesso ao serviço.
+O serviço está disponível gratuitamente para AEM 6.4 Forms e AEM 6.5 clientes de vigência no local do Forms e clientes corporativos do Adobe Managed Service. Você pode entrar em contato com a equipe de vendas da Adobe ou com seu representante da Adobe para solicitar acesso ao serviço. O serviço também está disponível gratuitamente e pré-ativado para clientes do AEM Forms as a Cloud Service.
 
 A Adobe habilita o acesso para sua organização e fornece os privilégios necessários à pessoa designada como administrador em sua organização. O administrador pode conceder acesso aos desenvolvedores (usuários) do AEM Forms de sua organização para se conectar ao serviço. Consulte [Configurar o serviço de conversão automática de formulários](configure-service.md) para obter detalhes.
 
-## Formulários PDF e idiomas suportados {#supported-languages-and-pdf-forms}
+## PDF forms e idiomas compatíveis {#supported-languages-and-pdf-forms}
 
 O serviço oferece suporte a formulários PDF não interativos, formulários criados com o Adobe Acrobat conhecidos como AcroForms e baseados em XFA criados com o AEM Forms ou o Adobe LiveCycle.
 
-O serviço também oferece suporte a formulários PDF habilitados para Adobe Sign. Se o formulário PDF de origem tiver marcas de texto do Adobe Sign, o serviço preserva todas as informações relacionadas ao Adobe Sign durante a conversão e associa as informações do assinante presentes no PDF de origem aos campos de formulário adaptáveis correspondentes. O recurso está disponível apenas para AcroForms.
+O serviço também oferece suporte a PDF forms habilitados para Adobe Sign. Se o formulário PDF de origem tiver marcas de texto do Adobe Sign, o serviço preserva todas as informações relacionadas ao Adobe Sign durante a conversão e associa as informações do assinante presentes no PDF de origem aos campos de formulário adaptáveis correspondentes. O recurso está disponível apenas para AcroForms.
 
 O serviço pode converter somente formulários em inglês em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
@@ -53,12 +53,12 @@ Depois que o ambiente do AEM Forms for configurado, para converter formulários 
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha e criptografados.
 * Não carregue formulários digitalizados, coloridos, em idioma diferente do inglês e preenchidos. Tais formas não são suportados.
 * Não carregue formulários PDF com espaços no nome do arquivo.
-* Não carregue [portfólios em PDF](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um portfólio em PDF em formulários adaptáveis.
+* Não carregue [portfólios em PDF](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfolio PDF em um formulário adaptável.
 * Faça as alterações sugeridas nos formulários PDF descritas no artigo [Práticas recomendadas e considerações](styles-and-pattern-considerations-and-best-practices.md).
 * Leia o artigo [Problemas conhecidos](known-issues.md) para evitar armadilhas.
 
 ### 3. Revisar formulários convertidos {#review-converted-forms}
 
-Os formulários físicos podem ter requisitos complexos de captura de dados em termos de layout de campo, nomeação ou sugestões implícitas que podem não ser capturadas com precisão pela lógica de detecção baseada em AI/ML. Quando a conversão automática estiver concluída, você poderá usar o [editor de Revisar e corrigir](review-correct-ui-edited.md) para revisar o formulário convertido e fazer as atualizações necessárias e gerar uma saída aprimorada mais próxima à experiência desejada. Depois de fazer as alterações necessárias, envie o formulário novamente para conversão.
+Os formulários do mundo real podem ter requisitos complexos de captura de dados em termos de layout de campo, nomeação ou sugestões implícitas que podem não ser capturadas com precisão pela lógica de detecção baseada em AI/ML. Quando a conversão automática estiver concluída, você poderá usar o [editor de Revisar e corrigir](review-correct-ui-edited.md) para revisar o formulário convertido e fazer as atualizações necessárias e gerar uma saída aprimorada mais próxima à experiência desejada. Depois de fazer as alterações necessárias, envie o formulário novamente para conversão.
 
-O tempo necessário para a conversão automática depende de uma variedade de fatores, como tamanho do formulário de entrada, complexidade do formulário, empréstimo na fila de processamento do serviço. O usuário é notificado regularmente sobre o progresso através do indicador de status na pasta/arquivo. Quando a conversão for concluída, uma notificação por e-mail também será enviada para o endereço de e-mail configurado.
+O tempo necessário para a conversão automática depende de vários fatores, como tamanho do formulário de entrada, complexidade do formulário, empréstimo na fila de processamento do serviço. O usuário é notificado regularmente sobre o progresso através do indicador de status na pasta/arquivo. Quando a conversão for concluída, uma notificação por e-mail também será enviada para o endereço de e-mail configurado.
