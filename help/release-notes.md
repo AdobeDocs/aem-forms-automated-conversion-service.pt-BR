@@ -1,14 +1,13 @@
 ---
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
-description: 'Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários '
-translation-type: tm+mt
-source-git-commit: 70dc18347e072ccd7c1625f6831554ecfc13f2fb
+description: Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários
+exl-id: fccafbc9-28c1-4736-922c-24d675b25213
+source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 88%
+source-wordcount: '409'
+ht-degree: 84%
 
 ---
-
 
 # Notas de versão
 
@@ -22,6 +21,12 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 * Funcionalidade obsoleta
 * Instruções especiais
 * Futuros planos de alterações
+
+## 24 de junho de 2021 (AFC-2021.06.2) {#june-2021}
+
+### O que foi melhorado {#june-2021-improvements}
+
+A precisão foi aprimorada para detectar automaticamente seções lógicas nos formulários de origem e convertê-las em painéis de formulário adaptáveis correspondentes.
 
 ## 03 de março de 2021 (AFC-2021.02.2) {#mar-2021}
 
@@ -60,7 +65,7 @@ Por padrão, o serviço cria um painel de nível superior separado para cada pá
 
 O serviço agora é mais eficiente na detecção de listas com marcadores e numeradas.
 
-### Instruções especiais  {#special-instructions}
+### Instruções especiais {#special-instructions}
 
 **Instalar o pacote de conectores do Serviço de conversão automática de formulários**
 
