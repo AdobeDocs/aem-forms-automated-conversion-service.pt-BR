@@ -1,14 +1,24 @@
 ---
-source-git-commit: 5f945d77db476387159d342511b82691cf7708ee
-translation-type: tm+mt
+source-git-commit: 4978265ca6f9712a745c3f72e02899da42fdbb0b
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 100%
 
 ---
 # Licença do MIT
 
-© Copyright 2018 Adobe. All rights reserved.
+© Copyright 2021 Adobe. All rights reserved.
 
-A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o &quot;Software&quot;), para negociar o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, intercalar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e para permitir às pessoas a quem o Software for fornecido fazê-lo, sob as seguintes condições:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-O aviso de copyright acima e este aviso de permissão serão incluídos em todas as cópias ou partes substanciais do Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-O SOFTWARE É FORNECIDO &quot;NO ESTADO EM QUE SE ENCONTRA&quot;, SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO LIMITADA, AS GARANTIAS DE COMERCIABILIDADE, ADEQUAÇÃO A UM FIM EM PARTICULAR E NÃO-INFRAÇÃO. OS TITULARES DE DIREITOS AUTORAIS OU DE COPYRIGHT NÃO SERÃO RESPONSÁVEIS POR QUALQUER REIVINDICAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, QUER EM AÇÃO DE CONTRATO, TORTO OU DE OUTRA FORMA, RESULTANTE DE, PARA FORA OU EM RELAÇÃO AO SOFTWARE OU À UTILIZAÇÃO OU OUTROS TRATAMENTOS NO SOFTWARE.
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
