@@ -2,14 +2,13 @@
 title: Configurar o serviço de conversão automática de formulários
 description: Pronto para usar a instância do AEM para usar o serviço Automated forms conversion
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
+exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
+source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
 workflow-type: tm+mt
-source-wordcount: '2673'
+source-wordcount: '2670'
 ht-degree: 7%
 
 ---
-
 
 # Configurar o serviço de conversão automática de formulários {#about-this-help}
 
@@ -50,7 +49,7 @@ Antes de usar o serviço, prepare a instância do autor do AEM para se conectar 
 1. (opcional) [Baixe e instale o pacote de conectores mais recente](#installConnectorPackage)
 1. [Criar temas e modelos personalizados](#referencepackage)
 
-### Baixe e instale o AEM 6.4 ou AEM 6.5 ou o AEM Forms integrado como um Cloud Service {#aemquickstart}
+### Baixe e instale o AEM 6.4 ou AEM 6.5 ou o AEM Forms integrado como Cloud Service {#aemquickstart}
 
 
 O serviço Automated forms conversion é executado AEM instância do autor. Você precisa AEM 6.4, AEM 6.5 ou AEM Forms como Cloud Service para configurar uma instância de autor de AEM.
@@ -67,7 +66,7 @@ O serviço Automated forms conversion é executado AEM instância do autor. Voc�
 
 Baixe e instale o AEM Service Pack mais recente. Para obter instruções detalhadas, consulte ou [AEM 6.4 Notas de versão do Service Pack](https://helpx.adobe.com/br/experience-manager/6-4/release-notes/sp-release-notes.html) ou [AEM 6.5 Notas de versão do Service Pack](https://helpx.adobe.com/br/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### (Somente para AEM 6.4 e AEM 6.5) Baixe e instale o pacote do complemento AEM Forms {#downloadaemformsaddon}
+### (Somente para AEM 6.4 e AEM 6.5) Baixe e instale o pacote do complemento AEM Forms  {#downloadaemformsaddon}
 
 Uma instância AEM contém recursos básicos de formulários. O serviço de conversão requer recursos completos do AEM Forms. Baixe e instale o pacote complementar do AEM Forms para aproveitar todos os recursos do AEM Forms. O pacote é necessário para configurar e executar o serviço de conversão. Para obter instruções detalhadas, consulte [Instalar e configurar recursos de captura de dados.](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -146,9 +145,9 @@ O serviço Automated forms conversion usa o serviço de email Day CQ para enviar
 
 * Para o AEM Forms as a Cloud Service, [registre um tíquete de suporte para habilitar o serviço de email](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
-#### Adicionar usuário ao grupo de usuários de formulários {#adduserstousergroup}
+#### Adicionar usuário ao grupo usuários de formulários {#adduserstousergroup}
 
-Especifique um endereço de email no perfil do usuário AEM designado para executar o serviço. Certifique-se de que o usuário seja o membro do grupo [forms user](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html). Os emails são enviados para o endereço de email do usuário que está executando a conversão. Para especificar um endereço de e-mail para o usuário e adicionar usuário ao grupo de usuários`e forms:
+Especifique um endereço de email no perfil do usuário AEM designado para executar o serviço. Certifique-se de que o usuário seja o membro do grupo [forms user](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html). Os emails são enviados para o endereço de email do usuário que está executando a conversão. Para especificar um endereço de email para o usuário e adicioná-lo ao grupo de usuários de formulários:
 
 1. Faça logon na instância do autor do AEM Forms como administrador AEM. Use suas credenciais de AEM local para fazer logon. Não use o Adobe ID para fazer logon. Toque em **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -156,7 +155,7 @@ Especifique um endereço de email no perfil do usuário AEM designado para execu
 1. Especifique um endereço de email no campo **[!UICONTROL Email]** e toque em **[!UICONTROL Save]**. Os emails são enviados para o endereço de email especificado na conclusão bem-sucedida ou na falha da conversão.
 1. Toque na guia **Grupos**. Na guia selecionar grupo , digite e selecione o grupo **forms-users**. Toque em **Salvar e fechar**. O usuário agora é membro do grupo usuários do formulário.
 
-#### (Somente para AEM 6.4 e AEM 6.5) Obter certificados públicos {#obtainpubliccertificates}
+#### (Apenas para AEM 6.4 e AEM 6.5) Obter certificados públicos {#obtainpubliccertificates}
 
 Um certificado público permite autenticar seu perfil no Adobe I/O.
 
@@ -189,7 +188,7 @@ Um certificado público permite autenticar seu perfil no Adobe I/O.
    <li>Step text</li>
    -->
 
-#### (Somente para AEM 6.4 e AEM 6.5) Configure as APIs de serviço no Console do desenvolvedor do Adobe {#createintegration}
+#### (Somente para AEM 6.4 e AEM 6.5) Configure as APIs de serviço no Console do desenvolvedor do Adobe. {#createintegration}
 
 Para usar o serviço Automated forms conversion, crie um projeto e adicione a API do Serviço de configuração automatizada do Forms ao projeto no Console do desenvolvedor do Adobe. A integração gera a Chave da API, Segredo do cliente, Carga (JWT).
 
