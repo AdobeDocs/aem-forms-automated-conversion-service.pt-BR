@@ -1,14 +1,13 @@
 ---
 title: Introdução
-description: 'Acelere a conversão de formulários impressos em formulários adaptáveis '
-translation-type: tm+mt
-source-git-commit: 53b88de185ed1b6669ecfc3c7c6649d5627741e9
+description: Acelere a conversão de formulários impressos em formulários adaptáveis
+exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
+source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 75%
+source-wordcount: '690'
+ht-degree: 71%
 
 ---
-
 
 # Introdução {#introduction-to-automated-forms-conversion-service}
 
@@ -34,7 +33,7 @@ O serviço oferece suporte a formulários PDF não interativos, formulários cri
 
 O serviço também oferece suporte a PDF forms habilitados para Adobe Sign. Se o formulário PDF de origem tiver marcas de texto do Adobe Sign, o serviço preserva todas as informações relacionadas ao Adobe Sign durante a conversão e associa as informações do assinante presentes no PDF de origem aos campos de formulário adaptáveis correspondentes. O recurso está disponível apenas para AcroForms.
 
-O serviço pode converter somente formulários em inglês em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+O serviço pode converter formulários em inglês, francês, alemão e espanhol em formulários adaptáveis. Você também pode traduzir os formulários adaptáveis gerados para outro idioma usando [AEM fluxo de trabalho de tradução](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Fluxo de trabalho de conversão  {#conversion-workflow}
 
