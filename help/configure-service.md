@@ -3,9 +3,9 @@ title: Configurar o serviço de conversão automática de formulários
 description: Pronto para usar a instância do AEM para usar o serviço Automated forms conversion
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
+source-git-commit: 264208305996e98ff2dbccf0e63027b4c757754c
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2682'
 ht-degree: 7%
 
 ---
@@ -241,9 +241,7 @@ Crie uma configuração de Cloud Service para conectar sua instância de AEM ao 
    | Modelo | Modelo padrão a ser aplicado a formulários convertidos. Você sempre pode especificar um modelo diferente antes de iniciar a conversão. Um modelo contém a estrutura básica e o conteúdo inicial de um formulário adaptável. Você pode escolher um modelo nos modelos prontos para uso fornecidos. Você também pode criar um modelo personalizado. |
    | Tema | Tema padrão a ser aplicado a formulários convertidos. Você sempre pode especificar um tema diferente antes de iniciar a conversão.  Você pode clicar no ícone para escolher um tema fornecido imediatamente. Também é possível criar um tema personalizado. |
    | Fragmentos existentes | Localização dos fragmentos existentes, se houver. |
-   | Meta-modelo personalizado | Caminho do arquivo .schema.json do metamodelo personalizado. |
-
-
+   | Meta-modelo personalizado | Caminho do arquivo .schema.json do metamodelo personalizado. Você pode criar metamodelos separados para os idiomas inglês, francês, alemão e espanhol. |
 
 1. Na guia **[!UICONTROL Advanced]** da página **[!UICONTROL Create Automated Forms Conversion Configuration]**, especifique o valor do seguinte campo:
 
