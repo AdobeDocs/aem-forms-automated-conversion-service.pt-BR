@@ -7,9 +7,9 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
+source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2591'
 ht-degree: 1%
 
 ---
@@ -221,23 +221,23 @@ Você pode criar um meta modelo específico de idioma. Esse metamodelo ajuda a c
 * Inglês (EN)
 * Francês (França)
 * Alemão (Alemanha)
-* Espanhol()
+* Espanhol (Espanha)
 
 Adicione a tag de metatag *aem:Language* na parte superior de um metamodelo para especificar seu idioma. Por exemplo,
 
 ```JSON
 "metaTags": {
-        "aem:Language": "de"
+        "aem:Language": "fr"
     }
 ```
 
-Inglês é o idioma padrão dos meta-modelos.
+Quando nenhum idioma é especificado, o serviço considera que o metamodelo está em inglês.
 
 ### Considerações para a criação de um meta modelo específico de idioma
 
 * Verifique se o nome de cada chave está em inglês. Por exemplo, emailAddress.
-* Certifique-se de que todas as referências de entidade e valores predefinidos de todas as chaves *id* estejam no idioma inglês. Por exemplo, &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;Entidade&quot;.
-* Verifique se a descrição ou as mensagens incluídas em um metamodelo das seguintes chaves correspondem ao idioma do metamodelo:
+* Certifique-se de que todas as referências de entidade e valores predefinidos de todas as chaves de id contenham apenas caracteres ASCII. Por exemplo, &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
+* Verifique se todos os valores correspondentes às seguintes chaves estão na linguagem do metamodelo especificado:
    * aem:affKeyword
    * título
    * descrição
@@ -245,9 +245,9 @@ Inglês é o idioma padrão dos meta-modelos.
    * shortDescription
    * validatePictureClauseMessage
 
-   Por exemplo, quando o idioma do metamodelo é francês (&quot;aem:Language&quot;: &quot;fr&quot;), assegurar que todas as descrições e mensagens sejam redigidas em francês.
+   Por exemplo, quando o idioma do metamodelo é francês (&quot;aem:Language&quot;: &quot;fr&quot;), assegurar que todas as descrições e mensagens estejam em francês.
 
-* Certifique-se de que todas as [propriedades do esquema JSON](#jsonschemaproperties) usem apenas os valores suportados.
+* Certifique-se de que todas as [propriedades do esquema JSON](#jsonschemaproperties) usem apenas os valores suportados. Por exemplo, a propriedade type só pode abranger valores selecionados de String, Number, Integer e Boolean.
 
 A imagem a seguir exibe exemplos do metamodelo de idioma inglês e o metamodelo de idioma francês correspondente:
 
