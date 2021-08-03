@@ -2,9 +2,9 @@
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
+source-git-commit: 3bf065a754d8e8f97a660eb2ae39f37341bb4668
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '428'
 ht-degree: 80%
 
 ---
@@ -24,7 +24,7 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 
 ## 29 de julho de 2021 (AFC-2021.07.2) {#july-2021}
 
-* Adição da capacidade de converter PDF forms em francês, alemão e espanhol em formulários adaptáveis.
+* Adição da capacidade de converter um formulário PDF em francês, alemão e espanhol em um formulário adaptável.
 
 ## 24 de junho de 2021 (AFC-2021.06.2) {#june-2021}
 
