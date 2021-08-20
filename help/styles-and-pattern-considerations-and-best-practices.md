@@ -7,9 +7,9 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: c070651253877408466231ab80a6b7e0d04a9fab
+source-git-commit: 730910935e8c9e8a3ab2b670b022989afc403b5a
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1267'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,8 @@ Você pode fazer upload de todas as PDF forms de uma só vez ou em fases, confor
 * Organize documentos de origem em um lote de 8 a 15 documentos. Mantenha formulários de origem com Fragmentos de formulário adaptável comuns em um único lote.
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha.
 * Não carregue o [PDF Portfolio](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfolio PDF em um formulário adaptável.
-* Não carregue formulários digitalizados e preenchidos. Tais formas não são suportados.
+* Não carregue formulários digitalizados, preenchidos e em qualquer idioma diferente de inglês, francês, alemão e espanhol. Tais formas não são suportados.
+
 * Não carregue formulários de origem com espaços no nome do arquivo. Remova o espaço do nome do arquivo antes de fazer upload dos formulários.
 
 Ao usar um formulário XDP para conversão, execute as seguintes etapas antes de fazer upload dos formulários XPD de origem:
