@@ -2,10 +2,10 @@
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 3bf065a754d8e8f97a660eb2ae39f37341bb4668
+source-git-commit: 19412c37f354fd47b661de114f286147c93c5b9e
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 80%
+source-wordcount: '404'
+ht-degree: 74%
 
 ---
 
@@ -73,6 +73,6 @@ O serviço agora é mais eficiente na detecção de listas com marcadores e nume
 
 **Instalar o pacote de conectores do Serviço de conversão automática de formulários**
 
-Você precisa do pacote de conectores 1.1.38 ou superior para usar os recursos e as melhorias mais recentes fornecidos na versão AFC-2020.03.1. Você pode baixar o pacote de conectores no [Compartilhamento de pacotes do AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+Você precisa do pacote de conectores 1.1.38 ou superior para usar os recursos e as melhorias mais recentes fornecidos na versão AFC-2020.03.1.
 
 Se você já tiver em execução um ambiente do Serviço de conversão automática de formulários, para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar mais recente do AEM Forms e o pacote de conectores mais recente na ordem mencionada. Para obter instruções detalhadas, consulte o artigo [Configurar o Serviço de conversão automática de formulários](configure-service.md).
