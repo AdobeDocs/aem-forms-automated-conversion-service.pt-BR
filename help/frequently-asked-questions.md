@@ -1,15 +1,15 @@
 ---
 title: Perguntas frequentes
-seo-title: Perguntas frequentes
+seo-title: Frequently asked questions
 description: Perguntas comuns ou perguntas frequentes
-seo-description: perguntas frequentes sobre o Automated forms conversion Service
+seo-description: frequently asked questions for Automated Forms Conversion Service
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1821'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
    <p>O serviço pode converter PDF forms não interativos, XDP e PDF forms baseados em XFA e AcroForms em formulários adaptáveis. O serviço não oferece suporte a formulários digitalizados ou preenchidos. Para outras limitações, consulte o artigo <a href="known-issues.md">problemas conhecidos</a>.<br /> </p> 
     <p>Estamos adicionando regularmente suporte para outros tipos de fonte. Mantenha a seção <a href="introduction.md">supportedPDF forms</a> na lista de permissões para obter uma atualização regular sobre recursos e funcionalidades recém-adicionados.</p>
 
-   O serviço pode converter somente formulários em inglês, francês, alemão e espanhol em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM.](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   O serviço pode converter somente formulários em inglês, francês, alemão, espanhol, italiano e português em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM.](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **O serviço pode produzir um XDP em vez de um formulário adaptável?**
 

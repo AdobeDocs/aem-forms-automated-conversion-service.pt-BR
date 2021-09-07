@@ -1,15 +1,15 @@
 ---
 title: Ampliar o meta modelo padrão
-seo-title: Ampliar o meta modelo padrão
+seo-title: Extend the default meta-model
 description: Estenda o metamodelo padrão para adicionar padrões, validações e entidades específicas à sua organização e aplique configurações a campos de formulário adaptáveis enquanto executa o serviço Automated forms conversion.
-seo-description: Estenda o metamodelo padrão para adicionar padrões, validações e entidades específicas à sua organização e aplique configurações a campos de formulário adaptáveis enquanto executa o serviço Automated forms conversion.
+seo-description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2565'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ O metamodelo é um esquema JSON. Antes de começar com o metamodelo, verifique s
 
 ## Metamodelo padrão {#default-meta-model}
 
-O serviço Automated forms conversion tem um meta modelo padrão. É um esquema JSON e reside na Adobe Cloud com outros componentes do serviço Automated forms conversion. Você pode encontrar uma cópia do metamodelo em seu servidor de AEM local em: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Você também pode [clicar aqui](assets/en.globalschema.json) para acessar ou baixar o schema do idioma inglês. O metamodelo dos idiomas [Francês](assets/fr.globalschema.json), [Alemão](assets/de.globalschema.json) e [Espanhol](assets/es.globalschema.json) também está disponível para download.
+O serviço Automated forms conversion tem um meta modelo padrão. É um esquema JSON e reside na Adobe Cloud com outros componentes do serviço Automated forms conversion. Você pode encontrar uma cópia do metamodelo em seu servidor de AEM local em: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Você também pode [clicar aqui](assets/en.globalschema.json) para acessar ou baixar o schema do idioma inglês. O metamodelo dos idiomas [Francês](assets/fr.globalschema.json), [Alemão](assets/de.globalschema.json) [Espanhol](assets/es.globalschema.json), [Italiano](assets/it.globalschema.json) e [Português](assets/pt_br.globalschema.json) também está disponível para download.
 
 O esquema do metamodelo é derivado de entidades de esquema em https://schema.org/docs/schemas.html. Ele tem Pessoa, PostalAddress, LocalBusiness e mais entidades, conforme definido em https://schema.org. Cada entidade do metamodelo adere ao tipo de objeto de esquema JSON. O código a seguir representa uma estrutura de metamodelo de amostra:
 
@@ -222,6 +222,8 @@ Você pode criar um meta modelo específico de idioma. Esse metamodelo ajuda a c
 * Francês (França)
 * Alemão (Alemanha)
 * Espanhol (Espanha)
+* Italiano (Itália)
+* Português (pt-br)
 
 Adicione a tag de metatag *aem:Language* na parte superior de um metamodelo para especificar seu idioma. Por exemplo,
 

@@ -1,15 +1,15 @@
 ---
 title: 'Práticas recomendadas e considerações '
-seo-title: 'Práticas recomendadas e considerações '
+seo-title: Best practices and considerations
 description: Práticas recomendadas e considerações para o serviço Automated forms conversion
-seo-description: Lista de estilos e padrões em PDF forms de origem que o serviço Automated forms conversion tem dificuldade de identificar
+seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 9d107d2dfc64fd84d4f734ded5898612ce9a3295
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1247'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Você pode fazer upload de todas as PDF forms de uma só vez ou em fases, confor
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha.
 * Não carregue o [PDF Portfolio](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfolio PDF em um formulário adaptável.
 * Não carregue formulários de origem com espaços no nome do arquivo. Remova o espaço do nome do arquivo antes de fazer upload dos formulários.
-* Não carregue formulários digitalizados, preenchidos e em qualquer idioma diferente de inglês, francês, alemão e espanhol. Tais formas não são suportados.
+* Não carregue formulários digitalizados, preenchidos e em qualquer outro idioma que não seja inglês, francês, alemão, espanhol, italiano e português. Tais formas não são suportados.
 
 Ao usar um formulário XDP para conversão, execute as seguintes etapas antes de fazer upload dos formulários XPD de origem:
 

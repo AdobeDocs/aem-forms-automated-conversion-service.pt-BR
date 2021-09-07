@@ -1,15 +1,15 @@
 ---
 title: Problemas conhecidos
-seo-title: Problemas conhecidos
+seo-title: Known Issues
 description: problemas conhecidos e limitações do Automated forms conversion Service
-seo-description: Antes de começar a usar o serviço AEM Forms Automated forms conversion, saiba mais sobre os problemas conhecidos e as limitações do serviço
+seo-description: Before you begin using AEM Forms Automated Forms Conversion service, learn about the known issues and limitations of the service
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Antes de começar a usar o serviço AEM Forms Automated forms conversion, analis
 * PDF forms maiores que 15 páginas não são compatíveis.
 * Documentos criptografados, protegidos por senha e protegidos não são convertidos. Remova a criptografia ou as senhas antes de executar a conversão.
 * Tabelas complexas como tabelas sem bordas, tabelas aninhadas e tabelas com valores de espaço reservado não são suportadas. Use o editor de formulário adaptável para adicionar ou modificar tabelas complexas, após a conversão. Somente tabelas simples, com campos vazios, cabeçalhos adequados e limites de limpeza são compatíveis.
-* O serviço converte somente formulários em inglês, francês, alemão e espanhol em formulários adaptáveis. Você pode traduzir formulários adaptáveis convertidos para outro idioma usando [AEM fluxo de trabalho de tradução](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+* O serviço converte somente formulários em inglês, francês, alemão, espanhol, italiano e português em formulários adaptáveis. Você pode traduzir formulários adaptáveis convertidos para outro idioma usando [AEM fluxo de trabalho de tradução](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 O Forms não oferece suporte à detecção automática do layout de várias colunas de formulários de entrada.
 * As informações codificadas com cores no formulário PDF de origem não são transferidas para o formulário adaptável.
 * As cores do formulário PDF de origem não são transferidas para temas de formulário adaptável.
