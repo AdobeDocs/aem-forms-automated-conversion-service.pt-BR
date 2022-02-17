@@ -2,10 +2,10 @@
 title: Novidades? Notas de versão - Serviço de conversão automática de formulários
 description: Saiba mais sobre os recursos mais recentes e o erro corrigido do serviço de conversão automática de formulários
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 833cada8efcc3f0a0e5788c1ab99a95d814e0153
+source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 71%
+source-wordcount: '451'
+ht-degree: 66%
 
 ---
 
@@ -22,7 +22,11 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 * Instruções especiais
 * Futuros planos de alterações
 
-## 29 de julho de 2021 (AFC-2021.08.0) {#aug-2021}
+## 24 de fevereiro de 2022 (AFC-2022.02.0) {#feb-2022}
+
+* Adição da capacidade de [converter automaticamente seções em fragmentos](convert-existing-forms-to-adaptive-forms.md) para ajudar a melhorar a velocidade de renderização de formulários convertidos e facilitar o carregamento de formulários grandes no editor de formulários adaptável.
+
+## 29 de agosto de 2021 (AFC-2021.08.0) {#aug-2021}
 
 * Adição da capacidade de converter PDF forms em idiomas italiano e português em um formulário adaptável.
 
@@ -57,7 +61,6 @@ Adicionado suporte para converter PDF forms coloridos em formulários adaptávei
 ### O que foi melhorado {#jul-2020-improvements}
 
 Melhorias na conversão automática de campos de texto, formulário e grupo de opções para os componentes de formulário adaptáveis correspondentes.
-
 
 ## 20 de março de 2020 (AFC-2020.03.1) {#mar-2020}
 
