@@ -1,14 +1,14 @@
 ---
-title: 'Solução de problemas do serviço de conversão automática de formulários '
-seo-title: 'Solução de problemas do serviço de conversão automática de formulários (AFCS) '
-description: 'Problemas comuns do AFCS e suas soluções '
-seo-description: Problemas comuns do AFCS e suas soluções
+title: Solução de problemas do serviço de conversão automática de formulários
+seo-title: Troubleshoot Automated Forms Conversion Service (AFCS)
+description: Problemas comuns do AFCS e suas soluções
+seo-description: Common AFCS issues and their solutions
 contentOwner: khsingh
 topic-tags: forms
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 source-git-commit: 5353a071f8633b36fc73c34c5d7629228659e2ba
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '649'
 ht-degree: 89%
 
 ---
@@ -32,7 +32,7 @@ O documento fornece etapas básicas de solução de problemas para erros comuns.
 | **Mensagem de erro** <br> Formulários digitalizados não são suportados.  <br><br>**Motivo** <br> O formulário PDF contém apenas imagens digitalizadas do formulário e não contém nenhuma estrutura de conteúdo. <br><br>**Solução** <br> O serviço não oferece suporte à conversão de formulários digitalizados ou de uma imagem de um formulário para um formulário pronto para uso adaptável. No entanto, você usa o Adobe Acrobat para converter a imagem de um formulário em um formulário PDF. Em seguida, use o serviço para converter o formulário PDF em um formulário adaptável. Sempre use uma imagem de alta qualidade do formulário para conversão no Acrobat. Melhora a qualidade da conversão. | ![Não é possível se conectar ao serviço.](assets/scanned-forms-error.png) |
 | **Mensagem de erro** <br> Formulários PDF criptografados não são suportados.  <br><br>**Motivo** <br> A pasta contém formulários PDF criptografados. <br><br>**Solução** <br> O serviço não oferece suporte à conversão de formulários PDF criptografados em formulários adaptáveis. Remova a criptografia, carregue o formulário não criptografado e execute a conversão. | ![Não é possível se conectar ao serviço.](assets/secured-pdf-form.png) |
 | **Mensagem de erro** <br> Não é possível analisar o esquema JSON do metamodelo.  <br><br>**Motivo** <br> O esquema JSON fornecido para o serviço não está formatado corretamente, contém caracteres inválidos ou usa sintaxe inválida para mapear componentes.  <br><br>**Solução**<br> Verifique a formatação do arquivo JSON. Você pode usar qualquer validador JSON online para verificar a formatação e a estrutura do esquema. Consulte o artigo [Ampliar o metamodelo padrão](extending-the-default-meta-model.md) para obter informações sobre a sintaxe do metamodelo. | ![Não é possível se conectar ao serviço.](assets/invalid-meta-model-schema.png) |
-| **Erro (Somente em ambientes locais)** <br> A  **[!UICONTROL Source Language]** opção não lista o idioma correto de um formulário adaptável. <br><br>**** <br> MotivoA propriedade jcr:language do formulário adaptável não está definida corretamente.  <br><br>**** <br> SoluçãoAbra o CRX-DE lite, navegue até  `/content/forms/af/`, abra o  `jcr:content` nó e defina o valor do nó para o idioma correto. Para obter a lista de idiomas suportados, consulte [Adicionar suporte de localização para localidades não suportadas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales). | ![Não é possível se conectar ao serviço.](assets/aem-forms-translation-project-language-unavailable.png) |
+| **Erro (somente ambientes locais)** <br> A variável **[!UICONTROL Source Language]** A opção não lista o idioma correto de um Formulário adaptável. <br><br>**Motivo** <br> A propriedade jcr:language do formulário adaptável não está definida corretamente.  <br><br>**Resolução** <br> Abra o CRX-DE lite, acesse `/content/forms/af/`, abra o `jcr:content` e defina o valor do nó para o idioma correto. Para obter a lista de idiomas compatíveis, consulte [Adicionar suporte de localização para localidades sem suporte](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales). | ![Não é possível se conectar ao serviço.](assets/aem-forms-translation-project-language-unavailable.png) |
 
 <!--
 

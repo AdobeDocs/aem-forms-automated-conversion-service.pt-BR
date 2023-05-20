@@ -24,33 +24,33 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 
 ## 24 de fevereiro de 2022 (AFC-2022.02.0) {#feb-2022}
 
-* Adição da capacidade de [converter automaticamente seções em fragmentos](convert-existing-forms-to-adaptive-forms.md) para ajudar a melhorar a velocidade de renderização de formulários convertidos e facilitar o carregamento de formulários grandes no editor de formulários adaptável.
+* Adição da capacidade de [converter automaticamente seções em fragmentos](convert-existing-forms-to-adaptive-forms.md) para ajudar a melhorar a velocidade de renderização de formulários convertidos e facilitar o carregamento de formulários grandes no editor de formulários adaptáveis.
 
 ## 29 de agosto de 2021 (AFC-2021.08.0) {#aug-2021}
 
-* Adição da capacidade de converter PDF forms em idiomas italiano e português em um formulário adaptável.
+* Adição da capacidade de converter PDF forms em italiano e português para um formulário adaptável.
 
 ## 29 de julho de 2021 (AFC-2021.07.2) {#july-2021}
 
-* Adição da capacidade de converter um formulário PDF em francês, alemão e espanhol em um formulário adaptável.
+* Adição da capacidade de converter um Formulário PDF em francês, alemão e espanhol em um Formulário adaptável.
 
 ## 24 de junho de 2021 (AFC-2021.06.2) {#june-2021}
 
 ### O que foi melhorado {#june-2021-improvements}
 
-A precisão foi aprimorada para detectar automaticamente seções lógicas nos formulários de origem e convertê-las em painéis de formulário adaptáveis correspondentes.
+Precisão aprimorada para detectar automaticamente seções lógicas nos formulários de origem e convertê-las em painéis de formulários adaptáveis correspondentes.
 
-## 03 de março de 2021 (AFC-2021.02.2) {#mar-2021}
+## 3 de março de 2021 (AFC-2021.02.2) {#mar-2021}
 
 ### O que foi melhorado {#march-2021-improvements}
 
-Melhorias na organização do conteúdo do formulário em grupos e campos de escolha, ao converter um formulário de origem em um formulário adaptável.
+Melhorias na organização do conteúdo do formulário em grupos de opções e campos ao converter um formulário de origem em um formulário adaptável.
 
 ## 02 de fevereiro de 2021 (AFC-2021.01.2) {#feb-2021}
 
 ### O que foi melhorado {#feb-2021-improvements}
 
-Melhorias na organização do conteúdo de formulário em painéis e na geração de títulos para painéis ao converter um formulário de origem em um formulário adaptável.
+Melhorias na organização do conteúdo do formulário em painéis e geração de títulos para painéis ao converter um formulário de origem em um formulário adaptável.
 
 ## 16 de julho de 2020 (AFC-2020.07.2) {#jul-2020}
 
