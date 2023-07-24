@@ -1,9 +1,14 @@
 ---
 title: Configurar o serviço de conversão automática de formulários
 description: Prepare sua instância do AEM para usar o serviço do Automated forms conversion
-role: User, Admin
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer, User
+level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: tm+mt
 source-wordcount: '2684'
 ht-degree: 7%
@@ -258,7 +263,7 @@ Crie uma configuração de Cloud Service para conectar sua instância AEM ao ser
    <td>Selecione a opção para gerar automaticamente o Documento de registro para formulários convertidos. A opção é somente para formulários baseados em XFA (XDP e PDF forms). Ao ativar a opção, após enviar um formulário, você pode permitir que seus clientes mantenham um registro, em formato impresso ou de documento, das informações que preencheram no formulário para referência futura. Isso é chamado de documento de registro.</td>
    </tr>
    <tr>
-   <td>Ativar Analytics</td>
+   <td>Habilitar Analytics</td>
    <td>(Somente para AEM 6.4 e AEM 6.5) Selecione a opção para ativar o Adobe Analytics em todos os formulários convertidos. Antes de usar a opção, verifique se o Adobe Analytics está ativado para a sua instância do AEM Forms.</td>
    </tr>
    </tbody>
