@@ -1,17 +1,17 @@
 ---
-title: Introdução para o serviço do automated forms conversion
+title: Introdução ao serviço do automated forms conversion
 description: Acelere a conversão de formulários impressos em formulários adaptáveis
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 69%
+source-wordcount: '703'
+ht-degree: 64%
 
 ---
 
@@ -51,7 +51,7 @@ O serviço de conversão automática de formulários é executado na Adobe Cloud
 
 O serviço de conversão automática de formulários é executado na Adobe Cloud. [Configure a conta de Adobe I/O de sua organização e conecte sua instância de AEM loca](configure-service.md)l ao serviço de conversão em execução na Adobe Cloud.
 
-### 2. Converter formulários PDF em formulários adaptáveis {#use-the-conversion-service}
+### 2. Converter PDF forms em formulários adaptáveis {#use-the-conversion-service}
 
 Depois que o ambiente do AEM Forms for configurado, para converter formulários PDF em formulários adaptáveis, [carregue formulários PDF](convert-existing-forms-to-adaptive-forms.md) na sua instância do AEM e [inicie a conversão](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Antes de carregar os formulários, considere o seguinte:
 

@@ -1,21 +1,19 @@
 ---
-title: Converter formulários PDF em adaptive forms
+title: Converter PDF forms em formulários adaptáveis
 seo-title: Convert PDF forms to adaptive forms
 description: Execute o serviço Automated forms conversion para converter PDF forms em formulários adaptáveis
 seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
-uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
-discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 8%
+source-wordcount: '1612'
+ht-degree: 7%
 
 ---
 
-# Converter formulários PDF em adaptive forms {#convert-print-forms-to-adaptive-forms}
+# Converter PDF forms em formulários adaptáveis {#convert-print-forms-to-adaptive-forms}
 
 O serviço AEM Forms Automated forms conversion, desenvolvido pela Adobe Sensei, converte automaticamente seus PDF forms em formulários adaptáveis responsivos e compatíveis com dispositivos. Se você estiver usando PDF forms não interativos, Acro Forms ou PDF forms baseados em XFA, o serviço do Automated forms conversion pode converter facilmente esses formulários em formulários adaptáveis. Para obter informações sobre recursos, fluxo de trabalho de conversão e informações de integração, consulte [Automated forms conversion](introduction.md) serviço.
 
@@ -54,9 +52,9 @@ Execute as seguintes etapas para carregar os formulários a serem convertidos em
 1. Faça logon na instância do AEM Forms.
 
 1. Toque **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tocar **[!UICONTROL Create]**> **[!UICONTROL Folder]**. Especificar **Título** e **Nome** da pasta. Tocar **[!UICONTROL Create]**. Uma pasta é criada.
+1. Toque **[!UICONTROL Create]**> **[!UICONTROL Folder]**. Especificar **Título** e **Nome** da pasta. Toque **[!UICONTROL Create]**. Uma pasta é criada.
 1. Toque para abrir a pasta recém-criada.
-1. Tocar **[!UICONTROL Create]**> **[!UICONTROL File Upload]**. Selecione os formulários para carregar, clique em **[!UICONTROL Open]** e clique em **[!UICONTROL Upload]**. Os formulários são carregados.
+1. Toque **[!UICONTROL Create]**> **[!UICONTROL File Upload]**. Selecione os formulários para carregar, clique em **[!UICONTROL Open]** e clique em **[!UICONTROL Upload]**. Os formulários são carregados.
 
 ### Executar a conversão {#run-the-conversion}
 
@@ -114,7 +112,7 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
   > * [aumente o valor do parâmetro sling.max.calls]para um número alto o suficiente até que a exceção desapareça.
   > * [aumentar tamanho do cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). O erro ocorre se o formulário for muito complexo, tiver um grande número de tabelas e uma estrutura hierárquica de vários níveis.
 
-1. Tocar **[!UICONTROL Start Conversion]**. A conversão foi iniciada. O progresso da conversão é exibido na pasta ou no formulário até que a conversão esteja em andamento. A mensagem é substituída por outra mensagem de status (Convertido, Parcialmente convertido ou Falha na conversão) após a conclusão da conversão. Um email de status também é enviado no endereço de email configurado na conclusão da conversão:
+1. Toque **[!UICONTROL Start Conversion]**. A conversão foi iniciada. O progresso da conversão é exibido na pasta ou no formulário até que a conversão esteja em andamento. A mensagem é substituída por outra mensagem de status (Convertido, Parcialmente convertido ou Falha na conversão) após a conclusão da conversão. Um email de status também é enviado no endereço de email configurado na conclusão da conversão:
 
    * Em uma conversão bem-sucedida, o formulário adaptável convertido e o esquema relacionado são baixados no caminho especificado na variável **[!UICONTROL Basic]** da caixa de diálogo de conversão. Os fragmentos de formulário e o esquema correspondente serão baixados somente se a opção Extrair fragmento estiver selecionada antes de iniciar a conversão.
    * Em uma conversão com falha, a variável **[!UICONTROL Conversion Failed]** será exibida se todos os formulários de entrada falharem na conversão ou se a variável **[!UICONTROL Partially Failed]** A mensagem é exibida quando apenas alguns de todos os formulários de entrada não são convertidos. Um email de status é enviado no [endereço de email configurado](configure-service.md#configureemailnotification) e um erro é registrado no arquivo error.log.

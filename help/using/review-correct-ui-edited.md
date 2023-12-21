@@ -2,15 +2,15 @@
 title: Revisar e corrigir formulários convertidos
 description: Revise e corrija os formulários adaptáveis convertidos pelo serviço do Automated forms conversion.
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2510'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Após a primeira conversão bem-sucedida, o serviço de conversão sobrepõe o d
 
 Após a primeira conversão bem-sucedida, o serviço de conversão sobrepõe o documento do PDF de origem aos campos e componentes identificados. É possível fazer melhorias nos campos identificados e regenerar o formulário adaptável para obter uma saída mais próxima da experiência desejada. Você pode começar a revisar uma conversão somente após a primeira conversão bem-sucedida.
 
-### Antes de você iniciar {#before-you-start}
+### Antes de começar {#before-you-start}
 
 * O editor de revisão e correção não oferece suporte a fragmentos. Não use o editor para revisar conversões que tiveram o **Extrair fragmento** opção ativada durante as conversões. Você pode usar o [editor de formulário adaptável](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) para essas conversões.
 
