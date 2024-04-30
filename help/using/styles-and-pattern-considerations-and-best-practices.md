@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas e considerações
-description: Práticas recomendadas e considerações para o serviço do Automated forms conversion
+description: Práticas recomendadas e considerações para o serviço do Automated forms conversion (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 3%
+source-wordcount: '1229'
+ht-degree: 2%
 
 ---
 
 # Práticas recomendadas e padrões complexos conhecidos {#Best-practices-and-considerations2}
 
-Este documento fornece diretrizes e recomendações das quais os administradores de formulários, autores e desenvolvedores podem se beneficiar ao trabalhar com a [!DNL Automated Forms Conversion service]. Ele discute as práticas recomendadas desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automática. Essas práticas recomendadas contribuem coletivamente para o desempenho e os resultados [!DNL Automated Forms Conversion service].
+Este documento fornece diretrizes e recomendações das quais os administradores de formulários, autores e desenvolvedores podem se beneficiar ao trabalhar com a [!DNL Automated Forms Conversion service] (AFCS). Ele discute as práticas recomendadas desde a preparação de formulários de origem até a correção de padrões complexos que exigem algum esforço extra para a conversão automática. Essas práticas recomendadas contribuem coletivamente para o desempenho e os resultados [!DNL Automated Forms Conversion service] (AFCS).
 
 ## Práticas recomendadas
 
@@ -28,7 +28,7 @@ O serviço de conversão converte PDF forms disponíveis em seu AEM [!DNL Forms]
 É possível fazer upload de todos os PDF forms de uma só vez ou em fases, conforme necessário. Antes de carregar os formulários, considere o seguinte:
 
 * Mantenha o número de formulários em uma pasta menor que 15 e o número total de páginas em uma pasta menor que 50.
-* Mantenha o tamanho da pasta inferior a 10 MB. Não conserve formulários em uma subpasta.
+* Mantenha o tamanho da pasta inferior a 10 MB. Não mantenha formulários em uma subpasta.
 * Mantenha o número de páginas em um formulário menor que 15.
 * Organize documentos de origem em um lote de 8 a 15 documentos. Mantenha formulários de origem com fragmentos de formulário adaptáveis comuns em um único lote.
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha e protegidos.

@@ -1,6 +1,6 @@
 ---
-title: Ampliar o meta modelo padrão
-description: Estenda o metamodelo padrão para adicionar padrões, validações e entidades específicos à sua organização e aplicar configurações a campos de formulário adaptáveis ao executar o serviço do Automated forms conversion.
+title: Estender o metamodelo padrão
+description: Estenda o metamodelo padrão para adicionar padrões, validações e entidades específicos à sua organização e aplicar configurações a campos de formulário adaptáveis ao executar o serviço do Automated forms conversion (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2569'
 ht-degree: 1%
 
 ---
 
-# Ampliar o meta modelo padrão {#extend-the-default-meta-model}
+# Estender o metamodelo padrão {#extend-the-default-meta-model}
 
-O serviço de automated forms conversion identifica e extrai objetos de formulário de formulários de origem. O Mapeador semântico ajuda o serviço a decidir como os objetos extraídos são representados em um formulário adaptável. Por exemplo, um formulário de origem pode ter vários tipos diferentes de representações de uma data. O mapeador semântico ajuda a mapear todas as representações de objetos de formulário de data do formulário de origem com o componente de data dos formulários adaptáveis. O mapeador semântico também permite que o serviço pré-configure e aplique validações, regras, padrões de dados, texto de ajuda e propriedades de acessibilidade aos componentes de formulário adaptáveis durante a conversão.
+O serviço de automated forms conversion (AFCS) identifica e extrai objetos de formulário de formulários de origem. O Mapeador semântico ajuda o serviço a decidir como os objetos extraídos são representados em um formulário adaptável. Por exemplo, um formulário de origem pode ter vários tipos diferentes de representações de uma data. O mapeador semântico ajuda a mapear todas as representações de objetos de formulário de data do formulário de origem com o componente de data dos formulários adaptáveis. O mapeador semântico também permite que o serviço pré-configure e aplique validações, regras, padrões de dados, texto de ajuda e propriedades de acessibilidade aos componentes de formulário adaptáveis durante a conversão.
 
 ![](assets/meta-model.gif)
 
@@ -25,7 +25,7 @@ O modelo meta é um esquema JSON. Antes de começar com o metamodelo, verifique 
 
 ## Metamodelo padrão {#default-meta-model}
 
-O serviço do Automated forms conversion tem um metamodelo padrão. É um esquema JSON e reside na Adobe Cloud com outros componentes do serviço do Automated forms conversion. Você pode encontrar uma cópia do meta modelo em seu servidor AEM local em: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Também é possível [clique aqui](assets/en.globalschema.json) para acessar ou baixar o esquema de idioma inglês. O metamodelo para [Francês](assets/fr.globalschema.json), [Alemão](assets/de.globalschema.json) [Espanhol](assets/es.globalschema.json), [Italiano](assets/it.globalschema.json), e [Português](assets/pt_br.globalschema.json) Os idiomas também estão disponíveis para download.
+O serviço do Automated forms conversion (AFCS) tem um metamodelo padrão. É um esquema JSON e reside na Adobe Cloud com outros componentes do serviço do Automated forms conversion (AFCS). Você pode encontrar uma cópia do meta modelo em seu servidor AEM local em: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Também é possível [clique aqui](assets/en.globalschema.json) para acessar ou baixar o esquema de idioma inglês. O metamodelo para [Francês](assets/fr.globalschema.json), [Alemão](assets/de.globalschema.json) [Espanhol](assets/es.globalschema.json), [Italiano](assets/it.globalschema.json), e [Português](assets/pt_br.globalschema.json) Os idiomas também estão disponíveis para download.
 
 O esquema do modelo meta é derivado de entidades de esquema em https://schema.org/docs/schemas.html. Ele tem Pessoa, PostalAddress, LocalBusiness e mais entidades, conforme definido em https://schema.org. Cada entidade do metamodelo adere ao tipo de objeto de esquema JSON. O código a seguir representa um exemplo de estrutura de metamodelo:
 
@@ -51,7 +51,7 @@ Execute as seguintes etapas para baixar o metamodelo padrão no sistema de arqui
 
 1. Faça logon na sua instância do AEM Forms.
 1. Navegue até a **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** **>** **[!UICONTROL Meta Model]** pasta.
-1. Selecione o **[!UICONTROL global.schema.json]** arquivo e toque em **[!UICONTROL Download]**. Uma caixa de diálogo de download é exibida. Selecione o **[!UICONTROL Download asset(s) as binary files]** opção. Tocar **[!UICONTROL Download]**. Um arquivo é baixado.
+1. Selecione o **[!UICONTROL global.schema.json]** arquivo e toque em **[!UICONTROL Download]**. Uma caixa de diálogo de download é exibida. Selecione o **[!UICONTROL Download asset(s) as binary files]** opção. Toque **[!UICONTROL Download]**. Um arquivo é baixado.
 
    <!--
    Comment Type: draft
@@ -120,16 +120,16 @@ Neste exemplo, o serviço de conversão procura palavras-chave de telefone, tele
 
 ### Propriedades do esquema JSON para campos de formulário adaptável gerados {#jsonschemaproperties}
 
-O metamodelo é compatível com as seguintes propriedades comuns do esquema JSON para campos de formulário adaptáveis gerados usando o serviço do Automated forms conversion:
+O metamodelo é compatível com as seguintes propriedades comuns do esquema JSON para campos de formulário adaptáveis gerados usando o serviço do Automated forms conversion (AFCS):
 
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>Nome da Propriedade</strong></th> 
+   <th><strong>Nome de propriedade</strong></th> 
    <th><strong>Descrição</strong></th> 
   </tr> 
   <tr> 
-   <td><p>título</p></td> 
+   <td><p>cargo</p></td> 
    <td> 
     <p>O texto mencionado na propriedade title em um metamodelo serve como uma palavra-chave de pesquisa para executar ações nos campos de formulário adaptáveis gerados. Por exemplo, modificar o rótulo de um campo de formulário adaptável. Para obter mais informações, consulte <strong>Modificar o rótulo de um campo de formulário</strong> in <a href="#custommetamodelexamples">Exemplos de metamodelo personalizado.</a></p> </td> 
   </tr>
@@ -164,7 +164,7 @@ O metamodelo é compatível com as seguintes propriedades comuns do esquema JSON
 
 ### Pesquisa baseada em palavra-chave para aplicar propriedades a campos de formulário adaptáveis gerados {#keywordsearch}
 
-O serviço Automated forms conversion realiza uma pesquisa por palavra-chave no formulário de origem durante a conversão. Depois de filtrar os campos que atendem aos critérios de pesquisa, o serviço de conversão aplica as propriedades definidas para esses campos no metamodelo aos campos de formulário adaptáveis gerados.
+O serviço Automated forms conversion (AFCS) executa uma pesquisa por palavra-chave no formulário de origem durante a conversão. Depois de filtrar os campos que atendem aos critérios de pesquisa, o serviço de conversão aplica as propriedades definidas para esses campos no metamodelo aos campos de formulário adaptáveis gerados.
 
 As palavras-chave são referenciadas usando o **aem:affKeyword** propriedade.
 
@@ -181,12 +181,12 @@ Neste exemplo, o serviço de conversão usa o texto dentro de **aem:affKeyword**
 
 ### Propriedades adicionais para campos de formulário adaptável gerados {#additionalproperties}
 
-Você pode usar o **aem:afProperties** no metamodelo para definir as seguintes propriedades adicionais para campos de formulários adaptáveis gerados usando o serviço do Automated forms conversion:
+Você pode usar o **aem:afProperties** no modelo meta para definir as seguintes propriedades adicionais para campos de formulários adaptáveis gerados usando o serviço do Automated forms conversion (AFCS):
 
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>Nome da Propriedade</strong></th> 
+   <th><strong>Nome de propriedade</strong></th> 
    <th><strong>Descrição</strong></th> 
   </tr> 
   <tr> 
@@ -217,13 +217,13 @@ Você pode usar o **aem:afProperties** no metamodelo para definir as seguintes p
 
 ## Criar um modelo personalizado no seu próprio idioma{#language-specific-meta-model}
 
-Você pode criar um metamodelo específico de idioma. Esse metamodelo ajuda a criar regras de mapeamento no idioma de sua escolha. O serviço Automated forms conversion permite criar metamodelos nos seguintes idiomas:
+Você pode criar um metamodelo específico de idioma. Esse metamodelo ajuda a criar regras de mapeamento no idioma de sua escolha. O serviço Automated forms conversion (AFCS) permite criar metamodelos nos seguintes idiomas:
 
 * Inglês (EN)
-* Francês (fr)
-* Alemão (de)
-* Espanhol (es)
-* Italiano (it)
+* Francês (França)
+* Alemão (Alemanha)
+* Espanhol (Espanha)
+* Italiano (Itália)
 * Português (pt-br)
 
 Adicione o *aem:Idioma* metatag à parte superior um metamodelo para especificar seu idioma. Por exemplo,
@@ -242,7 +242,7 @@ Quando nenhum idioma é especificado, o serviço considera que o metamodelo est�
 * Garantir que todas as referências de entidade e os valores predefinidos de toda a chave de id incluam apenas caracteres ASCII. Por exemplo &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
 * Verifique se todos os valores correspondentes às seguintes chaves estão no idioma do metamodelo especificado:
    * aem:affKeyword
-   * título
+   * cargo
    * descrição
    * enumName
    * shortDescription
@@ -258,9 +258,9 @@ A imagem a seguir exibe exemplos de metamodelo de idioma inglês e do metamodelo
 
 ## Modificar campos de formulário adaptáveis usando o metamodelo personalizado {#modify-adaptive-form-fields-using-custom-meta-model}
 
-Sua organização pode ter padrões e validações, além daqueles listados no metamodelo padrão. É possível estender o metamodelo padrão para adicionar padrões, validações e entidades específicas à sua organização. O serviço do Automated forms conversion aplica o metamodelo personalizado aos campos de formulário durante a conversão. É possível continuar atualizando o metamodelo à medida que novos padrões, validações e entidades específicos da sua organização são descobertos.
+Sua organização pode ter padrões e validações, além daqueles listados no metamodelo padrão. É possível estender o metamodelo padrão para adicionar padrões, validações e entidades específicas à sua organização. O serviço do Automated forms conversion (AFCS) aplica o metamodelo personalizado aos campos de formulário durante a conversão. É possível continuar atualizando o metamodelo à medida que novos padrões, validações e entidades específicos da sua organização são descobertos.
 
-O serviço do Automated forms conversion usa um metamodelo padrão salvo no seguinte local para mapear campos de formulário de origem para os campos de formulário adaptáveis durante a conversão:
+O serviço do Automated forms conversion (AFCS) usa um metamodelo padrão salvo no seguinte local para mapear campos de formulário de origem para os campos de formulário adaptáveis durante a conversão:
 
 http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 

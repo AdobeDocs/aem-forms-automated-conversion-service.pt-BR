@@ -8,28 +8,28 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1799'
-ht-degree: 4%
+source-wordcount: '1777'
+ht-degree: 3%
 
 ---
 
 # Perguntas frequentes{#frequently-asked-questions}
 
-1. **A qual versão do AEM Forms o serviço Automated forms conversion oferece suporte?**
-   <p>O serviço Automated forms conversion é compatível com o AEM 6.4 Forms e o AEM 6.5 Forms. Ele funciona com AEM Forms em formulários OSGi e AEM no JEE. Você precisa do pacote complementar mais recente do AEM Forms sobre a instância de autor AEM para usar o serviço. Para obter instruções detalhadas, consulte <a href="configure-service.md">Configurar o Automated forms conversion</a> serviço.</p> 
+1. **A qual versão do AEM Forms o serviço do Automated forms conversion (AFCS) oferece suporte?**
+   <p>O serviço Automated forms conversion (AFCS) é compatível com AEM 6.4 Forms e AEM 6.5 Forms. Ele funciona com AEM Forms em formulários OSGi e AEM no JEE. Você precisa do pacote complementar mais recente do AEM Forms sobre a instância de autor AEM para usar o serviço. Para obter instruções detalhadas, consulte <a href="configure-service.md">Configurar o Automated forms conversion</a> serviço.</p> 
     <br>
 
 1. **O serviço pode ser instalado no local?**
-   <p>O Adobe treina algoritmos de IA e ML do serviço do Automated forms conversion regularmente com um novo conjunto de dados para melhorar a precisão da conversão. Os algoritmos atualizados são implantados no serviço de conversão em execução na Adobe Cloud em intervalos periódicos. Todos os clientes do serviço são beneficiados com os algoritmos atualizados. Assim, a implantação central hospedada na nuvem é mais adequada para o serviço Automated forms conversion, para aprender e fornecer continuamente melhorias a todos os clientes.</p> 
+   <p>O Adobe treina algoritmos de IA e ML do serviço do Automated forms conversion (AFCS) regularmente com um novo conjunto de dados para melhorar a precisão da conversão. Os algoritmos atualizados são implantados no serviço de conversão em execução na Adobe Cloud em intervalos periódicos. Todos os clientes do serviço são beneficiados com os algoritmos atualizados. Assim, a implantação central hospedada na nuvem é mais adequada para o serviço Automated forms conversion (AFCS) para aprender e fornecer continuamente melhorias a todos os clientes.</p> 
     <p>O serviço converte formulários em branco em formulários adaptáveis. O serviço não oferece suporte a formulários preenchidos e extração de dados de formulários preenchidos. Remover dados de formulários preenchidos e remover ou incluir na lista de permissões informações proprietárias dos formulários antes de enviá-los ao serviço para conversão</p> <br>
 
 1. **O serviço é compatível com todos os formatos de PDF forms? Quais idiomas são suportados?**
    <p>O serviço pode converter PDF forms não interativos, XDP e PDF forms baseados em XFA e AcroForms em formulários adaptáveis. O serviço não suporta formulários digitalizados ou preenchidos. Para outras limitações, consulte <a href="known-issues.md">problemas conhecidos</a> artigo.<br /> </p> 
     <p>Estamos adicionando suporte regularmente para outros tipos de fonte. Mantenha a <a href="introduction.md">formulários PDF suportados</a> na sua lista de observação para obter uma atualização regular sobre os recursos e funcionalidades recém-adicionados.</p>
 
-   O serviço pode converter somente formulários em inglês, francês, alemão, espanhol, italiano e português em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM.](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   O serviço pode converter somente formulários em inglês, francês, alemão, espanhol, italiano e português em formulários adaptáveis. Você pode traduzir os formulários adaptáveis gerados para outro idioma usando [Fluxo de trabalho de tradução do AEM.](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **O serviço pode produzir um XDP em vez de um formulário adaptável?**
    <p>O serviço não produz uma saída XDP. Estamos adicionando recursos e ao serviço regularmente. Mantenha a <a href="introduction.md">idiomas e PDF forms compatíveis</a> na sua lista de observação para obter uma atualização regular sobre os recursos e funcionalidades recém-adicionados.</p> <br>
@@ -83,7 +83,7 @@ Os motivos mais comuns para a conversão em falha são:</p>
    <p>O serviço não converte automaticamente scripts de formulários baseados em XFA ou do Acro Forms em regras de formulário adaptáveis correspondentes. Você (autores de formulários) pode usar o <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">Editor de regras</a> para adicionar interatividade a um formulário adaptável.</p> <br>
 
 1. **Alguns objetos de formulário não são convertidos corretamente em componentes de formulário adaptáveis. Como resolver o problema?**
-   <p>O serviço Automated forms conversion é treinado em um grande conjunto de formulários. Mas os aplicativos baseados em IA/ML são limitados por seus dados e padrões de treinamento. Pode haver vários tipos de campos, layouts, padrões e contexto discerníveis para a percepção humana, mas difíceis de reconhecer automaticamente. O serviço pode não identificar esses objetos ou reconhecê-los incorretamente. Você pode usar <a href="review-correct-ui-edited.md" target="_blank">Revisar e corrigir</a> editor para fazer as modificações necessárias no layout familiar baseado em formulário em papel do formulário de entrada.</p> <br/>
+   <p>O serviço de automated forms conversion (AFCS) é treinado em um grande conjunto de formulários. Mas os aplicativos baseados em IA/ML são limitados por seus dados e padrões de treinamento. Pode haver vários tipos de campos, layouts, padrões e contexto discerníveis para a percepção humana, mas difíceis de reconhecer automaticamente. O serviço pode não identificar esses objetos ou reconhecê-los incorretamente. Você pode usar <a href="review-correct-ui-edited.md" target="_blank">Revisar e corrigir</a> editor para fazer as modificações necessárias no layout familiar baseado em formulário em papel do formulário de entrada.</p> <br/>
 
 1. **Algumas correções são repetidas nos formulários. O serviço pode identificar e corrigir todas essas instâncias em conversões futuras?**
 
@@ -114,8 +114,8 @@ O erro acima ocorre quando a delegação de inicialização não está configura
 1. **Como alterar automaticamente a capitalização do texto do formulário adaptável?**
    <p>Você pode usar adaptável de temas ou editor de estilos para alterar a capitalização de um campo de formulário adaptável. Por exemplo, você pode abrir o editor de temas e definir o valor da propriedade Case de todo o texto do formulário para maiúsculas, minúsculas ou camelCase. Você também pode usar a opção Substituição de CSS no editor de tema para criar diferentes tipos de estilos.</p>
 
-1. **Posso usar tags de texto do Adobe Sign com o serviço Automated forms conversion?**
-   <p> Quando você usa o Serviço Automated forms conversion para converter um formulário PDF em um formulário adaptável e o formulário PDF tem tags de texto Adobe Sign, essas tags são convertidas em campos de formulário adaptáveis correspondentes e os detalhes do assinante são preenchidos automaticamente.  O recurso está disponível somente para o Acro Forms e os formulários adaptáveis são compatíveis com um número limitado de campos do Adobe Sign.</p>  </br>
+1. **Posso usar tags de texto do Adobe Sign com o serviço do Automated forms conversion (AFCS)?**
+   <p> Quando você usa o Serviço de Automated forms conversion (AFCS) para converter um formulário de PDF em um formulário adaptável e o formulário de PDF tem tags de texto Adobe Sign, essas tags são convertidas em campos de formulário adaptáveis correspondentes e os detalhes do assinante são preenchidos automaticamente.  O recurso está disponível somente para o Acro Forms e os formulários adaptáveis são compatíveis com um número limitado de campos do Adobe Sign.</p>  </br>
 
 1. **Como criar um formulário PDF habilitado para Adobe Sign?**
    </p>Para criar um formulário PDF habilitado para Adobe Sign:</p>

@@ -1,5 +1,5 @@
 ---
-title: Solução de problemas do serviço de conversão automática de formulários
+title: Solução de problemas do serviço de conversão automática de formulários (AFCS)
 description: Problemas comuns do AFCS e suas soluções
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -9,14 +9,14 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 89%
+source-wordcount: '655'
+ht-degree: 85%
 
 ---
 
-# Solução de problemas do serviço de conversão automática de formulários
+# Solução de problemas do serviço de conversão automática de formulários (AFCS)
 
 O documento fornece etapas básicas de solução de problemas para erros comuns.
 
@@ -27,7 +27,7 @@ O documento fornece etapas básicas de solução de problemas para erros comuns.
 | Erro | Exemplo |
 |--- |--- |
 | **Mensagem de erro** <br> O cabeçalho do token de acesso não está disponível. <br><br> **Motivo** <br> Um administrador criou várias configurações do IMS ou a configuração do IMS não pode acessar o serviço AFCS na Adobe Cloud. <br><br>**Solução** <br> Se houver várias configurações, exclua todas as configurações e [crie uma nova configuração](configure-service.md#obtainpubliccertificates). <br> Se houver uma única configuração, use a **Verificação de integridade** para [verificar a conectividade](configure-service.md#createintegrationoption). | ![O cabeçalho do token de acesso não está disponível](assets/invalid-ims-configurations.png) |
-| **Mensagem de erro** <br> Não é possível conectar ao serviço.  <br><br>**Motivo** <br> URL de serviço incorreto ou nenhum URL de serviço é mencionado nos serviços em nuvem do serviço de conversão automática de formulários. <br><br>**Solução** <br> Corrija o [URL do serviço](configure-service.md#configure-the-cloud-service) nos serviços na nuvem do serviço de conversão automática de formulários. | ![Não é possível se conectar ao serviço.](assets/wrong-service-url-configured.png) |
+| **Mensagem de erro** <br> Não é possível conectar ao serviço.  <br><br>**Motivo** <br> Um URL de serviço incorreto ou nenhum URL de serviço é mencionado nos serviços em nuvem do Serviço de Automated forms conversion (AFCS). <br><br>**Resolução** <br> Correto [URL do serviço](configure-service.md#configure-the-cloud-service) no Automated forms conversion Service (AFCS) Cloud services. | ![Não é possível se conectar ao serviço.](assets/wrong-service-url-configured.png) |
 | **Mensagem de erro** <br> O serviço falhou ao converter o formulário.  <br><br>**Motivo** <br> Problemas de conectividade de rede da sua parte, o serviço está inativo devido à manutenção agendada ou interrupção no Adobe Cloud. <br><br>**Solução** <br> Resolva os problemas de conectividade de rede da sua parte e verifique o status do serviço em https://status.adobe.com/ para consultar se há uma interrupção planejada ou não planejada. | ![Não é possível se conectar ao serviço.](assets/conversion-failure.png) |
 | **Mensagem de erro** <br> O número de páginas é superior a 15.  <br><br>**Motivo** <br> O formulário de origem tem mais de 15 páginas.  <br><br>**Solução** <br> Use o Adobe Acrobat para dividir os formulários com mais de 15 páginas. Reduza o número de páginas em um formulário para menos de 15. | ![Não é possível se conectar ao serviço.](assets/number-of-pages.png) |
 | **Mensagem de erro** <br> O número de arquivos é superior a 15.  <br><br>**Motivo** <br>  A pasta contém mais de 15 formulários. <br><br>**Solução** <br>Coloque o número de formulários em uma pasta igual ou inferior a 15. Reduza o número total de páginas em uma pasta menos de 50. Ajuste o tamanho da pasta para menos de 10 MB. Não conserve formulários em uma subpasta. Organize formulários de origem em um lote de 8 a 15 formulários. | ![Não é possível se conectar ao serviço.](assets/number-of-pages.png) |
@@ -52,7 +52,7 @@ O documento fornece etapas básicas de solução de problemas para erros comuns.
 <td><img alt="The access token header is not available" src="assets/invalid-ims-configuration.png" /></td>
 </tr>
 <tr>
-<td><strong>Error Message</strong> <br> Unable to connect to the service.  <br><br><strong>Reason</strong> <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service cloud services. <br><br><strong>Resolution</strong> <br> Correct <a href="configure-service.md#configure-the-cloud-service">Service URL</a> in Automated Forms Conversion Service Cloud services.</td>
+<td><strong>Error Message</strong> <br> Unable to connect to the service.  <br><br><strong>Reason</strong> <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service (AFCS) cloud services. <br><br><strong>Resolution</strong> <br> Correct <a href="configure-service.md#configure-the-cloud-service">Service URL</a> in Automated Forms Conversion Service (AFCS) Cloud services.</td>
 <td><img alt="Unable to connect to the service." src="assets/wrong-endpoint-configured.png" /></td>
 </tr>
 <tr>

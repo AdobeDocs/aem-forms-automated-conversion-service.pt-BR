@@ -1,6 +1,6 @@
 ---
 title: Revisar e corrigir formulários convertidos
-description: Revise e corrija os formulários adaptáveis convertidos pelo serviço do Automated forms conversion.
+description: Revise e corrija os formulários adaptáveis convertidos pelo serviço do Automated forms conversion (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2510'
+source-wordcount: '2512'
 ht-degree: 0%
 
 ---
 
 # Revisar e corrigir formulários convertidos{#review-and-correct-converted-forms}
 
-O serviço AEM Forms Automated forms conversion identifica campos, conteúdo e layout do documento de PDF de entrada e converte o documento PDF em um formulário adaptável. O formulário adaptável de saída pode ter alguns campos ausentes ou convertidos incorretamente. Você pode usar o editor de Revisar e corrigir para fazer melhorias nos campos identificados e gerar novamente o formulário adaptável para obter uma saída mais próxima da experiência desejada. Após a primeira conversão, você pode abrir o documento de PDF de entrada no editor para:
+O serviço de Automated forms conversion do AEM Forms (AFCS) identifica campos, conteúdo e layout do documento de PDF de entrada e converte o documento de PDF em um formulário adaptável. O formulário adaptável de saída pode ter alguns campos ausentes ou convertidos incorretamente. Você pode usar o editor de Revisar e corrigir para fazer melhorias nos campos identificados e gerar novamente o formulário adaptável para obter uma saída mais próxima da experiência desejada. Após a primeira conversão, você pode abrir o documento de PDF de entrada no editor para:
 
 * Exibir todos os campos e conteúdos identificados durante a conversão
 * Identifique os campos e o conteúdo ausente durante a conversão

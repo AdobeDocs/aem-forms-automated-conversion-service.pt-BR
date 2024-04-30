@@ -1,27 +1,28 @@
 ---
 title: Converter PDF forms em formulários adaptáveis
 seo-title: Convert PDF forms to adaptive forms
-description: Execute o serviço Automated forms conversion para converter PDF forms em formulários adaptáveis
-seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
+description: Execute o serviço Automated forms conversion (AFCS) para converter PDF forms em formulários adaptáveis
+seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
 contentOwner: khsingh
 topic-tags: forms
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
+exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1616'
 ht-degree: 7%
 
 ---
 
 # Converter PDF forms em formulários adaptáveis {#convert-print-forms-to-adaptive-forms}
 
-O serviço AEM Forms Automated forms conversion, desenvolvido pela Adobe Sensei, converte automaticamente seus PDF forms em formulários adaptáveis responsivos e compatíveis com dispositivos. Se você estiver usando PDF forms não interativos, Acro Forms ou PDF forms baseados em XFA, o serviço do Automated forms conversion pode converter facilmente esses formulários em formulários adaptáveis. Para obter informações sobre recursos, fluxo de trabalho de conversão e informações de integração, consulte [Automated forms conversion](introduction.md) serviço.
+O serviço de Automated forms conversion do AEM Forms (AFCS), desenvolvido pela Adobe Sensei, converte automaticamente seus PDF forms em formulários adaptáveis responsivos e compatíveis com dispositivos. Se você estiver usando PDF forms não interativos, Acro Forms ou PDF forms baseados em XFA, o serviço do Automated forms conversion (AFCS) pode facilmente converter esses formulários em formulários adaptáveis. Para obter informações sobre recursos, fluxo de trabalho de conversão e informações de integração, consulte [Automated forms conversion](introduction.md) serviço.
 
 ## Pré-requisitos {#pre-requisites}
 
 * [**Configurar o serviço de conversão**](configure-service.md)
 
-* **Prepare o [modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) a aplicar aos formulários convertidos:** O uso de um modelo permite aplicar identidade visual consistente em todos os formulários adaptáveis. Além disso, o serviço do Automated forms conversion não extrai e usa o cabeçalho e o rodapé de documentos PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar o cabeçalho e o rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão. Ao criar uma pasta para os modelos, selecione a variável **[!UICONTROL Browse configurations]** para todos.
+* **Prepare o [modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) a aplicar aos formulários convertidos:** O uso de um modelo permite aplicar identidade visual consistente em todos os formulários adaptáveis. Além disso, o serviço de Automated forms conversion (AFCS) não extrai e usa o cabeçalho e o rodapé dos documentos de PDF de origem. Você pode usar modelos de formulário adaptáveis para especificar o cabeçalho e o rodapé. O cabeçalho e o rodapé especificados no modelo são aplicados ao formulário adaptável durante a conversão. Ao criar uma pasta para os modelos, selecione a variável **[!UICONTROL Browse configurations]** para todos.
 
 * **Prepare o [temas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) a aplicar aos formulários convertidos:** Usar um tema permite aplicar um estilo consistente a todas as formas adaptáveis da organização.
 

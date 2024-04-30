@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 2%
+source-wordcount: '1506'
+ht-degree: 1%
 
 ---
 
-# Integrar formulário adaptável ao banco de dados usando o fluxo de trabalho do AEM {#submit-forms-to-database-using-forms-portal}
+# Integrar formulário adaptável ao banco de dados usando o fluxo de trabalho AEM {#submit-forms-to-database-using-forms-portal}
 
-O serviço Automated forms conversion permite converter um formulário de PDF não interativo, um formulário Acro ou um formulário de PDF baseado em XFA em um formulário adaptável. Ao iniciar o processo de conversão, você tem a opção de gerar um formulário adaptável com ou sem vínculos de dados.
+O serviço de automated forms conversion (AFCS) permite converter um formulário de PDF não interativo, um formulário do Acro ou um formulário de PDF baseado em XFA em um formulário adaptável. Ao iniciar o processo de conversão, você tem a opção de gerar um formulário adaptável com ou sem vínculos de dados.
 
 Se você optar por gerar um formulário adaptável sem associações de dados, será possível integrar o formulário adaptável convertido com um modelo de dados de formulário, esquema XML ou esquema JSON após a conversão. Para o modelo de dados de formulário, é necessário vincular campos de formulário adaptáveis manualmente com o modelo de dados de formulário. No entanto, se você gerar um formulário adaptável com vinculações de dados, o serviço de conversão associará automaticamente os formulários adaptáveis a um esquema JSON e criará uma vinculação de dados entre os campos disponíveis no formulário adaptável e no esquema JSON. Em seguida, você pode integrar o formulário adaptável a um banco de dados de sua escolha, preencher dados no formulário e enviá-lo para o banco de dados. Da mesma forma, após a integração bem-sucedida com o banco de dados, é possível configurar campos no formulário adaptável convertido para recuperar valores do banco de dados e preencher previamente os campos de formulário adaptável.
 
@@ -43,7 +43,7 @@ Você pode baixar o exemplo de formulário Fale Conosco usando:
 
 [Obter arquivo](assets/sample_contact_us_form.pdf)
 
-O arquivo PDF serve como entrada para o serviço do Automated forms conversion. O serviço converte esse arquivo em um formulário adaptável. A imagem a seguir representa o formulário entre em contato conosco de amostra em formato PDF.
+O arquivo PDF serve como entrada para o serviço de Automated forms conversion (AFCS). O serviço converte esse arquivo em um formulário adaptável. A imagem a seguir representa o formulário entre em contato conosco de amostra em formato PDF.
 
 ![exemplo de formulário de pedido de empréstimo](assets/sample_contact_us_form.png)
 
@@ -160,9 +160,9 @@ Depois de configurar o MYSQL como a fonte de dados, execute as seguintes etapas 
 
 1. Na instância do autor AEM, navegue até **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
 
-1. Tocar **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
+1. Toque **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
 
-1. No **[!UICONTROL Create Form Data Model]** assistente, especificar **workflow_submit** como o nome do modelo de dados de formulário. Tocar **[!UICONTROL Next]**.
+1. No **[!UICONTROL Create Form Data Model]** assistente, especificar **workflow_submit** como o nome do modelo de dados de formulário. Toque **[!UICONTROL Next]**.
 
 1. Selecione a fonte de dados MYSQL que você configurou na seção anterior e toque em **[!UICONTROL Create]**.
 
@@ -184,7 +184,7 @@ Você pode baixar o modelo de dados de formulário de amostra usando:
 
 ## Gerar formulários adaptáveis com vinculação JSON {#generate-adaptive-forms-with-json-binding}
 
-Use o [Serviço Automated forms conversion a ser convertido](convert-existing-forms-to-adaptive-forms.md) o [Formulário Fale Conosco](#sample-adaptive-form) para um formulário adaptável com vinculação de dados. Certifique-se de não selecionar a opção **[!UICONTROL Generate adaptive form(s) without data bindings]** ao gerar o formulário adaptável.
+Use o [Serviço do Automated forms conversion (AFCS) para conversão](convert-existing-forms-to-adaptive-forms.md) o [Formulário Fale Conosco](#sample-adaptive-form) para um formulário adaptável com vinculação de dados. Certifique-se de não selecionar a opção **[!UICONTROL Generate adaptive form(s) without data bindings]** ao gerar o formulário adaptável.
 
 ![Formulário adaptável com vinculação JSON](assets/generate_af_with_data_bindings.png)
 
@@ -253,7 +253,7 @@ Execute as seguintes etapas para enviar o formulário adaptável para o modelo d
 
 1. No **[!UICONTROL Submission]** , selecione **[!UICONTROL Invoke an AEM workflow]** do **[!UICONTROL Submit Action]** selecione o modelo de fluxo de trabalho criado na seção anterior e especifique **data.xml** no **[!UICONTROL Data File Path]** campo.
 
-1. Toque ![Salvar](assets/save_icon.png) para salvar as propriedades.
+1. Toque em ![Salvar](assets/save_icon.png) para salvar as propriedades.
 
 1. Toque **[!UICONTROL Preview]**, insira valores nos campos de formulário adaptável e toque em **[!UICONTROL Submit]**. Os valores enviados agora são exibidos na tabela do banco de dados MYSQL, em vez de **crx-repository**.
 
