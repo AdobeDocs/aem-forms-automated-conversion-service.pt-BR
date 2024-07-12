@@ -22,13 +22,13 @@ Antes de começar a usar o AFCS (AEM Forms Automated forms conversion Service), 
 ## Problemas conhecidos {#known-issues}
 
 * A pasta que contém formulários para conversão não deve ter mais de 15 formulários e 50 páginas no total. O tamanho da pasta de origem não deve exceder 10 MB. Não criar subpastas na pasta de origem.
-* Alguns objetos de formulário são facilmente visíveis para o olho humano, mas são [difícil de identificar para o serviço](styles-and-pattern-considerations-and-best-practices.md). Uso [Revisar e corrigir o editor](review-correct-ui-edited.md) para identificar e converter esses objetos de formulário.
+* Alguns objetos de formulário são facilmente visíveis para o olho humano, mas são [difíceis de identificar para o serviço](styles-and-pattern-considerations-and-best-practices.md). Use o [Editor de revisão e correção](review-correct-ui-edited.md) para identificar e converter esses objetos de formulário.
 * Editor de revisão e correção:
 
    * Não tem ação de desfazer. O botão Salvar salva as alterações permanentemente.
    * Não suporta painéis repetíveis para formulários baseados em XFA.
    * Se você modificar uma lista em uma tabela usando o editor Revisar e corrigir, a largura da linha não será ajustada automaticamente e o texto poderá passar para a próxima linha da tabela.
-   * A variável **[!UICONTROL Auto-detect multi-column layout from input forms]** O recurso não funciona com o editor de Revisar e corrigir e Fragmentos de formulário.
+   * O recurso **[!UICONTROL Auto-detect multi-column layout from input forms]** não funciona com o editor de Revisão e Correção e Fragmentos de formulário.
    * A assinatura de script criada com o editor de Revisar e corrigir falha ao carregar formulários adaptáveis publicados.
 
 
@@ -37,9 +37,9 @@ Antes de começar a usar o AFCS (AEM Forms Automated forms conversion Service), 
    * Os scripts XFA não são compatíveis. Por exemplo, scripts para gerar automaticamente valores para um componente suspenso.
    * O modelo meta não funciona para o grupo de opções
    * A opção Grupos de opções com um único caractere não é identificada
-   * Quando o documento de origem é um XFA (.XDP) dinâmico e ele [define o comportamento das propriedades XFA em um formulário adaptável](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), a propriedade de presença do documento de origem não será aplicada. Por exemplo, um campo no documento de origem é marcado como oculto e um script torna o campo visível, em seguida, o campo permanece visível no formulário adaptável de saída.
+   * Quando o documento de origem é um XFA (.XDP) dinâmico e [define o comportamento das propriedades XFA em um formulário adaptável](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), a propriedade de presença do documento de origem não é respeitada. Por exemplo, um campo no documento de origem é marcado como oculto e um script torna o campo visível, em seguida, o campo permanece visível no formulário adaptável de saída.
 
-* Quando você usa o **Usar o AcroForm de entrada como Documento de registro (DoR) para formulários adaptáveis gerados** considere o seguinte:
+* Ao usar a opção **Usar o AcroForm de entrada como Documento de Registro (DoR) para formulários adaptáveis gerados**, considere o seguinte:
 
 <table>
     <tr>
@@ -76,7 +76,7 @@ Antes de começar a usar o AFCS (AEM Forms Automated forms conversion Service), 
 * Não há suporte para PDF forms com mais de 15 páginas.
 * Documentos criptografados, protegidos por senha e protegidos não são convertidos. Remova criptografia ou senhas antes de executar a conversão.
 * Tabelas complexas como tabelas sem borda, tabelas aninhadas e tabelas com valores de espaço reservado não são compatíveis. Use o editor de formulário adaptável para adicionar ou modificar tabelas complexas, após a conversão. Somente tabelas simples, com campos vazios, cabeçalhos adequados e limites claros são suportados.
-* O serviço converte apenas formulários em inglês, francês, alemão, espanhol, italiano e português para formulários adaptáveis. É possível traduzir formulários adaptáveis convertidos para outro idioma usando [Fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+* O serviço converte apenas formulários em inglês, francês, alemão, espanhol, italiano e português para formulários adaptáveis. Você pode traduzir formulários adaptáveis convertidos para outro idioma usando o [fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * O AEM 6.4 Forms não é compatível com a detecção automática de layout de várias colunas de formulários de entrada.
 * As informações codificadas usando cores no formulário de PDF de origem não são transferidas para o formulário adaptável.
 * As cores do formulário de PDF de origem não são transferidas para temas de formulário adaptáveis.

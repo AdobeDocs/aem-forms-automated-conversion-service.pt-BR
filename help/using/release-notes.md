@@ -10,8 +10,8 @@ level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 66%
+source-wordcount: '487'
+ht-degree: 63%
 
 ---
 
@@ -30,7 +30,7 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 
 ## 24 de fevereiro de 2022 (AFC-2022.02.0) {#feb-2022}
 
-* Adição da capacidade de [converter automaticamente seções em fragmentos](convert-existing-forms-to-adaptive-forms.md) para ajudar a melhorar a velocidade de renderização de formulários convertidos e facilitar o carregamento de formulários grandes no editor de formulários adaptáveis.
+* Recurso adicionado para [converter automaticamente seções em fragmentos](convert-existing-forms-to-adaptive-forms.md) para ajudar a melhorar a velocidade de renderização de formulários convertidos e facilitar o carregamento de formulários grandes no editor de formulários adaptáveis.
 
 ## 29 de agosto de 2021 (AFC-2021.08.0) {#aug-2021}
 

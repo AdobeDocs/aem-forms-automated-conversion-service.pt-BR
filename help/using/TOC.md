@@ -13,7 +13,7 @@ role: User
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 100%
+ht-degree: 40%
 
 ---
 
@@ -26,10 +26,10 @@ ht-degree: 100%
 + [Configurar o serviço](configure-service.md)
 + [Converter formulários impressos em formulários adaptáveis](convert-existing-forms-to-adaptive-forms.md)
 + [Revisar e corrigir formulários convertidos](review-correct-ui-edited.md)
-+ [Ampliar o meta modelo padrão](extending-the-default-meta-model.md)
++ [Estender o metamodelo padrão](extending-the-default-meta-model.md)
 + [Preenchimento e fluxos de trabalho recomendados com base na fonte de dados para formulários adaptáveis](prefill-submit-forms.md)
 + [Fluxos de trabalho recomendados para habilitar a geração de documentos de registro para formulários adaptáveis](enable-document-of-record-generation.md)
-+ [Integrar formulário adaptável ao banco de dados usando o fluxo de trabalho do AEM](submit-converted-adaptive-form-to-database.md)
++ [Integrar formulário adaptável ao banco de dados usando o fluxo de trabalho AEM](submit-converted-adaptive-form-to-database.md)
 + [Perguntas frequentes](frequently-asked-questions.md)
 + [Problemas conhecidos](known-issues.md)
 + [Solução de problemas](troubleshoot-afcs.md)

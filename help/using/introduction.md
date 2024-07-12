@@ -29,7 +29,7 @@ O serviço Automated forms conversion (AFCS) ajuda a acelerar a digitalização 
 
 ## Integração {#onboarding}
 
-O serviço está disponível gratuitamente para clientes de vigência no local AEM 6.4 Forms e AEM 6.5 Forms e clientes corporativos de serviço gerenciado Adobe. Você pode entrar em contato com a equipe de vendas da Adobe ou com seu representante da Adobe para solicitar acesso ao serviço. O serviço também está disponível gratuitamente e é pré-ativado para clientes do AEM Forms as a Cloud Service.
+O serviço está disponível gratuitamente para clientes de vigência no local AEM 6.4 Forms e AEM 6.5 Forms e clientes corporativos de serviço gerenciado Adobe. Você pode entrar em contato com a equipe de vendas da Adobe ou com seu representante da Adobe para solicitar acesso ao serviço. O serviço também está disponível gratuitamente e pré-ativado para clientes do AEM Forms as a Cloud Service.
 
 A Adobe habilita o acesso para sua organização e fornece os privilégios necessários à pessoa designada como administrador em sua organização. O administrador pode conceder acesso aos desenvolvedores (usuários) do AEM Forms de sua organização para se conectar ao serviço. Consulte [Configurar o serviço de conversão automática de formulários](configure-service.md) para obter detalhes.
 
@@ -39,7 +39,7 @@ O serviço oferece suporte a formulários PDF não interativos, formulários cri
 
 O serviço também oferece suporte a PDF forms habilitados para Adobe Sign. Se o formulário PDF de origem tiver marcas de texto do Adobe Sign, o serviço preserva todas as informações relacionadas ao Adobe Sign durante a conversão e associa as informações do assinante presentes no PDF de origem aos campos de formulário adaptáveis correspondentes. O recurso está disponível apenas para AcroForms.
 
-O serviço pode converter formulários em inglês, francês, alemão, espanhol, italiano e português em formulários adaptáveis. Você também pode traduzir os formulários adaptáveis gerados para outro idioma usando [Fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+O serviço pode converter formulários em inglês, francês, alemão, espanhol, italiano e português em formulários adaptáveis. Você também pode traduzir os formulários adaptáveis gerados para outro idioma usando o [fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Fluxo de trabalho de conversão  {#conversion-workflow}
 

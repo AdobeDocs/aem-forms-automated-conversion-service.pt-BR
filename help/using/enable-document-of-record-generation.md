@@ -22,11 +22,11 @@ ht-degree: 0%
 O Documento de registro (DoR) permite manter um registro das informações fornecidas e submetê-las em um formulário adaptável para que você possa consultá-las posteriormente.
 O DoR usa um modelo base para definir seu layout. Você pode gerar uma DoR usando um modelo padrão ou associando qualquer outro modelo ao formulário adaptável.
 
-![Documento de registro gerado](assets/document_of_record.gif)
+![Documento de Registro Gerado](assets/document_of_record.gif)
 
 Para obter mais informações sobre como gerar uma DoR, consulte [Gerar documento de registro para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
-A variável [Serviço de automated forms conversion (AFCS)](/help/using/introduction.md) converte os seguintes formulários de origem em formulários adaptáveis:
+O [serviço do Automated forms conversion (AFCS)](/help/using/introduction.md) converte os seguintes formulários de origem em formulários adaptáveis:
 
 * PDF forms não interativos
 * Acro Forms
@@ -43,7 +43,7 @@ A tabela a seguir ilustra um exemplo de como o modelo DoR usado afeta o layout d
 <table> 
  <tbody>
  <tr>
-  <td><p><strong>Formulário de origem</strong></p></td>
+  <td><p><strong>Formulário do Source</strong></p></td>
   <td><p><strong>DoR gerado</strong></p></td> 
    </tr>
   <tr>
@@ -63,7 +63,7 @@ Este artigo descreve os caminhos recomendados para gerar uma DoR com base nos tr
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>Formulário de origem</strong></th> 
+   <th><strong>Formulário do Source</strong></th> 
    <th><strong>Métodos para gerar DoR</strong></th> 
   </tr> 
   <tr> 
@@ -94,11 +94,11 @@ Se você estiver usando um formulário de PDF não interativo como o formulário
 
 ### Habilitar geração de DoR antes da conversão para gerar DoR usando o modelo padrão {#generate-document-of-record-using-cloud-configuration}
 
-1. Selecionar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Propriedades da configuração da nuvem usadas para conversão > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** opção.
+1. Selecione **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Propriedades da configuração de nuvem usadas para conversão > **[!UICONTROL Advanced]** > opção **[!UICONTROL Generate Document of Record]**.
 
    ![Gerar documento de registro usando a configuração na nuvem](assets/generate_dor_cloud_config.gif)
 
-1. Toque **[!UICONTROL Save & Close]** para salvar as configurações.
+1. Toque em **[!UICONTROL Save & Close]** para salvar as configurações.
 
 1. [Executar a conversão](/help/using/convert-existing-forms-to-adaptive-forms.md). Certifique-se de usar a configuração de nuvem editada na etapa 1 dessas instruções.
 Ao enviar o formulário adaptável convertido, o DoR é gerado automaticamente usando o modelo padrão.
@@ -107,17 +107,17 @@ Ao enviar o formulário adaptável convertido, o DoR é gerado automaticamente u
 
 Se você não habilitar a geração de DoR antes de converter o formulário de origem em um formulário adaptável, ainda poderá fazer isso após a conversão.
 
-1. [Executar a conversão](/help/using/convert-existing-forms-to-adaptive-forms.md) no formulário PDF não interativo para gerar um formulário adaptável.
+1. [Execute a conversão](/help/using/convert-existing-forms-to-adaptive-forms.md) no formulário PDF não interativo para gerar um formulário adaptável.
 
-1. Selecione o formulário adaptável no **[!UICONTROL output]** pasta e toque em **[!UICONTROL Properties]**.
+1. Selecione o formulário adaptável na pasta **[!UICONTROL output]** e toque em **[!UICONTROL Properties]**.
 
-1. No **[!UICONTROL Form Model]** , expanda a **[!UICONTROL Document of Record Template Configuration]** e selecione **[!UICONTROL Generate Document of Record]**.
+1. Na guia **[!UICONTROL Form Model]**, expanda a seção **[!UICONTROL Document of Record Template Configuration]** e selecione **[!UICONTROL Generate Document of Record]**.
 
    ![Gerar documento de registro](assets/generate_dor_af_properties.png)
 
-1. Toque **[!UICONTROL Save & Close]** para salvar as configurações.
+1. Toque em **[!UICONTROL Save & Close]** para salvar as configurações.
 
-Ao enviar o formulário adaptável convertido, o DoR é gerado automaticamente usando o modelo padrão. Se quiser associar outro modelo DoR ao formulário adaptável convertido, selecione **[!UICONTROL Associate form template as the Document of Record template]** opção.
+Ao enviar o formulário adaptável convertido, o DoR é gerado automaticamente usando o modelo padrão. Se quiser associar qualquer outro modelo DoR ao formulário adaptável convertido, selecione a opção **[!UICONTROL Associate form template as the Document of Record template]**.
 
 ## Gerar documento de registro para PDF forms baseados no Acro Forms ou XFA {#generate-document-of-record-acroform-xfaform}
 
@@ -129,25 +129,25 @@ Se você estiver usando um formulário Acro Form ou PDF baseado em XFA como o fo
 
 ### Habilite a geração de DoR antes da conversão para gerar DoR usando o modelo de formulário de origem {#use-input-form-as-template-to-generate-document-of-record}
 
-1. Selecionar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Propriedades da configuração da nuvem usadas para conversão > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** opção.
+1. Selecione **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Propriedades da configuração de nuvem usadas para conversão > **[!UICONTROL Advanced]** > opção **[!UICONTROL Generate Document of Record]**.
 
-1. Toque **[!UICONTROL Save & Close]** para salvar as configurações.
+1. Toque em **[!UICONTROL Save & Close]** para salvar as configurações.
 
 1. [Executar a conversão](/help/using/convert-existing-forms-to-adaptive-forms.md). Certifique-se de usar a configuração de nuvem editada na etapa 1 dessas instruções.
 O serviço de conversão associa automaticamente o formulário Acro Form ou o formulário PDF baseado em XFA ao formulário adaptável convertido como o modelo DoR.
-É possível abrir as propriedades do formulário adaptável para exibir o modelo DoR na **[!UICONTROL Document of Record Template Configuration]** seção de **[!UICONTROL Form Model]** guia.
+É possível abrir as propriedades do formulário adaptável para exibir o modelo DoR na seção **[!UICONTROL Document of Record Template Configuration]** da guia **[!UICONTROL Form Model]**.
 
-   ![Editar propriedades do formulário adaptável para gerar o Documento de registro](assets/generate_dor_af_properties_xdp_acro.png)
+   ![Editar propriedades do formulário adaptável para gerar o Documento de Registro](assets/generate_dor_af_properties_xdp_acro.png)
 
    Ao enviar o formulário adaptável convertido, o DoR é gerado automaticamente usando o modelo de formulário de origem.
 
 ### Editar propriedades do formulário adaptável após a conversão para habilitar a geração de DoR {#edit-adaptive-form-properties-to-generate-document-of-record}
 
-1. [Executar a conversão](/help/using/convert-existing-forms-to-adaptive-forms.md) no formulário PDF não interativo para gerar um formulário adaptável.
+1. [Execute a conversão](/help/using/convert-existing-forms-to-adaptive-forms.md) no formulário PDF não interativo para gerar um formulário adaptável.
 
-1. Selecione o formulário adaptável no **[!UICONTROL output]** pasta e toque em **[!UICONTROL Properties]**.
+1. Selecione o formulário adaptável na pasta **[!UICONTROL output]** e toque em **[!UICONTROL Properties]**.
 
-1. No **[!UICONTROL Form Model]** , expanda a **[!UICONTROL Document of Record Template Configuration]** e selecione **[!UICONTROL Generate Document of Record]** para habilitar a geração de DoR usando o template padrão.
-Você também pode selecionar a variável **[!UICONTROL Associate form template as the Document of Record template]** e selecione o template para habilitar a geração de DoR usando o template de formulário de origem ou qualquer outro template de formulário.
+1. Na guia **[!UICONTROL Form Model]**, expanda a seção **[!UICONTROL Document of Record Template Configuration]** e selecione **[!UICONTROL Generate Document of Record]** para habilitar a geração de DoR usando o modelo padrão.
+Você também pode selecionar a opção **[!UICONTROL Associate form template as the Document of Record template]** e selecionar o modelo para habilitar a geração de DoR usando o modelo de formulário de origem ou qualquer outro modelo de formulário.
 
-1. Toque **[!UICONTROL Save & Close]** para salvar as configurações.
+1. Toque em **[!UICONTROL Save & Close]** para salvar as configurações.

@@ -20,7 +20,7 @@ Se você optar por gerar um formulário adaptável sem associações de dados, s
 
 A figura a seguir descreve os diferentes estágios de integração de um formulário adaptável convertido em um banco de dados usando o Forms Portal:
 
-![integração de banco de dados](assets/database_integration.gif)
+![integração do banco de dados](assets/database_integration.gif)
 
 Este artigo descreve as instruções passo a passo para executar com êxito todos esses estágios de integração.
 
@@ -29,9 +29,9 @@ A amostra, discutida neste artigo, é uma implementação de referência de dado
 ## Pré-requisitos {#pre-requisites}
 
 * Configurar uma instância de autor do AEM 6.4 ou 6.5
-* Instalar [service pack mais recente](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html) para sua instância do AEM
+* Instale o [service pack mais recente](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html) para sua instância do AEM
 * Versão mais recente do pacote complementar do AEM Forms
-* Configurar [Serviço de automated forms conversion (AFCS)](configure-service.md)
+* Configurar o [serviço do Automated forms conversion (AFCS)](configure-service.md)
 * Configurar um banco de dados. O banco de dados usado na implementação da amostra é o MySQL 5.6.24. No entanto, é possível integrar o formulário adaptável convertido a qualquer banco de dados de sua escolha.
 
 ## Configurar conexão entre a instância AEM e o banco de dados {#set-up-connection-aem-instance-database}
@@ -50,10 +50,10 @@ A configuração de uma conexão entre uma instância AEM e um banco de dados MY
 
 Execute as seguintes etapas, em todas as instâncias de autor e publicação, para instalar o arquivo mysql-connector-java-5.1.39-bin.jar:
 
-1. Navegue até http://[server]:[porta]/system/console/depfinder e procure o pacote com.mysql.jdbc.
+1. Navegue até http://[server]:[port]/system/console/depfinder e procure o pacote com.mysql.jdbc.
 1. Na coluna Exportado por, verifique se o pacote foi exportado por algum pacote. Continue se o pacote não for exportado por um pacote.
-1. Navegue até http://[server]:[porta]/system/console/bundles e clique em **[!UICONTROL Install/Update]**.
-1. Clique em **[!UICONTROL Choose File]** e navegue para selecionar o arquivo mysql-connector-java-5.1.39-bin.jar. Além disso, **[!UICONTROL Start Bundle]** e **[!UICONTROL Refresh Packages]** caixas de seleção.
+1. Navegue até http://[server]:[port]/system/console/bundles e clique em **[!UICONTROL Install/Update]**.
+1. Clique em **[!UICONTROL Choose File]** e procure o arquivo mysql-connector-java-5.1.39-bin.jar. Marque também as caixas de seleção **[!UICONTROL Start Bundle]** e **[!UICONTROL Refresh Packages]**.
 1. Clique em **[!UICONTROL Install]** ou **[!UICONTROL Update]**. Após a conclusão, reinicie o servidor.
 1. (Somente para Windows) Desative o firewall do sistema para o seu sistema operacional.
 
@@ -67,9 +67,9 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
    CREATE SCHEMA `formsportal` ;
    ```
 
-   onde **formsportal** refere-se ao nome do schema.
+   onde **formsportal** refere-se ao nome do esquema.
 
-1. Criar um **dados** no esquema de banco de dados usando a seguinte instrução SQL:
+1. Crie uma tabela **data** no esquema de banco de dados usando a seguinte instrução SQL:
 
    ```sql
     CREATE TABLE `data` (
@@ -81,7 +81,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Criar um **metadados** no esquema de banco de dados usando a seguinte instrução SQL:
+1. Crie uma tabela de **metadados** no esquema de banco de dados usando a seguinte instrução SQL:
 
    ```sql
    CREATE TABLE `metadata` (
@@ -121,7 +121,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Criar um **additionalmetadatable** no esquema de banco de dados usando a seguinte instrução SQL:
+1. Crie uma tabela **additional metadatatable** no esquema de banco de dados usando a seguinte instrução SQL:
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -133,7 +133,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Criar um **tabela de comentários** no esquema de banco de dados usando a seguinte instrução SQL:
+1. Crie uma tabela **commenttable** no esquema de banco de dados usando a seguinte instrução SQL:
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -148,7 +148,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
 
 Execute as seguintes etapas de configuração para criar uma conexão entre a instância do AEM e o banco de dados MYSQL:
 
-1. Vá para a página Configuração do console da Web do AEM em *http://[host]:[porta]/system/console/configMgr*.
+1. Vá para a página Configuração do Console Web AEM em *http://[host]:[port]/system/console/configMgr*.
 1. Clique para abrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** no modo de edição.
 1. Especifique os valores das propriedades conforme descrito na tabela a seguir:
 
@@ -192,7 +192,7 @@ Execute as seguintes etapas de configuração para criar uma conexão entre a in
     </tbody> 
     </table>
 1. Deixe as outras configurações como estão e clique em **[!UICONTROL Save]**.
-1. Localize e clique para abrir **[!UICONTROL Apache Sling Connection Pooled DataSource]** no modo de edição, na Configuração do console da Web. Especifique os valores das propriedades conforme descrito na tabela a seguir:
+1. Localize e clique para abrir **[!UICONTROL Apache Sling Connection Pooled DataSource]** no modo de edição, na Configuração do Console da Web. Especifique os valores das propriedades conforme descrito na tabela a seguir:
 
    <table> 
     <tbody> 
@@ -210,7 +210,7 @@ Execute as seguintes etapas de configuração para criar uma conexão entre a in
     </tr>
     <tr> 
     <td><p>URI da conexão JDBC</p></td> 
-    <td><p>jdbc:mysql://[host]:[porta]/[nome_do_esquema]</p></td>
+    <td><p>jdbc:mysql://[host]:[port]/[schema_name]</p></td>
     </tr>
     <tr> 
     <td><p>Nome de usuário</p></td> 
@@ -267,35 +267,35 @@ Execute as seguintes etapas de configuração para criar uma conexão entre a in
 
 Execute as seguintes etapas, em todas as instâncias de autor e publicação, para instalar e configurar a amostra:
 
-1. Baixar o seguinte **aem-fp-db-integration-sample-pkg-6.1.2.zip** para o seu sistema de arquivos.
+1. Baixe o seguinte pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** no sistema de arquivos.
 
 [Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Ir para o gerenciador de pacotes AEM em *http://[host]:[porta]/crx/packmgr/*.
+1. Vá para o gerenciador de pacote do AEM em *http://[host]:[port]/crx/packmgr/*.
 1. Clique em **[!UICONTROL Upload Package]**.
-1. Navegue para selecionar o **aem-fp-db-integration-sample-pkg-6.1.2.zip** e clique em **[!UICONTROL OK]**.
-1. Clique em **[!UICONTROL Install]** ao lado do pacote para instalar o pacote.
+1. Navegue para selecionar o pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** e clique em **[!UICONTROL OK]**.
+1. Clique em **[!UICONTROL Install]** ao lado do pacote para instalá-lo.
 
 ## Configurar o formulário adaptável convertido para integração com o Forms Portal {#configure-converted-adaptive-form-for-forms-portal-integration}
 
 Execute as seguintes etapas para habilitar o envio do formulário adaptável usando a página do Forms Portal:
-1. [Executar a conversão](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) para converter um formulário de origem em um formulário adaptável.
+1. [Execute a conversão](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) para converter um formulário de origem em um formulário adaptável.
 1. Abra o formulário adaptável no modo de edição.
 1. Toque em Contêiner de formulário e selecione Configurar ![Configurar formulário adaptável](assets/configure-adaptive-form.png).
-1. No **[!UICONTROL Submission]** , selecione **[!UICONTROL Forms Portal Submit Action]** do **[!UICONTROL Submit Action]** lista suspensa.
-1. Toque ![Salvar política de modelo](assets/edit_template_done.png) para salvar as configurações.
+1. Na seção **[!UICONTROL Submission]**, selecione **[!UICONTROL Forms Portal Submit Action]** na lista suspensa **[!UICONTROL Submit Action]**.
+1. Toque em ![Salvar política de modelo](assets/edit_template_done.png) para salvar as configurações.
 
 ## Criar e configurar a página do Portal do Forms {#create-configure-forms-portal-page}
 
 Execute as seguintes etapas para criar uma página do Forms Portal e configurá-la para enviar formulários adaptáveis usando esta página:
 
-1. Faça logon na instância de autor do AEM e toque em **[!UICONTROL Adobe Experience Manager]** >  **[!UICONTROL Sites]**.
-1. Selecione o local em que deseja salvar a nova página do Portal do Forms e toque em **[!UICONTROL Create]** > **[!UICONTROL Page]**.
-1. Selecione o modelo para a página, toque em **[!UICONTROL Next]**, especifique um título para a página e toque em **[!UICONTROL Create]**.
-1. Toque **[!UICONTROL Edit]** para configurar a página.
-1. No cabeçalho da página, toque em ![Editar modelo](assets/edit_template_sites.png)  > **[!UICONTROL Edit Template]** para abrir o modelo da página.
-1. Toque em Contêiner de layout e toque em ![Editar política de modelo](assets/edit_template_policy.png). No **[!UICONTROL Allowed Components]** , ative a opção **[!UICONTROL Document Services]** e **[!UICONTROL Document Services Predicates]** opções e toque em ![Salvar política de modelo](assets/edit_template_done.png).
-1. Inserir **[!UICONTROL Search & Lister]** componente na página. Como resultado, todos os formulários adaptáveis existentes disponíveis na instância do AEM são listados na página.
-1. Inserir **[!UICONTROL Drafts & Submissions]** componente na página. Duas guias, **[!UICONTROL Draft Forms]** e **[!UICONTROL Submitted Forms]**, exibir na página do Forms Portal. A variável **[!UICONTROL Draft Forms]** também exibe o formulário adaptável convertido gerado usando as etapas mencionadas em [Configurar o formulário adaptável convertido para integração com o Forms Portal](#configure-converted-adaptive-form-for-forms-portal-integration)
+1. Faça logon na instância de autor do AEM e toque em **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Sites]**.
+1. Selecione o local onde deseja salvar a nova página do Portal Forms e toque em **[!UICONTROL Create]** > **[!UICONTROL Page]**.
+1. Selecione o modelo da página, toque em **[!UICONTROL Next]**, especifique um título para a página e toque em **[!UICONTROL Create]**.
+1. Toque em **[!UICONTROL Edit]** para configurar a página.
+1. No cabeçalho da página, toque em ![Editar modelo](assets/edit_template_sites.png) > **[!UICONTROL Edit Template]** para abrir o modelo da página.
+1. Toque em Contêiner de layout e toque em ![Editar política de modelo](assets/edit_template_policy.png). Na guia **[!UICONTROL Allowed Components]**, habilite as opções **[!UICONTROL Document Services]** e **[!UICONTROL Document Services Predicates]** e toque em ![Salvar política de modelo](assets/edit_template_done.png).
+1. Inserir o componente **[!UICONTROL Search & Lister]** na página. Como resultado, todos os formulários adaptáveis existentes disponíveis na instância do AEM são listados na página.
+1. Inserir o componente **[!UICONTROL Drafts & Submissions]** na página. Duas guias, **[!UICONTROL Draft Forms]** e **[!UICONTROL Submitted Forms]**, são exibidas na página do Portal Forms. A guia **[!UICONTROL Draft Forms]** também exibe o formulário adaptável convertido gerado usando as etapas mencionadas em [Configurar o formulário adaptável convertido para integração com o Portal do Forms](#configure-converted-adaptive-form-for-forms-portal-integration)
 
-1. Toque **[!UICONTROL Preview]**, toque no formulário adaptável convertido, especifique valores para campos de formulário adaptável e envie-o. Os valores especificados para os campos de formulário adaptável são enviados ao banco de dados integrado.
+1. Toque em **[!UICONTROL Preview]**, toque no formulário adaptável convertido, especifique valores para campos de formulário adaptável e envie-o. Os valores especificados para os campos de formulário adaptável são enviados ao banco de dados integrado.
