@@ -1,6 +1,6 @@
 ---
 title: Problemas conhecidos
-description: problemas conhecidos e limitações do Automated forms conversion Service (AFCS)
+description: problemas conhecidos e limitações do Serviço de conversão automática de formulários (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: a2472d5a1a66ffada7be485415f50f32643e03fc
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '821'
 ht-degree: 1%
 
 ---
 
 # Problemas conhecidos e limitações {#known-issues-limitations}
 
-Antes de começar a usar o AFCS (AEM Forms Automated forms conversion Service), analise os seguintes problemas e limitações conhecidos:
+Antes de começar a usar o AFCS (Serviço de conversão automática de formulários) da AEM Forms, analise os seguintes problemas e limitações conhecidos:
 
 ## Problemas conhecidos {#known-issues}
 
@@ -70,14 +70,16 @@ Antes de começar a usar o AFCS (AEM Forms Automated forms conversion Service), 
 
 ## Limitações {#limitations}
 
-* PDF forms com layout dinâmico complexo, campos com contorno pontilhado ou campos preenchidos não são compatíveis.
+* Não há suporte para PDF forms com layout dinâmico complexo, campos com contorno pontilhado ou campos preenchidos.
 * As imagens e o texto dentro das imagens não são identificados. Adicionar imagens manualmente a formulários convertidos.
 * Documentos XDP de arte não são compatíveis.
 * Não há suporte para PDF forms com mais de 15 páginas.
 * Documentos criptografados, protegidos por senha e protegidos não são convertidos. Remova criptografia ou senhas antes de executar a conversão.
 * Tabelas complexas como tabelas sem borda, tabelas aninhadas e tabelas com valores de espaço reservado não são compatíveis. Use o editor de formulário adaptável para adicionar ou modificar tabelas complexas, após a conversão. Somente tabelas simples, com campos vazios, cabeçalhos adequados e limites claros são suportados.
 * O serviço converte apenas formulários em inglês, francês, alemão, espanhol, italiano e português para formulários adaptáveis. Você pode traduzir formulários adaptáveis convertidos para outro idioma usando o [fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
-* O AEM 6.4 Forms não é compatível com a detecção automática de layout de várias colunas de formulários de entrada.
-* As informações codificadas usando cores no formulário de PDF de origem não são transferidas para o formulário adaptável.
-* As cores do formulário de PDF de origem não são transferidas para temas de formulário adaptáveis.
+* O AEM 6.4 Forms não oferece suporte à detecção automática de layout de várias colunas de formulários de entrada.
+* As informações codificadas usando cores no formulário PDF de origem não são transferidas para o formulário adaptável.
+* As cores do Formulário PDF de origem não são transferidas para temas de formulário adaptáveis.
 * Os PDF forms coloridos são tratados como formulários em tons de cinza e os campos são detectados adequadamente.
+* Propriedades como vinculação de dados ou esquema de modelo de dados não estão disponíveis para o formulário adaptável baseado no componente principal.
+* Revisar e corrigir os formulários convertidos não está disponível para formulários baseados em Componentes principais.
