@@ -201,7 +201,7 @@ Você pode usar a propriedade **aem:afProperties** no metamodelo para definir as
   </tr>
   <td><p>jcr:title</p></td> 
    <td> 
-    <p>A propriedade jcr:title, com a propriedade de esquema JSON title, permite modificar o rótulo de um campo de formulário adaptável após a conversão.<br>Para obter mais informações, consulte <strong>Modificar o rótulo de um campo de formulário</strong> em <a href="#custommetamodelexamples">Exemplos de metamodelos personalizados.</a><br>Consulte <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Criação de formulários adaptáveis usando o esquema JSON</a> para obter informações sobre mais propriedades que você pode aplicar aos campos de formulário adaptáveis usando o esquema JSON.</p>
+    <p>A propriedade jcr:title, com a propriedade de esquema JSON title, permite modificar o rótulo de um campo de formulário adaptável após a conversão.<br>Para obter mais informações, consulte <strong>Modificar o rótulo de um campo de formulário</strong> em <a href="#custommetamodelexamples">Exemplos de metamodelos personalizados.</a><br>Consulte <a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Criação de formulários adaptáveis usando o esquema JSON</a> para obter informações sobre mais propriedades que você pode aplicar aos campos de formulário adaptáveis usando o esquema JSON.</p>
     <p></p></td> 
   </tr>
   <td><p>sling:resourceType e guideNodeClass</p></td> 

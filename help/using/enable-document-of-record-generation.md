@@ -24,7 +24,7 @@ O DoR usa um modelo base para definir seu layout. Você pode gerar uma DoR usand
 
 ![Documento de Registro Gerado](assets/document_of_record.gif)
 
-Para obter mais informações sobre como gerar uma DoR, consulte [Gerar documento de registro para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
+Para obter mais informações sobre como gerar uma DoR, consulte [Gerar documento de registro para formulários adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
 O [serviço do Automated forms conversion (AFCS)](/help/using/introduction.md) converte os seguintes formulários de origem em formulários adaptáveis:
 

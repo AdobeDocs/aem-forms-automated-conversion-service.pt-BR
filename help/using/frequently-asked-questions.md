@@ -43,8 +43,8 @@ ht-degree: 3%
 1. **O serviço pode converter um formulário do Microsoft Word em formulários adaptáveis?**
    <p>Não, o serviço não converte um formulário do Microsoft Word em um formulário adaptável. Você pode salvar um formulário do Microsoft Word no formato PDF e converter o formulário PDF em um formulário adaptável. O processo completo é </p> <br>
 
-   1. Use o Adobe Acrobat para [converter um documento do Word para um PDF não interativo](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html).
-   1. Use o Adobe Acrobat para [converter os PDF forms produzidos em PDF Form](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html) preenchível.
+   1. Use o Adobe Acrobat para [converter um documento do Word para um PDF não interativo](https://helpx.adobe.com/br/acrobat/how-to/create-pdf-files-word-excel-website.html).
+   1. Use o Adobe Acrobat para [converter os PDF forms produzidos em PDF Form](https://helpx.adobe.com/br/acrobat/how-to/convert-word-excel-paper-pdf-forms.html) preenchível.
    1. Use o Adobe Acrobat para atualizar e corrigir manualmente os campos de formulário.
    1. Salve o formulário PDF. Agora, você pode usar o formulário com o serviço de conversão para gerar um formulário adaptável. Você também pode usar o formulário como um documento de modelo de registro.
 
@@ -77,10 +77,10 @@ Os motivos mais comuns para a conversão em falha são:</p>
     <p> </p> <br>
 
 1. **O serviço identifica e usa fontes de PDF de origem em formulários adaptáveis de saída?**
-   <p>O estilo e o layout de um formulário de HTML responsivo geralmente são diferentes de um formulário baseado em PDF ou em papel. Para oferecer suporte a layout e estilo consistentes em todas as organizações, os formulários adaptáveis usam <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">temas para estilizar um formulário</a>. O serviço de conversão usa as fontes e os estilos de fonte especificados no tema aplicado durante a conversão. É possível alterar as fontes e os estilos de fonte do tema para fornecer uma aparência distinta aos componentes de um formulário adaptável.</p> <br>
+   <p>O estilo e o layout de um formulário de HTML responsivo geralmente são diferentes de um formulário baseado em PDF ou em papel. Para oferecer suporte a layout e estilo consistentes em todas as organizações, os formulários adaptáveis usam <a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/themes.html">temas para estilizar um formulário</a>. O serviço de conversão usa as fontes e os estilos de fonte especificados no tema aplicado durante a conversão. É possível alterar as fontes e os estilos de fonte do tema para fornecer uma aparência distinta aos componentes de um formulário adaptável.</p> <br>
 
 1. **O serviço extrai automaticamente o JavaScript de formulários baseados em XDP e o aplica aos formulários adaptáveis correspondentes?**
-   <p>O serviço não converte automaticamente scripts de formulários baseados em XFA ou do Acro Forms em regras de formulário adaptáveis correspondentes. Você (autores-formulários) pode usar o <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">Editor de regras</a> para adicionar interatividade a um formulário adaptável.</p> <br>
+   <p>O serviço não converte automaticamente scripts de formulários baseados em XFA ou do Acro Forms em regras de formulário adaptáveis correspondentes. Você (autores-formulários) pode usar o <a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/rule-editor.html">Editor de regras</a> para adicionar interatividade a um formulário adaptável.</p> <br>
 
 1. **Alguns objetos de formulário não são convertidos corretamente em componentes de formulário adaptáveis. Como resolver o problema?**
    <p>O serviço de automated forms conversion (AFCS) é treinado em um grande conjunto de formulários. Mas os aplicativos baseados em IA/ML são limitados por seus dados e padrões de treinamento. Pode haver vários tipos de campos, layouts, padrões e contexto discerníveis para a percepção humana, mas difíceis de reconhecer automaticamente. O serviço pode não identificar esses objetos ou reconhecê-los incorretamente. Você pode usar o editor de <a href="review-correct-ui-edited.md" target="_blank">Revisar e corrigir</a> para fazer as modificações necessárias no layout familiar baseado em formulário de papel do formulário de entrada.</p> <br/>
@@ -121,4 +121,4 @@ O erro acima ocorre quando a delegação de inicialização não está configura
 1. **Como criar um formulário PDF habilitado para Adobe Sign?**
    </p>Para criar um formulário PDF habilitado para Adobe Sign:</p>
 
-   Adicione [marcas de texto do Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html) a nomes de campos ou use a opção [Converter em Formulário do Adobe Sign](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html).
+   Adicione [marcas de texto do Adobe Sign](https://helpx.adobe.com/br/sign/using/text-tag.html) a nomes de campos ou use a opção [Converter em Formulário do Adobe Sign](https://helpx.adobe.com/br/sign/using/create-forms-with-acrobat.html).

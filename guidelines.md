@@ -37,7 +37,7 @@ As exceções a essa regra aplicam-se às notas de versão, nas quais problemas 
 
 Quaisquer ideias para melhorar a documentação do AEM são bem-vindas como contribuições. No entanto, comentários, problemas e pull requests destinam-se somente a *contribuições*, não para responder suas perguntas sobre como usar o AEM, implementar seu projeto do AEM ou resolver problemas técnicos.
 
-[&#128279;](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) [&#128279;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+[&#128279;](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager#home) [&#128279;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)
 
 **&#x200B;**&#x200B;**
 
