@@ -70,8 +70,10 @@ Depois de carregar os formulários e configurar o serviço, execute as seguintes
 
    1. Verifique se você habilitou os [Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) na instância do AEM Forms. Se não estiver habilitado, você poderá [habilitar os componentes principais no seu ambiente do AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) ou do [Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
    1. Selecione um [modelo e tema de formulário adaptável baseado em componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) conforme mostrado na imagem abaixo:
+
       ![Selecione o modelo de formulário adaptável](assets/select-af-template-1.png).
    1. Toque em **[!UICONTROL Start Conversion]** para converter o PDF em um formulário baseado em componentes principais.
+
    >[!NOTE]
    > * Propriedades como vinculação de dados ou esquema de modelo de dados não estão disponíveis para o formulário adaptável baseado em componente principal, mas as mesmas estão disponíveis para componentes de base.
    > * [Revisar e corrigir os formulários convertidos](#review-and-correct-the-converted-forms) não está disponível para o formulário baseado em componentes principais.
@@ -102,7 +104,7 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
    >[!NOTE]
    >
    >
-   > * Você pode usar somente a opção **[!UICONTROL  Extract Fragment]** ou **[!UICONTROL Use existing adaptive form fragments]** de cada vez. Não é possível usar as duas opções simultaneamente.
+   > * Você pode usar somente a opção **[!UICONTROL &#x200B; Extract Fragment]** ou **[!UICONTROL Use existing adaptive form fragments]** de cada vez. Não é possível usar as duas opções simultaneamente.
    > * Você pode usar a opção **[!UICONTROL Use existing adaptive form fragments]** somente com PDF forms não interativo. Outros tipos de formulário ainda não são suportados.
    > * Você pode usar somente fragmentos desvinculados ou fragmentos vinculados a um esquema JSON com o Serviço de conversão automatizada. Não use fragmentos XFA. Fragmentos XFA não são compatíveis.
    >

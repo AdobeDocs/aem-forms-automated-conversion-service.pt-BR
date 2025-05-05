@@ -101,7 +101,7 @@ O serviço só oferece suporte a formulários em branco ou não preenchidos. Nã
    <p>O tempo depende do tamanho e da complexidade dos formulários de entrada e do número de solicitações. O serviço pretende reduzir significativamente o tempo de implantação convertendo PDF forms em formulários adaptáveis em um ritmo muito mais rápido em comparação ao processo manual de conversão de formulários. </p> <br />
 
 1. **O que devo fazer se encontrar um erro relacionado às bibliotecas RSA? A mensagem de erro é semelhante à mensagem mencionada abaixo:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
 O erro acima ocorre quando a delegação de inicialização não está configurada para bibliotecas RSA/BouncyCastle. Execute as etapas abaixo para resolver o problema:
    <p> </p>
 
@@ -109,6 +109,7 @@ O erro acima ocorre quando a delegação de inicialização não está configura
    1. Adicione as seguintes propriedades ao arquivo sling.properties:<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
    1. Salvar e fechar o arquivo. <br/>
    1. Iniciar a instância do AEM.<br/>
+
    <br/>
 
 1. **Como alterar automaticamente a capitalização do texto do formulário adaptável?**
