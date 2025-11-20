@@ -29,7 +29,7 @@ ht-degree: 40%
 + [Estender o metamodelo padrão](extending-the-default-meta-model.md)
 + [Preenchimento e fluxos de trabalho recomendados com base na fonte de dados para formulários adaptáveis](prefill-submit-forms.md)
 + [Fluxos de trabalho recomendados para habilitar a geração de documentos de registro para formulários adaptáveis](enable-document-of-record-generation.md)
-+ [Integrar formulário adaptável ao banco de dados usando o fluxo de trabalho AEM](submit-converted-adaptive-form-to-database.md)
++ [Integrar formulário adaptável ao banco de dados usando o workflow do AEM](submit-converted-adaptive-form-to-database.md)
 + [Perguntas frequentes](frequently-asked-questions.md)
 + [Problemas conhecidos](known-issues.md)
 + [Solução de problemas](troubleshoot-afcs.md)
