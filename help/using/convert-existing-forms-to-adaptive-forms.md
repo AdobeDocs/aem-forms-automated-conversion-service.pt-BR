@@ -7,7 +7,7 @@ role: Admin, Developer
 topic-tags: forms
 feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 6ec2a2afbbf0e70c1101e365094881c7a8959a0a
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1794'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 # Converter PDF forms em formulários adaptáveis {#convert-print-forms-to-adaptive-forms}
 
-O serviço de conversão automática de formulários (AFCS) da AEM Forms, viabilizado pelo Adobe Sensei, converte automaticamente seu PDF forms em formulários adaptáveis responsivos e compatíveis com dispositivos<!--foundation and [core components](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Se você estiver usando o PDF forms não interativo, o Acro Forms ou o PDF forms baseado em XFA, o serviço de conversão automática de formulários (AFCS) pode converter facilmente esses formulários em formulários adaptáveis. Para obter informações sobre recursos, fluxo de trabalho de conversão e informações de integração, consulte o serviço [Conversão automática de formulários](introduction.md).
+O serviço de conversão automática de formulários (AFCS) da AEM Forms, viabilizado pelo Adobe Sensei, converte automaticamente seu PDF forms em formulários adaptáveis responsivos e compatíveis com dispositivos<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Se você estiver usando o PDF forms não interativo, o Acro Forms ou o PDF forms baseado em XFA, o serviço de conversão automática de formulários (AFCS) pode converter facilmente esses formulários em formulários adaptáveis. Para obter informações sobre recursos, fluxo de trabalho de conversão e informações de integração, consulte o serviço [Conversão automática de formulários](introduction.md).
 
 ## Pré-requisitos {#pre-requisites}
 
@@ -24,7 +24,7 @@ O serviço de conversão automática de formulários (AFCS) da AEM Forms, viabil
 
 * **Modelos e temas para formulários convertidos:**
    * **AEM Forms as a Cloud Service:** modelos e temas padrão estão disponíveis; você pode usá-los para conversão ou preparar temas personalizados.
-   * **AEM 6.5 e AEM 6.5 LTS:** Prepare os [modelos](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/template-editor.html) e [temas](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/themes.html) para serem aplicados aos formulários convertidos. Você deve [habilitar os Componentes Principais do Formulário Adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=pt-BR) se quiser usar modelos e temas baseados nos Componentes Principais (consulte [Configurar o serviço](configure-service.md#referencepackage)). Usar um modelo permite aplicar uma identidade visual consistente; o AFCS não extrai o cabeçalho e o rodapé dos PDFs de origem — especifique-os no modelo de formulário adaptável. O uso de um tema aplica um estilo consistente em todos os formulários. Ao criar uma pasta para modelos, selecione a opção **[!UICONTROL Browse configurations]** para todos.
+   * **AEM 6.5 e AEM 6.5 LTS:** Prepare os [modelos](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) e [temas](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) para serem aplicados aos formulários convertidos. Você deve [habilitar os Componentes Principais do Formulário Adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=pt-BR) se quiser usar modelos e temas baseados nos Componentes Principais (consulte [Configurar o serviço](configure-service.md#referencepackage)). Usar um modelo permite aplicar uma identidade visual consistente; o AFCS não extrai o cabeçalho e o rodapé dos PDFs de origem — especifique-os no modelo de formulário adaptável. O uso de um tema aplica um estilo consistente em todos os formulários. Ao criar uma pasta para modelos, selecione a opção **[!UICONTROL Browse configurations]** para todos.
 
 * **(opcional)** [**Converter seu PDF forms de origem em um formulário do Adobe Sign**](frequently-asked-questions.md)
 
@@ -71,7 +71,7 @@ Depois de carregar os formulários e configurar o serviço, execute as seguintes
    * Especifique um local para salvar os formulários adaptáveis gerados e o esquema correspondente. Você pode usar caminhos padrão ou especificar caminhos personalizados.
    * Use a opção **Gerar formulários adaptáveis sem associações de modelo de dados** para selecionar se deseja gerar um formulário adaptável com ou sem associações de modelo de dados.
 Se você não selecionar essa opção, o serviço de conversão associará automaticamente os formulários adaptáveis a um esquema JSON e criará uma associação de dados entre os campos disponíveis no formulário adaptável e no esquema JSON. O campo **[!UICONTROL Save generated data model schema at]** exibe o local padrão para salvar o esquema JSON gerado. Você também pode personalizar o local para salvar o esquema gerado.
-Se você selecionar essa opção, o serviço de conversão gerará um formulário adaptável sem vínculos de modelo de dados. Após uma conversão bem-sucedida, você pode associar um formulário adaptável a um Modelo de dados de formulário, esquema XML ou esquema JSON. Para obter mais informações, consulte [Criação de um formulário adaptável](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+Se você selecionar essa opção, o serviço de conversão gerará um formulário adaptável sem vínculos de modelo de dados. Após uma conversão bem-sucedida, você pode associar um formulário adaptável a um Modelo de dados de formulário, esquema XML ou esquema JSON. Para obter mais informações, consulte [Criação de um formulário adaptável](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
 
@@ -113,7 +113,7 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
    >[!NOTE]
    >
    >
-   > * Você pode usar somente a opção **[!UICONTROL &#x200B; Extract Fragment]** ou **[!UICONTROL Use existing adaptive form fragments]** de cada vez. Não é possível usar as duas opções simultaneamente.
+   > * Você pode usar somente a opção **[!UICONTROL  Extract Fragment]** ou **[!UICONTROL Use existing adaptive form fragments]** de cada vez. Não é possível usar as duas opções simultaneamente.
    > * Você pode usar a opção **[!UICONTROL Use existing adaptive form fragments]** somente com PDF forms não interativo. Outros tipos de formulário ainda não são suportados.
    > * Você pode usar somente fragmentos desvinculados ou fragmentos vinculados a um esquema JSON com o Serviço de conversão automatizada. Não use fragmentos XFA. Fragmentos XFA não são compatíveis.
    >
@@ -133,7 +133,7 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
   >
   > * reestruturar o formulário para criar uma hierarquia simplificada
   > * [aumente o valor do parâmetro sling.max.calls]para um número alto o suficiente até que a exceção desapareça.
-  > * [aumentar tamanho do cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html?lang=pt-BR). O erro ocorre se o formulário for muito complexo, tiver um grande número de tabelas e uma estrutura hierárquica de vários níveis.
+  > * [aumentar tamanho do cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). O erro ocorre se o formulário for muito complexo, tiver um grande número de tabelas e uma estrutura hierárquica de vários níveis.
 
 1. Toque em **[!UICONTROL Start Conversion]**. A conversão foi iniciada. O progresso da conversão é exibido na pasta ou no formulário até que a conversão esteja em andamento. A mensagem é substituída por outra mensagem de status (Convertido, Parcialmente convertido ou Falha na conversão) após a conclusão da conversão. Um email de status também é enviado no endereço de email configurado na conclusão da conversão:
 
@@ -173,3 +173,4 @@ Se você selecionar essa opção, o serviço de conversão gerará um formulári
 ## Revisar e corrigir os formulários convertidos {#review-and-correct-the-converted-forms}
 
 Os formulários reais têm requisitos complexos de captura de dados. Quando a conversão automática estiver concluída, os clientes poderão revisar a qualidade da conversão do formulário e fazer as atualizações necessárias nele. A AEM Forms fornece um editor [de revisão e correção](review-correct-ui-edited.md) para fazer as alterações necessárias. Ele permite melhorar a identificação automatizada de campos de formulário e converter campos identificados de um tipo para outro. Por exemplo, você pode ajudar a identificar o layout de duas colunas de um formulário e alterar um campo identificado automaticamente como um botão de opção para um campo de várias opções.
+

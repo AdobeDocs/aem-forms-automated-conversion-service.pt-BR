@@ -4,9 +4,9 @@ description: Estenda o metamodelo padrão para adicionar padrões, validações 
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1159'
 ht-degree: 1%
 
 ---
@@ -299,3 +299,4 @@ Execute as seguintes etapas para criar uma página do Forms Portal e configurá-
 1. Inserir o componente **[!UICONTROL Drafts & Submissions]** na página. Duas guias, **[!UICONTROL Draft Forms]** e **[!UICONTROL Submitted Forms]**, são exibidas na página do Portal Forms. A guia **[!UICONTROL Draft Forms]** também exibe o formulário adaptável convertido gerado usando as etapas mencionadas em [Configurar o formulário adaptável convertido para integração com o Portal do Forms](#configure-converted-adaptive-form-for-forms-portal-integration)
 
 1. Toque em **[!UICONTROL Preview]**, toque no formulário adaptável convertido, especifique valores para campos de formulário adaptável e envie-o. Os valores especificados para os campos de formulário adaptável são enviados ao banco de dados integrado.
+

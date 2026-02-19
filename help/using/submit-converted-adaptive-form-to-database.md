@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 O serviço de conversão automática de formulários (AFCS) permite converter um formulário não interativo do PDF, um formulário do Acro ou um formulário do PDF baseado em XFA em um formulário adaptável. Ao iniciar o processo de conversão, você tem a opção de gerar um formulário adaptável com ou sem vínculos de dados.
 
-Se você optar por gerar um formulário adaptável sem associações de dados, será possível integrar o formulário adaptável convertido com um modelo de dados de formulário, esquema XML ou esquema JSON após a conversão. Para o modelo de dados de formulário, é necessário vincular campos de formulário adaptáveis manualmente com o modelo de dados de formulário. No entanto, se você gerar um formulário adaptável com vinculações de dados, o serviço de conversão associará automaticamente os formulários adaptáveis a um esquema JSON e criará uma vinculação de dados entre os campos disponíveis no formulário adaptável e no esquema JSON. Em seguida, você pode integrar o formulário adaptável a um banco de dados de sua escolha, preencher dados no formulário e enviá-lo para o banco de dados. Da mesma forma, após a integração bem-sucedida com o banco de dados, é possível configurar campos no formulário adaptável convertido para recuperar valores do banco de dados e preencher previamente os campos de formulário adaptável.
+Se você optar por gerar um formulário adaptável sem associações de dados, será possível integrar o formulário adaptável convertido com um Modelo de dados de formulário, esquema XML ou esquema JSON após a conversão. Para o modelo de dados de formulário, é necessário vincular campos de formulário adaptáveis manualmente com o modelo de dados de formulário. No entanto, se você gerar um formulário adaptável com vinculações de dados, o serviço de conversão associará automaticamente os formulários adaptáveis a um esquema JSON e criará uma vinculação de dados entre os campos disponíveis no formulário adaptável e no esquema JSON. Em seguida, você pode integrar o formulário adaptável a um banco de dados de sua escolha, preencher dados no formulário e enviá-lo para o banco de dados. Da mesma forma, após a integração bem-sucedida com o banco de dados, é possível configurar campos no formulário adaptável convertido para recuperar valores do banco de dados e preencher previamente os campos de formulário adaptável.
 
 A figura a seguir descreve os diferentes estágios de integração de um formulário adaptável convertido com um banco de dados:
 
@@ -276,3 +276,4 @@ Execute as seguintes etapas para configurar o formulário adaptável para preenc
 Você pode baixar a amostra de formulário adaptável convertido usando:
 
 [Obter arquivo](assets/DownloadedFormsPackage_1498226829041200.zip)
+

@@ -8,7 +8,7 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Quando você usar um formulário XDP para conversão, execute as seguintes etapa
 
 * Analise o formulário XDP e corrija problemas visuais. Certifique-se de que o documento de origem use os controles e as estruturas desejadas. Por exemplo, o formulário de origem pode ter caixas de seleção em vez de botões de opção para uma única seleção. Altere as caixas de seleção para botões de opção a fim de produzir um formulário adaptável com os componentes desejados.
 * [Adicione associações ao formulário XDP](http://www.adobe.com/go/learn_aemforms_designer_65) antes de iniciar a conversão. Quando as associações estão disponíveis no formulário XDP de origem, o serviço aplica associações automaticamente aos campos de formulário adaptáveis correspondentes durante a conversão. Isso economiza o tempo necessário para aplicar manualmente as vinculações.
-* [Adicionar marcas do Adobe Sign](https://helpx.adobe.com/br/sign/using/text-tag.html) ao arquivo XDP. O serviço converte automaticamente as tags do Adobe Sign em campos de formulário adaptáveis correspondentes. O Forms adaptável é compatível com um número limitado de campos do Adobe Sign. Para obter a lista completa dos campos compatíveis, consulte [Usando o Adobe Sign em um formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=pt-BR).
+* [Adicionar marcas do Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html) ao arquivo XDP. O serviço converte automaticamente as tags do Adobe Sign em campos de formulário adaptáveis correspondentes. O Forms adaptável é compatível com um número limitado de campos do Adobe Sign. Para obter a lista completa dos campos compatíveis, consulte [Usando o Adobe Sign em um formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en).
 * Converter tabelas complexas em documentos XDP em tabelas simples, se possível. Uma tabela com campos de formulário em células de tabela, células de tamanho desigual, células estendidas de linha ou coluna, células mescladas, bordas parciais ou nenhuma borda visível é considerada uma tabela complexa. Uma tabela com qualquer um dos itens mencionados acima é considerada uma tabela complexa.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
@@ -63,7 +63,7 @@ O AEM [!DNL Forms Automated Conversion service] usa inteligência artificial e a
 
 [!DNL Automated Forms Conversion service] é treinado em um grande conjunto de formulários. Ele identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. No entanto, há alguns campos e estilos no PDF forms que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campo ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
 
-O serviço começaria a identificar e atribuir campos ou painéis corretos a esses padrões, à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor de [Revisar e corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de começar a corrigir os problemas ou ler mais, familiarize-se com [componentes de formulário adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+O serviço começaria a identificar e atribuir campos ou painéis corretos a esses padrões, à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor de [Revisar e corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de começar a corrigir os problemas ou ler mais, familiarize-se com [componentes de formulário adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ### Padrões gerais {#general}
 
@@ -82,7 +82,7 @@ O serviço começaria a identificar e atribuir campos ou painéis corretos a ess
 
 | Padrão | Resolução |
 |--- |--- |
-| **Padrão** <br> As opções de grupo de opções com formas diferentes de caixa ou círculo não são convertidas em componentes de formulário adaptáveis correspondentes. <br><br>**Solução** <br> Altere as formas de opções de escolha para caixa ou círculo ou use o editor de Revisar e Corrigir para identificar as formas. | ![Campos de opção &#x200B;](assets/best-practice-choice-group-options.png) |
+| **Padrão** <br> As opções de grupo de opções com formas diferentes de caixa ou círculo não são convertidas em componentes de formulário adaptáveis correspondentes. <br><br>**Solução** <br> Altere as formas de opções de escolha para caixa ou círculo ou use o editor de Revisar e Corrigir para identificar as formas. | ![Campos de opção ](assets/best-practice-choice-group-options.png) |
 
 ### Campos de formulário {#form-fields}
 
@@ -121,3 +121,4 @@ Comment Type: draft
 <li>Choice groups with only box or circle shaped selectors are supported. </li>
 </ul>
 -->
+

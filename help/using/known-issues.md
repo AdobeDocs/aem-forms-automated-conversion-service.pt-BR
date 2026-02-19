@@ -8,16 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 # Problemas conhecidos e limitações {#known-issues-limitations}
 
-Antes de começar a usar o AFCS (Serviço de conversão automática de formulários) da AEM Forms, analise os seguintes problemas e limitações conhecidos:
+Antes de começar a usar o serviço de conversão automática de formulários do AEM Forms (AFCS), analise os seguintes problemas e limitações conhecidos:
 
 ## Problemas conhecidos {#known-issues}
 
@@ -37,7 +37,7 @@ Antes de começar a usar o AFCS (Serviço de conversão automática de formulár
    * Os scripts XFA não são compatíveis. Por exemplo, scripts para gerar automaticamente valores para um componente suspenso.
    * O modelo Meta não funciona para o grupo de opções
    * A opção Grupos de opções com um único caractere não é identificada
-   * Quando o documento de origem é um XFA (.XDP) dinâmico e [define o comportamento das propriedades XFA em um formulário adaptável](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), a propriedade de presença do documento de origem não é respeitada. Por exemplo, um campo no documento de origem é marcado como oculto e um script torna o campo visível, em seguida, o campo permanece visível no formulário adaptável de saída.
+   * Quando o documento de origem é um XFA (.XDP) dinâmico e [define o comportamento das propriedades XFA em um formulário adaptável](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), a propriedade de presença do documento de origem não é respeitada. Por exemplo, um campo no documento de origem é marcado como oculto e um script torna o campo visível, em seguida, o campo permanece visível no formulário adaptável de saída.
 
 * Ao usar a opção **Usar o AcroForm de entrada como Documento de Registro (DoR) para formulários adaptáveis gerados**, considere o seguinte:
 
@@ -83,3 +83,4 @@ Antes de começar a usar o AFCS (Serviço de conversão automática de formulár
 * Os PDF forms coloridos são tratados como formulários em tons de cinza e os campos são detectados adequadamente.
 * Propriedades como vinculação de dados ou esquema de modelo de dados não estão disponíveis para o formulário adaptável baseado no componente principal.
 * Revisar e corrigir os formulários convertidos não está disponível para formulários baseados em Componentes principais.
+
