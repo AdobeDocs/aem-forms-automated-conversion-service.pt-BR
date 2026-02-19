@@ -8,9 +8,9 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: a2472d5a1a66ffada7be485415f50f32643e03fc
+source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
@@ -35,9 +35,9 @@ Antes de começar a usar o AFCS (Serviço de conversão automática de formulár
 * Para formulários XFA:
    * A extração de fragmentos de um formulário baseado em XFA não é compatível.
    * Os scripts XFA não são compatíveis. Por exemplo, scripts para gerar automaticamente valores para um componente suspenso.
-   * O modelo meta não funciona para o grupo de opções
+   * O modelo Meta não funciona para o grupo de opções
    * A opção Grupos de opções com um único caractere não é identificada
-   * Quando o documento de origem é um XFA (.XDP) dinâmico e [define o comportamento das propriedades XFA em um formulário adaptável](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), a propriedade de presença do documento de origem não é respeitada. Por exemplo, um campo no documento de origem é marcado como oculto e um script torna o campo visível, em seguida, o campo permanece visível no formulário adaptável de saída.
+   * Quando o documento de origem é um XFA (.XDP) dinâmico e [define o comportamento das propriedades XFA em um formulário adaptável](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), a propriedade de presença do documento de origem não é respeitada. Por exemplo, um campo no documento de origem é marcado como oculto e um script torna o campo visível, em seguida, o campo permanece visível no formulário adaptável de saída.
 
 * Ao usar a opção **Usar o AcroForm de entrada como Documento de Registro (DoR) para formulários adaptáveis gerados**, considere o seguinte:
 
@@ -77,7 +77,7 @@ Antes de começar a usar o AFCS (Serviço de conversão automática de formulár
 * Documentos criptografados, protegidos por senha e protegidos não são convertidos. Remova criptografia ou senhas antes de executar a conversão.
 * Tabelas complexas como tabelas sem borda, tabelas aninhadas e tabelas com valores de espaço reservado não são compatíveis. Use o editor de formulário adaptável para adicionar ou modificar tabelas complexas, após a conversão. Somente tabelas simples, com campos vazios, cabeçalhos adequados e limites claros são suportados.
 * O serviço converte apenas formulários em inglês, francês, alemão, espanhol, italiano e português para formulários adaptáveis. Você pode traduzir formulários adaptáveis convertidos para outro idioma usando o [fluxo de trabalho de tradução do AEM](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
-* O AEM 6.4 Forms não oferece suporte à detecção automática de layout de várias colunas de formulários de entrada.
+* O AEM 6.5 Forms não é compatível com a detecção automática de layout de várias colunas de formulários de entrada em algumas configurações.
 * As informações codificadas usando cores no formulário PDF de origem não são transferidas para o formulário adaptável.
 * As cores do Formulário PDF de origem não são transferidas para temas de formulário adaptáveis.
 * Os PDF forms coloridos são tratados como formulários em tons de cinza e os campos são detectados adequadamente.

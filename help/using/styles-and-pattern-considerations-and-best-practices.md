@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas e considerações
-description: Práticas recomendadas e considerações para o serviço do Automated forms conversion (AFCS)
+description: Práticas recomendadas e considerações para o serviço de conversão automática de formulários (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1291'
 ht-degree: 2%
 
 ---
@@ -21,18 +21,18 @@ Este documento fornece diretrizes e recomendações das quais os administradores
 
 ## Práticas recomendadas
 
-O serviço de conversão converte os PDF forms disponíveis na instância do AEM [!DNL Forms] em formulários adaptáveis. As práticas recomendadas listadas abaixo ajudam a melhorar a velocidade e a precisão da conversão. Além disso, essas práticas recomendadas ajudam a economizar tempo gasto nas atividades de conversão do.
+O serviço de conversão converte o PDF forms disponível na sua instância do AEM [!DNL Forms] em formulários adaptáveis. As práticas recomendadas listadas abaixo ajudam a melhorar a velocidade e a precisão da conversão. Além disso, essas práticas recomendadas ajudam a economizar tempo gasto nas atividades de conversão do.
 
 ### Antes de fazer upload da origem
 
-É possível fazer upload de todos os PDF forms de uma só vez ou em fases, conforme necessário. Antes de carregar os formulários, considere o seguinte:
+Você pode fazer upload de todas as PDF forms de uma só vez ou em fases, conforme necessário. Antes de carregar os formulários, considere o seguinte:
 
 * Mantenha o número de formulários em uma pasta menor que 15 e o número total de páginas em uma pasta menor que 50.
 * Mantenha o tamanho da pasta inferior a 10 MB. Não mantenha formulários em uma subpasta.
 * Mantenha o número de páginas em um formulário menor que 15.
 * Organize documentos de origem em um lote de 8 a 15 documentos. Mantenha formulários de origem com fragmentos de formulário adaptáveis comuns em um único lote.
 * Não carregue os formulários protegidos. O serviço não converte formulários protegidos por senha e protegidos.
-* Não carregue os Portfolio [PDF](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um Portfolio de PDF em um formulário adaptável.
+* Não carregue os [Portfólios do PDF](https://helpx.adobe.com/br/acrobat/using/overview-pdf-portfolios.html). O serviço não converte um PDF Portfolio em um formulário adaptável.
 * Não carregue formulários de origem com espaços no nome do arquivo. Remova o espaço do nome do arquivo antes de carregar os formulários.
 * Não carregue formulários digitalizados, preenchidos e em nenhum idioma além de inglês, francês, alemão, espanhol, italiano e português. Tais formas não são suportados.
 
@@ -40,12 +40,14 @@ Quando você usar um formulário XDP para conversão, execute as seguintes etapa
 
 * Analise o formulário XDP e corrija problemas visuais. Certifique-se de que o documento de origem use os controles e as estruturas desejadas. Por exemplo, o formulário de origem pode ter caixas de seleção em vez de botões de opção para uma única seleção. Altere as caixas de seleção para botões de opção a fim de produzir um formulário adaptável com os componentes desejados.
 * [Adicione associações ao formulário XDP](http://www.adobe.com/go/learn_aemforms_designer_65) antes de iniciar a conversão. Quando as associações estão disponíveis no formulário XDP de origem, o serviço aplica associações automaticamente aos campos de formulário adaptáveis correspondentes durante a conversão. Isso economiza o tempo necessário para aplicar manualmente as vinculações.
-* [Adicionar marcas Adobe Sign](https://helpx.adobe.com/br/sign/using/text-tag.html) ao arquivo XDP. O serviço converte automaticamente tags Adobe Sign em campos de formulário adaptáveis correspondentes. O Forms adaptável é compatível com um número limitado de campos do Adobe Sign. Para obter a lista completa dos campos com suporte, consulte [Usando o Adobe Sign em um formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=pt-BR) documentação.
+* [Adicionar marcas do Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html) ao arquivo XDP. O serviço converte automaticamente as tags do Adobe Sign em campos de formulário adaptáveis correspondentes. O Forms adaptável é compatível com um número limitado de campos do Adobe Sign. Para obter a lista completa dos campos compatíveis, consulte [Usando o Adobe Sign em um formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en).
 * Converter tabelas complexas em documentos XDP em tabelas simples, se possível. Uma tabela com campos de formulário em células de tabela, células de tamanho desigual, células estendidas de linha ou coluna, células mescladas, bordas parciais ou nenhuma borda visível é considerada uma tabela complexa. Uma tabela com qualquer um dos itens mencionados acima é considerada uma tabela complexa.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Antes de iniciar a conversão
 
+* **AEM Forms as a Cloud Service:** modelos e temas padrão estão disponíveis; você pode usá-los ou criar modelos e temas personalizados.
+* **AEM 6.5 e AEM 6.5 LTS:** crie modelos e temas de formulários adaptáveis (ou instale ativos de referência conforme descrito em [Configurar o serviço](configure-service.md#referencepackage)). Você deve habilitar [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=pt-BR) se quiser usar modelos e temas baseados em Componentes principais.
 * Criar modelos de formulário adaptáveis. Os modelos ajudam a especificar uma estrutura uniforme para os formulários de sua organização ou departamento.
 * Especifique o cabeçalho e o rodapé nos modelos de formulário adaptáveis. O serviço ignora o cabeçalho-rodapé dos documentos de origem e usa o cabeçalho-rodapé especificado no modelo de formulário adaptável.
 * Crie temas de formulário adaptáveis. Os temas ajudam a fornecer uma aparência uniforme para formulários de sua organização ou departamento.
@@ -59,15 +61,15 @@ Quando você usar um formulário XDP para conversão, execute as seguintes etapa
 
 O AEM [!DNL Forms Automated Conversion service] usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente com os dados de origem e produz uma saída aprimorada com cada churn. Esses serviços aprendem com experiências como as humanas.
 
-[!DNL Automated Forms Conversion service] é treinado em um grande conjunto de formulários. Ele identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. No entanto, existem alguns campos e estilos em PDF forms que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campo ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
+[!DNL Automated Forms Conversion service] é treinado em um grande conjunto de formulários. Ele identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. No entanto, há alguns campos e estilos no PDF forms que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campo ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
 
-O serviço começaria a identificar e atribuir campos ou painéis corretos a esses padrões, à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor de [Revisar e corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de começar a corrigir os problemas ou ler mais, familiarize-se com [componentes de formulário adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+O serviço começaria a identificar e atribuir campos ou painéis corretos a esses padrões, à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor de [Revisar e corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de começar a corrigir os problemas ou ler mais, familiarize-se com [componentes de formulário adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ### Padrões gerais {#general}
 
 | Padrão | Exemplo |
 |--- |--- |
-| **Padrão** <br>O serviço não converte PDF forms preenchidos em um formulário adaptável. <br><br>**Solução** <br>Use formulários adaptáveis vazios. | ![Formulário preenchido](assets/best-practice-filled-forms.png) |
+| **Padrão** <br>O serviço não converte o PDF forms preenchido em um formulário adaptável. <br><br>**Solução** <br>Use formulários adaptáveis vazios. | ![Formulário preenchido](assets/best-practice-filled-forms.png) |
 | **Padrão** <br>O serviço pode falhar ao reconhecer texto e campos em um formato denso. <br><br>**Solução** <br> Aumente a largura entre o texto e os campos de um formulário denso antes de iniciar a conversão. |  |
 | **Padrão** <br>O serviço não oferece suporte a formulários digitalizados. <br><br>**Solução** <br>Não use formulários digitalizados. | ![Formulário digitalizado](assets/scanned-forms.png) |
 | **Padrão** <br>O serviço não extrai imagens e texto dentro de imagens. <br><br>**Solução** <br> adicionar imagens ou texto manualmente a formulários convertidos. | ![Imagem com Formulário de texto](assets/best-practice-image-with-text.png) |
@@ -80,7 +82,7 @@ O serviço começaria a identificar e atribuir campos ou painéis corretos a ess
 
 | Padrão | Resolução |
 |--- |--- |
-| **Padrão** <br> As opções de grupo de opções com formas diferentes de caixa ou círculo não são convertidas em componentes de formulário adaptáveis correspondentes. <br><br>**Solução** <br> Altere as formas de opções de escolha para caixa ou círculo ou use o editor de Revisar e Corrigir para identificar as formas. | ![Campos de opção &#x200B;](assets/best-practice-choice-group-options.png) |
+| **Padrão** <br> As opções de grupo de opções com formas diferentes de caixa ou círculo não são convertidas em componentes de formulário adaptáveis correspondentes. <br><br>**Solução** <br> Altere as formas de opções de escolha para caixa ou círculo ou use o editor de Revisar e Corrigir para identificar as formas. | ![Campos de opção ](assets/best-practice-choice-group-options.png) |
 
 ### Campos de formulário {#form-fields}
 

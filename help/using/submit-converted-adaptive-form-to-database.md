@@ -1,6 +1,6 @@
 ---
 title: Enviar os formulários adaptáveis convertidos com um esquema JSON para o banco de dados
-description: Envie os formulários adaptáveis convertidos com um esquema JSON para o banco de dados criando um modelo de dados de formulário e fazendo referência a ele em um fluxo de trabalho AEM.
+description: Envie os formulários adaptáveis convertidos com um esquema JSON para o banco de dados criando um modelo de dados de formulário e fazendo referência a ele em um fluxo de trabalho do AEM.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
 
-# Integrar formulário adaptável ao banco de dados usando o fluxo de trabalho AEM {#submit-forms-to-database-using-forms-portal}
+# Integrar formulário adaptável ao banco de dados usando o workflow do AEM {#submit-forms-to-database-using-forms-portal}
 
-O serviço de automated forms conversion (AFCS) permite converter um formulário de PDF não interativo, um formulário do Acro ou um formulário de PDF baseado em XFA em um formulário adaptável. Ao iniciar o processo de conversão, você tem a opção de gerar um formulário adaptável com ou sem vínculos de dados.
+O serviço de conversão automática de formulários (AFCS) permite converter um formulário não interativo do PDF, um formulário do Acro ou um formulário do PDF baseado em XFA em um formulário adaptável. Ao iniciar o processo de conversão, você tem a opção de gerar um formulário adaptável com ou sem vínculos de dados.
 
 Se você optar por gerar um formulário adaptável sem associações de dados, será possível integrar o formulário adaptável convertido com um modelo de dados de formulário, esquema XML ou esquema JSON após a conversão. Para o modelo de dados de formulário, é necessário vincular campos de formulário adaptáveis manualmente com o modelo de dados de formulário. No entanto, se você gerar um formulário adaptável com vinculações de dados, o serviço de conversão associará automaticamente os formulários adaptáveis a um esquema JSON e criará uma vinculação de dados entre os campos disponíveis no formulário adaptável e no esquema JSON. Em seguida, você pode integrar o formulário adaptável a um banco de dados de sua escolha, preencher dados no formulário e enviá-lo para o banco de dados. Da mesma forma, após a integração bem-sucedida com o banco de dados, é possível configurar campos no formulário adaptável convertido para recuperar valores do banco de dados e preencher previamente os campos de formulário adaptável.
 
@@ -29,21 +29,21 @@ Este artigo descreve as instruções passo a passo para executar com êxito todo
 
 ## Pré-requisitos {#pre-requisites}
 
-* Configurar uma instância de autor do AEM 6.4 ou 6.5
+* Configurar uma instância de autor do AEM 6.5 ou AEM 6.5 LTS
 * Instale o [service pack mais recente](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html) para sua instância do AEM
 * Versão mais recente do pacote complementar do AEM Forms
-* Configurar o [serviço do Automated forms conversion](configure-service.md)
+* Configurar o [Serviço de conversão automática de formulários](configure-service.md)
 * Configurar um banco de dados. O banco de dados usado na implementação da amostra é o MySQL 5.6.24. No entanto, é possível integrar o formulário adaptável convertido a qualquer banco de dados de sua escolha.
 
 ## Exemplo de formulário adaptável {#sample-adaptive-form}
 
-Para executar o caso de uso para integrar formulários adaptáveis convertidos ao banco de dados usando um fluxo de trabalho AEM, baixe o seguinte arquivo de PDF de amostra.
+Para executar o caso de uso para integrar formulários adaptáveis convertidos ao banco de dados usando um fluxo de trabalho do AEM, baixe o seguinte arquivo de amostra do PDF.
 
 Você pode baixar o exemplo de formulário Fale Conosco usando:
 
 [Obter arquivo](assets/sample_contact_us_form.pdf)
 
-O arquivo PDF serve como entrada para o serviço de Automated forms conversion (AFCS). O serviço converte esse arquivo em um formulário adaptável. A imagem a seguir representa o formulário entre em contato conosco de amostra em formato PDF.
+O arquivo do PDF serve como a entrada para o serviço de conversão automática de formulários (AFCS). O serviço converte esse arquivo em um formulário adaptável. A imagem a seguir representa o formulário entre em contato conosco de amostra em um formato PDF.
 
 ![formulário de aplicativo de empréstimo de exemplo](assets/sample_contact_us_form.png)
 
@@ -60,7 +60,7 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
 ## Preparar dados para o modelo de formulário {#prepare-data-for-form-model}
 
-A Integração de dados do AEM Forms permite configurar e conectar-se a diferentes fontes de dados. Depois de gerar um formulário adaptável usando o processo de conversão, você pode definir o modelo de formulário com base em um modelo de dados de formulário, XSD ou um esquema JSON. Você pode usar um banco de dados, o Microsoft Dynamics ou qualquer outro serviço de terceiros para criar um modelo de dados de formulário.
+A Integração de dados do AEM Forms permite configurar e conectar-se a diferentes fontes de dados. Depois de gerar um formulário adaptável usando o processo de conversão, você pode definir o modelo de formulário com base em um modelo de dados de formulário, XSD ou um esquema JSON. Você pode usar um banco de dados, Microsoft Dynamics ou qualquer outro serviço de terceiros para criar um modelo de dados de formulário.
 
 Este tutorial usa o banco de dados MySQL como a fonte para criar um modelo de dados de formulário. Crie um esquema no banco de dados e adicione a tabela **contactus** ao esquema com base nos campos disponíveis no formulário adaptável.
 
@@ -82,7 +82,7 @@ CREATE TABLE `contactus` (
 
 Execute as seguintes etapas de configuração para criar uma conexão entre a instância do AEM e o banco de dados MYSQL:
 
-1. Vá para a página Configuração do Console da Web AEM em `http://server:port/system/console/configMgr`.
+1. Vá para a página Configuração do Console da Web do AEM em `http://server:port/system/console/configMgr`.
 1. Localize e clique para abrir **[!UICONTROL Apache Sling Connection Pooled DataSource]** no modo de edição, na Configuração do Console da Web. Especifique os valores das propriedades conforme descrito na tabela a seguir:
 
    <table> 
@@ -158,7 +158,7 @@ Execute as seguintes etapas de configuração para criar uma conexão entre a in
 
 Depois de configurar o MYSQL como a fonte de dados, execute as seguintes etapas para criar um modelo de dados de formulário:
 
-1. Na instância do autor AEM, navegue até **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
+1. Na instância do autor do AEM, navegue até **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
 
 1. Toque em **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
 
@@ -184,7 +184,7 @@ Você pode baixar o modelo de dados de formulário de amostra usando:
 
 ## Gerar formulários adaptáveis com vinculação JSON {#generate-adaptive-forms-with-json-binding}
 
-Use o [serviço do Automated forms conversion (AFCS) para converter](convert-existing-forms-to-adaptive-forms.md) o [formulário Fale Conosco](#sample-adaptive-form) em um formulário adaptável com associação de dados. Certifique-se de não marcar a caixa de seleção **[!UICONTROL Generate adaptive form(s) without data bindings]** ao gerar o formulário adaptável.
+Use o [Serviço de Conversão Automatizada de Formulários (AFCS) para converter](convert-existing-forms-to-adaptive-forms.md) o [Formulário Fale Conosco](#sample-adaptive-form) em um formulário adaptável com associação de dados. Certifique-se de não marcar a caixa de seleção **[!UICONTROL Generate adaptive form(s) without data bindings]** ao gerar o formulário adaptável.
 
 ![Formulário adaptável com associação JSON](assets/generate_af_with_data_bindings.png)
 

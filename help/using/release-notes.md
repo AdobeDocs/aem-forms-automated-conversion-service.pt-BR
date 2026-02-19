@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 63%
+source-wordcount: '504'
+ht-degree: 53%
 
 ---
 
@@ -38,7 +38,7 @@ O Serviço de conversão automática de formulários recebe melhorias continuame
 
 ## 29 de julho de 2021 (AFC-2021.07.2) {#july-2021}
 
-* Adição da capacidade de converter um Formulário PDF em francês, alemão e espanhol em um Formulário adaptável.
+* Adição da capacidade de converter um formulário do PDF em francês, alemão e espanhol em um formulário adaptável.
 
 ## 24 de junho de 2021 (AFC-2021.06.2) {#june-2021}
 
@@ -88,4 +88,4 @@ O serviço agora é mais eficiente na detecção de listas com marcadores e nume
 
 Você precisa do pacote de conectores 1.1.38 ou superior para usar os recursos e as melhorias mais recentes fornecidos na versão AFC-2020.03.1.
 
-Se você já tiver em execução um ambiente do Serviço de conversão automática de formulários, para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar mais recente do AEM Forms e o pacote de conectores mais recente na ordem mencionada. Para obter instruções detalhadas, consulte o artigo [Configurar o Serviço de conversão automática de formulários](configure-service.md).
+Se você já tiver em execução um ambiente do serviço de Conversão automática de formulários (AEM 6.5 ou AEM 6.5 LTS), para usar os recursos mais recentes do serviço de conversão, instale o service pack mais recente, o pacote complementar mais recente do AEM Forms e o pacote de conectores mais recente na ordem mencionada. Para o AEM Forms as a Cloud Service, as atualizações são fornecidas automaticamente. Para obter instruções detalhadas, consulte o artigo [Configurar o Serviço de conversão automática de formulários](configure-service.md).

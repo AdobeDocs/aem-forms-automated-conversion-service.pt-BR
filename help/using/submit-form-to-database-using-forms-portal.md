@@ -1,12 +1,12 @@
 ---
 title: Enviar formulários adaptáveis para o banco de dados usando o Forms Portal
-description: Estenda o metamodelo padrão para adicionar padrões, validações e entidades específicos à sua organização e aplicar configurações a campos de formulário adaptáveis ao executar o serviço do Automated forms conversion (AFCS).
+description: Estenda o metamodelo padrão para adicionar padrões, validações e entidades específicos à sua organização e aplicar configurações a campos de formulário adaptáveis ao executar o serviço de conversão automática de formulários (AFCS).
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Integrar formulários adaptáveis ao banco de dados usando o Forms Portal {#submit-forms-to-database-using-forms-portal}
 
-O serviço de automated forms conversion (AFCS) permite converter um formulário de PDF não interativo, um formulário do Acro ou um formulário de PDF baseado em XFA em um formulário adaptável. Ao iniciar o processo de conversão, você tem a opção de gerar um formulário adaptável com ou sem vínculos de dados.
+O serviço de conversão automática de formulários (AFCS) permite converter um formulário não interativo do PDF, um formulário do Acro ou um formulário do PDF baseado em XFA em um formulário adaptável. Ao iniciar o processo de conversão, você tem a opção de gerar um formulário adaptável com ou sem vínculos de dados.
 
 Se você optar por gerar um formulário adaptável sem associações de dados, será possível integrar o formulário adaptável convertido com um Modelo de dados de formulário, esquema XML ou esquema JSON após a conversão. No entanto, se você gerar um formulário adaptável com vinculações de dados, o serviço de conversão associará automaticamente os formulários adaptáveis a um esquema JSON e criará uma vinculação de dados entre os campos disponíveis no formulário adaptável e no esquema JSON. Em seguida, você pode integrar o formulário adaptável a um banco de dados de sua escolha, preencher dados no formulário e enviá-lo para o banco de dados usando o Portal do Forms.
 
@@ -28,15 +28,15 @@ A amostra, discutida neste artigo, é uma implementação de referência de dado
 
 ## Pré-requisitos {#pre-requisites}
 
-* Configurar uma instância de autor do AEM 6.4 ou 6.5
+* Configurar uma instância de autor do AEM 6.5 ou AEM 6.5 LTS
 * Instale o [service pack mais recente](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html) para sua instância do AEM
 * Versão mais recente do pacote complementar do AEM Forms
-* Configurar o [serviço do Automated forms conversion (AFCS)](configure-service.md)
+* Configurar o [Serviço de conversão automática de formulários (AFCS)](configure-service.md)
 * Configurar um banco de dados. O banco de dados usado na implementação da amostra é o MySQL 5.6.24. No entanto, é possível integrar o formulário adaptável convertido a qualquer banco de dados de sua escolha.
 
-## Configurar conexão entre a instância AEM e o banco de dados {#set-up-connection-aem-instance-database}
+## Configurar conexão entre a instância do AEM e o banco de dados {#set-up-connection-aem-instance-database}
 
-A configuração de uma conexão entre uma instância AEM e um banco de dados MYSQL consiste em:
+A configuração de uma conexão entre uma instância do AEM e um banco de dados MYSQL consiste em:
 
 * [Instalação de um pacote de conector MYSQL](#install-mysql-connector-java-file)
 
@@ -148,7 +148,7 @@ Execute as seguintes etapas para criar esquema e tabelas no banco de dados:
 
 Execute as seguintes etapas de configuração para criar uma conexão entre a instância do AEM e o banco de dados MYSQL:
 
-1. Vá para a página Configuração do Console Web AEM em *http://[host]:[port]/system/console/configMgr*.
+1. Vá para a página Configuração do Console da Web do AEM em *http://[host]:[port]/system/console/configMgr*.
 1. Clique para abrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** no modo de edição.
 1. Especifique os valores das propriedades conforme descrito na tabela a seguir:
 
@@ -271,7 +271,7 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
 [Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Vá para o gerenciador de pacote do AEM em *http://[host]:[port]/crx/packmgr/*.
+1. Vá para o gerenciador de pacotes do AEM em *http://[host]:[port]/crx/packmgr/*.
 1. Clique em **[!UICONTROL Upload Package]**.
 1. Navegue para selecionar o pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** e clique em **[!UICONTROL OK]**.
 1. Clique em **[!UICONTROL Install]** ao lado do pacote para instalá-lo.
