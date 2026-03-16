@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas e considerações
-description: NÃO PUBLISH
+description: NÃO PUBLICAR
 seo-description: DO NOT PUBLISH
 page-status-flag: never-activated
 uuid: c2821264-39e2-44f8-b234-835c46f33fd5
@@ -8,9 +8,9 @@ topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '550'
 ht-degree: 6%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 6%
 [DO NOT PUBLISH]
 -->
 
-O serviço de conversão automatizada do AEM Forms converte um formulário de PDF em um formulário adaptável. O serviço usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente com os dados de origem e produz uma saída aprimorada com cada churn. Esses serviços aprendem com a experiência, como os seres humanos.
+O serviço de Conversão automatizada do AEM Forms converte um formulário do PDF em um formulário adaptável. O serviço usa inteligência artificial e algoritmos de aprendizado de máquina para entender o layout e os campos do formulário de origem. Cada serviço de aprendizado de máquina aprende continuamente com os dados de origem e produz uma saída aprimorada com cada churn. Esses serviços aprendem com a experiência, como os seres humanos.
 
-O serviço de automated forms conversion (AFCS) é treinado em um grande conjunto de formulários. Ele identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. No entanto, existem alguns campos e estilos em PDF forms que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campos ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
+O serviço de conversão automática de formulários (AFCS) é treinado em um grande conjunto de formulários. Ele identifica facilmente os campos em um formulário de origem e produz formulários adaptáveis. No entanto, há alguns campos e estilos no PDF forms que são facilmente visíveis para o olho humano, mas difíceis de entender para o serviço. O serviço pode atribuir tipos de campos ou painéis diferentes dos aplicáveis a alguns campos ou estilos. Todos esses padrões de campo e estilo estão listados abaixo.
 
-O serviço começaria a identificar e atribuir campos ou painéis corretos a esses padrões, à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor de [Revisar e corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de começar a corrigir os problemas ou ler mais, familiarize-se com [componentes de formulário adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+O serviço começaria a identificar e atribuir campos ou painéis corretos a esses padrões, à medida que continua aprendendo com os dados de origem. Por enquanto, você pode usar o editor de [Revisar e corrigir](review-correct-ui-edited.md) para corrigir esses problemas. Antes de começar a corrigir os problemas ou ler mais, familiarize-se com [componentes de formulário adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ## Geral {#general}
 
@@ -36,7 +36,7 @@ O serviço começaria a identificar e atribuir campos ou painéis corretos a ess
    <td width="30%">Padrões e resolução conhecidos</td> 
    <td width="70%">Exemplo</td> 
   </tr>
-   <td><p><strong>Padrão</strong></p> <p>O serviço não converte PDF forms preenchidos em formulário adaptável.</p> <p> </p> <p><strong>Resolução</strong></p> <p>Use formulários adaptáveis vazios.</p> </td> 
+   <td><p><strong>Padrão</strong></p> <p>O serviço não converte o PDF forms preenchido em um formulário adaptável.</p> <p> </p> <p><strong>Resolução</strong></p> <p>Use formulários adaptáveis vazios.</p> </td> 
    <td style="text-align: left;"><img src="assets/pre-filled-form.png" /></td> 
   </tr>
   <tr>
