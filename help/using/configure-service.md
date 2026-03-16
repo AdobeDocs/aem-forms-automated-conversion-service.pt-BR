@@ -256,7 +256,7 @@ Faça logon na instância do autor para criar as configurações do Adobe IMS. U
 
    Ao se conectar com êxito, a mensagem *Token recuperado com êxito* é exibida.
 
-   ![Ao se conectar com êxito, a mensagem token recuperado com êxito é exibida. ](/help/using/assets/healthy-dialog.png)
+   ![Ao se conectar com êxito, a mensagem token recuperado com êxito é exibida. &#x200B;](/help/using/assets/healthy-dialog.png)
 
 1. Clique em **Fechar**.
 
