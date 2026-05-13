@@ -8,10 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 3%
+source-wordcount: 1918
+ht-degree: 4%
 
 ---
 
@@ -43,8 +49,8 @@ ht-degree: 3%
 1. **O serviço pode converter um formulário do Microsoft Word em formulários adaptáveis?**
    <p>Não, o serviço não converte um formulário do Microsoft Word em um formulário adaptável. Você pode salvar um formulário do Microsoft Word em um formulário do PDF e converter o formulário do PDF em um formulário adaptável. O processo completo é </p> <br>
 
-   1. Use o Adobe Acrobat para [converter um Documento do Word para uma PDF não interativa](https://helpx.adobe.com/br/acrobat/how-to/create-pdf-files-word-excel-website.html).
-   1. Use o Adobe Acrobat para [converter o PDF forms produzido em um Formulário do PDF preenchível](https://helpx.adobe.com/br/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
+   1. Use o Adobe Acrobat para [converter um Documento do Word para uma PDF não interativa](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html).
+   1. Use o Adobe Acrobat para [converter o PDF forms produzido em um Formulário do PDF preenchível](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
    1. Use o Adobe Acrobat para atualizar e corrigir manualmente os campos de formulário.
    1. Salve o formulário do PDF. Agora, você pode usar o formulário com o serviço de conversão para gerar um formulário adaptável. Você também pode usar o formulário como um documento de modelo de registro.
 
@@ -77,10 +83,10 @@ Os motivos mais comuns para a conversão em falha são:</p>
     <p> </p> <br>
 
 1. **O serviço identifica e usa fontes do PDF de origem em formulários adaptáveis de saída?**
-   <p>O estilo e o layout de um formulário responsivo do HTML geralmente são diferentes de um formulário do PDF ou baseado em papel. Para oferecer suporte a layout e estilo consistentes em todas as organizações, os formulários adaptáveis usam <a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/themes.html">temas para estilizar um formulário</a>. O serviço de conversão usa as fontes e os estilos de fonte especificados no tema aplicado durante a conversão. É possível alterar as fontes e os estilos de fonte do tema para fornecer uma aparência distinta aos componentes de um formulário adaptável.</p> <br>
+   <p>O estilo e o layout de um formulário responsivo do HTML geralmente são diferentes de um formulário do PDF ou baseado em papel. Para oferecer suporte a layout e estilo consistentes em todas as organizações, os formulários adaptáveis usam <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">temas para estilizar um formulário</a>. O serviço de conversão usa as fontes e os estilos de fonte especificados no tema aplicado durante a conversão. É possível alterar as fontes e os estilos de fonte do tema para fornecer uma aparência distinta aos componentes de um formulário adaptável.</p> <br>
 
 1. **O serviço extrai automaticamente o JavaScript de formulários baseados em XDP e o aplica aos formulários adaptáveis correspondentes?**
-   <p>O serviço não converte automaticamente scripts de formulários baseados em XFA ou do Acro Forms em regras de formulário adaptáveis correspondentes. Você (autores-formulários) pode usar o <a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/rule-editor.html">Editor de regras</a> para adicionar interatividade a um formulário adaptável.</p> <br>
+   <p>O serviço não converte automaticamente scripts de formulários baseados em XFA ou do Acro Forms em regras de formulário adaptáveis correspondentes. Você (autores-formulários) pode usar o <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">Editor de regras</a> para adicionar interatividade a um formulário adaptável.</p> <br>
 
 1. **Alguns objetos de formulário não são convertidos corretamente em componentes de formulário adaptáveis. Como resolver o problema?**
    <p>O serviço de conversão automática de formulários (AFCS) é treinado em um grande conjunto de formulários. Mas os aplicativos baseados em IA/ML são limitados por seus dados e padrões de treinamento. Pode haver vários tipos de campos, layouts, padrões e contexto discerníveis para a percepção humana, mas difíceis de reconhecer automaticamente. O serviço pode não identificar esses objetos ou reconhecê-los incorretamente. Você pode usar o editor de <a href="review-correct-ui-edited.md" target="_blank">Revisar e corrigir</a> para fazer as modificações necessárias no layout familiar baseado em formulário de papel do formulário de entrada.</p> <br/>
@@ -101,7 +107,7 @@ O serviço só oferece suporte a formulários em branco ou não preenchidos. Nã
    <p>O tempo depende do tamanho e da complexidade dos formulários de entrada e do número de solicitações. O serviço pretende reduzir significativamente o tempo de implantação, convertendo o PDF forms em formulários adaptáveis em um ritmo muito mais rápido em comparação ao processo manual de conversão de formulários. </p> <br />
 
 1. **O que devo fazer se encontrar um erro relacionado às bibliotecas RSA? A mensagem de erro é semelhante à mensagem mencionada abaixo:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
 O erro acima ocorre quando a delegação de inicialização não está configurada para bibliotecas RSA/BouncyCastle. Execute as etapas abaixo para resolver o problema:
    <p> </p>
 
@@ -120,5 +126,5 @@ O erro acima ocorre quando a delegação de inicialização não está configura
 1. **Como criar um formulário do PDF habilitado para o Adobe Sign?**
    </p>Para criar um formulário do PDF habilitado para o Adobe Sign:</p>
 
-   Adicione [marcas de texto do Adobe Sign](https://helpx.adobe.com/br/sign/using/text-tag.html) a nomes de campos ou use a opção [Converter em Formulário do Adobe Sign](https://helpx.adobe.com/br/sign/using/create-forms-with-acrobat.html).
+   Adicione [marcas de texto do Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html) a nomes de campos ou use a opção [Converter em Formulário do Adobe Sign](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html).
 

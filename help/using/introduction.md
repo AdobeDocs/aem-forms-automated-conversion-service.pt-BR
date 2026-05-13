@@ -8,10 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/stoZAgMJGYjT1IKCcXBAe2JxWAvPJfwq0znNs757b0U
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 53%
+source-wordcount: 769
+ht-degree: 57%
 
 ---
 
@@ -25,7 +31,7 @@ O serviço de conversão automática de formulários (AFCS) ajuda a acelerar a d
 * Agrupar campos comuns em fragmentos de formulário reutilizáveis
 * Habilitar o Adobe Analytics durante a conversão
 
-![É simples. Você nos fornece as fontes e deixa tudo com a gente. Nós lhe fornecemos lindos formulários adaptáveis. Você sempre pode remexer no resultado para sua satisfação. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
+![É simples. Você nos fornece as fontes e deixa tudo com a gente. Nós lhe fornecemos lindos formulários adaptáveis. Você sempre pode remexer no resultado para sua satisfação. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Integração {#onboarding}
 
@@ -49,9 +55,9 @@ O serviço de conversão automática de formulários (AFCS) é executado na Adob
 
 ### &#x200B;1. Configurar o ambiente {#set-up-the-environment}
 
-O serviço de conversão automática de formulários (AFCS) é executado na Adobe Cloud. [Configure a conta do Adobe I/O de sua organização e conecte sua instância do AEM local](configure-service.md) ao serviço de conversão em execução na Adobe Cloud. Para o AEM 6.5 e o AEM 6.5 LTS, você deve habilitar os Componentes principais do formulário adaptável se usar modelos e temas baseados em Componentes principais; consulte [Configurar o serviço](configure-service.md#referencepackage).
+O serviço de conversão automática de formulários (AFCS) é executado na Adobe Cloud. [Configure a conta de Adobe I/O de sua organização e conecte sua instância de AEM loca](configure-service.md)l ao serviço de conversão em execução na Adobe Cloud. Para o AEM 6.5 e o AEM 6.5 LTS, você deve habilitar os Componentes principais do formulário adaptável se usar modelos e temas baseados em Componentes principais; consulte [Configurar o serviço](configure-service.md#referencepackage).
 
-### &#x200B;2. Converter o PDF forms em formulários adaptáveis {#use-the-conversion-service}
+### &#x200B;2. Converter PDF forms em formulários adaptáveis {#use-the-conversion-service}
 
 Depois que o ambiente do AEM Forms for configurado, para converter formulários PDF em formulários adaptáveis, [carregue formulários PDF](convert-existing-forms-to-adaptive-forms.md) na sua instância do AEM e [inicie a conversão](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Antes de carregar os formulários, considere o seguinte:
 
