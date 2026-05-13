@@ -1,6 +1,6 @@
 ---
 title: Revisar e corrigir formulários convertidos
-description: Revise e corrija os formulários adaptáveis convertidos pelo serviço do Automated forms conversion (AFCS).
+description: Revise e corrija os formulários adaptáveis convertidos pelo Serviço de conversão automática de formulários (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -8,16 +8,30 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: 2548
 ht-degree: 0%
 
 ---
 
 # Revisar e corrigir formulários convertidos{#review-and-correct-converted-forms}
 
-O serviço de Automated forms conversion do AEM Forms (AFCS) identifica campos, conteúdo e layout do documento de PDF de entrada e converte o documento de PDF em um formulário adaptável. O formulário adaptável de saída pode ter alguns campos ausentes ou convertidos incorretamente. Você pode usar o editor de Revisar e corrigir para fazer melhorias nos campos identificados e gerar novamente o formulário adaptável para obter uma saída mais próxima da experiência desejada. Após a primeira conversão, você pode abrir o documento de PDF de entrada no editor para:
+O serviço de conversão automática de formulários do AEM Forms (AFCS) identifica campos, conteúdo e layout do documento PDF de entrada e converte o documento do PDF em um formulário adaptável. O formulário adaptável de saída pode ter alguns campos ausentes ou convertidos incorretamente. Você pode usar o editor de Revisar e corrigir para fazer melhorias nos campos identificados e gerar novamente o formulário adaptável para obter uma saída mais próxima da experiência desejada. Após a primeira conversão, é possível abrir o documento PDF de entrada no editor para:
 
 * Exibir todos os campos e conteúdos identificados durante a conversão
 * Identifique os campos e o conteúdo ausente durante a conversão
@@ -25,7 +39,7 @@ O serviço de Automated forms conversion do AEM Forms (AFCS) identifica campos, 
 * Verificar as tabelas identificadas, redimensionar as colunas e modificar o conteúdo da célula
 * Remover campos identificados incorretamente
 
-Depois de fazer as alterações necessárias, reenvie os PDF forms para o serviço de conversão. Em uma conversão bem-sucedida, os ativos atualizados, incluindo o formulário adaptável e o esquema, são baixados para a instância do AEM Forms. Você pode repetir o processo até que a experiência desejada seja alcançada. ![](assets/stages-of-form-2.gif)
+Depois de fazer as alterações necessárias, reenvie o PDF forms para o serviço de conversão. Em uma conversão bem-sucedida, os ativos atualizados, incluindo o formulário adaptável e o esquema, são baixados para a instância do AEM Forms. Você pode repetir o processo até que a experiência desejada seja alcançada. ![](assets/stages-of-form-2.gif)
 
 Você precisa do navegador Google Chrome, Mozilla FireFox ou Microsoft Edge para usar o editor de revisão e correção. O editor não é compatível com o Internet Explorer.
 
@@ -45,7 +59,7 @@ O editor de Revisar e corrigir oferece uma interface fácil de usar. Ele tem os 
 
 ![Interface de usuário de Revisão e Correção](assets/reviewcorrectui.png)
 
-**A.** Navegador de Conteúdo **B.** Navegador de Propriedades **C.** Barra de Ferramentas **D.** Botão de Propriedades **E.** Botão de Filtro **F.** Botão Salvar **G.** formulário PDF sobreposto aos campos identificados
+**A.** Navegador de Conteúdo **B.** Propriedades Navegador **C.** Barra de Ferramentas **D.** Botão Propriedades **E.** Botão Filtro **F.** Botão Salvar **G.** Formulário do PDF sobreposto com campos identificados
 
 Após a primeira conversão bem-sucedida, o serviço de conversão sobrepõe o documento do PDF de origem aos campos e componentes identificados. Esses campos ou componentes são do tipo: Texto, Campo, Painel, Grupo de escolha e tabela:
 
@@ -69,7 +83,7 @@ Após a primeira conversão bem-sucedida, o serviço de conversão sobrepõe o d
 
 ### Iniciar a revisão {#start-the-review}
 
-Para começar a revisar conversões, selecione o documento do PDF de origem usado para conversão e selecione e toque em **Revisar conversões**. O editor de Revisar e corrigir é aberto em uma nova guia. Você pode começar a revisar conversões. Execute as seguintes verificações básicas antes de começar a corrigir qualquer outro problema:
+Para começar a revisar conversões, selecione o documento PDF de origem usado para conversão e selecione e toque em **Revisar conversões**. O editor de Revisar e corrigir é aberto em uma nova guia. Você pode começar a revisar conversões. Execute as seguintes verificações básicas antes de começar a corrigir qualquer outro problema:
 
 ![](assets/usingreviewandcorrecteditor.png)
 
@@ -91,7 +105,7 @@ Para começar a revisar conversões, selecione o documento do PDF de origem usad
 
    * Para revisar a integridade e a correção do texto, use o botão de filtro ![](assets/toggle_eye.png) para exibir somente texto, clique em cada texto e valide. Corrija os problemas de ortografia, digitação ou gramática, se houver.
 
-   * Para adicionar texto ao formulário, toque no botão + e em **[!UICONTROL Text]**. Draw a caixa, abra o navegador de propriedades e digite o texto a ser adicionado à caixa Conteúdo.
+   * Para adicionar texto ao formulário, toque no botão + e em **[!UICONTROL Text]**. Desenhe a caixa, abra o navegador de propriedades e digite o texto a ser adicionado à caixa Conteúdo.
 
 1. **Tabelas de revisão:** verifique se todas as bordas da tabela estão identificadas. Além disso, verifique se o conteúdo das células está identificado corretamente.
 
@@ -99,13 +113,13 @@ Para começar a revisar conversões, selecione o documento do PDF de origem usad
 
    * Para remover bordas extras, use a opção **[!UICONTROL Delete Column]** ou **[!UICONTROL Delete Row]**.
 
-Depois de fazer as alterações necessárias, toque no botão **[!UICONTROL Save & Convert]** para reenviar os PDF forms para o serviço de conversão. Cada campo é convertido em um componente de campo adaptável correspondente. Após a conversão, os ativos atualizados, incluindo o formulário adaptável e o esquema, são baixados para a instância do AEM Forms. Dependendo da complexidade do formulário, o serviço pode levar algum tempo para concluir a conversão.
+Depois de fazer as alterações necessárias, toque no botão **[!UICONTROL Save & Convert]** para reenviar o PDF forms para o serviço de conversão. Cada campo é convertido em um componente de campo adaptável correspondente. Após a conversão, os ativos atualizados, incluindo o formulário adaptável e o esquema, são baixados para a instância do AEM Forms. Dependendo da complexidade do formulário, o serviço pode levar algum tempo para concluir a conversão.
 
 ![Salvar e Converter](assets/save-and-convert.png)
 
 Depois de executar as verificações básicas, você pode revisar o formulário para corrigir problemas específicos da organização. Esses problemas podem estar relacionados à adição de campos ausentes e muito mais. Você pode exibir a seção [Usar as ferramentas de Revisão e Correção do editor](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) para saber mais sobre todas as ferramentas que o editor fornece para corrigir esses problemas.
 
-Você também pode trabalhar no reconhecimento de problemas idênticos que ocorrem em quase todos os seus formulários e relatar esses padrões ao Adobe. Use o editor de Revisar e corrigir até que a experiência desejada seja alcançada.
+Você também pode trabalhar no reconhecimento de problemas idênticos que ocorrem em quase todos os formulários e relatar esses padrões ao Adobe. Use o editor de Revisar e corrigir até que a experiência desejada seja alcançada.
 
 ## Usar as ferramentas do editor Revisar e corrigir {#use-the-review-and-correct-editor-tools}
 
@@ -126,9 +140,9 @@ O serviço de conversão pode não identificar alguns componentes do formulário
 
 ![](assets/add-component.gif)
 
-Para adicionar um componente ao formulário, toque em **[!UICONTROL +]** e em **[!UICONTROL Field]**. Draw uma caixa que cobre o rótulo e a caixa de entrada do campo. Por exemplo, a imagem de exemplo acima usa o componente de campo para adicionar o rótulo e a caixa de valor **Data de Nascimento** abaixo dele ao formulário. Ao desenhar a caixa, o serviço de conversão identifica o tipo do campo. Você pode alterar o tipo de campo do navegador de propriedades, se necessário. Depois de criar o componente, abra o navegador de propriedades e defina as propriedades do componente.
+Para adicionar um componente ao formulário, toque em **[!UICONTROL +]** e em **[!UICONTROL Field]**. Desenhe um rótulo de caixa que cubra a caixa e a caixa de entrada do campo. Por exemplo, a imagem de exemplo acima usa o componente de campo para adicionar o rótulo e a caixa de valor **Data de Nascimento** abaixo dele ao formulário. Ao desenhar a caixa, o serviço de conversão identifica o tipo do campo. Você pode alterar o tipo de campo do navegador de propriedades, se necessário. Depois de criar o componente, abra o navegador de propriedades e defina as propriedades do componente.
 
-Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o botão **[!UICONTROL Save & Convert]** para reenviar os PDF forms para o serviço de conversão.
+Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o botão **[!UICONTROL Save & Convert]** para reenviar o PDF forms para o serviço de conversão.
 
 ### Adicionar ou editar uma tabela {#addedittable}
 
@@ -157,7 +171,7 @@ Selecione o campo a ser convertido, toque em ![](assets/smock_shuffle_18_n.svg) 
 | Texto | Texto ou Grupo de Escolha |
 | Grupo de escolha | Texto ou painel |
 
-Após a conversão, abra o navegador de propriedades, especifique o rótulo e especifique outras propriedades necessárias. Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o botão Salvar e converter para reenviar os PDF forms para o serviço de conversão.
+Após a conversão, abra o navegador de propriedades, especifique o rótulo e especifique outras propriedades necessárias. Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o botão Salvar e converter para reenviar o PDF forms para o serviço de conversão.
 
 ### Criar ou remover um painel {#create-or-remove-a-panel}
 
@@ -169,7 +183,7 @@ O serviço de conversão pode criar painéis que têm componentes sem relação 
 
 * Para criar um painel, use a tecla Ctrl (no Windows ou Linux) ou a tecla Control (no Mac) para selecionar componentes relacionados e toque em ![grupo](assets/group.jpg) para criar um painel. Abra o navegador de propriedades para especificar as propriedades do painel.
 
-Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o botão **[!UICONTROL Save & Convert]** para reenviar os PDF forms para o serviço de conversão.
+Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o botão **[!UICONTROL Save & Convert]** para reenviar o PDF forms para o serviço de conversão.
 
 ### Excluir um painel ou componente {#delete-a-panel-or-component}
 
@@ -181,7 +195,7 @@ Para excluir um painel ou componente, selecione um painel ou componente e toque 
 
 Cada componente do formulário tem um conjunto de propriedades como nome, título, tipo. Para definir as propriedades de um componente, selecione o componente e toque em navegador de propriedades. As propriedades do componente selecionado são exibidas. Altere ou defina as propriedades.
 
-Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o botão **[!UICONTROL Save & Convert]** para reenviar os PDF forms para o serviço de conversão.
+Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o botão **[!UICONTROL Save & Convert]** para reenviar o PDF forms para o serviço de conversão.
 
 ### Enviar um formulário para conversão {#send-a-form-for-conversion}
 

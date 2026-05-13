@@ -8,9 +8,25 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+TQID: https://experienceleague.adobe.com/EixW6MGzAyHz-JcPYmnKQBLWqnEFOwUepUFOcG8DBUo
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: 1356
 ht-degree: 4%
 
 ---
@@ -72,7 +88,7 @@ O serviço começaria a identificar e atribuir campos ou painéis corretos a ess
 | **Padrão** <br>O serviço não converte o PDF forms preenchido em um formulário adaptável. <br><br>**Solução** <br>Use formulários adaptáveis vazios. | ![Formulário preenchido](assets/best-practice-filled-forms.png) |
 | **Padrão** <br>O serviço pode falhar ao reconhecer texto e campos em um formato denso. <br><br>**Solução** <br> Aumente a largura entre o texto e os campos de um formulário denso antes de iniciar a conversão. |  |
 | **Padrão** <br>O serviço não oferece suporte a formulários digitalizados. <br><br>**Solução** <br>Não use formulários digitalizados. | ![Formulário digitalizado](assets/scanned-forms.png) |
-| **Padrão** <br>O serviço não extrai imagens e texto dentro de imagens. <br><br>**Solução** <br> Adicione manualmente imagens ou texto a formulários convertidos. | ![Imagem com Formulário de texto](assets/best-practice-image-with-text.png) |
+| **Padrão** <br>O serviço não extrai imagens e texto dentro de imagens. <br><br>**Solução** <br> adicionar imagens ou texto manualmente a formulários convertidos. | ![Imagem com Formulário de texto](assets/best-practice-image-with-text.png) |
 | **Padrão** <br>Tabelas com limites pontilhados ou não claros e bordas não são convertidas. <br><br>**Solução** <br>Use tabelas com limites e bordas explícitos. compatível. | ![Formulário de tabela não limpo](assets/best-practice-table-dotted-non-clear.png) |
 | **Padrão** <br> Formulários adaptáveis não oferecem suporte a texto vertical pronto para uso. Portanto, o serviço não converte texto vertical em texto Forms adaptável correspondente. <br><br>**Solução** <br> Use o editor de formulários adaptáveis para adicionar texto vertical, se necessário. | ![Formulário de tabela não limpo](assets/vertical-text.png) |
 
@@ -82,7 +98,7 @@ O serviço começaria a identificar e atribuir campos ou painéis corretos a ess
 
 | Padrão | Resolução |
 |--- |--- |
-| **Padrão** <br> As opções de grupo de opções com formas diferentes de caixa ou círculo não são convertidas em componentes de formulário adaptáveis correspondentes. <br><br>**Solução** <br> Altere as formas de opções de escolha para caixa ou círculo ou use o editor Revisar e Corrigir para identificar as formas. | ![Campos de opção &#x200B;](assets/best-practice-choice-group-options.png) |
+| **Padrão** <br> As opções de grupo de opções com formas diferentes de caixa ou círculo não são convertidas em componentes de formulário adaptáveis correspondentes. <br><br>**Solução** <br> Altere as formas de opções de escolha para caixa ou círculo ou use o editor de Revisar e Corrigir para identificar as formas. | ![Campos de opção &#x200B;](assets/best-practice-choice-group-options.png) |
 
 ### Campos de formulário {#form-fields}
 

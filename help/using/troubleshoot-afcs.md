@@ -9,10 +9,26 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/CYDvLiZX-BqErF-cKQX1SieVDMxkoD1kfP4rLIT9ku0
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 85%
+source-wordcount: 689
+ht-degree: 79%
 
 ---
 
@@ -27,7 +43,7 @@ O documento fornece etapas básicas de solução de problemas para erros comuns.
 | Erro | Exemplo |
 |--- |--- |
 | **Mensagem de erro** <br> O cabeçalho do token de acesso não está disponível. <br><br> **Motivo** <br> Um administrador criou várias configurações do IMS ou a configuração do IMS não pode acessar o serviço AFCS na Adobe Cloud. <br><br>**Solução** <br> Se houver várias configurações, exclua todas as configurações e [crie uma nova configuração](configure-service.md#obtainpubliccertificates). <br> Se houver uma única configuração, use a **Verificação de integridade** para [verificar a conectividade](configure-service.md#createintegrationoption). | ![O cabeçalho do token de acesso não está disponível](assets/invalid-ims-configurations.png) |
-| **Mensagem de erro** <br> Não é possível conectar ao serviço.  <br><br>**Motivo** <br> URL de serviço incorreto ou nenhuma URL de serviço é mencionada nos serviços de nuvem do Serviço de Automated forms conversion (AFCS). <br><br>**Solução** <br> Corrija a [URL do Serviço](configure-service.md#configure-the-cloud-service) nos serviços de Nuvem do Serviço de Automated forms conversion (AFCS). | ![Não é possível se conectar ao serviço.](assets/wrong-service-url-configured.png) |
+| **Mensagem de erro** <br> Não é possível conectar ao serviço.  <br><br>**Motivo** <br> URL de serviço incorreto ou nenhuma URL de serviço é mencionada nos serviços de nuvem do Serviço de Conversão Automatizada de Formulários (AFCS). <br><br>**Solução** <br> Corrija a [URL do Serviço](configure-service.md#configure-the-cloud-service) nos serviços em nuvem do Serviço de Conversão Automatizada de Formulários (AFCS). | ![Não é possível se conectar ao serviço.](assets/wrong-service-url-configured.png) |
 | **Mensagem de erro** <br> O serviço falhou ao converter o formulário.  <br><br>**Motivo** <br> Problemas de conectividade de rede da sua parte, o serviço está inativo devido à manutenção agendada ou interrupção no Adobe Cloud. <br><br>**Solução** <br> Resolva os problemas de conectividade de rede da sua parte e verifique o status do serviço em https://status.adobe.com/pt-br/ para consultar se há uma interrupção planejada ou não planejada. | ![Não é possível se conectar ao serviço.](assets/conversion-failure.png) |
 | **Mensagem de erro** <br> O número de páginas é superior a 15.  <br><br>**Motivo** <br> O formulário de origem tem mais de 15 páginas.  <br><br>**Solução** <br> Use o Adobe Acrobat para dividir os formulários com mais de 15 páginas. Reduza o número de páginas em um formulário para menos de 15. | ![Não é possível se conectar ao serviço.](assets/number-of-pages.png) |
 | **Mensagem de erro** <br> O número de arquivos é superior a 15.  <br><br>**Motivo** <br>  A pasta contém mais de 15 formulários. <br><br>**Solução** <br>Coloque o número de formulários em uma pasta igual ou inferior a 15. Reduza o número total de páginas em uma pasta menos de 50. Ajuste o tamanho da pasta para menos de 10 MB. Não conserve formulários em uma subpasta. Organize formulários de origem em um lote de 8 a 15 formulários. | ![Não é possível se conectar ao serviço.](assets/number-of-pages.png) |
