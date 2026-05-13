@@ -82,22 +82,22 @@ Antes de usar o serviço, prepare sua instância do autor do AEM para se conecta
 
 O serviço de conversão automática de formulários (AFCS) é executado na instância de autor do AEM. Você precisa do AEM 6.5, AEM 6.5 LTS ou AEM Forms as a Cloud Service para configurar uma instância de autor do AEM.
 
-* Se você não tiver o AEM 6.5 ou o AEM 6.5 LTS em execução, baixe-o dos locais abaixo. Depois de baixar o AEM, para obter instruções sobre como configurar uma instância de autor do AEM, consulte [implantação e manutenção](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).:
+* Se você não tiver o AEM 6.5 ou o AEM 6.5 LTS em execução, baixe-o dos locais abaixo. Depois de baixar o AEM, para obter instruções sobre como configurar uma instância de autor do AEM, consulte [implantação e manutenção](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).:
 
    * Se você for um cliente atual do AEM, baixe o AEM 6.5 ou o AEM 6.5 LTS do [site de licenciamento da Adobe](http://licensing.adobe.com).
 
    * Se você for um parceiro da Adobe, use o [Programa de Treinamento de Parceiros da Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar o AEM 6.5 ou o AEM 6.5 LTS.
 
-* Se você estiver usando o AEM Forms as a Cloud Service, consulte integrar o [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) e [configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment).
+* Se você estiver usando o AEM Forms as a Cloud Service, consulte integrar o [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=pt-BR#setup-environment) e [configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=pt-BR#setup-environment).
 
 
 ### (Somente para AEM 6.5 e AEM 6.5 LTS) Baixe e instale o Service Pack mais recente da AEM {#servicepack}
 
-Baixe e instale o Service Pack mais recente da AEM. Para obter instruções detalhadas, consulte as [Notas de versão do Service Pack do AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
+Baixe e instale o Service Pack mais recente da AEM. Para obter instruções detalhadas, consulte as [Notas de versão do Service Pack do AEM 6.5](https://helpx.adobe.com/br/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### (Somente para AEM 6.5 e AEM 6.5 LTS) Baixar e instalar o pacote complementar do AEM Forms  {#downloadaemformsaddon}
 
-Uma instância do AEM contém recursos básicos de formulários. O serviço de conversão exige todos os recursos do AEM Forms. Baixe e instale o pacote complementar do AEM Forms para aproveitar todos os recursos do AEM Forms. O pacote é necessário para configurar e executar o serviço de conversão. Para obter instruções detalhadas, consulte [Instalar e configurar recursos de captura de dados.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
+Uma instância do AEM contém recursos básicos de formulários. O serviço de conversão exige todos os recursos do AEM Forms. Baixe e instale o pacote complementar do AEM Forms para aproveitar todos os recursos do AEM Forms. O pacote é necessário para configurar e executar o serviço de conversão. Para obter instruções detalhadas, consulte [Instalar e configurar recursos de captura de dados.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
 
 >[!NOTE]
 > Execute as configurações obrigatórias após a instalação do pacote complementar.
@@ -114,7 +114,7 @@ The connector package provides early access to the [Auto-detect logical sections
 
 **AEM Forms as a Cloud Service:** você pode usar os modelos predefinidos ou criar modelos personalizados e apontar [configuração de serviço](#configure-the-cloud-service) para eles.
 
-**(Somente para AEM 6.5 e AEM 6.5 LTS)** O serviço de conversão automática de formulários (AFCS) requer pelo menos um tema e um modelo para converter um formulário do PDF em um formulário adaptável. Você deve [habilitar os Componentes principais do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=pt-BR) se quiser usar modelos e temas baseados nos Componentes principais; as instruções estão documentadas lá. Se você iniciar o AEM 6.5 ou o AEM 6.5 LTS no [modo de produção](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de execução nosamplecontent), os pacotes de referência não serão instalados. Crie um tema e um modelo personalizados ou baixe e instale o pacote [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) na sua instância do Autor para obter temas e modelos de referência. Em seguida, aponte a [configuração de serviço](#configure-the-cloud-service) para usar os modelos e temas antes de usar o serviço.
+**(Somente para AEM 6.5 e AEM 6.5 LTS)** O serviço de conversão automática de formulários (AFCS) requer pelo menos um tema e um modelo para converter um formulário do PDF em um formulário adaptável. Você deve [habilitar os Componentes principais do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=pt-BR) se quiser usar modelos e temas baseados nos Componentes principais; as instruções estão documentadas lá. Se você iniciar o AEM 6.5 ou o AEM 6.5 LTS no [modo de produção](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de execução nosamplecontent), os pacotes de referência não serão instalados. Crie um tema e um modelo personalizados ou baixe e instale o pacote [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) na sua instância do Autor para obter temas e modelos de referência. Em seguida, aponte a [configuração de serviço](#configure-the-cloud-service) para usar os modelos e temas antes de usar o serviço.
 
 ## Configurar acesso e permissões
 
@@ -148,7 +148,7 @@ Execute as etapas abaixo para criar um perfil e adicionar desenvolvedores a ele.
    1. Insira o endereço de email dos desenvolvedores e, opcionalmente, o nome e sobrenome.
    1. Selecione perfis de produto. Clique em **[!UICONTROL Save]**.
 
-Repita as etapas acima para todos os usuários. Para obter mais detalhes sobre como adicionar desenvolvedores, consulte [Gerenciar desenvolvedores](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+Repita as etapas acima para todos os usuários. Para obter mais detalhes sobre como adicionar desenvolvedores, consulte [Gerenciar desenvolvedores](https://helpx.adobe.com/br/enterprise/using/manage-developers.html).
 
 Depois que um administrador adiciona desenvolvedores ao perfil do Adobe I/O, eles são notificados por email (se configurado).
 
@@ -166,7 +166,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email).
 -->
 
 ### Adicionar usuário ao grupo de formulários-usuários {#adduserstousergroup}

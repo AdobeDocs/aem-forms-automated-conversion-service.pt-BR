@@ -73,7 +73,7 @@ Este artigo descreve os fluxos de trabalho recomendados para preencher previamen
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Opção 1</strong>: você <a href="#generate-adaptive-forms-with-no-data-binding">gera um formulário adaptável sem associação de dados</a> usando o serviço de conversão automática de formulários (AFCS) e configura o esquema JSON como fonte de dados. Você associa os campos de formulário adaptável ao esquema JSON manualmente e <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">usa qualquer um dos protocolos </a> compatíveis para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.</p></td> 
+    <p><strong>Opção 1</strong>: você <a href="#generate-adaptive-forms-with-no-data-binding">gera um formulário adaptável sem associação de dados</a> usando o serviço de conversão automática de formulários (AFCS) e configura o esquema JSON como fonte de dados. Você associa os campos de formulário adaptável ao esquema JSON manualmente e <a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">usa qualquer um dos protocolos </a> compatíveis para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.</p></td> 
   </tr>
   <tr>
   <td></td> 
@@ -93,7 +93,7 @@ Este artigo descreve os fluxos de trabalho recomendados para preencher previamen
   <tr>
   <td><p>Esquema XSD</p></td> 
    <td> 
-    <p>Selecione Esquema XSD como fonte de dados. Com base na fonte de dados selecionada, você <a href="#generate-adaptive-forms-with-no-data-binding">gera um formulário adaptável sem associação de dados</a> usando o serviço de conversão automática de formulários (AFCS) e configura o esquema XSD como fonte de dados. Você associa os campos de formulário adaptável ao esquema XSD manualmente e <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">usa qualquer um dos protocolos</a> compatíveis para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.</p>
+    <p>Selecione Esquema XSD como fonte de dados. Com base na fonte de dados selecionada, você <a href="#generate-adaptive-forms-with-no-data-binding">gera um formulário adaptável sem associação de dados</a> usando o serviço de conversão automática de formulários (AFCS) e configura o esquema XSD como fonte de dados. Você associa os campos de formulário adaptável ao esquema XSD manualmente e <a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">usa qualquer um dos protocolos</a> compatíveis para preencher previamente os valores de campo. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.</p>
     </td> 
   </tr>
   <tr>
@@ -117,7 +117,7 @@ As informações fornecidas neste artigo baseiam-se no pressuposto de que qualqu
 
 ## Pré-requisitos {#pre-requisites}
 
-* Configurar uma [instância do autor do AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html)
+* Configurar uma [instância do autor do AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/deploy.html)
 * Configurar o [AFCS (Serviço de conversão automática de formulários) na instância do autor do AEM](configure-service.md)
 
 ## Exemplo de formulário adaptável {#sample-adaptive-form}
@@ -186,7 +186,7 @@ Exemplo de esquema XSD de aplicativo de empréstimo
 
 [Obter arquivo](assets/loanapplication.xsd)
 
-Para obter mais informações sobre como usar o esquema XSD como modelo de formulário em formulários adaptáveis, consulte [Criando formulários adaptáveis usando o esquema XML](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html).
+Para obter mais informações sobre como usar o esquema XSD como modelo de formulário em formulários adaptáveis, consulte [Criando formulários adaptáveis usando o esquema XML](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html).
 
 Se estiver usando um esquema JSON como modelo de formulário para executar os casos de uso, crie um arquivo JSON com o seguinte texto:
 
@@ -236,7 +236,7 @@ Esquema JSON do aplicativo de empréstimo de exemplo
 
 [Obter arquivo](assets/demo_schema.json)
 
-Para obter mais informações sobre como usar o esquema JSON como modelo de formulário em formulários adaptáveis, consulte [Criação de formulários adaptáveis usando o esquema JSON](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html).
+Para obter mais informações sobre como usar o esquema JSON como modelo de formulário em formulários adaptáveis, consulte [Criação de formulários adaptáveis usando o esquema JSON](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html).
 
 ## Gerar formulários adaptáveis sem associação de dados {#generate-adaptive-forms-with-no-data-binding}
 
@@ -260,10 +260,10 @@ Caso de uso: você gera um formulário adaptável sem vínculo de dados usando o
 
 Antes de executar o caso de uso:
 
-* [Configurar o banco de dados MySQL como a fonte de dados](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
-* [Criar o modelo de dados do formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html)
+* [Configurar o banco de dados MySQL como a fonte de dados](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
+* [Criar o modelo de dados do formulário](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
-Com base no caso de uso, crie o modelo de dados de formulário **loanapplication** e associe o argumento do serviço de leitura a um valor **[!UICONTROL Literal]**. O valor literal do número de telefone deve ser de um dos registros configurados no esquema **candidato** do banco de dados MySQL. Os serviços usam o valor como argumento para buscar detalhes da fonte de dados. Você também pode selecionar [Atributo de perfil de usuário ou Solicitar atributo](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) na lista suspensa **[!UICONTROL Binding To]**
+Com base no caso de uso, crie o modelo de dados de formulário **loanapplication** e associe o argumento do serviço de leitura a um valor **[!UICONTROL Literal]**. O valor literal do número de telefone deve ser de um dos registros configurados no esquema **candidato** do banco de dados MySQL. Os serviços usam o valor como argumento para buscar detalhes da fonte de dados. Você também pode selecionar [Atributo de perfil de usuário ou Solicitar atributo](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) na lista suspensa **[!UICONTROL Binding To]**
 
 ![Configurar modelo de dados de formulário](assets/configure_model_object.png)
 
@@ -298,7 +298,7 @@ Execute as seguintes etapas:
 
 **Caso de uso:** gere um formulário adaptável sem associação de dados usando o serviço de conversão automática de formulários (AFCS) e configure o banco de dados MYSQL como fonte de dados. Você vincula os campos de formulário adaptáveis usando o editor de regras para preencher previamente os valores dos campos. Modifique os valores de campo, se necessário, e envie dados para o repositório crx.
 
-Execute as seguintes etapas para usar o [editor de regras](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) para chamar o serviço de modelo de dados de formulário para associar campos e valores de preenchimento prévio em um formulário adaptável:
+Execute as seguintes etapas para usar o [editor de regras](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/rule-editor.html) para chamar o serviço de modelo de dados de formulário para associar campos e valores de preenchimento prévio em um formulário adaptável:
 
 1. Selecione o **formulário de aplicativo de empréstimo de amostra** na pasta **[!UICONTROL output]** e toque em **[!UICONTROL Edit]**.
 1. Na guia **[!UICONTROL Content]**, toque no ícone configurar:
