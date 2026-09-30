@@ -8,27 +8,40 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-TQID: https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8
+TQID: 'https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2548
+source-wordcount: '2548'
 ht-degree: 0%
-
 ---
-
 # Revisar e corrigir formulários convertidos{#review-and-correct-converted-forms}
 
 O serviço de conversão automática de formulários do AEM Forms (AFCS) identifica campos, conteúdo e layout do documento PDF de entrada e converte o documento do PDF em um formulário adaptável. O formulário adaptável de saída pode ter alguns campos ausentes ou convertidos incorretamente. Você pode usar o editor de Revisar e corrigir para fazer melhorias nos campos identificados e gerar novamente o formulário adaptável para obter uma saída mais próxima da experiência desejada. Após a primeira conversão, é possível abrir o documento PDF de entrada no editor para:
@@ -77,7 +90,7 @@ Após a primeira conversão bem-sucedida, o serviço de conversão sobrepõe o d
 
 ### Antes de começar {#before-you-start}
 
-* O editor de revisão e correção não oferece suporte a fragmentos. Não use o editor para revisar conversões que tiveram a opção **Extrair Fragmento** habilitada durante as conversões. Você pode usar o [editor de formulários adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/introduction-forms-authoring.html) para essas conversões.
+* O editor de revisão e correção não oferece suporte a fragmentos. Não use o editor para revisar conversões que tiveram a opção **Extrair Fragmento** habilitada durante as conversões. Você pode usar o [editor de formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) para essas conversões.
 
 * O editor de Revisar e Corrigir não tem uma ação de desfazer. Use o botão Salvar somente para salvar permanentemente as alterações.
 
@@ -201,7 +214,7 @@ Toque no botão **[!UICONTROL Save]** para salvar as modificações ou use o bot
 
 Depois de fazer todas as alterações necessárias no Editor de revisão e correção, você pode reenviar o formulário para conversão. Para enviar o formulário para conversão, toque em **[!UICONTROL Save & Convert]**. O **[!UICONTROL Sent for conversion label]** é aplicado à pasta que contém o documento de origem e o formulário de origem atualizado é carregado para o serviço de conversão em execução no Adobe I/O.
 
-Dependendo da complexidade do formulário, o serviço de conversão pode levar algum tempo para converter o formulário. Após a conclusão da conversão, o formulário adaptável convertido e os ativos relacionados são baixados para o computador. Você pode revisar o formulário no editor após a conclusão da conversão e abrir o formulário adaptável no [editor de formulários adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/using/introduction-forms-authoring.html) para o conjunto final de correções, se necessário.
+Dependendo da complexidade do formulário, o serviço de conversão pode levar algum tempo para converter o formulário. Após a conclusão da conversão, o formulário adaptável convertido e os ativos relacionados são baixados para o computador. Você pode revisar o formulário no editor após a conclusão da conversão e abrir o formulário adaptável no [editor de formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) para o conjunto final de correções, se necessário.
 
 Se você reenviar um formulário para conversão depois de atualizar o formulário no editor de formulários adaptáveis, todas as alterações feitas no formulário adaptável serão perdidas. Você pode abrir um formulário no editor de revisão e correção somente após uma conversão bem-sucedida.
 
