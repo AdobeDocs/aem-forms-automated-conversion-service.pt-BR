@@ -8,33 +8,50 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-TQID: https://experienceleague.adobe.com/xxFiHKgzZsDqk1rjtsBOEa-gaEi5S7iRY-Ela1T6eL8
+TQID: 'https://experienceleague.adobe.com/xxFiHKgzZsDqk1rjtsBOEa-gaEi5S7iRY-Ela1T6eL8'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: a1df6763-63b5-45b4-8c8a-155a692a2b3e
+    internal-label: Integrations
   - id: ae478996-b206-4712-9b0c-dc78a2644453
+    internal-label: Integrations
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
   - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+    internal-label: APIs
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: cb6b167400093c85e8929eb147e2a0be256772a6
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2663
+source-wordcount: '2660'
 ht-degree: 5%
-
 ---
-
 # Configurar o serviço de conversão automática de formulários (AFCS) {#about-this-help}
 
 Este artigo descreve como um administrador do AEM pode configurar o Serviço de conversão automática de formulários (AFCS) para automatizar a conversão do PDF forms no Adaptive Forms. Este artigo é para administradores de TI e da AEM em sua organização. As informações fornecidas pressupõem que qualquer pessoa que leia este artigo esteja familiarizada com as seguintes tecnologias:
@@ -84,9 +101,9 @@ O serviço de conversão automática de formulários (AFCS) é executado na inst
 
 * Se você não tiver o AEM 6.5 ou o AEM 6.5 LTS em execução, baixe-o dos locais abaixo. Depois de baixar o AEM, para obter instruções sobre como configurar uma instância de autor do AEM, consulte [implantação e manutenção](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).:
 
-   * Se você for um cliente atual do AEM, baixe o AEM 6.5 ou o AEM 6.5 LTS do [site de licenciamento da Adobe](http://licensing.adobe.com).
+  * Se você for um cliente atual do AEM, baixe o AEM 6.5 ou o AEM 6.5 LTS do [site de licenciamento da Adobe](http://licensing.adobe.com).
 
-   * Se você for um parceiro da Adobe, use o [Programa de Treinamento de Parceiros da Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar o AEM 6.5 ou o AEM 6.5 LTS.
+  * Se você for um parceiro da Adobe, use o [Programa de Treinamento de Parceiros da Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar o AEM 6.5 ou o AEM 6.5 LTS.
 
 * Se você estiver usando o AEM Forms as a Cloud Service, consulte integrar o [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=pt-BR#setup-environment) e [configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=pt-BR#setup-environment).
 
@@ -252,10 +269,10 @@ Faça logon na instância do autor para criar as configurações do Adobe IMS. U
    * **Título**: especifique um título.
    * **Servidor de Autorização**: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
    * Recupere o seguinte da seção [Configurar as APIs de serviço no Adobe Developer Console](#1-configure-the-service-apis-on-adobe-developer-console):
-      * **ID do Cliente**: Copiar e colar **Chave de API(ID do Cliente)**.
-      * **Segredo do Cliente**: Copiar e colar **Segredo do Cliente**.
-      * **Escopo**: copiar e colar **Escopos**.
-      * **ID da Organização**: copiar e colar a **ID da Organização**.
+     * **ID do Cliente**: Copiar e colar **Chave de API(ID do Cliente)**.
+     * **Segredo do Cliente**: Copiar e colar **Segredo do Cliente**.
+     * **Escopo**: copiar e colar **Escopos**.
+     * **ID da Organização**: copiar e colar a **ID da Organização**.
 
      ![Criar configuração do IMS Adobe](/help/using/assets/save-ims-configuration.png)
 

@@ -8,28 +8,40 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-TQID: https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI
+TQID: 'https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 1918
+source-wordcount: '1917'
 ht-degree: 4%
-
 ---
-
 # Perguntas frequentes{#frequently-asked-questions}
 
 1. **A qual versão do AEM Forms o AFCS (Serviço de Conversão Automatizada de Formulários) oferece suporte?**
@@ -83,8 +95,8 @@ Os motivos mais comuns para a conversão em falha são:</p>
    * O Source PDF tem uma imagem do formulário em vez do formulário real.
    * O serviço está configurado incorretamente, a URL do serviço não foi fornecida ou a URL do serviço fornecida está incorreta. Verifique a [configuração do serviço](configure-service.md#configure-the-cloud-service) em **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
    * A configuração do IMS não está configurada corretamente. Execute uma verificação de integridade na configuração do IMS para garantir que ela esteja funcionando corretamente. Para verificar se a configuração do IMS está correta ou não:
-      1. Ir para `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-      2. Selecione a configuração. Clique no **[!UICONTROL Check Health]** no cabeçalho e clique em **[!UICONTROL Check]**. Se tiver êxito, você receberá a mensagem **[!UICONTROL Token retrieved successfully!]**. <br> <br>
+     1. Ir para `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
+     2. Selecione a configuração. Clique no **[!UICONTROL Check Health]** no cabeçalho e clique em **[!UICONTROL Check]**. Se tiver êxito, você receberá a mensagem **[!UICONTROL Token retrieved successfully!]**. <br> <br>
 
 1. **O uso de fontes personalizadas afeta a conversão?**
    <p>Quando um formulário não interativo do PDF é convertido em um formulário adaptável, para melhorar a qualidade da conversão, as fontes são incorporadas no formulário do PDF. O suporte para incorporação de fontes está restrito ao PDF forms não interativo. Para otimizar a conversão do AcroForm e do PDF forms com base em XFA, são usadas fontes de fallback.</p> 
@@ -116,8 +128,8 @@ O serviço só oferece suporte a formulários em branco ou não preenchidos. Nã
    <p>O tempo depende do tamanho e da complexidade dos formulários de entrada e do número de solicitações. O serviço pretende reduzir significativamente o tempo de implantação, convertendo o PDF forms em formulários adaptáveis em um ritmo muito mais rápido em comparação ao processo manual de conversão de formulários. </p> <br />
 
 1. **O que devo fazer se encontrar um erro relacionado às bibliotecas RSA? A mensagem de erro é semelhante à mensagem mencionada abaixo:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
-O erro acima ocorre quando a delegação de inicialização não está configurada para bibliotecas RSA/BouncyCastle. Execute as etapas abaixo para resolver o problema:
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+   O erro acima ocorre quando a delegação de inicialização não está configurada para bibliotecas RSA/BouncyCastle. Execute as etapas abaixo para resolver o problema:
    <p> </p>
 
    1. Pare a instância do AEM. Navegue até a pasta `[AEM installation directory]\crx-quickstart\conf\`. Abra o arquivo sling.properties para edição. Se você usar `[AEM installation directory]\crx-quickstart\bin\start.bat` para iniciar uma instância do AEM, edite o sling.properties localizado em `[AEM_root]\crx-quickstart\`.

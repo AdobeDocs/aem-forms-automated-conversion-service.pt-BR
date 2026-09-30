@@ -4,13 +4,16 @@ description: Estenda o metamodelo padrão para adicionar padrões, validações 
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 1%
-
+source-wordcount: '1188'
+ht-degree: 2%
 ---
-
 
 # Integrar formulários adaptáveis ao banco de dados usando o Forms Portal {#submit-forms-to-database-using-forms-portal}
 
@@ -269,7 +272,7 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
 1. Baixe o seguinte pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** no sistema de arquivos.
 
-[Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Vá para o gerenciador de pacotes do AEM em *http://[host]:[port]/crx/packmgr/*.
 1. Clique em **[!UICONTROL Upload Package]**.
